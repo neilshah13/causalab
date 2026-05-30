@@ -28,18 +28,37 @@ import re
 import unicodedata
 
 
+def words(s: str) -> list[str]:
+    """Lowercased runs of unicode letters, in order."""
+    return [w.lower() for w in re.findall(r"[^\W\d_]+", s, flags=re.UNICODE)]
+
+
 def first_word(s: str) -> str:
-    """Lowercased first run of (unicode) letters — strips leading space,
-    trailing punctuation, and anything the model emits after the answer word."""
-    s = s.strip()
-    m = re.match(r"[^\W\d_]+", s, flags=re.UNICODE)
-    return (m.group(0) if m else s).lower()
+    ws = words(s)
+    return ws[0] if ws else s.strip().lower()
 
 
 def deaccent(s: str) -> str:
     return "".join(
         c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn"
     )
+
+
+def predict(generated: str, vocab: set[str], vocab_da: dict[str, str]) -> str:
+    """First valid *cycle word* in the generation — article-proof.
+
+    Models answer with a leading determiner ("Le vendredi", "El sábado") or
+    restate ("El día es sábado"); a plain first-word match grabs the article
+    and undercounts. Scanning for the first word that is an actual answer
+    candidate fixes that while still failing genuine non-answers ("Quel jour
+    est trois…"). Falls back to the raw first word so misses stay misses."""
+    for w in words(generated):
+        if w in vocab:
+            return w
+        da = deaccent(w)
+        if da in vocab_da:
+            return vocab_da[da]
+    return first_word(generated)
 
 
 def build_cfg(task: str, model: str, max_new_tokens: int, target_variable: str, experiment_root: str | None):
@@ -128,6 +147,14 @@ def main() -> None:
         eager_attn=cfg.model.get("eager_attn"),
     )
 
+    # Candidate cycle words (the 7/12 valid answers) — used to skip articles.
+    vocab: set[str] = set()
+    for ex in dataset:
+        raw = ex["input"]["raw_output"]
+        for a in raw if isinstance(raw, list) else [raw]:
+            vocab.add(first_word(a))
+    vocab_da = {deaccent(w): w for w in vocab}
+
     correct = correct_da = total = 0
     per_class: dict[str, dict[str, int]] = {}
     examples: list[dict] = []
@@ -142,7 +169,7 @@ def main() -> None:
             raw = ex["input"]["raw_output"]
             answers = raw if isinstance(raw, list) else [raw]
             exp_words = [first_word(a) for a in answers]
-            gen_word = first_word(strings[i])
+            gen_word = predict(strings[i], vocab, vocab_da)
             hit = gen_word in exp_words
             hit_da = deaccent(gen_word) in [deaccent(w) for w in exp_words]
             correct += hit
@@ -167,7 +194,7 @@ def main() -> None:
     result = {
         "task": args.task,
         "model": args.model,
-        "scorer": "gen_first_word_match",
+        "scorer": "gen_first_cycle_word_match",
         "max_new_tokens": args.max_new_tokens,
         "accuracy": acc,
         "accuracy_accent_insensitive": acc_da,
