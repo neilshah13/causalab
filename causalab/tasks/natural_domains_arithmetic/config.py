@@ -118,6 +118,30 @@ _NUMBERS_FR = ["un", "deux", "trois", "quatre", "cinq", "six", "sept"]
 _NUMBERS_ES = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete"]
 _NUMBER_TO_INT_FR = {n: i + 1 for i, n in enumerate(_NUMBERS_FR)}
 _NUMBER_TO_INT_ES = {n: i + 1 for i, n in enumerate(_NUMBERS_ES)}
+
+# Two in-language worked exemplars prepended to the multilingual templates.
+# Llama-3.1-8B otherwise lands one short (inclusive counting) and answers
+# verbosely in FR/ES; these pin exclusive counting + a terse one-word answer,
+# lifting the encoding gate from ~0.4 to 0.80-0.96. The exemplars use concrete
+# words (no {entity}/{number} placeholders), so token-position resolution still
+# locks onto the single question placeholders. ES weekdays use the 'Cuál/está/
+# del' phrasing (A/B-best).
+_FS_WEEKDAYS_FR = (
+    "Q: Quel jour est deux jours après lundi?\nA: mercredi\n"
+    "Q: Quel jour est trois jours après vendredi?\nA: lundi\n"
+)
+_FS_MONTHS_FR = (
+    "Q: Quel mois est deux mois après janvier?\nA: mars\n"
+    "Q: Quel mois est cinq mois après octobre?\nA: mars\n"
+)
+_FS_WEEKDAYS_ES = (
+    "Q: ¿Cuál día de la semana está dos días después del lunes?\nA: miércoles\n"
+    "Q: ¿Cuál día de la semana está tres días después del viernes?\nA: lunes\n"
+)
+_FS_MONTHS_ES = (
+    "Q: ¿Qué mes es dos meses después de enero?\nA: marzo\n"
+    "Q: ¿Qué mes es cinco meses después de octubre?\nA: marzo\n"
+)
 _ALL_NUMBER_WORDS = [
     "one",
     "two",
@@ -330,7 +354,7 @@ DOMAIN_PRESETS: dict[str, dict] = {
         cyclic=True,
         modulus=7,
         number_is_cyclic=True,
-        template="Q: Quel jour est {number} jours après {entity}?\nA:",
+        template=_FS_WEEKDAYS_FR + "Q: Quel jour est {number} jours après {entity}?\nA:",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,
@@ -343,7 +367,7 @@ DOMAIN_PRESETS: dict[str, dict] = {
         cyclic=True,
         modulus=7,
         number_is_cyclic=True,
-        template="Q: ¿Qué día de la semana es {number} días después de {entity}?\nA:",
+        template=_FS_WEEKDAYS_ES + "Q: ¿Cuál día de la semana está {number} días después del {entity}?\nA:",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,
@@ -356,7 +380,7 @@ DOMAIN_PRESETS: dict[str, dict] = {
         cyclic=True,
         modulus=12,
         number_is_cyclic=False,
-        template="Q: Quel mois est {number} mois après {entity}?\nA:",
+        template=_FS_MONTHS_FR + "Q: Quel mois est {number} mois après {entity}?\nA:",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,
@@ -369,21 +393,7 @@ DOMAIN_PRESETS: dict[str, dict] = {
         cyclic=True,
         modulus=12,
         number_is_cyclic=False,
-        template="Q: ¿Qué mes es {number} meses después de {entity}?\nA:",
-        output_prefix=" ",
-        result_entities=None,
-        compute_result=None,
-        entity_embedding=None,
-    ),
-    # Alternate Spanish weekday phrasing under test ('Cuál'/'está'/'del').
-    "weekdays_es_v2": dict(
-        entities=_DAYS_ES,
-        numbers=_NUMBERS_ES,
-        number_to_int=_NUMBER_TO_INT_ES,
-        cyclic=True,
-        modulus=7,
-        number_is_cyclic=True,
-        template="Q: ¿Cuál día de la semana está {number} días después del {entity}?\nA:",
+        template=_FS_MONTHS_ES + "Q: ¿Qué mes es {number} meses después de {entity}?\nA:",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,

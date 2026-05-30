@@ -3,7 +3,7 @@ domain_type: weekdays_fr
 variant: weekdays_fr
 number_range: null
 number_groups: null
-max_new_tokens: 1
+max_new_tokens: 4
 colormap: rainbow
 colormap2: null
 intervention_metric: kl

@@ -2,13 +2,12 @@
 # <command> is run as `uv run <command>` from the repo root inside the sbatch job.
 # Lines starting with # are ignored. Edit freely to add concepts / runners.
 #
-# Phase C — Stage-0 encoding gate (FR/ES weekdays + months), tokenization-robust
-# (generation + lenient first-cycle-word match; see deploy/cinaps/encoding_gate.py).
-# --fewshot pins exclusive counting + terse answers; max_new_tokens defaults to 10.
-weekdays_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_fr --model llama31_8b --fewshot
-weekdays_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_es --model llama31_8b --fewshot
-months_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_fr --model llama31_8b --fewshot
-months_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_es --model llama31_8b --fewshot
+# Phase C — Stage-0 encoding gate (FR/ES weekdays + months). Few-shot exemplars
+# are now baked into the task templates (config.py), so no --fewshot flag needed.
+weekdays_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_fr --model llama31_8b
+weekdays_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_es --model llama31_8b
+months_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_fr --model llama31_8b
+months_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_es --model llama31_8b
 #
-# Example — a full geometry pipeline (≥48 GB GPU; pin to node11/node22):
-# weekdays_pipe	1	python -m causalab.runner.run_exp --config-name weekdays_8b_pipeline
+# Phase 2 — full manifold pipeline (few-shot baked). Heavier; run via run_exp.
+# weekdays_fr_pipe  1  python -m causalab.runner.run_exp --config-name runners/multilingual/weekdays_fr_pipeline experiment_root=artifacts/multilingual/weekdays_fr
