@@ -61,6 +61,34 @@ def predict(generated: str, vocab: set[str], vocab_da: dict[str, str]) -> str:
     return first_word(generated)
 
 
+# Two in-language worked exemplars per cycle, keyed by domain_type. They pin
+# (1) exclusive counting (the model otherwise lands one short in FR/ES), and
+# (2) a terse one-word answer (otherwise it answers verbosely and gets cut off).
+# Each ends with a newline so the real question template follows directly.
+FEWSHOT_PREFIX = {
+    "weekdays_fr": (
+        "Q: Quel jour est deux jours après lundi?\nA: mercredi\n"
+        "Q: Quel jour est trois jours après vendredi?\nA: lundi\n"
+    ),
+    "weekdays_es": (
+        "Q: ¿Qué día de la semana es dos días después de lunes?\nA: miércoles\n"
+        "Q: ¿Qué día de la semana es tres días después de viernes?\nA: lunes\n"
+    ),
+    "months_fr": (
+        "Q: Quel mois est deux mois après janvier?\nA: mars\n"
+        "Q: Quel mois est cinq mois après octobre?\nA: mars\n"
+    ),
+    "months_es": (
+        "Q: ¿Qué mes es dos meses después de enero?\nA: marzo\n"
+        "Q: ¿Qué mes es cinco meses después de octubre?\nA: marzo\n"
+    ),
+    "weekdays_es_v2": (
+        "Q: ¿Cuál día de la semana está dos días después del lunes?\nA: miércoles\n"
+        "Q: ¿Cuál día de la semana está tres días después del viernes?\nA: lunes\n"
+    ),
+}
+
+
 def build_cfg(task: str, model: str, max_new_tokens: int, target_variable: str, experiment_root: str | None):
     import causalab
     from hydra import compose, initialize_config_dir
@@ -85,17 +113,35 @@ def build_cfg(task: str, model: str, max_new_tokens: int, target_variable: str, 
     return cfg
 
 
-def load_dataset(cfg):
+def load_dataset(cfg, fewshot_prefix: str | None = None, template_override: str | None = None):
     from omegaconf import OmegaConf
 
     from causalab.runner.helpers import generate_datasets, resolve_task
 
-    task, _ = resolve_task(
-        task_name=cfg.task.name,
-        task_config=OmegaConf.to_container(cfg.task, resolve=True),
-        target_variable=cfg.task.get("target_variable"),
-        seed=cfg.seed,
-    )
+    if fewshot_prefix or template_override:
+        # Build the task directly so we can override / prepend to the template
+        # (resolve_task fills template from the preset and ignores cfg.task).
+        from causalab.tasks.loader import load_task
+        from causalab.tasks.natural_domains_arithmetic.config import NaturalDomainConfig
+
+        tc = OmegaConf.to_container(cfg.task, resolve=True)
+        raw = NaturalDomainConfig(
+            domain_type=tc["domain_type"],
+            number_range=tc.get("number_range"),
+            number_groups=tc.get("number_groups"),
+            result_entities=tc.get("result_entities"),
+        )
+        base = template_override if template_override else raw.template  # post_init filled it from preset
+        raw.template = (fewshot_prefix or "") + base
+        task = load_task("natural_domains_arithmetic", task_cfg=raw)
+        task.intervention_variable = cfg.task.get("target_variable")
+    else:
+        task, _ = resolve_task(
+            task_name=cfg.task.name,
+            task_config=OmegaConf.to_container(cfg.task, resolve=True),
+            target_variable=cfg.task.get("target_variable"),
+            seed=cfg.seed,
+        )
     train_dataset, _ = generate_datasets(
         task,
         n_train=cfg.task.n_train,
@@ -112,16 +158,32 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--task", required=True, help="task config name, e.g. natural_domains_arithmetic_weekdays_fr")
     ap.add_argument("--model", default="llama31_8b")
-    ap.add_argument("--max-new-tokens", type=int, default=6)
+    ap.add_argument("--max-new-tokens", type=int, default=10)
+    ap.add_argument("--fewshot", action="store_true", help="prepend 2 in-language worked exemplars (pins exclusive counting + terse answers)")
+    ap.add_argument("--fewshot-prefix", default=None, help="explicit exemplar prefix (overrides the built-in FEWSHOT_PREFIX)")
+    ap.add_argument("--template", default=None, help="override the question template (e.g. to test alternate phrasings)")
     ap.add_argument("--target-variable", default="result", help="variable to score (calendar cycles use 'result')")
     ap.add_argument("--experiment-root", default=None, help="base root; task variant is appended")
     ap.add_argument("--gate", type=float, default=0.60)
     ap.add_argument("--batch-size", type=int, default=16)
     ap.add_argument("--dry-run", action="store_true", help="build cfg + dataset and preview prompts; no model load")
     args = ap.parse_args()
+    # CLI args carry literal "\n"; turn them into real newlines (leave UTF-8 intact).
+    if args.template:
+        args.template = args.template.replace("\\n", "\n")
+    if args.fewshot_prefix:
+        args.fewshot_prefix = args.fewshot_prefix.replace("\\n", "\n")
 
     cfg = build_cfg(args.task, args.model, args.max_new_tokens, args.target_variable, args.experiment_root)
-    task, dataset = load_dataset(cfg)
+    if args.fewshot_prefix:
+        fewshot_prefix = args.fewshot_prefix
+    elif args.fewshot:
+        fewshot_prefix = FEWSHOT_PREFIX.get(cfg.task.get("domain_type"))
+        if not fewshot_prefix:
+            raise SystemExit(f"--fewshot: no exemplars for domain_type={cfg.task.get('domain_type')!r}")
+    else:
+        fewshot_prefix = None
+    task, dataset = load_dataset(cfg, fewshot_prefix, args.template)
     out_dir = os.path.join(cfg.experiment_root, "encoding_gate")
 
     if args.dry_run:
@@ -195,6 +257,7 @@ def main() -> None:
         "task": args.task,
         "model": args.model,
         "scorer": "gen_first_cycle_word_match",
+        "fewshot": bool(args.fewshot),
         "max_new_tokens": args.max_new_tokens,
         "accuracy": acc,
         "accuracy_accent_insensitive": acc_da,

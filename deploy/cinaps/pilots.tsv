@@ -3,11 +3,12 @@
 # Lines starting with # are ignored. Edit freely to add concepts / runners.
 #
 # Phase C — Stage-0 encoding gate (FR/ES weekdays + months), tokenization-robust
-# (generation + lenient first-word match; see deploy/cinaps/encoding_gate.py).
-weekdays_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_fr --model llama31_8b
-weekdays_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_es --model llama31_8b
-months_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_fr --model llama31_8b
-months_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_es --model llama31_8b
+# (generation + lenient first-cycle-word match; see deploy/cinaps/encoding_gate.py).
+# --fewshot pins exclusive counting + terse answers; max_new_tokens defaults to 10.
+weekdays_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_fr --model llama31_8b --fewshot
+weekdays_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_weekdays_es --model llama31_8b --fewshot
+months_fr	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_fr --model llama31_8b --fewshot
+months_es	1	python deploy/cinaps/encoding_gate.py --task natural_domains_arithmetic_months_es --model llama31_8b --fewshot
 #
 # Example — a full geometry pipeline (≥48 GB GPU; pin to node11/node22):
 # weekdays_pipe	1	python -m causalab.runner.run_exp --config-name weekdays_8b_pipeline
