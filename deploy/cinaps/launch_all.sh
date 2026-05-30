@@ -17,11 +17,14 @@ export HF_HOME="${HF_HOME:-$WORKDIR_BASE/$(whoami)/hf_cache}"
 [ -f "$MANIFEST" ] || { echo "ERROR: manifest not found: $MANIFEST" >&2; exit 1; }
 echo "+ manifest: $MANIFEST    HF_HOME: $HF_HOME"
 
+excl=()
+[ -n "${GATE_EXCLUDE_NODES:-}" ] && excl=(--exclude="$GATE_EXCLUDE_NODES")
+
 n=0
 while IFS=$'\t' read -r name gpus cmd; do
     [[ -z "${name:-}" || "$name" == \#* ]] && continue
-    echo "+ sbatch --gpus=$gpus --job-name=cinaps_$name -- uv run $cmd"
-    sbatch --gpus="$gpus" --job-name="cinaps_$name" \
+    echo "+ sbatch --gpus=$gpus ${excl[*]} --job-name=cinaps_$name -- uv run $cmd"
+    sbatch --gpus="$gpus" "${excl[@]}" --job-name="cinaps_$name" \
            --export=ALL,HF_HOME="$HF_HOME" \
            "$HERE/job.sbatch" $cmd
     n=$((n + 1))
