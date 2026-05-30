@@ -100,6 +100,24 @@ _MONTHS = [
     "November",
     "December",
 ]
+
+# Multilingual extensions for the Stage-0 encoding gate. These mirror the
+# English weekdays/months presets exactly in structure; only entity strings,
+# number words, and the template body are translated.
+_DAYS_FR = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+_DAYS_ES = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+_MONTHS_FR = [
+    "janvier", "février", "mars", "avril", "mai", "juin",
+    "juillet", "août", "septembre", "octobre", "novembre", "décembre",
+]
+_MONTHS_ES = [
+    "enero", "febrero", "marzo", "abril", "mayo", "junio",
+    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
+]
+_NUMBERS_FR = ["un", "deux", "trois", "quatre", "cinq", "six", "sept"]
+_NUMBERS_ES = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete"]
+_NUMBER_TO_INT_FR = {n: i + 1 for i, n in enumerate(_NUMBERS_FR)}
+_NUMBER_TO_INT_ES = {n: i + 1 for i, n in enumerate(_NUMBERS_ES)}
 _ALL_NUMBER_WORDS = [
     "one",
     "two",
@@ -303,6 +321,58 @@ DOMAIN_PRESETS: dict[str, dict] = {
         compute_result=lambda entity, number, cfg: chr(
             ord(entity) + cfg.number_to_int[number]
         ),
+        entity_embedding=None,
+    ),
+    "weekdays_fr": dict(
+        entities=_DAYS_FR,
+        numbers=_NUMBERS_FR,
+        number_to_int=_NUMBER_TO_INT_FR,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template="Q: Quel jour est {number} jours après {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_es": dict(
+        entities=_DAYS_ES,
+        numbers=_NUMBERS_ES,
+        number_to_int=_NUMBER_TO_INT_ES,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template="Q: ¿Qué día es {number} días después de {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "months_fr": dict(
+        entities=_MONTHS_FR,
+        numbers=_NUMBERS_FR,
+        number_to_int=_NUMBER_TO_INT_FR,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template="Q: Quel mois est {number} mois après {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "months_es": dict(
+        entities=_MONTHS_ES,
+        numbers=_NUMBERS_ES,
+        number_to_int=_NUMBER_TO_INT_ES,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template="Q: ¿Qué mes es {number} meses después de {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
         entity_embedding=None,
     ),
 }
