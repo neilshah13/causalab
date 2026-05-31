@@ -453,4 +453,102 @@ DOMAIN_PRESETS: dict[str, dict] = {
         compute_result=None,
         entity_embedding=None,
     ),
+    # Few-shot variants of the failing cycles. Each prefixes the test prompt with
+    # 2 worked examples to provide in-context demonstrations of the modular
+    # arithmetic pattern. Same entities and arithmetic, only the template differs.
+    "moon_phases_fs": dict(
+        entities=_MOON_QUARTERS,
+        number_range=4,
+        cyclic=True,
+        modulus=4,
+        number_is_cyclic=True,
+        template=(
+            "Q: What lunar phase is one phase after New Moon?\n"
+            "A: First Quarter\n"
+            "Q: What lunar phase is three phases after First Quarter?\n"
+            "A: New Moon\n"
+            "Q: What lunar phase is {number} phases after {entity}?\n"
+            "A:"
+        ),
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "solfege_fs": dict(
+        entities=_SOLFEGE,
+        number_range=7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=(
+            "Q: In solfège, what syllable is one step after Do?\n"
+            "A: Re\n"
+            "Q: In solfège, what syllable is three steps after Sol?\n"
+            "A: Do\n"
+            "Q: In solfège, what syllable is {number} steps after {entity}?\n"
+            "A:"
+        ),
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "compass_fs": dict(
+        entities=_COMPASS_CARDINAL,
+        number_range=4,
+        cyclic=True,
+        modulus=4,
+        number_is_cyclic=True,
+        template=(
+            "Q: What direction is one turn clockwise from North?\n"
+            "A: East\n"
+            "Q: What direction is three turns clockwise from South?\n"
+            "A: East\n"
+            "Q: What direction is {number} turns clockwise from {entity}?\n"
+            "A:"
+        ),
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "zodiac_fs": dict(
+        entities=_ZODIAC,
+        number_range=7,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template=(
+            "Q: What zodiac sign is one sign after Aries?\n"
+            "A: Taurus\n"
+            "Q: What zodiac sign is three signs after Gemini?\n"
+            "A: Virgo\n"
+            "Q: What zodiac sign is {number} signs after {entity}?\n"
+            "A:"
+        ),
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "chinese_zodiac_fs": dict(
+        entities=_CHINESE_ZODIAC,
+        number_range=7,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template=(
+            "Q: In the Chinese zodiac, what animal comes one year after Rat?\n"
+            "A: Ox\n"
+            "Q: In the Chinese zodiac, what animal comes two years after Tiger?\n"
+            "A: Dragon\n"
+            "Q: In the Chinese zodiac, what animal comes {number} years after {entity}?\n"
+            "A:"
+        ),
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
 }
