@@ -118,6 +118,24 @@ _NUMBERS_FR = ["un", "deux", "trois", "quatre", "cinq", "six", "sept"]
 _NUMBERS_ES = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete"]
 _NUMBER_TO_INT_FR = {n: i + 1 for i, n in enumerate(_NUMBERS_FR)}
 _NUMBER_TO_INT_ES = {n: i + 1 for i, n in enumerate(_NUMBERS_ES)}
+
+# English-domain extensions for the Stage-0 encoding gate. Each list orders
+# the entities cyclically; modular arithmetic uses index-mod-modulus.
+# Multi-word entities are kept whole because raw_output uses startswith
+# checking — the model emits the first token (max_new_tokens=1) and the
+# expected raw_output begins with that token, so first-token disambiguation
+# is what actually carries classification weight.
+_MOON_QUARTERS = ["New Moon", "First Quarter", "Full Moon", "Last Quarter"]
+_SOLFEGE = ["Do", "Re", "Mi", "Fa", "Sol", "La", "Ti"]
+_COMPASS_CARDINAL = ["North", "East", "South", "West"]
+_ZODIAC = [
+    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+]
+_CHINESE_ZODIAC = [
+    "Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake",
+    "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig",
+]
 _ALL_NUMBER_WORDS = [
     "one",
     "two",
@@ -370,6 +388,66 @@ DOMAIN_PRESETS: dict[str, dict] = {
         modulus=12,
         number_is_cyclic=False,
         template="Q: ¿Qué mes es {number} meses después de {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "moon_phases": dict(
+        entities=_MOON_QUARTERS,
+        number_range=4,
+        cyclic=True,
+        modulus=4,
+        number_is_cyclic=True,
+        template="Q: What lunar phase is {number} phases after {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "solfege": dict(
+        entities=_SOLFEGE,
+        number_range=7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template="Q: In solfège, what syllable is {number} steps after {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "compass": dict(
+        entities=_COMPASS_CARDINAL,
+        number_range=4,
+        cyclic=True,
+        modulus=4,
+        number_is_cyclic=True,
+        template="Q: What direction is {number} turns clockwise from {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "zodiac": dict(
+        entities=_ZODIAC,
+        number_range=7,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template="Q: What zodiac sign is {number} signs after {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "chinese_zodiac": dict(
+        entities=_CHINESE_ZODIAC,
+        number_range=7,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template="Q: In the Chinese zodiac, what animal year is {number} years after the year of the {entity}?\nA: the year of the",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,
