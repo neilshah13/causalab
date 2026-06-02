@@ -26,7 +26,7 @@ Prefer to look around first? Run the end-to-end weekdays pipeline (Llama-3.1-8B,
 ./scripts/run_exp.sh --slurm weekdays_8b_pipeline  # sbatch
 ```
 
-Or open [`demos/weekdays_geometry.ipynb`](demos/weekdays_geometry.ipynb) for the same pipeline rendered as a notebook.
+Or open [`demos/weekdays_geometry.ipynb`](demos/weekdays_geometry.ipynb) for the same pipeline rendered as a notebook. To run the pipeline on cycles other than weekdays/months (zodiac, solfège, chromatic, the multilingual calendar cycles, …) see [`docs/cyclic_domains.md`](docs/cyclic_domains.md).
 
 ## Working with a coding agent
 
