@@ -9,7 +9,7 @@ You write a high-level causal model describing *how you think* an LM solves a ta
 ## Quick Start
 
 Causalab is built to be driven by a **coding agent** (e.g. Claude Code). The fast path:
-test
+
 1. Clone and install:
    ```bash
    git clone https://github.com/goodfire-ai/causalab.git
