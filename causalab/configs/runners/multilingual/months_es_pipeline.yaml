@@ -1,0 +1,31 @@
+# @package _global_
+# Multilingual manifold pipeline (few-shot baked into the task template).
+# Pullback skipped (matches the shipped months runner).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_months_es
+  - /model: llama31_8b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - /analysis/output_manifold
+  - /analysis/path_steering
+  - /analysis/attention_pattern
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  layers: [28]
+
+activation_manifold:
+  layers: [28]
+
+path_steering:
+  isometry:
+    n_interior_per_pair: 1
+
+attention_pattern:
+  source_token_types: [entity, number]
+  target_token_types: [last_token]

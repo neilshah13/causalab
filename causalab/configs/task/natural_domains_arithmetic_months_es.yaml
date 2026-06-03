@@ -3,7 +3,7 @@ domain_type: months_es
 variant: months_es
 number_range: null
 number_groups: null
-max_new_tokens: 1
+max_new_tokens: 4
 colormap: twilight_shifted
 colormap2: null
 intervention_metric: kl
