@@ -1,6 +1,6 @@
 # Cyclic concept domains — task catalog & runner recipes
 
-This branch adds **14 task presets** to `natural_domains_arithmetic`, extending the original calendar cycles (weekdays + months) into multilingual variants and additional English cyclic concept domains. Each preset is a drop-in replacement for the existing `/task` Hydra group — same causal model, same counterfactual mechanism, only the entities, numbers, and prompt template change.
+This branch adds **20 task presets** to `natural_domains_arithmetic`, extending the original calendar cycles (weekdays + months) into multilingual variants and additional English cyclic concept domains. Each preset is a drop-in replacement for the existing `/task` Hydra group — same causal model, same counterfactual mechanism, only the entities, numbers, and prompt template change.
 
 Use this doc to:
 
@@ -14,12 +14,28 @@ Use this doc to:
 
 Cross-language transfer experiments for the original weekdays/months cycles.
 
+#### European (FR/ES)
+
 | Task name | Entities | Modulus | Template |
 |---|---|---|---|
 | `natural_domains_arithmetic_weekdays_fr` | lundi … dimanche | 7 | `Quel jour est {number} jours après {entity}?` |
 | `natural_domains_arithmetic_weekdays_es` | lunes … domingo | 7 | `¿Qué día es {number} días después de {entity}?` |
 | `natural_domains_arithmetic_months_fr` | janvier … décembre | 12 | `Quel mois est {number} mois après {entity}?` |
 | `natural_domains_arithmetic_months_es` | enero … diciembre | 12 | `¿Qué mes es {number} meses después de {entity}?` |
+
+#### CJK & Hindi
+
+Offsets use Arabic numerals (1–7) in all three languages — avoids Chinese 两/二 ambiguity
+and simplifies tokenization. `max_new_tokens=10` (entities are multi-token in Llama's tokenizer).
+
+| Task name | Entities | Modulus | Template |
+|---|---|---|---|
+| `natural_domains_arithmetic_weekdays_zh` | 星期一 … 星期日 | 7 | `{entity}后{number}天是哪天？` |
+| `natural_domains_arithmetic_months_zh` | 一月 … 十二月 | 12 | `{entity}后{number}个月是哪个月？` |
+| `natural_domains_arithmetic_weekdays_ja` | 月曜日 … 日曜日 | 7 | `{entity}の{number}日後は何曜日ですか？` |
+| `natural_domains_arithmetic_months_ja` | 1月 … 12月 | 12 | `{entity}の{number}ヶ月後は何月ですか？` |
+| `natural_domains_arithmetic_weekdays_hi` | सोमवार … रविवार | 7 | `{entity} के {number} दिन बाद कौन सा दिन होगा?` |
+| `natural_domains_arithmetic_months_hi` | जनवरी … दिसंबर | 12 | `{entity} के {number} महीने बाद कौन सा महीना होगा?` |
 
 ### 2. Additional English cyclic domains
 
@@ -134,7 +150,7 @@ Pass/fail at the 60% top-1 baseline accuracy threshold across model × cycle. Pa
 
 The small base models pass only the calendar cycles. Gemma 4 31B IT via chat-template wrapping passes 7 of 9 — adding music, 24-hour clock, and both zodiacs to the geometric-encoding club. The `_fs` few-shot variants lift some failing cycles into the gate window (e.g., chinese_zodiac on Qwen 3.5 9B: 4% → 48%).
 
-### Multilingual calendar cycles (Gemma 4 31B base, raw Q/A)
+### Multilingual calendar cycles — European (Gemma 4 31B base, raw Q/A)
 
 | Cycle | EN | FR | ES |
 |---|---|---|---|
@@ -142,6 +158,25 @@ The small base models pass only the calendar cycles. Gemma 4 31B IT via chat-tem
 | months | 100% | **52%** ✗ | (in flight) |
 
 The FR base-model accuracy drops below the gate despite the IT variant via OpenRouter producing 100% on the same prompts — a chat-template effect. **Crucially, the underlying activation manifold at L50 is still cyclic on French weekdays (isometry r = 0.984)** even though the model fails to output the right token most of the time. Encoding ≠ readout.
+
+### Multilingual calendar cycles — CJK & Hindi (results pending)
+
+Encoding-gate sweep to be run on Llama-3.1-8B via `encoding_gate.py` (lenient first-word
+matching; exact-match `baseline` accuracy will be near 0% for Hindi due to Devanagari
+tokenization). The `—` entries below will be filled after Phase 1 runs.
+
+| Cycle | Llama-3.1-8B (lenient) |
+|---|---|
+| weekdays_zh | — |
+| months_zh | — |
+| weekdays_ja | — |
+| months_ja | — |
+| weekdays_hi | — |
+| months_hi | — |
+
+Runner configs: `causalab/configs/runners/multilingual/*_zh_*.yaml`, `*_ja_*.yaml`, `*_hi_*.yaml`.
+Gate runner configs (baseline only): session-local `*_gate.yaml` files in
+`agent_logs/2026-06-10--cjk-hindi-cycles--keen-panda/code/configs/runners/multilingual/`.
 
 ## Caveats
 

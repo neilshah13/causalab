@@ -119,6 +119,71 @@ _NUMBERS_ES = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete"]
 _NUMBER_TO_INT_FR = {n: i + 1 for i, n in enumerate(_NUMBERS_FR)}
 _NUMBER_TO_INT_ES = {n: i + 1 for i, n in enumerate(_NUMBERS_ES)}
 
+# Few-shot prefixes for FR/ES presets (2 worked Q/A examples each).
+_FS_WEEKDAYS_FR = (
+    "Q: Quel jour est deux jours après lundi?\nA: mercredi\n"
+    "Q: Quel jour est trois jours après vendredi?\nA: lundi\n"
+)
+_FS_WEEKDAYS_ES = (
+    "Q: ¿Qué día de la semana es dos días después de lunes?\nA: miércoles\n"
+    "Q: ¿Qué día de la semana es tres días después de viernes?\nA: lunes\n"
+)
+_FS_MONTHS_FR = (
+    "Q: Quel mois est deux mois après janvier?\nA: mars\n"
+    "Q: Quel mois est cinq mois après octobre?\nA: mars\n"
+)
+_FS_MONTHS_ES = (
+    "Q: ¿Qué mes es dos meses después de enero?\nA: marzo\n"
+    "Q: ¿Qué mes es cinco meses después de octubre?\nA: marzo\n"
+)
+
+# CJK and Hindi extensions. Offsets use Arabic numerals (1–7) to avoid
+# grammatical ambiguity (Chinese 两 vs 二) and CJK/Devanagari tokenization complexity.
+_DAYS_ZH = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
+_MONTHS_ZH = [
+    "一月", "二月", "三月", "四月", "五月", "六月",
+    "七月", "八月", "九月", "十月", "十一月", "十二月",
+]
+_DAYS_JA = ["月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "日曜日"]
+_MONTHS_JA = [
+    "1月", "2月", "3月", "4月", "5月", "6月",
+    "7月", "8月", "9月", "10月", "11月", "12月",
+]
+_DAYS_HI = ["सोमवार", "मंगलवार", "बुधवार", "गुरुवार", "शुक्रवार", "शनिवार", "रविवार"]
+_MONTHS_HI = [
+    "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून",
+    "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
+]
+
+# Shared Arabic-numeral offset list for ZH/JA/HI (1–7).
+_NUMBERS_ARABIC_7 = ["1", "2", "3", "4", "5", "6", "7"]
+_NUMBER_TO_INT_ARABIC_7 = {str(i): i for i in range(1, 8)}
+
+_FS_WEEKDAYS_ZH = (
+    "Q: 星期一后2天是哪天？\nA: 星期三\n"
+    "Q: 星期五后3天是哪天？\nA: 星期一\n"
+)
+_FS_MONTHS_ZH = (
+    "Q: 一月后2个月是哪个月？\nA: 三月\n"
+    "Q: 十月后5个月是哪个月？\nA: 三月\n"
+)
+_FS_WEEKDAYS_JA = (
+    "Q: 月曜日の2日後は何曜日ですか？\nA: 水曜日\n"
+    "Q: 金曜日の3日後は何曜日ですか？\nA: 月曜日\n"
+)
+_FS_MONTHS_JA = (
+    "Q: 1月の2ヶ月後は何月ですか？\nA: 3月\n"
+    "Q: 10月の5ヶ月後は何月ですか？\nA: 3月\n"
+)
+_FS_WEEKDAYS_HI = (
+    "Q: सोमवार के 2 दिन बाद कौन सा दिन होगा?\nA: बुधवार\n"
+    "Q: शुक्रवार के 3 दिन बाद कौन सा दिन होगा?\nA: सोमवार\n"
+)
+_FS_MONTHS_HI = (
+    "Q: जनवरी के 2 महीने बाद कौन सा महीना होगा?\nA: मार्च\n"
+    "Q: अक्टूबर के 5 महीने बाद कौन सा महीना होगा?\nA: मार्च\n"
+)
+
 # English-domain extensions for the Stage-0 encoding gate. Each list orders
 # the entities cyclically; modular arithmetic uses index-mod-modulus.
 # Multi-word entities are kept whole because raw_output uses startswith
@@ -388,6 +453,84 @@ DOMAIN_PRESETS: dict[str, dict] = {
         modulus=12,
         number_is_cyclic=False,
         template=_FS_MONTHS_ES + "Q: ¿Qué mes es {number} meses después de {entity}?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_zh": dict(
+        entities=_DAYS_ZH,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_ZH + "Q: {entity}后{number}天是哪天？\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "months_zh": dict(
+        entities=_MONTHS_ZH,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template=_FS_MONTHS_ZH + "Q: {entity}后{number}个月是哪个月？\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_ja": dict(
+        entities=_DAYS_JA,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_JA + "Q: {entity}の{number}日後は何曜日ですか？\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "months_ja": dict(
+        entities=_MONTHS_JA,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template=_FS_MONTHS_JA + "Q: {entity}の{number}ヶ月後は何月ですか？\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_hi": dict(
+        entities=_DAYS_HI,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_HI + "Q: {entity} के {number} दिन बाद कौन सा दिन होगा?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "months_hi": dict(
+        entities=_MONTHS_HI,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=12,
+        number_is_cyclic=False,
+        template=_FS_MONTHS_HI + "Q: {entity} के {number} महीने बाद कौन सा महीना होगा?\nA:",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,

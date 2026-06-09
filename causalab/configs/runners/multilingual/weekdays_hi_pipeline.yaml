@@ -1,0 +1,32 @@
+# @package _global_
+# Full manifold pipeline for Hindi weekdays (run after encoding gate passes).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_hi
+  - /model: llama31_8b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - /analysis/output_manifold
+  - /analysis/path_steering
+  - /analysis/pullback
+  - /analysis/attention_pattern
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  layers: [28]
+
+activation_manifold:
+  layers: [28]
+
+path_steering:
+  n_extra_pairs: 29
+  isometry:
+    n_interior_per_pair: 4
+
+attention_pattern:
+  source_token_types: [entity, number]
+  target_token_types: [last_token]

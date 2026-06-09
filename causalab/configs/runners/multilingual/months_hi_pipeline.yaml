@@ -1,0 +1,31 @@
+# @package _global_
+# Full manifold pipeline for Hindi months (pullback omitted — 12-entity cost).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_months_hi
+  - /model: llama31_8b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - /analysis/output_manifold
+  - /analysis/path_steering
+  - /analysis/attention_pattern
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  layers: [28]
+
+activation_manifold:
+  layers: [28]
+
+path_steering:
+  n_extra_pairs: 29
+  isometry:
+    n_interior_per_pair: 1
+
+attention_pattern:
+  source_token_types: [entity, number]
+  target_token_types: [last_token]
