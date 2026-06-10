@@ -33,7 +33,7 @@ and simplifies tokenization. `max_new_tokens=10` (entities are multi-token in Ll
 | `natural_domains_arithmetic_weekdays_zh` | 星期一 … 星期日 | 7 | `{entity}后{number}天是哪天？` |
 | `natural_domains_arithmetic_months_zh` | 一月 … 十二月 | 12 | `{entity}后{number}个月是哪个月？` |
 | `natural_domains_arithmetic_weekdays_ja` | 月曜日 … 日曜日 | 7 | `{entity}の{number}日後は何曜日ですか？` |
-| `natural_domains_arithmetic_months_ja` | 1月 … 12月 | 12 | `{entity}の{number}ヶ月後は何月ですか？` |
+| `natural_domains_arithmetic_months_ja` | 一月 … 十二月 | 12 | `{entity}の{number}ヶ月後は何月ですか？` |
 | `natural_domains_arithmetic_weekdays_hi` | सोमवार … रविवार | 7 | `{entity} के {number} दिन बाद कौन सा दिन होगा?` |
 | `natural_domains_arithmetic_months_hi` | जनवरी … दिसंबर | 12 | `{entity} के {number} महीने बाद कौन सा महीना होगा?` |
 
@@ -159,24 +159,21 @@ The small base models pass only the calendar cycles. Gemma 4 31B IT via chat-tem
 
 The FR base-model accuracy drops below the gate despite the IT variant via OpenRouter producing 100% on the same prompts — a chat-template effect. **Crucially, the underlying activation manifold at L50 is still cyclic on French weekdays (isometry r = 0.984)** even though the model fails to output the right token most of the time. Encoding ≠ readout.
 
-### Multilingual calendar cycles — CJK & Hindi (results pending)
+### Multilingual calendar cycles — CJK & Hindi
 
-Encoding-gate sweep to be run on Llama-3.1-8B via `encoding_gate.py` (lenient first-word
-matching; exact-match `baseline` accuracy will be near 0% for Hindi due to Devanagari
-tokenization). The `—` entries below will be filled after Phase 1 runs.
+Encoding-gate sweep on Llama-3.1-8B via `encoding_gate.py` (lenient first-word matching).
 
-| Cycle | Llama-3.1-8B (lenient) |
-|---|---|
-| weekdays_zh | — |
-| months_zh | — |
-| weekdays_ja | — |
-| months_ja | — |
-| weekdays_hi | — |
-| months_hi | — |
+| Cycle | Llama-3.1-8B (lenient) | Notes |
+|---|---|---|
+| weekdays_zh | **67.3%** ✓ (33/49) | — |
+| months_zh | **96.4%** ✓ (81/84) | — |
+| weekdays_ja | **63.3%** ✓ (31/49) | — |
+| months_ja | 100%* | *Degenerate: entity format was `1月…12月`; `first_word()` strips digits → all 12 collapse to `月`. Fixed to `一月…十二月` (kanji); gate rerun pending. |
+| weekdays_hi | **59.2%** ✗ (29/49) | Below 60% gate; running activation_manifold to test dissociation (H2). |
+| months_hi | **88.1%** ✓ (74/84) | June (जून) / July (जुलाई) share first_word `ज` due to Devanagari matra splitting; ~2/12 entities affected. |
 
 Runner configs: `causalab/configs/runners/multilingual/*_zh_*.yaml`, `*_ja_*.yaml`, `*_hi_*.yaml`.
-Gate runner configs (baseline only): session-local `*_gate.yaml` files in
-`agent_logs/2026-06-10--cjk-hindi-cycles--keen-panda/code/configs/runners/multilingual/`.
+Gate runner configs (baseline only): `causalab/configs/runners/multilingual/*_gate.yaml`.
 
 ## Caveats
 

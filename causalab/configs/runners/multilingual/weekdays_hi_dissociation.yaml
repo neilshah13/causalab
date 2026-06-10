@@ -1,0 +1,20 @@
+# @package _global_
+# Reduced pipeline for weekdays_hi (gate FAIL 59.2%). Tests FR-style dissociation:
+# isometry can be high even when readout accuracy is below the 60% gate.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_hi
+  - /model: llama31_8b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  layers: [28]
+
+activation_manifold:
+  layers: [28]
