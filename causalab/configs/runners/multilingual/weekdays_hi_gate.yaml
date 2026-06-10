@@ -1,0 +1,11 @@
+# @package _global_
+# Phase 1 encoding-gate runner for Hindi weekdays.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_hi
+  - /model: llama31_8b
+  - /analysis/baseline
+  - _self_
+
+task:
+  target_variable: result

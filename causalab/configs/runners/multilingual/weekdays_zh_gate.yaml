@@ -1,0 +1,12 @@
+# @package _global_
+# Phase 1 encoding-gate runner for Chinese Mandarin weekdays.
+# Run encoding_gate.py after this to get lenient accuracy (exact-match will be low).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_zh
+  - /model: llama31_8b
+  - /analysis/baseline
+  - _self_
+
+task:
+  target_variable: result

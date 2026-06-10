@@ -1,0 +1,11 @@
+# @package _global_
+# Phase 1 encoding-gate runner for Chinese Mandarin months.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_months_zh
+  - /model: llama31_8b
+  - /analysis/baseline
+  - _self_
+
+task:
+  target_variable: result
