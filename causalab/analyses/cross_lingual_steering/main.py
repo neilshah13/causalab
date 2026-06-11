@@ -110,21 +110,7 @@ def main(cfg: DictConfig) -> dict[str, Any]:
     if tv:
         target_subspace_dir = os.path.join(target_subspace_dir, tv)
 
-    # Features are stored per cell under layer_x_pos/ (grid mode) or flat (single mode)
-    from causalab.io.pipelines import load_subspace_metadata
-
-    ss_meta = load_subspace_metadata(root, subspace_sub, target_variable=tv)
-    _ss_mode = ss_meta.get("mode", "single")
-    _ss_method = ss_meta.get("method", "pca")
-    if _ss_mode == "grid" and _ss_method == "pca":
-        _feat_dir = os.path.join(
-            target_subspace_dir,
-            "layer_x_pos",
-            f"L{layer}_{token_position}",
-            "features",
-        )
-    else:
-        _feat_dir = os.path.join(target_subspace_dir, "features")
+    _feat_dir = os.path.join(target_subspace_dir, "result", "features")
 
     raw_path = os.path.join(_feat_dir, "raw_features.safetensors")
     if not os.path.exists(raw_path):

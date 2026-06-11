@@ -56,14 +56,9 @@ def _load_centroids(
     """
     from safetensors.torch import load_file
 
-    # Build cell directory path
-    cell_dir = os.path.join(
-        experiment_root,
-        "subspace",
-        subspace_sub,
-        "layer_x_pos",
-        f"L{layer}_{token_position}",
-    )
+    # Build cell directory path — causalab subspace artifacts use result/ layout:
+    # {root}/subspace/{subspace_sub}/result/{features/,train_dataset.json}
+    cell_dir = os.path.join(experiment_root, "subspace", subspace_sub, "result")
 
     features_path = os.path.join(cell_dir, "features", "raw_features.safetensors")
     if not os.path.exists(features_path):
@@ -76,15 +71,11 @@ def _load_centroids(
     raw_features = load_file(features_path)["features"]
     logger.info("Loaded raw features %s from %s", tuple(raw_features.shape), features_path)
 
-    # Resolve dataset path: cell dir first, fall back to subspace root
+    # Resolve dataset path
     ds_path = os.path.join(cell_dir, "train_dataset.json")
     if not os.path.exists(ds_path):
-        ds_path = os.path.join(
-            experiment_root, "subspace", subspace_sub, "train_dataset.json"
-        )
-    if not os.path.exists(ds_path):
         raise FileNotFoundError(
-            f"train_dataset.json not found under {cell_dir} or its parent subspace dir."
+            f"train_dataset.json not found at {ds_path}."
         )
 
     # Load task (no model weights needed)
