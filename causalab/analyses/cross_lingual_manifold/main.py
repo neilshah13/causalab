@@ -161,13 +161,14 @@ def main(cfg: DictConfig) -> dict[str, Any]:
     joint = compute_joint_mse_ratio(target_centroids, source_centroids)
 
     metrics = {
+        "analysis": ANALYSIS_NAME,
         "target_task": task_name,
         "source_task": source_task,
         "subspace_sub": subspace_sub,
         "layer": layer,
         "token_position": token_position,
-        **alignment,
-        **joint,
+        "subspace_alignment": alignment,
+        "joint_centroid_fit": joint,
     }
 
     # Write results
