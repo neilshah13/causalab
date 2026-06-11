@@ -168,12 +168,27 @@ Encoding-gate sweep on Llama-3.1-8B via `encoding_gate.py` (lenient first-word m
 | weekdays_zh | **67.3%** ✓ (33/49) | — |
 | months_zh | **96.4%** ✓ (81/84) | — |
 | weekdays_ja | **63.3%** ✓ (31/49) | — |
-| months_ja | 100%* | *Degenerate: entity format was `1月…12月`; `first_word()` strips digits → all 12 collapse to `月`. Fixed to `一月…十二月` (kanji); gate rerun pending. |
+| months_ja | **94.0%** ✓ (79/84) | Entities corrected to kanji form `一月…十二月`; original `1月…12月` caused degenerate 100% (all map to `月` after digit stripping). |
 | weekdays_hi | **59.2%** ✗ (29/49) | Below 60% gate; running activation_manifold to test dissociation (H2). |
 | months_hi | **88.1%** ✓ (74/84) | June (जून) / July (जुलाई) share first_word `ज` due to Devanagari matra splitting; ~2/12 entities affected. |
 
 Runner configs: `causalab/configs/runners/multilingual/*_zh_*.yaml`, `*_ja_*.yaml`, `*_hi_*.yaml`.
 Gate runner configs (baseline only): `causalab/configs/runners/multilingual/*_gate.yaml`.
+
+#### CJK & Hindi — full pipeline results (Llama-3.1-8B, L28)
+
+All 5 gate-passing cycles ran the full manifold pipeline. `weekdays_hi` received a dissociation run only (activation_manifold; no output_manifold or path_steering) because it failed the gate.
+
+| Cycle | Gate | act recon_mse | Geom coherence | Lin coherence | Geom isometry r |
+|---|---|---|---|---|---|
+| weekdays_zh | 67.3% ✓ | 1.55 | **96.6%** | **97.1%** | +0.32 |
+| months_zh | 96.4% ✓ | 2.99 | 71.4% | 75.1% | +0.01 |
+| weekdays_ja | 63.3% ✓ | 3.19 | **97.8%** | **97.6%** | −0.10 |
+| months_ja | 94.0% ✓ | 3.23 | 71.4% | 73.0% | −0.04 |
+| months_hi | 88.1% ✓ | 7.52 | 51.9% | 49.3% | −0.04 |
+| weekdays_hi | 59.2% ✗ | 4.35 | — (dissociation: activation ring confirmed) | — | — |
+
+Key pattern: **modulus, not script, drives coherence.** 7-cycle weekday rings reach 96–98% geometric coherence regardless of language; 12-cycle month rings cluster at 49–75%, also regardless of language.
 
 ## Caveats
 
