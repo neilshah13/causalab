@@ -1,0 +1,16 @@
+# @package cross_lingual_steering
+_name_: cross_lingual_steering
+
+source_task: ???
+source_experiment_root: ???
+
+subspace_sub: pca_k64
+layer: 28
+token_position: last_token
+manifold_sub: spline_s0.0
+
+n_eval_samples: 500
+n_prompts: 20
+num_steps_along_path: 10
+batch_size: 16
+max_pairs: null
