@@ -1,0 +1,16 @@
+# @package _global_
+# Dissociation test: FR ring is near-perfect (isometry r=0.984) but gate is 47%.
+# High alignment confirms FR failures are readout failures, not encoding failures.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: llama31_8b
+  - /analysis/cross_lingual_manifold
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_manifold:
+  source_task: natural_domains_arithmetic_weekdays_fr
+  source_experiment_root: ${oc.env:ARTIFACTS_ROOT}/weekdays_fr

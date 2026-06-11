@@ -1,0 +1,17 @@
+# @package _global_
+# English ring -> French prompts. Dissociation test: FR ring is near-perfect
+# (r=0.984) but gate is 47%. If EN steering transfers, FR failures are
+# readout failures rather than encoding failures.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_fr
+  - /model: llama31_8b
+  - /analysis/cross_lingual_steering
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_en
+  source_experiment_root: ${oc.env:ARTIFACTS_ROOT}/weekdays_en

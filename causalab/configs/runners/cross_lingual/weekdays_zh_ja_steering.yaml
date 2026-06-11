@@ -1,0 +1,15 @@
+# @package _global_
+# Chinese ring -> Japanese prompts. Within-CJK transfer.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_ja
+  - /model: llama31_8b
+  - /analysis/cross_lingual_steering
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_zh
+  source_experiment_root: ${oc.env:ARTIFACTS_ROOT}/weekdays_zh
