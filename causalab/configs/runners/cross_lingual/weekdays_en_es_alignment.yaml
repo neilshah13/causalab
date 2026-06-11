@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: llama31_8b
+  - /analysis/cross_lingual_manifold
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_manifold:
+  source_task: natural_domains_arithmetic_weekdays_es
+  source_experiment_root: ${oc.env:ARTIFACTS_ROOT}/weekdays_es
