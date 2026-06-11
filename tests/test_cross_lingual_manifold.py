@@ -62,8 +62,9 @@ def test_joint_mse_ratio_different_rings():
     assert ratio_info["mse_ratio"] > 3.0
 
 
-def test_compute_raw_centroids_shape():
-    """compute_raw_centroids returns (n_values, D) tensor."""
+def test_compute_raw_centroids_shape_and_values():
+    """compute_raw_centroids returns (n_values, D) with correct per-class means."""
+    torch.manual_seed(0)
     raw_features = torch.randn(70, 32)
 
     class FakeTask:
@@ -80,4 +81,10 @@ def test_compute_raw_centroids_shape():
     dataset = [FakeEx(i % 7) for i in range(70)]
     task = FakeTask()
     centroids = compute_raw_centroids(raw_features, dataset, task)
+
     assert centroids.shape == (7, 32)
+    # Each class has exactly 10 examples (indices 0,7,14,...,63 for class 0, etc.)
+    for cls in range(7):
+        expected = raw_features[cls::7].mean(dim=0)
+        assert torch.allclose(centroids[cls], expected, atol=1e-5), \
+            f"Class {cls} centroid mismatch"

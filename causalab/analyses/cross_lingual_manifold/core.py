@@ -23,8 +23,8 @@ def compute_raw_centroids(
     """
     n_values = len(task.intervention_values)
     D = raw_features.shape[1]
-    centroids = torch.zeros(n_values, D)
-    counts = torch.zeros(n_values)
+    centroids = torch.zeros(n_values, D, device=raw_features.device)
+    counts = torch.zeros(n_values, device=raw_features.device)
     for i, ex in enumerate(train_dataset[: raw_features.shape[0]]):
         ci = task.intervention_value_index(ex)
         centroids[ci] += raw_features[i]
