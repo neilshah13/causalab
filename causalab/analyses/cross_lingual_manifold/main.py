@@ -78,10 +78,20 @@ def _load_centroids(
             f"train_dataset.json not found at {ds_path}."
         )
 
-    # Load task (no model weights needed)
-    from omegaconf import OmegaConf as _OC
-    task_cfg_obj = _OC.create(task_config) if isinstance(task_config, dict) else task_config
-    task = load_task(task_name, task_cfg=task_cfg_obj if task_cfg_obj else None)
+    # Load task (no model weights needed).
+    # natural_domains_arithmetic is a factory task that expects a NaturalDomainConfig
+    # dataclass, not a plain dict — mirror what resolve_task does in runner/helpers.py.
+    if task_name == "natural_domains_arithmetic":
+        from causalab.tasks.natural_domains_arithmetic.config import NaturalDomainConfig
+        task_cfg_obj = NaturalDomainConfig(
+            domain_type=task_config["domain_type"],
+            number_range=task_config.get("number_range"),
+            number_groups=task_config.get("number_groups"),
+            result_entities=task_config.get("result_entities"),
+        )
+    else:
+        task_cfg_obj = task_config
+    task = load_task(task_name, task_cfg=task_cfg_obj)
     task.intervention_variable = target_variable
 
     # Load dataset aligned with features
