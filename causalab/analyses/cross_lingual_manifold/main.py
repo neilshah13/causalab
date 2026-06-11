@@ -79,7 +79,9 @@ def _load_centroids(
         )
 
     # Load task (no model weights needed)
-    task = load_task(task_name, task_cfg=task_config if task_config else None)
+    from omegaconf import OmegaConf as _OC
+    task_cfg_obj = _OC.create(task_config) if isinstance(task_config, dict) else task_config
+    task = load_task(task_name, task_cfg=task_cfg_obj if task_cfg_obj else None)
     task.intervention_variable = target_variable
 
     # Load dataset aligned with features
