@@ -2,7 +2,7 @@
 # English ring -> Chinese prompts. Cross-script transfer test.
 defaults:
   - /base
-  - /task: natural_domains_arithmetic_weekdays
+  - /task: natural_domains_arithmetic_weekdays_zh
   - /model: llama31_8b
   - /analysis/cross_lingual_steering
   - _self_

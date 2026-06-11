@@ -2,7 +2,7 @@
 # Chinese ring -> Japanese prompts. Within-CJK transfer.
 defaults:
   - /base
-  - /task: natural_domains_arithmetic_weekdays
+  - /task: natural_domains_arithmetic_weekdays_ja
   - /model: llama31_8b
   - /analysis/cross_lingual_steering
   - _self_
