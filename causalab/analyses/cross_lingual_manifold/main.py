@@ -73,7 +73,7 @@ def _load_centroids(
         )
 
     # Load raw features
-    raw_features = load_file(features_path)["raw_features"]
+    raw_features = load_file(features_path)["features"]
     logger.info("Loaded raw features %s from %s", tuple(raw_features.shape), features_path)
 
     # Resolve dataset path: cell dir first, fall back to subspace root
@@ -140,15 +140,24 @@ def main(cfg: DictConfig) -> dict[str, Any]:
         token_position=token_position,
     )
 
-    # Build source task config: start from target config and override the name.
-    # This ensures task-level fields like target_variable and domain settings
-    # are inherited, so the source task is resolved with the same structure.
+    # Build source task config: inherit from target and override domain_type/variant.
+    # The Python module name (task_config["name"] = "natural_domains_arithmetic") stays
+    # unchanged — load_task() resolves it as an importlib module path.
+    # We derive the domain variant from the source_task label string, e.g.
+    # "natural_domains_arithmetic_weekdays_es" -> domain "weekdays_es".
     source_task_config = dict(task_config)
-    source_task_config["name"] = source_task
+    module_prefix = f"{task_config['name']}_"
+    source_domain = (
+        source_task[len(module_prefix):]
+        if source_task.startswith(module_prefix)
+        else source_task
+    )
+    source_task_config["domain_type"] = source_domain
+    source_task_config["variant"] = source_domain
 
     source_centroids = _load_centroids(
         experiment_root=source_root,
-        task_name=source_task,
+        task_name=task_config["name"],  # Python module: "natural_domains_arithmetic"
         task_config=source_task_config,
         target_variable=target_variable,
         subspace_sub=subspace_sub,
