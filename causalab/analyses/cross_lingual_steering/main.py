@@ -105,11 +105,9 @@ def main(cfg: DictConfig) -> dict[str, Any]:
     # ------------------------------------------------------------------
     from safetensors.torch import load_file as _load_file
 
-    tv = cfg.task.get("target_variable")
+    # Subspace artifact path is always {root}/subspace/{subspace_sub}/result/features/
+    # target_variable ("result") is the intervention name, not a path component.
     target_subspace_dir = os.path.join(root, "subspace", subspace_sub)
-    if tv:
-        target_subspace_dir = os.path.join(target_subspace_dir, tv)
-
     _feat_dir = os.path.join(target_subspace_dir, "result", "features")
 
     raw_path = os.path.join(_feat_dir, "raw_features.safetensors")
