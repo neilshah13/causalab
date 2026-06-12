@@ -131,15 +131,13 @@ def main(cfg: DictConfig) -> dict[str, Any]:
     src_subspace_featurizer = featurizer.stages[0].featurizer
     with torch.no_grad():
         raw_on_device = raw_features.to(device)
-        # Apply source PCA (subspace featurizer) — handles weight matrix projection
+        # SubspaceFeaturizerModule is a nn.Module whose forward() returns (features, error).
+        # Some featurizer types expose .transform() (sklearn-style); fall back to __call__.
         if hasattr(src_subspace_featurizer, "transform"):
             pca_features = src_subspace_featurizer.transform(raw_on_device)
-        elif hasattr(src_subspace_featurizer, "encode"):
-            pca_features, _ = src_subspace_featurizer.encode(raw_on_device)
         else:
-            # Fallback: direct weight matrix multiply (typical for linear PCA stage)
-            W = src_subspace_featurizer.weight  # (k, D)
-            pca_features = (raw_on_device - src_subspace_featurizer.mean) @ W.T
+            out = src_subspace_featurizer(raw_on_device)
+            pca_features = out[0] if isinstance(out, (tuple, list)) else out
 
     # ------------------------------------------------------------------
     # 5. Compute TARGET task centroids in SOURCE manifold's coordinate system
