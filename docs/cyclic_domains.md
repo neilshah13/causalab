@@ -159,6 +159,8 @@ The small base models pass only the calendar cycles. Gemma 4 31B IT via chat-tem
 
 The FR base-model accuracy drops below the gate despite the IT variant via OpenRouter producing 100% on the same prompts — a chat-template effect. **Crucially, the underlying activation manifold at L50 is still cyclic on French weekdays (isometry r = 0.984)** even though the model fails to output the right token most of the time. Encoding ≠ readout.
 
+On **Llama-3.1-8B base**, this dissociation is reversed: weekdays_fr gates at **79.6%** (output succeeds) but forms only a weak open spline with near-zero isometry (r = 0.087). The two models illustrate both failure modes of output/geometry decoupling.
+
 ### Multilingual calendar cycles — CJK & Hindi
 
 Encoding-gate sweep on Llama-3.1-8B via `encoding_gate.py` (lenient first-word matching).
@@ -189,6 +191,42 @@ All 5 gate-passing cycles ran the full manifold pipeline. `weekdays_hi` received
 | weekdays_hi | 59.2% ✗ | 4.35 | — (dissociation: activation ring confirmed) | — | — |
 
 Key pattern: **modulus, not script, drives coherence.** 7-cycle weekday rings reach 96–98% geometric coherence regardless of language; 12-cycle month rings cluster at 49–75%, also regardless of language.
+
+### Cross-lingual weekdays — full pipeline (Llama-3.1-8B, L28)
+
+All gate-passing weekday variants ran the full manifold + path-steering pipeline at Layer 28, last-token position, 64-dim PCA subspace. `weekdays` (EN) is the English baseline. Pullback = LBFGS belief-space geodesic optimization (k=32 neighbours).
+
+| Cycle | Gate | Ring? | Act recon_mse | Geom coherence | Geom isometry r | Pullback r² opt / lin |
+|---|---|---|---|---|---|---|
+| weekdays (EN) | 93.9% ✓ | **YES** (periodic) | 2.90 | 78.3% | **+0.989** | **0.69** / 0.42 ★ |
+| weekdays_fr | 79.6% ✓ | NO (open spline) | 7.02 | 74.5% | +0.087 | 0.27 / **0.53** ★ |
+| weekdays_zh | 67.3% ✓ | NO (open spline) | **1.55** | **96.6%** | +0.317 | — |
+| weekdays_ja | 63.3% ✓ | NO (open spline) | 3.19 | **97.8%** | −0.101 | — |
+| weekdays_hi | 59.2% ✗ | NO | 4.35 | — | — | — |
+| weekdays_es | 38.8% ✗ | — | — | — | — | — |
+
+★ **EN**: pullback optimized > linear (Δr²=+0.27, paired t p=0.0003) — the geodesic optimizer successfully exploits the ring curvature. **FR**: linear > optimized (Δr²=−0.26, p<0.0001) — the optimizer diverges on most pairs (some `mean_dist_from_geometric` > 100×); FR representations have no curved manifold structure to exploit.
+
+Note: `weekdays_hi` gate was run with an older version of `encoding_gate.py` lacking Devanagari matra-stripping; the 59.2% figure may be a slight undercount. A rerun with the fixed scorer is pending.
+
+### Cross-lingual manifold alignment (Llama-3.1-8B, L28, pca_k64)
+
+Principal angles between 2D weekday-ring subspaces across language pairs. Overlap = cos(θ₁)·cos(θ₂); radius ratio = max/min ring centroid radius in the joint PCA frame.
+
+| Pair (target ← source) | θ₁ (°) | θ₂ (°) | Subspace overlap | Radius ratio |
+|---|---|---|---|---|
+| ZH ← JA | 50.4 | 57.2 | **0.35** | 2.1× |
+| EN ← ZH | 59.2 | 61.9 | 0.24 | 12.4× |
+| EN ← FR | 79.4 | 83.7 | **0.023** | 14.3× |
+
+All three pairs have large principal angles — **no language pair shares its weekday-ring subspace.** Key findings:
+
+- EN ring is **12–14× larger** in radius than non-English rings in the joint PCA frame — English dominates the residual-stream geometry for this task.
+- ZH and JA are the most similar pair (overlap 0.35), consistent with their shared template structure (Arabic-numeral offsets, same Q/A format).
+- EN and FR are nearly orthogonal (overlap 0.023) despite both using Latin script — the FR open spline and EN closed ring occupy perpendicular subspaces.
+- Safety implication: an English-derived intervention direction (e.g., a "refuse harmful request" SAE feature) retains only ≈2% of its norm when projected onto the FR weekday subspace and ≈24% onto ZH — structurally limited cross-lingual transfer.
+
+Cross-lingual steering results (EN→ZH, ZH→JA, EN→FR) pending — runner configs at `causalab/configs/runners/cross_lingual/`.
 
 ## Caveats
 
