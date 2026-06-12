@@ -14,4 +14,4 @@ task:
 
 cross_lingual_steering:
   source_task: natural_domains_arithmetic_weekdays_en
-  source_experiment_root: ${oc.env:ARTIFACTS_ROOT}/weekdays_en
+  source_experiment_root: ${oc.env:ARTIFACTS_ROOT}/weekdays

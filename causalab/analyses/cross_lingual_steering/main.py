@@ -96,6 +96,7 @@ def main(cfg: DictConfig) -> dict[str, Any]:
         source_experiment_root,
         "activation_manifold",
         subspace_sub,
+        f"L{layer}_{token_position}",
         manifold_sub,
         "result",
     )
