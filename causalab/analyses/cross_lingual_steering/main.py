@@ -153,9 +153,9 @@ def main(cfg: DictConfig) -> dict[str, Any]:
     else:
         train_ds, _ = generate_datasets(
             task,
-            n_train=ss_meta.get("n_train", cfg.task.get("n_train", 1000)),
+            n_train=cfg.task.get("n_train", 1000),
             n_test=0,
-            seed=ss_meta.get("seed", cfg.seed),
+            seed=cfg.seed,
             enumerate_all=cfg.task.enumerate_all,
             resample_variable=cfg.task.get("resample_variable", "all"),
         )
