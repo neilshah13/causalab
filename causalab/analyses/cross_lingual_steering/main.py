@@ -90,11 +90,14 @@ def main(cfg: DictConfig) -> dict[str, Any]:
     # ------------------------------------------------------------------
     from causalab.analyses.activation_manifold.loading import load_featurizer
 
+    # Featurizer models are stored under result/ inside the manifold output dir.
+    # path_steering handles this by appending tv ("result") to the path; we do it explicitly.
     manifold_out = os.path.join(
         source_experiment_root,
         "activation_manifold",
         subspace_sub,
         manifold_sub,
+        "result",
     )
     featurizer = load_featurizer(
         manifold_out, interchange_target, layer, token_pos.id
