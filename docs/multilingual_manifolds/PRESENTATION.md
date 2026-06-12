@@ -314,18 +314,18 @@ This is the cleanest single demonstration that the English ring is a *real geome
 
 ![Isometry vs coherence scatter](figures/fig7_isometry_coherence.png)
 
-**Figure 7.** Each language plotted as (x = isometry r, y = steering coherence). English is a star (ring);
-the others are circles (open arcs).
+**Figure 7.** Each language plotted as (x = isometry r, y = steering coherence). English (coral, labelled
+"ring") is the only closed ring; the others are open arcs.
 
 - **Isometry** = "does the internal geometry *mean* calendar-distance?"
 - **Coherence** = "can the model be *steered* to the right day?"
 
 These come apart dramatically:
-- **English (★):** high on both — the ring is real *and* useful.
-- **Chinese & Japanese (●):** near-zero/negative isometry but coherence ~0.97–0.98 — **steerable without
+- **English (ring):** high on both — the ring is real *and* useful.
+- **Chinese & Japanese:** near-zero/negative isometry but coherence ~0.97–0.98 — **steerable without
   being geometrically faithful.** The model lands on the right weekday, but not by traversing a
   calendar-ordered curve.
-- **French (●):** low on both — passes the output gate (79.6%) yet is the worst-organized internally.
+- **French:** low on both — passes the output gate (79.6%) yet is the worst-organized internally.
 
 The takeaway, expanded in Part IV: **getting the answer right and representing the concept geometrically are
 two separable properties.**
@@ -359,8 +359,8 @@ prediction to a live behavioral test, and the prediction fails dramatically. Hol
 
 **Figure 8.** The decisive experiment. We take the weekday manifold learned from a *source* language and
 use it to steer prompts in a *different target* language, then measure steering coherence (does the model
-output the correct target-language day?). Orange bars = cross-lingual steering; blue bars = the target
-language steering *itself* (its same-language baseline). Each orange bar is annotated with the source→target
+output the correct target-language day?). Coral bars = cross-lingual steering; grey bars = the target
+language steering *itself* (its same-language baseline). Each coral bar is annotated with the source→target
 pair and that pair's static subspace overlap.
 
 The verified numbers (Cinaps jobs 12573–12575):
