@@ -18,6 +18,33 @@ from causalab.neural.pipeline import Pipeline
 from causalab.neural.units import AtomicModelUnit, InterchangeTarget
 
 
+def _ensure_gemma3_pyvene_support() -> None:
+    """Register pyvene component mappings for Gemma-3 text models.
+
+    pyvene ships intervention mappings for Gemma/Gemma2 but not Gemma-3. The
+    Gemma-3 text decoder is structurally compatible — its residual-stream block
+    sits at ``model.layers[i]`` just like Gemma-2 — so mirror the Gemma-2
+    mappings onto ``Gemma3ForCausalLM``. No-op if pyvene already knows Gemma-3
+    or the transformers build lacks these classes.
+    """
+    try:
+        from transformers import Gemma2ForCausalLM, Gemma3ForCausalLM
+    except Exception:
+        return
+    module_map = getattr(pv, "type_to_module_mapping", None)
+    dim_map = getattr(pv, "type_to_dimension_mapping", None)
+    if module_map is None or dim_map is None:
+        return
+    if Gemma3ForCausalLM in module_map:
+        return
+    if Gemma2ForCausalLM in module_map and Gemma2ForCausalLM in dim_map:
+        module_map[Gemma3ForCausalLM] = dict(module_map[Gemma2ForCausalLM])
+        dim_map[Gemma3ForCausalLM] = dict(dim_map[Gemma2ForCausalLM])
+
+
+_ensure_gemma3_pyvene_support()
+
+
 def prepare_intervenable_model(
     pipeline: Pipeline,
     model_units: InterchangeTarget | list[AtomicModelUnit],

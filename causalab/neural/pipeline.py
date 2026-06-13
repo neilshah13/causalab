@@ -202,8 +202,8 @@ class LMPipeline(Pipeline):
             if device_map is not None:
                 pretrained_kwargs["device_map"] = device_map
             if self.load_weights:
-                self.model = AutoModelForCausalLM.from_pretrained(  # type: ignore[call-arg]
-                    self.model_or_name, **pretrained_kwargs
+                self.model = self._load_causal_lm(
+                    self.model_or_name, pretrained_kwargs
                 )
                 if device_map is None:
                     self.model = self.model.to(device=device)
@@ -581,6 +581,54 @@ class LMPipeline(Pipeline):
                 f"config has no '{name}' (checked top level and text_config)"
             )
         return val
+
+    def _load_causal_lm(self, name: str, pretrained_kwargs: dict):
+        """Load a causal-LM, handling multimodal checkpoints (e.g. Gemma-3).
+
+        ``AutoModelForCausalLM`` resolves a multimodal checkpoint to its
+        ``*ForConditionalGeneration`` class, whose text-only generation is
+        unreliable (Gemma-3 emits garbage logits with no pixel inputs). When the
+        config nests a distinct ``text_config``, load the text-only causal-LM
+        class instead. Such checkpoints store the text weights under a
+        ``language_model.`` prefix that the text class does not expect, so remap
+        those keys (strip the prefix); the vision/projector weights then fall out
+        as unexpected keys and are ignored. No special handling for plain
+        causal-LM configs (Llama) — they take the ``AutoModelForCausalLM`` path.
+        """
+        from transformers import AutoConfig
+
+        explicit_config = pretrained_kwargs.get("config")
+        base_config = explicit_config or AutoConfig.from_pretrained(
+            name, token=pretrained_kwargs.get("token")
+        )
+        text_config = (
+            base_config.get_text_config()
+            if hasattr(base_config, "get_text_config")
+            else getattr(base_config, "text_config", None)
+        )
+        if text_config is None or text_config is base_config:
+            return AutoModelForCausalLM.from_pretrained(name, **pretrained_kwargs)
+
+        # Multimodal checkpoint: load the text-only causal-LM head directly.
+        from transformers.models.auto.modeling_auto import (
+            MODEL_FOR_CAUSAL_LM_MAPPING,
+        )
+
+        try:
+            text_cls = MODEL_FOR_CAUSAL_LM_MAPPING[type(text_config)]
+        except KeyError:
+            # No text-only causal-LM class registered; fall back to the default.
+            return AutoModelForCausalLM.from_pretrained(name, **pretrained_kwargs)
+
+        kwargs = dict(pretrained_kwargs)
+        kwargs["config"] = text_config
+        prev_map = getattr(text_cls, "_checkpoint_conversion_mapping", {})
+        text_cls._checkpoint_conversion_mapping = {r"^language_model\.": ""}
+        try:
+            model = text_cls.from_pretrained(name, **kwargs)
+        finally:
+            text_cls._checkpoint_conversion_mapping = prev_map
+        return model
 
     def _normalize_multimodal_config(self) -> None:
         """Alias language-model dims onto the top-level config for multimodal models.
