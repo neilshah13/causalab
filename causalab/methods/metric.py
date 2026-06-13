@@ -27,6 +27,7 @@ def tokenize_variable_values(
     tokenizer,
     values: list[str],
     token_pattern: Callable,
+    first_token_only: bool = False,
 ) -> torch.Tensor | list[list[int]]:
     """Tokenize variable values, returning token IDs per concept.
 
@@ -38,10 +39,25 @@ def tokenize_variable_values(
 
     For multi-token outputs (e.g., graph walk generation steps),
     falls back to the first variant's token sequence.
+
+    If ``first_token_only`` is True, each concept is represented by the
+    *first* token of every variant's encoding (deduplicated). This is the
+    intended mode for multi-token answer vocabularies (e.g. CJK weekday
+    names) where single-token-exact matching would discard every concept;
+    the caller (``get_output_token_ids``) selects it via the task's
+    ``output_first_token_only`` flag.
     """
     all_concept_ids: list[list[int]] = []
     for v in values:
         variants = token_pattern(v)
+        if first_token_only:
+            first_tok_ids: list[int] = []
+            for var_str in variants:
+                seq = tokenizer.encode(var_str, add_special_tokens=False)
+                if seq and seq[0] not in first_tok_ids:
+                    first_tok_ids.append(seq[0])
+            all_concept_ids.append(first_tok_ids)
+            continue
         # Collect all single-token encodings across variants
         single_tok_ids = []
         first_seq = None
