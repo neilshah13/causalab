@@ -557,7 +557,25 @@ class LMPipeline(Pipeline):
     # ------------------------------------------------------------------
 
     def get_num_layers(self) -> int:
-        return int(self.model.config.num_hidden_layers)
+        return int(self._config_attr("num_hidden_layers"))
 
     def get_num_attention_heads(self) -> int:
-        return int(self.model.config.num_attention_heads)
+        return int(self._config_attr("num_attention_heads"))
+
+    def _config_attr(self, name: str):
+        """Read a transformer-dims attribute, tolerating multimodal configs.
+
+        Plain causal-LM configs (e.g. Llama) expose dims at the top level.
+        Multimodal configs (e.g. Gemma-3 ``Gemma3Config``) nest the language
+        model's dims under ``text_config`` and leave the top-level attr as
+        ``None``; fall back to ``text_config`` in that case.
+        """
+        cfg = self.model.config
+        val = getattr(cfg, name, None)
+        if val is None:
+            val = getattr(getattr(cfg, "text_config", None), name, None)
+        if val is None:
+            raise AttributeError(
+                f"config has no '{name}' (checked top level and text_config)"
+            )
+        return val

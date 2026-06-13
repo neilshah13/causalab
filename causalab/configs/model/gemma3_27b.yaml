@@ -1,0 +1,7 @@
+id: gemma3_27b
+name: google/gemma-3-27b-pt
+device: auto
+dtype: bfloat16
+eager_attn: false
+slurm:
+  gpus: 2
