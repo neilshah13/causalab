@@ -243,6 +243,8 @@ class LMPipeline(Pipeline):
                 self.model.config.name_or_path
             )
 
+        self._normalize_multimodal_config()
+
         self.tokenizer.pad_token = self.tokenizer.eos_token
         self.tokenizer.pad_token_id = self.tokenizer.convert_tokens_to_ids(
             self.tokenizer.pad_token
@@ -579,3 +581,35 @@ class LMPipeline(Pipeline):
                 f"config has no '{name}' (checked top level and text_config)"
             )
         return val
+
+    def _normalize_multimodal_config(self) -> None:
+        """Alias language-model dims onto the top-level config for multimodal models.
+
+        Multimodal configs (e.g. Gemma-3 ``Gemma3Config``) keep the language
+        tower's dims (``hidden_size``, ``num_hidden_layers``, …) under
+        ``text_config`` and leave the top-level attributes unset. Much of the
+        codebase reads these straight off ``model.config``; copy them up from
+        ``text_config`` when the top-level value is missing. No-op for plain
+        causal-LM configs (Llama), where the dims already live at the top level.
+        """
+        cfg = getattr(self.model, "config", None)
+        if cfg is None:
+            return
+        if hasattr(cfg, "get_text_config"):
+            text_cfg = cfg.get_text_config()
+        else:
+            text_cfg = getattr(cfg, "text_config", None)
+        if text_cfg is None or text_cfg is cfg:
+            return
+        for attr in (
+            "hidden_size",
+            "num_hidden_layers",
+            "num_attention_heads",
+            "num_key_value_heads",
+            "head_dim",
+            "intermediate_size",
+            "vocab_size",
+            "max_position_embeddings",
+        ):
+            if getattr(cfg, attr, None) is None and getattr(text_cfg, attr, None) is not None:
+                setattr(cfg, attr, getattr(text_cfg, attr))
