@@ -1,0 +1,11 @@
+# @package _global_
+# Baseline-only (encoding gate) for Gemma-3-27B. Used to re-score CJK gates
+# after the startswith fix in compute_base_accuracy (multi-token answers).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/baseline
+  - _self_
+task:
+  target_variable: result

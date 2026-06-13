@@ -519,10 +519,15 @@ def compute_base_accuracy(
         for bi, ex in enumerate(batch_examples):
             generated = strings[bi].strip()
             raw_output = ex["input"]["raw_output"]
+            # Match with startswith (the task default checker) rather than exact
+            # equality: multi-token answers (e.g. CJK/Hangul weekday names need
+            # max_new_tokens>1) generate the correct token(s) followed by
+            # continuation ("星期二\nQ: ..."), which exact-equality wrongly rejects.
+            # Single-token outputs (max_new_tokens=1) are unaffected.
             if isinstance(raw_output, list):
-                hit = any(generated == ans.strip() for ans in raw_output)
+                hit = any(generated.startswith(ans.strip()) for ans in raw_output if ans.strip())
             else:
-                hit = generated == raw_output.strip()
+                hit = bool(raw_output.strip()) and generated.startswith(raw_output.strip())
             if hit:
                 correct += 1
             total += 1
