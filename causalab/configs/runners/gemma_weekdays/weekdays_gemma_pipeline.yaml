@@ -1,0 +1,32 @@
+# @package _global_
+# Full per-language weekday manifold pipeline for Gemma-3-27B (base) at L*=54.
+# Mirrors the Llama weekdays_8b_pipeline knobs. Override the task per language
+# via CLI, e.g.:  task=natural_domains_arithmetic_weekdays_fr
+# Run pinned to node11 (96GB) via submit_node11.sh; pass a per-language
+# experiment_root. attention_pattern is omitted (crashes on this task family).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - /analysis/output_manifold
+  - /analysis/path_steering
+  - /analysis/pullback
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  k_features: 64
+  layers: [54]
+
+activation_manifold:
+  layers: [54]
+
+path_steering:
+  n_extra_pairs: 29
+  isometry:
+    n_interior_per_pair: 4
