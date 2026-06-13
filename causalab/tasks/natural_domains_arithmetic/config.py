@@ -154,8 +154,11 @@ _MONTHS_HI = [
     "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून",
     "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर",
 ]
+# Korean (Hangul) weekdays. Like CJK, day names are single contiguous words and
+# offsets use Arabic numerals (1–7) to avoid native-numeral tokenization issues.
+_DAYS_KO = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
 
-# Shared Arabic-numeral offset list for ZH/JA/HI (1–7).
+# Shared Arabic-numeral offset list for ZH/JA/HI/KO (1–7).
 _NUMBERS_ARABIC_7 = ["1", "2", "3", "4", "5", "6", "7"]
 _NUMBER_TO_INT_ARABIC_7 = {str(i): i for i in range(1, 8)}
 
@@ -182,6 +185,10 @@ _FS_WEEKDAYS_HI = (
 _FS_MONTHS_HI = (
     "Q: जनवरी के 2 महीने बाद कौन सा महीना होगा?\nA: मार्च\n"
     "Q: अक्टूबर के 5 महीने बाद कौन सा महीना होगा?\nA: मार्च\n"
+)
+_FS_WEEKDAYS_KO = (
+    "Q: 월요일에서 2일 후는 무슨 요일입니까?\nA: 수요일\n"
+    "Q: 금요일에서 3일 후는 무슨 요일입니까?\nA: 월요일\n"
 )
 
 # English-domain extensions for the Stage-0 encoding gate. Each list orders
@@ -518,6 +525,19 @@ DOMAIN_PRESETS: dict[str, dict] = {
         modulus=7,
         number_is_cyclic=True,
         template=_FS_WEEKDAYS_HI + "Q: {entity} के {number} दिन बाद कौन सा दिन होगा?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_ko": dict(
+        entities=_DAYS_KO,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_KO + "Q: {entity}에서 {number}일 후는 무슨 요일입니까?\nA:",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,
