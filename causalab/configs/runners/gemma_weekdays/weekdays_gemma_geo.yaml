@@ -1,0 +1,25 @@
+# @package _global_
+# Geometry-only weekday pipeline for Gemma-3-27B @ L54 — baseline + subspace +
+# activation_manifold (ring shape + subspace for cross-lingual overlap). No
+# path_steering / pullback: used for languages whose OUTPUT is degenerate on
+# gemma3 (CJK/Hangul/Hindi), where output-based metrics (coherence, pullback)
+# are invalid and path_steering is very slow (~60s/path). Geometry here is
+# activation-based and valid. Override task per language via CLI.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  k_features: 64
+  layers: [54]
+
+activation_manifold:
+  layers: [54]
