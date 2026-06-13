@@ -606,29 +606,50 @@ class LMPipeline(Pipeline):
             if hasattr(base_config, "get_text_config")
             else getattr(base_config, "text_config", None)
         )
+        # Plain causal-LM config (Llama): default path.
         if text_config is None or text_config is base_config:
             return AutoModelForCausalLM.from_pretrained(name, **pretrained_kwargs)
 
-        # Multimodal checkpoint: load the text-only causal-LM head directly.
+        # Multimodal checkpoint (e.g. Gemma-3). AutoModelForCausalLM loads the
+        # native *ForConditionalGeneration with correct weights, but (a) its
+        # text-only generation is unreliable and (b) its decoder lives under
+        # model.language_model.*, which the hooks/pyvene don't expect. Loading
+        # the text-only class directly fails too: it sets
+        # base_model_prefix="language_model", which defeats checkpoint-key
+        # remapping (every weight ends up randomly initialized). So load the
+        # native model for correct weights, then transplant its text tower +
+        # head into a clean text causal-LM whose structure (model.layers.*) the
+        # hooks and pyvene mappings expect.
         from transformers.models.auto.modeling_auto import (
             MODEL_FOR_CAUSAL_LM_MAPPING,
         )
+        from accelerate import init_empty_weights
 
+        full = AutoModelForCausalLM.from_pretrained(name, **pretrained_kwargs)
+        text_decoder = getattr(getattr(full, "model", None), "language_model", None)
+        head = getattr(full, "lm_head", None)
         try:
             text_cls = MODEL_FOR_CAUSAL_LM_MAPPING[type(text_config)]
         except KeyError:
-            # No text-only causal-LM class registered; fall back to the default.
-            return AutoModelForCausalLM.from_pretrained(name, **pretrained_kwargs)
+            text_cls = None
+        if text_decoder is None or head is None or text_cls is None:
+            # Unexpected structure — keep the native model rather than guess.
+            return full
 
-        kwargs = dict(pretrained_kwargs)
-        kwargs["config"] = text_config
-        prev_map = getattr(text_cls, "_checkpoint_conversion_mapping", {})
-        text_cls._checkpoint_conversion_mapping = {r"^language_model\.": ""}
-        try:
-            model = text_cls.from_pretrained(name, **kwargs)
-        finally:
-            text_cls._checkpoint_conversion_mapping = prev_map
-        return model
+        with init_empty_weights():
+            text_model = text_cls(text_config)
+        # Replace the meta-initialized submodules with the loaded ones.
+        text_model.model = text_decoder
+        text_model.lm_head = head
+        text_model.config = text_config
+        # Free the vision tower / projector we will never use.
+        for attr in ("vision_tower", "multi_modal_projector"):
+            if hasattr(full.model, attr):
+                try:
+                    delattr(full.model, attr)
+                except Exception:
+                    pass
+        return text_model
 
     def _normalize_multimodal_config(self) -> None:
         """Alias language-model dims onto the top-level config for multimodal models.
