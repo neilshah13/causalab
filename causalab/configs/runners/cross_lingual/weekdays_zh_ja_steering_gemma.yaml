@@ -1,0 +1,14 @@
+# @package _global_
+# Gemma-3-27B cross-lingual steering: zh->ja weekdays @ L54.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_ja
+  - /model: gemma3_27b
+  - /analysis/cross_lingual_steering
+  - _self_
+task:
+  target_variable: result
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_zh
+  source_experiment_root: artifacts/natural_domains_arithmetic/gemma3_27b/weekdays_zh/weekdays_zh
+  layer: 54
