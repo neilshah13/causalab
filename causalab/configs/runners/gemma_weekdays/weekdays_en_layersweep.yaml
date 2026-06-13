@@ -1,0 +1,30 @@
+# @package _global_
+# Phase 0 — English layer selection on Gemma-3-27B (base, google/gemma-3-27b-pt).
+# Pivoted from Gemma-4-31B: transformers 4.57.1 on Cinaps supports gemma3 but NOT
+# gemma4 (gemma4 needs transformers >=5.5.3). See issues.md ISSUE-1.
+#
+# Text tower = 62 layers. Run once per candidate L in {45, 50, 54, 56, 58}
+# (~73-94% depth; Llama used L28/32 = 87.5% -> ~L54 here) with a layer-tagged
+# --experiment-root, e.g.:
+#   ./scripts/run_exp.sh --slurm \
+#     --experiment-root ${SESSION_DIR}/artifacts/natural_domains_arithmetic/gemma3_27b/weekdays/L54 \
+#     weekdays_en_layersweep subspace.layers=[54] activation_manifold.layers=[54]
+# Pick L* = lowest activation_manifold reconstruction_kl whose spline closes (periodic ring).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  k_features: 64
+  layers: [54]          # overridden per-run by CLI; default = Llama-equivalent depth (~87.5%)
+
+activation_manifold:
+  layers: [54]          # overridden per-run by CLI to match subspace.layers
