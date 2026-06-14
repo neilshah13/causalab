@@ -60,12 +60,20 @@ def compute_isometry_metrics(
         dx = np.asarray(D_X).flatten()
         dy = np.asarray(D_Y).flatten()
 
+    # Drop non-finite pairs so a single nan/inf distance (e.g. from a degenerate
+    # spline segment) does not poison the whole correlation. n_pairs reports the
+    # number of finite pairs actually used.
+    finite = np.isfinite(dx) & np.isfinite(dy)
+    dx = dx[finite]
+    dy = dy[finite]
+    n_dropped = int((~finite).sum())
+
     n_pairs = int(len(dx))
     if n_pairs == 0 or np.std(dx) == 0 or np.std(dy) == 0:
-        return {"pearson_r": float("nan"), "n_pairs": n_pairs}
+        return {"pearson_r": float("nan"), "n_pairs": n_pairs, "n_dropped": n_dropped}
 
     pearson_r = float(np.corrcoef(dx, dy)[0, 1])
-    return {"pearson_r": pearson_r, "n_pairs": n_pairs}
+    return {"pearson_r": pearson_r, "n_pairs": n_pairs, "n_dropped": n_dropped}
 
 
 # ---------------------------------------------------------------------------
