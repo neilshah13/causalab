@@ -1,0 +1,16 @@
+# @package _global_
+# Gemma-3-27B cross-lingual steering, L54. sw ring -> tr (Arabic-loanword cluster: shared Fri).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_tr
+  - /model: gemma3_27b
+  - /analysis/cross_lingual_steering
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_sw
+  source_experiment_root: artifacts/natural_domains_arithmetic/gemma3_27b/weekdays_sw/weekdays_sw
+  layer: 54

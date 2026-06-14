@@ -191,6 +191,39 @@ _FS_WEEKDAYS_KO = (
     "Q: 금요일에서 3일 후는 무슨 요일입니까?\nA: 월요일\n"
 )
 
+# Low-resource Latin-script extensions (session 2026-06-14--low-resource-latin).
+# Four families: Vietnamese (Austroasiatic), Swahili (Bantu), Turkish (Turkic),
+# Indonesian (Austronesian). Latin script => output metrics valid on gemma3.
+# Offsets use Arabic numerals 1-7 (shared _NUMBERS_ARABIC_7) to isolate the
+# weekday concept from number-word tokenization, matching the zh/ja/hi/ko presets.
+#
+# NOTE (vi): Vietnamese day names are lexically ordinal numbers ("thu Hai" = 2nd
+# day) and 6/7 share the "thu" prefix; only "Chu Nhat" (Sunday) differs. The
+# startswith gate (multi-token) disambiguates them. The ordinal-numeric naming is
+# a known interpretation caveat -- the weekday subspace may entangle with the
+# number subspace (cross-checked via a number-arithmetic control this session).
+_DAYS_VI = ["thứ Hai", "thứ Ba", "thứ Tư", "thứ Năm", "thứ Sáu", "thứ Bảy", "Chủ Nhật"]
+_DAYS_SW = ["Jumatatu", "Jumanne", "Jumatano", "Alhamisi", "Ijumaa", "Jumamosi", "Jumapili"]
+_DAYS_TR = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
+_DAYS_ID = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"]
+
+_FS_WEEKDAYS_VI = (
+    "Q: 2 ngày sau thứ Hai là thứ mấy?\nA: thứ Tư\n"
+    "Q: 3 ngày sau thứ Sáu là thứ mấy?\nA: thứ Hai\n"
+)
+_FS_WEEKDAYS_SW = (
+    "Q: Siku 2 baada ya Jumatatu ni siku gani?\nA: Jumatano\n"
+    "Q: Siku 3 baada ya Ijumaa ni siku gani?\nA: Jumatatu\n"
+)
+_FS_WEEKDAYS_TR = (
+    "Q: Pazartesi gününden 2 gün sonra hangi gündür?\nA: Çarşamba\n"
+    "Q: Cuma gününden 3 gün sonra hangi gündür?\nA: Pazartesi\n"
+)
+_FS_WEEKDAYS_ID = (
+    "Q: Hari apa 2 hari setelah Senin?\nA: Rabu\n"
+    "Q: Hari apa 3 hari setelah Jumat?\nA: Senin\n"
+)
+
 # English-domain extensions for the Stage-0 encoding gate. Each list orders
 # the entities cyclically; modular arithmetic uses index-mod-modulus.
 # Multi-word entities are kept whole because raw_output uses startswith
@@ -538,6 +571,58 @@ DOMAIN_PRESETS: dict[str, dict] = {
         modulus=7,
         number_is_cyclic=True,
         template=_FS_WEEKDAYS_KO + "Q: {entity}에서 {number}일 후는 무슨 요일입니까?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_vi": dict(
+        entities=_DAYS_VI,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_VI + "Q: {number} ngày sau {entity} là thứ mấy?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_sw": dict(
+        entities=_DAYS_SW,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_SW + "Q: Siku {number} baada ya {entity} ni siku gani?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_tr": dict(
+        entities=_DAYS_TR,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_TR + "Q: {entity} gününden {number} gün sonra hangi gündür?\nA:",
+        output_prefix=" ",
+        result_entities=None,
+        compute_result=None,
+        entity_embedding=None,
+    ),
+    "weekdays_id": dict(
+        entities=_DAYS_ID,
+        numbers=_NUMBERS_ARABIC_7,
+        number_to_int=_NUMBER_TO_INT_ARABIC_7,
+        cyclic=True,
+        modulus=7,
+        number_is_cyclic=True,
+        template=_FS_WEEKDAYS_ID + "Q: Hari apa {number} hari setelah {entity}?\nA:",
         output_prefix=" ",
         result_entities=None,
         compute_result=None,

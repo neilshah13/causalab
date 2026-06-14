@@ -1,0 +1,16 @@
+# @package _global_
+# Gemma-3-27B cross-lingual steering, L54. EN ring -> Swahili prompts (privilege baseline).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays_sw
+  - /model: gemma3_27b
+  - /analysis/cross_lingual_steering
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_en
+  source_experiment_root: artifacts/natural_domains_arithmetic/gemma3_27b/weekdays/weekdays
+  layer: 54
