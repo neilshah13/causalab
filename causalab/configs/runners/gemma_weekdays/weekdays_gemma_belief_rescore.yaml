@@ -1,0 +1,47 @@
+# @package _global_
+# Experiment A — belief re-score. Full per-language weekday manifold pipeline for
+# Gemma-3-27B (base) @ L54, but with the Hellinger belief manifold scored by
+# teacher-forced full-answer-sequence likelihood (output_manifold.belief_scoring=
+# answer_sequence) instead of the free-generation last-step distribution. This is
+# the validity fix for CJK/Hangul output geometry (KO isometry nan, JA geo<<lin):
+# multi-token answers that share a prefix/suffix have no single discriminative
+# generation step, so the single-step scorer collapses the belief control points.
+#
+# Override the task per language via CLI, e.g. task=natural_domains_arithmetic_weekdays_ko
+# Run pinned to node11 (96GB) via submit_node11.sh. Write to a SIBLING __lasttok
+# experiment_root so the original position-0 artifacts stay diffable, e.g.:
+#   --experiment-root artifacts/natural_domains_arithmetic/gemma3_27b/weekdays_ko__lasttok
+# (task.variant=weekdays_ko is appended automatically -> .../weekdays_ko__lasttok/weekdays_ko)
+# pullback + attention_pattern omitted (not needed for the isometry/coherence gates;
+# attention_pattern crashes on this task family).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/baseline
+  - /analysis/subspace
+  - /analysis/activation_manifold
+  - /analysis/output_manifold
+  - /analysis/path_steering
+  - _self_
+
+task:
+  target_variable: result
+
+subspace:
+  k_features: 64
+  layers: [54]
+
+activation_manifold:
+  layers: [54]
+
+output_manifold:
+  belief_scoring: answer_sequence
+
+path_steering:
+  n_extra_pairs: 29
+  eval_criteria:
+    - isometry
+    - coherence
+  isometry:
+    n_interior_per_pair: 4

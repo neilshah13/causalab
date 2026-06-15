@@ -1,0 +1,17 @@
+# @package _global_
+# Experiment B — reverse/cross-source steering, Gemma-3-27B @ L54.
+# zh ring -> EN prompts (optional pair; mid source -> clean target).
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/cross_lingual_steering
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_zh
+  source_experiment_root: artifacts/natural_domains_arithmetic/gemma3_27b/weekdays_zh/weekdays_zh
+  layer: 54
