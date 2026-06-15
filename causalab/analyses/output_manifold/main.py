@@ -164,28 +164,51 @@ def _build_belief_artifacts(cfg: DictConfig, out_root: str, batch_size: int) -> 
                 "output_manifold requires score tokens and a task intervention_variable."
             )
 
-        output_logits: list[list[torch.Tensor]] = []
-        n_batches = math.ceil(len(train_dataset) / batch_size)
-        for bi in range(n_batches):
-            start, end = bi * batch_size, min((bi + 1) * batch_size, len(train_dataset))
-            batch_inputs = [ex["input"] for ex in train_dataset[start:end]]
-            result = pipeline.generate(batch_inputs)
-            scores = result["scores"]
-            for k in range(len(batch_inputs)):
-                output_logits.append([s[k].cpu() for s in scores])
+        belief_scoring = cfg[ANALYSIS_NAME].get("belief_scoring", "last_step")
+        if belief_scoring == "answer_sequence":
+            # Teacher-forced full-answer-sequence scoring. Handles multi-token
+            # answers that share a prefix/suffix (ZH 星期 / KO 요일 / JA 曜日) or
+            # where the model emits a leading token before the answer (KO digits),
+            # which the single-step `last_step` scorer below collapses. See
+            # metric.compute_teacher_forced_belief_dists.
+            from causalab.methods.metric import compute_teacher_forced_belief_dists
 
-        per_example_probs_fvs = torch.stack(
-            [
-                class_probabilities(
-                    ol[-1], score_token_ids, full_vocab_softmax=True
-                ).squeeze(0)
-                for ol in output_logits
+            candidate_variants = [
+                task.result_token_pattern(v) for v in task.intervention_values
             ]
-        )
-        other_mass = (1.0 - per_example_probs_fvs.sum(dim=-1, keepdim=True)).clamp(
-            min=0.0
-        )
-        per_example_dists = torch.cat([per_example_probs_fvs, other_mass], dim=-1)
+            logger.info(
+                "Belief scoring = answer_sequence (teacher-forced) over %d classes.",
+                len(candidate_variants),
+            )
+            per_example_dists = compute_teacher_forced_belief_dists(
+                pipeline, train_dataset, candidate_variants, batch_size=batch_size
+            )
+        else:
+            output_logits: list[list[torch.Tensor]] = []
+            n_batches = math.ceil(len(train_dataset) / batch_size)
+            for bi in range(n_batches):
+                start, end = (
+                    bi * batch_size,
+                    min((bi + 1) * batch_size, len(train_dataset)),
+                )
+                batch_inputs = [ex["input"] for ex in train_dataset[start:end]]
+                result = pipeline.generate(batch_inputs)
+                scores = result["scores"]
+                for k in range(len(batch_inputs)):
+                    output_logits.append([s[k].cpu() for s in scores])
+
+            per_example_probs_fvs = torch.stack(
+                [
+                    class_probabilities(
+                        ol[-1], score_token_ids, full_vocab_softmax=True
+                    ).squeeze(0)
+                    for ol in output_logits
+                ]
+            )
+            other_mass = (
+                1.0 - per_example_probs_fvs.sum(dim=-1, keepdim=True)
+            ).clamp(min=0.0)
+            per_example_dists = torch.cat([per_example_probs_fvs, other_mass], dim=-1)
         save_tensor_results(
             {"dists": per_example_dists},
             out_root,

@@ -5,6 +5,14 @@ _output_dir: ${experiment_root}/output_manifold/${._subdir}
 
 method: spline
 smoothness: 0.0
+# Belief-distribution scoring for the Hellinger manifold:
+#   last_step       — read the model's free-generation last-step distribution (ol[-1])
+#                     over the score tokens. Default; reproduces all prior runs. Fails
+#                     for multi-token answers that share a prefix/suffix (CJK/Hangul).
+#   answer_sequence — teacher-forced P(full gold answer) per class; alignment-free,
+#                     handles shared affixes and leading tokens. See
+#                     metric.compute_teacher_forced_belief_dists.
+belief_scoring: last_step
 intrinsic_dim: 1
 intrinsic_mode: pca            # "parameter" or "pca"
 max_control_points: "all"      # int or "all"; subsamples evenly spaced centroids before TPS fit

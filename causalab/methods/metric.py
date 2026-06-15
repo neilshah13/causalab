@@ -417,6 +417,93 @@ def _logits_to_class_probs(
     return joint
 
 
+@torch.no_grad()
+def compute_teacher_forced_belief_dists(
+    pipeline: Any,
+    dataset: list[CounterfactualExample],
+    candidate_variants: list[list[str]],
+    batch_size: int = 16,
+) -> torch.Tensor:
+    """Per-example belief distribution over W candidate answers via teacher forcing.
+
+    For each example and each candidate class, score the model's probability of
+    *generating that candidate's full answer string* after the prompt — the
+    product of per-token conditional probabilities P(tok_k | prompt + gold
+    prefix), summed over the candidate's spelling variants. The trailing column
+    holds ``other = 1 - sum_c p_c`` (clamped at 0).
+
+    Why teacher forcing instead of reading a single free-generation step
+    (``ol[-1]``): for multi-token answers that share a prefix (ZH ``星期``) or a
+    suffix (KO ``요일``, JA ``曜日``), or where the model emits a leading token
+    before the answer (KO digits), no single generation step separates the
+    classes — so the single-step scorer collapses the belief manifold. Scoring
+    the *whole* answer sequence is alignment-free and discriminative whenever the
+    model can actually produce the right weekday (which the base-accuracy gate
+    confirms it can). Tokens the model emits *after* the answer (``\\nQ:``, EOS)
+    are never scored, so trailing continuations cannot mark a correct answer wrong.
+
+    Returns an ``(N, W+1)`` tensor of true probabilities (rows need not sum to 1
+    before the ``other`` bin is added; they do after).
+    """
+    model = pipeline.model
+    tokenizer = pipeline.tokenizer
+    device = model.device
+    pad_id = tokenizer.pad_token_id
+    W = len(candidate_variants)
+    N = len(dataset)
+    out = torch.zeros(N, W + 1)
+
+    # Pre-tokenize candidate variant answer strings once (no special tokens).
+    variant_ids: list[list[list[int]]] = [
+        [tokenizer.encode(var, add_special_tokens=False) for var in variants]
+        for variants in candidate_variants
+    ]
+
+    for i, ex in enumerate(dataset):
+        prompt_ids = tokenizer.encode(
+            ex["input"]["raw_input"], add_special_tokens=True
+        )
+        L = len(prompt_ids)
+
+        seqs: list[list[int]] = []
+        meta: list[tuple[int, int]] = []  # (class_idx, answer_len)
+        for c, vlist in enumerate(variant_ids):
+            for ans in vlist:
+                if not ans:
+                    continue
+                seqs.append(prompt_ids + ans)
+                meta.append((c, len(ans)))
+        if not seqs:
+            out[i, W] = 1.0
+            continue
+
+        # Right-pad so answer-token positions stay at fixed absolute offsets.
+        for b_start in range(0, len(seqs), batch_size):
+            b_seqs = seqs[b_start : b_start + batch_size]
+            b_meta = meta[b_start : b_start + batch_size]
+            maxlen = max(len(s) for s in b_seqs)
+            input_ids = torch.full((len(b_seqs), maxlen), pad_id, dtype=torch.long)
+            attn = torch.zeros((len(b_seqs), maxlen), dtype=torch.long)
+            for j, s in enumerate(b_seqs):
+                input_ids[j, : len(s)] = torch.tensor(s, dtype=torch.long)
+                attn[j, : len(s)] = 1
+            input_ids = input_ids.to(device)
+            attn = attn.to(device)
+            logits = model(input_ids=input_ids, attention_mask=attn).logits
+            logp = torch.log_softmax(logits.float(), dim=-1)
+            for j, (c, alen) in enumerate(b_meta):
+                total = 0.0
+                for k in range(alen):
+                    pos = L + k  # answer token position
+                    tok = input_ids[j, pos]
+                    total = total + logp[j, pos - 1, tok]
+                out[i, c] += float(torch.exp(total).cpu())
+
+        out[i, W] = max(0.0, 1.0 - float(out[i, :W].sum()))
+
+    return out
+
+
 def compute_reference_distributions(
     dataset: list[CounterfactualExample],
     score_token_ids: list[int] | list[list[int]],
