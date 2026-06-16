@@ -14,6 +14,23 @@
 > presented as a *hypothesis that the behavioral data refuted* — which turns out to be the most
 > interesting result of the entire program.
 
+> **Revision note (2026-06-16, Gemma-3-27B program).** The program was extended to **Gemma-3-27B base
+> at Layer 54** across **11 languages** (sessions `lucid-heron`, `swift-tundra`, `vivid-marlin`). Two
+> results from this extension revise claims below and are folded in as dated callouts (not yet rewritten
+> into the Llama-primary narrative):
+> 1. **The CJK/Hangul "broken geometry" was substantially a *measurement artifact*.** The belief manifold
+>    was scored at a single free-generation step (`ol[-1]`), which for multi-token answers that share a
+>    prefix/suffix (ZH 星期, KO 요일, JA 曜日) reads a non-discriminative position. Re-scoring with the model's
+>    **teacher-forced likelihood of the full gold answer** lifts isometry: **KO `nan`→0.852, JA 0.081→0.527,
+>    ZH −0.108→0.466**, EN/FR controls unchanged. JA's geodesic≪linear coherence gap *survives* (real kink).
+>    *Strengthens the "shared geometry" story on isometry — see the Finding 5/Part VI updates and
+>    `agent_logs/2026-06-15--belief-rescore-steering--vivid-marlin/result/REPORT.md`.*
+> 2. **Finding 5's source-quality law does NOT generalize to reverse (X→EN) transfer on Gemma.** The very
+>    reverse pairs Part VI flagged as decisive were run: a *clean* non-English source does **not** steer EN
+>    better than a degenerate one (ko→EN=0.808 with KO the cleanest ring of all, ≈ overlap-matched zh→EN=0.793),
+>    and subspace **overlap predicts transfer at least as well as source isometry** (Pearson 0.49 vs 0.52,
+>    own-coherence −0.24). See the Finding 5 and Part VI updates.
+
 ---
 
 ## 0. How to read this document
@@ -473,6 +490,26 @@ consistent (and the error bars are tiny for the English-sourced pairs), but the 
 source isometry, not overlap" should be confirmed with the missing pairs — FR→EN, JA→ZH, EN→JA, and the
 reverse directions — before it is treated as a law. This is the top item of remaining work (Part VI).
 
+> ⚠️ **UPDATE (2026-06-16, Gemma-3-27B, reverse transfer — Finding 5 does not generalize).** The reverse
+> pairs were run on Gemma-3-27B (L54): **vi/sw/ja/fr/zh/ko → EN** plus **ja→zh**. The source-quality law
+> **fails for X→EN transfer**:
+> - The cleanest possible source provides **no** advantage: **ko→EN = 0.808** with KO now the cleanest ring
+>   of all (isometry 0.852, own-coherence 0.989), statistically level with overlap-matched **zh→EN = 0.793**
+>   and far below the ~0.95 a source-quality law predicts. Source **own-coherence anti-correlates** with
+>   transfer (Pearson **−0.24**, n=6).
+> - Subspace **overlap predicts transfer at least as well as isometry** (Pearson **0.49** vs **0.52**) —
+>   directly contradicting Finding 5's "overlap does not predict transfer."
+> - What *does* replicate is the **asymmetry**: EN-as-source ≫ EN-as-target (EN→ZH 0.971 vs zh→EN 0.793;
+>   ZH→JA 0.978 vs **ja→zh 0.439**).
+>
+> **Reconciliation.** Finding 5 was established on **forward EN→X** transfer (English the source) on Llama.
+> The clean reading consistent with both: **English is a privileged steering *source* regardless of target**,
+> but this is a property of *English-as-source* (and target steerability), **not** a general "clean source ⇒
+> good transfer" law — a clean *non-English* source (KO) does not inherit the privilege. So the mechanistic
+> hypothesis ("operations universal, representations local") needs qualifying: the shared successor operation
+> is most cleanly *exported* from English specifically, and reverse transfer is gated by source↔target overlap
+> and target steerability. Numbers + method: `…/vivid-marlin/result/REPORT.md` §6.2.
+
 ---
 
 # Part V — Significance for AI alignment
@@ -640,15 +677,19 @@ had made.
 > languages) and *extension* work (new investigations, more pairs, cross-model replication). None of it
 > blocks the conclusions in Parts III–V.
 
-### Highest-priority remaining experiment — confirm Finding 5 with more pairs
+### ✅ Highest-priority remaining experiment — DONE (2026-06-16, Gemma): Finding 5 *qualified/refuted* for reverse transfer
 
-Finding 5 ("transfer tracks source isometry, not overlap") is the program's most important claim, but it
-rests on only **three** source→target pairs. It should be confirmed before being treated as a law. The
-decisive follow-ups are the **missing and reverse-direction pairs** — e.g. **FR→EN, JA→ZH, EN→JA, ZH→EN** —
-which would test the prediction directly: a *poor* source (FR, isometry 0.087) should steer even a *clean,
-well-aligned* target badly, and a *clean* source (EN) should steer *every* target well regardless of overlap.
-This is cheap (the steering analysis just loads existing source featurizers) and would either cement or
-qualify the headline conclusion.
+The reverse and missing-direction pairs flagged here were run on **Gemma-3-27B (L54)**: vi/sw/ja/fr/zh/ko→EN
+and ja→zh. **Outcome: the source-quality law does not hold for X→EN transfer** (see the Finding 5 update box).
+The decisive result is **ko→EN = 0.808** — KO is now the cleanest source ring of all (isometry 0.852) yet
+transfers no better than degenerate, overlap-matched ZH (0.793); source own-coherence *anti*-correlates with
+transfer (−0.24); and overlap predicts as well as isometry (0.49 vs 0.52, n=6). English's steering privilege
+is a property of *English-as-source*, not of clean rings in general. Full numbers + method:
+`agent_logs/2026-06-15--belief-rescore-steering--vivid-marlin/result/REPORT.md`.
+
+**Now the highest-priority remaining steering work** is to (a) raise n (add es/hi/id/tr→EN and more targets)
+and add a significance test so the refutation is a backed law rather than a strong n=6 counterexample, and
+(b) re-score vi/sw isometry under `answer_sequence` so all source isometries are same-provenance.
 
 ### Gated out / conditional
 
@@ -665,9 +706,13 @@ qualify the headline conclusion.
 1. **Why is English uniquely ring-forming?** Is it pretraining-data dominance or something structural?
    The decisive test is to repeat the whole study on a *language-balanced* model (mGPT, BLOOM, Mistral) and
    see whether the English privilege disappears.
-2. **Is the Japanese anti-correlation (isometry −0.101) real or noise?** Either the Japanese spline is
-   genuinely *inverted* (days run backward along the curve) or it is artifact from a barely-passing gate.
-   Inspecting the spline's control-point ordering would settle it quickly.
+2. **Is the Japanese anti-correlation (isometry −0.101 on Llama) real or noise?** *Partially answered on
+   Gemma (2026-06-16):* JA's *negative isometry* was a belief-scoring artifact — re-scored, Gemma JA isometry
+   is **+0.527** (positive, EN-like). But JA's **geodesic≪linear coherence dissociation is real** and
+   *survives* the re-score (geo 0.394 ≪ lin 0.989), i.e. a genuine kinked geodesic, not a scoring artifact.
+   Remaining: inspect JA spline control-point ordering directly (tensors now exist under
+   `…/weekdays_ja__lasttok/`) to characterize the kink. (Llama JA's sign should be re-checked under the same
+   teacher-forced scorer before being treated as real.)
 3. **Why is the English ring 12–14× larger in radius?** Is the English subspace simply higher-variance for
    weekday features, or is there a deeper reason? Comparing eigenvalue spectra across languages would tell.
 4. **Systematic Llama vs. Gemma comparison for French.** We have observed *both* dissociation directions
@@ -717,11 +762,13 @@ sound — but it is logged so no one mistakes it for a problem with the headline
 
 ## B. Experimental coordinates
 
-- **Model:** Llama 3.1 8B base (cross-model notes: Gemma 2 9B, Gemma 4 31B base).
-- **Layer / position:** Layer 28 of 32 (~87% depth), last-token, 64-dim PCA subspace.
-- **Task module:** `natural_domains_arithmetic`, weekday presets (`weekdays`, `weekdays_fr/zh/ja/hi/es`).
-- **New analyses added this session:** `cross_lingual_manifold`, `cross_lingual_steering`
-  (6 passing unit tests in `tests/test_cross_lingual_manifold.py`).
+- **Primary model (Parts I–V):** Llama 3.1 8B base, Layer 28 of 32 (~87% depth), last-token, 64-dim PCA.
+- **Extension model (2026-06 callouts):** **Gemma-3-27B base, Layer 54**, last-token, `pca_k64`, **11 weekday
+  languages** (EN/FR/ES/ZH/JA/HI/KO + low-resource VI/SW/TR/ID). Sessions `lucid-heron` (2026-06-13),
+  `swift-tundra` (low-resource, 2026-06-14), `vivid-marlin` (belief re-score + reverse steering, 2026-06-16).
+- **Task module:** `natural_domains_arithmetic`, weekday presets (`weekdays`, `weekdays_{fr,es,zh,ja,hi,ko,vi,sw,tr,id}`).
+- **Analyses:** `cross_lingual_manifold`, `cross_lingual_steering`; plus `output_manifold.belief_scoring=answer_sequence`
+  (teacher-forced belief scoring, commit `200c683` on `language-exploration`) added by the Gemma extension.
 
 ## C. Source documents
 
