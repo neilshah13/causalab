@@ -1,0 +1,19 @@
+# @package _global_
+# Experiment B (follow-up) — reverse/cross-source steering, Gemma-3-27B @ L54.
+# ko ring -> EN prompts. KO is the cleanest source post-belief-rescore (isometry 0.852):
+# decisive test of whether a clean NON-English source steers EN well (source quality)
+# vs the EN-target-ease ceiling seen in the other X->EN pairs.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/cross_lingual_steering
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_ko
+  source_experiment_root: artifacts/natural_domains_arithmetic/gemma3_27b/weekdays_ko/weekdays_ko
+  layer: 54
