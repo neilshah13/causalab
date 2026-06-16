@@ -27,9 +27,10 @@
 >    `agent_logs/2026-06-15--belief-rescore-steering--vivid-marlin/result/REPORT.md`.*
 > 2. **Finding 5's source-quality law does NOT generalize to reverse (X→EN) transfer on Gemma.** The very
 >    reverse pairs Part VI flagged as decisive were run: a *clean* non-English source does **not** steer EN
->    better than a degenerate one (ko→EN=0.808 with KO the cleanest ring of all, ≈ overlap-matched zh→EN=0.793),
->    and subspace **overlap predicts transfer at least as well as source isometry** (Pearson 0.49 vs 0.52,
->    own-coherence −0.24). See the Finding 5 and Part VI updates.
+>    better than a degenerate one (ko→EN=0.808 with KO the cleanest ring of all, ≈ overlap-matched zh→EN=0.793).
+>    At **n=10** (es/hi/id/tr→EN added 2026-06-16) **no source property predicts X→EN transfer at all** —
+>    overlap r=+0.14 (p=0.70), own-coherence r=+0.23 (p=0.52), isometry r=−0.14 (p=0.71); the earlier n=6
+>    overlap r≈0.49 was never significant and collapses with more data. See the Finding 5 and Part VI updates.
 
 ---
 
@@ -497,8 +498,12 @@ reverse directions — before it is treated as a law. This is the top item of re
 >   of all (isometry 0.852, own-coherence 0.989), statistically level with overlap-matched **zh→EN = 0.793**
 >   and far below the ~0.95 a source-quality law predicts. Source **own-coherence anti-correlates** with
 >   transfer (Pearson **−0.24**, n=6).
-> - Subspace **overlap predicts transfer at least as well as isometry** (Pearson **0.49** vs **0.52**) —
->   directly contradicting Finding 5's "overlap does not predict transfer."
+> - At n=6 subspace overlap appeared to predict transfer at least as well as isometry (Pearson 0.49 vs 0.52);
+>   but **raising to n=10** (es/hi/id/tr→EN, 2026-06-16) shows **no predictor is significant** — overlap
+>   **+0.14** (p=0.70), own-coherence **+0.23** (p=0.52), isometry **−0.14** (p=0.71). The n=6 overlap r≈0.49
+>   was small-sample noise (it was never significant, p=0.33, and collapses to +0.14 with four more points):
+>   *no* source property — overlap **or** ring-quality — governs X→EN transfer. All ten typologically diverse
+>   sources land in a narrow **0.70–0.86** band.
 > - What *does* replicate is the **asymmetry**: EN-as-source ≫ EN-as-target (EN→ZH 0.971 vs zh→EN 0.793;
 >   ZH→JA 0.978 vs **ja→zh 0.439**).
 >
@@ -687,9 +692,20 @@ transfer (−0.24); and overlap predicts as well as isometry (0.49 vs 0.52, n=6)
 is a property of *English-as-source*, not of clean rings in general. Full numbers + method:
 `agent_logs/2026-06-15--belief-rescore-steering--vivid-marlin/result/REPORT.md`.
 
-**Now the highest-priority remaining steering work** is to (a) raise n (add es/hi/id/tr→EN and more targets)
-and add a significance test so the refutation is a backed law rather than a strong n=6 counterexample, and
-(b) re-score vi/sw isometry under `answer_sequence` so all source isometries are same-provenance.
+**✅ Update (2026-06-16, n=10) — item (a) done.** es/hi/id/tr→EN were run (SLURM job 12754), raising Exp B
+to **n=10** (transfer→EN: es 0.733, hi 0.839, id 0.701, tr 0.785). The result is a clean **null**: *no* source
+property predicts X→EN transfer — overlap r=**+0.14** (p=0.70), own-coherence r=**+0.23** (p=0.52), isometry
+r=**−0.14** (p=0.71). The n=6 overlap r≈0.49 was never significant (p=0.33) and **collapses to +0.14** with
+four more points, confirming it was small-sample noise. All ten typologically diverse sources (clean Latin
+es/fr, broken CJK ja/zh, Devanagari hi, low-resource vi/sw/id/tr) steer English into a narrow **0.70–0.86**
+band — reverse transfer is bounded by **English's own readout ceiling**, not by the source ring. Full table,
+p-values, and reproducible script: `docs/multilingual_manifolds/reverse_steering_n10.md` (+
+`reverse_steering_n10_corr.py`); pipeline validated by reproducing the n=6 numbers exactly.
+
+**Remaining steering work:** (b) re-score the source isometries (vi/sw/es/hi/id/tr) under `answer_sequence`
+for a same-provenance isometry axis — though own-coherence (belief-invariant) already shows the null, so this
+only tightens the isometry row; and (c) extend to **other targets** (X→FR, X→ZH) to test whether the
+asymmetry/target-ceiling story is English-specific or a general property of reverse transfer.
 
 ### Gated out / conditional
 
@@ -777,6 +793,8 @@ sound — but it is logged so no one mistakes it for a problem with the headline
 - Per-figure technical notes: `…/result/figures/FIGURES.md`
 - Task catalog & cross-model gate results: `docs/cyclic_domains.md`
 - Steering-metric theory (conformal belief metric): `docs/new_pipeline.md`
+- Reverse (X→EN) steering at n=10 + significance (source-quality law null): `docs/multilingual_manifolds/reverse_steering_n10.md` (script: `reverse_steering_n10_corr.py`)
+- Belief-rescore + reverse-steering session: `agent_logs/2026-06-15--belief-rescore-steering--vivid-marlin/result/REPORT.md`
 
 *Prepared 2026-06-12. Figures generated on the Cinaps cluster; numbers cross-checked against REPORT.md,
 HANDOFF.md, FIGURES.md, and docs/cyclic_domains.md.*
