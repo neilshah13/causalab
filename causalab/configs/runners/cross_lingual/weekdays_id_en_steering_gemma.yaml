@@ -1,0 +1,18 @@
+# @package _global_
+# Experiment B (extension) — reverse/cross-source steering, Gemma-3-27B @ L54.
+# id ring -> EN prompts. Raises n for the X->EN transfer correlation.
+# ID (Indonesian) is a low-resource Latin source from the swift-tundra session.
+defaults:
+  - /base
+  - /task: natural_domains_arithmetic_weekdays
+  - /model: gemma3_27b
+  - /analysis/cross_lingual_steering
+  - _self_
+
+task:
+  target_variable: result
+
+cross_lingual_steering:
+  source_task: natural_domains_arithmetic_weekdays_id
+  source_experiment_root: artifacts/natural_domains_arithmetic/gemma3_27b/weekdays_id/weekdays_id
+  layer: 54
