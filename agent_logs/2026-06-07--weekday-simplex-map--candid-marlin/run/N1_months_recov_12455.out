@@ -1,0 +1,213 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 99.72it/s]
+holdout day=Jul (td=6): 21/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Jul",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Jul",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12893,
+    "frac_valid_in_deleted_region": 0.0,
+    "n_valid_in_deleted_region": 0,
+    "max_P_target_recovered": 0.108,
+    "held_region_cells": 15,
+    "recovered_cells": 8,
+    "cell_recovery_rate": 0.533,
+    "projection_recon_median_hellinger": 0.703,
+    "projection_recon_keeps_argmax_frac": 0.0
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12700,
+    "frac_valid_in_deleted_region": 0.101,
+    "n_valid_in_deleted_region": 1283,
+    "max_P_target_recovered": 0.995,
+    "held_region_cells": 20,
+    "recovered_cells": 18,
+    "cell_recovery_rate": 0.9,
+    "projection_recon_median_hellinger": 0.17,
+    "projection_recon_keeps_argmax_frac": 0.19
+  }
+}
+saved -> recovery_test_Jul.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.15it/s]
+holdout day=Jan (td=0): 14/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Jan",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Jan",
+    "n_held": 14,
+    "n_train": 216,
+    "n_valid_samples": 12533,
+    "frac_valid_in_deleted_region": 0.0,
+    "n_valid_in_deleted_region": 0,
+    "max_P_target_recovered": 0.102,
+    "held_region_cells": 12,
+    "recovered_cells": 12,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.613,
+    "projection_recon_keeps_argmax_frac": 0.0
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 14,
+    "n_train": 216,
+    "n_valid_samples": 12367,
+    "frac_valid_in_deleted_region": 0.065,
+    "n_valid_in_deleted_region": 805,
+    "max_P_target_recovered": 0.992,
+    "held_region_cells": 13,
+    "recovered_cells": 12,
+    "cell_recovery_rate": 0.923,
+    "projection_recon_median_hellinger": 0.153,
+    "projection_recon_keeps_argmax_frac": 0.071
+  }
+}
+saved -> recovery_test_Jan.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 97.75it/s]
+holdout day=Apr (td=3): 21/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Apr",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Apr",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 13137,
+    "frac_valid_in_deleted_region": 0.0,
+    "n_valid_in_deleted_region": 0,
+    "max_P_target_recovered": 0.121,
+    "held_region_cells": 15,
+    "recovered_cells": 11,
+    "cell_recovery_rate": 0.733,
+    "projection_recon_median_hellinger": 0.597,
+    "projection_recon_keeps_argmax_frac": 0.0
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12892,
+    "frac_valid_in_deleted_region": 0.046,
+    "n_valid_in_deleted_region": 594,
+    "max_P_target_recovered": 0.987,
+    "held_region_cells": 20,
+    "recovered_cells": 19,
+    "cell_recovery_rate": 0.95,
+    "projection_recon_median_hellinger": 0.167,
+    "projection_recon_keeps_argmax_frac": 0.19
+  }
+}
+saved -> recovery_test_Apr.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 99.33it/s]
+/workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/code/analyses/simplex_coverage/inverse_map.py:161: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(data, labels=types, showmeans=True)
+{
+  "concept": "months",
+  "layer": 31,
+  "k": 10,
+  "n_targets": 179,
+  "edge": {
+    "n": 66,
+    "median_hellinger": 0.192,
+    "p90_hellinger": 0.369,
+    "frac_reached_0.10": 0.015,
+    "frac_reached_0.20": 0.561
+  },
+  "interior": {
+    "n": 60,
+    "median_hellinger": 0.196,
+    "p90_hellinger": 0.244,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.55
+  },
+  "sparse": {
+    "n": 40,
+    "median_hellinger": 0.243,
+    "p90_hellinger": 0.347,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.225
+  },
+  "uniform": {
+    "n": 1,
+    "median_hellinger": 0.146,
+    "p90_hellinger": 0.146,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 1.0
+  },
+  "vertex": {
+    "n": 12,
+    "median_hellinger": 0.097,
+    "p90_hellinger": 0.152,
+    "frac_reached_0.10": 0.583,
+    "frac_reached_0.20": 0.917
+  },
+  "overall_median_hellinger": 0.199,
+  "overall_frac_reached_0.20": 0.508
+}
+saved -> inverse_map_L31.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.88it/s]
+/workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/code/analyses/simplex_coverage/inverse_map.py:161: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(data, labels=types, showmeans=True)
+{
+  "concept": "months",
+  "layer": 29,
+  "k": 10,
+  "n_targets": 179,
+  "edge": {
+    "n": 66,
+    "median_hellinger": 0.174,
+    "p90_hellinger": 0.388,
+    "frac_reached_0.10": 0.03,
+    "frac_reached_0.20": 0.561
+  },
+  "interior": {
+    "n": 60,
+    "median_hellinger": 0.201,
+    "p90_hellinger": 0.27,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.5
+  },
+  "sparse": {
+    "n": 40,
+    "median_hellinger": 0.248,
+    "p90_hellinger": 0.338,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.125
+  },
+  "uniform": {
+    "n": 1,
+    "median_hellinger": 0.149,
+    "p90_hellinger": 0.149,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 1.0
+  },
+  "vertex": {
+    "n": 12,
+    "median_hellinger": 0.082,
+    "p90_hellinger": 0.144,
+    "frac_reached_0.10": 0.583,
+    "frac_reached_0.20": 0.917
+  },
+  "overall_median_hellinger": 0.207,
+  "overall_frac_reached_0.20": 0.469
+}
+saved -> inverse_map_L29.json
+N1 DONE

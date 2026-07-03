@@ -1,0 +1,769 @@
+{
+  "concept": "months",
+  "layer": 31,
+  "keep": "Jan,Apr,Jul,Oct",
+  "held": [
+    "Feb",
+    "Mar",
+    "May",
+    "Jun",
+    "Aug",
+    "Sep",
+    "Nov",
+    "Dec"
+  ],
+  "margin": 2.0,
+  "recover_thresh": 0.5,
+  "results": [
+    {
+      "method": "cca",
+      "k": 4,
+      "n_valid": 5745,
+      "held_days_recovered": 3,
+      "n_held": 8,
+      "frac_held_recovered": 0.375,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.039,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.926,
+          "n_argmax": 37,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.861,
+          "n_argmax": 5,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.267,
+          "n_argmax": 2,
+          "recovered": false
+        },
+        "Aug": {
+          "max_P": 0.202,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "Sep": {
+          "max_P": 0.306,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "Nov": {
+          "max_P": 0.399,
+          "n_argmax": 9,
+          "recovered": false
+        },
+        "Dec": {
+          "max_P": 0.912,
+          "n_argmax": 72,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 5856,
+      "held_days_recovered": 6,
+      "n_held": 8,
+      "frac_held_recovered": 0.75,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.211,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 1.0,
+          "n_argmax": 724,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.937,
+          "n_argmax": 13,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.992,
+          "n_argmax": 210,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.331,
+          "n_argmax": 4,
+          "recovered": false
+        },
+        "Sep": {
+          "max_P": 0.962,
+          "n_argmax": 40,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.53,
+          "n_argmax": 3,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.997,
+          "n_argmax": 547,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 13,
+      "n_valid": 5345,
+      "held_days_recovered": 8,
+      "n_held": 8,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.832,
+          "n_argmax": 2,
+          "recovered": true
+        },
+        "Mar": {
+          "max_P": 1.0,
+          "n_argmax": 621,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.963,
+          "n_argmax": 71,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.996,
+          "n_argmax": 312,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.967,
+          "n_argmax": 45,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.985,
+          "n_argmax": 78,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.972,
+          "n_argmax": 51,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.994,
+          "n_argmax": 454,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 13,
+      "n_valid": 5380,
+      "held_days_recovered": 7,
+      "n_held": 8,
+      "frac_held_recovered": 0.875,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.416,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 1.0,
+          "n_argmax": 709,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.969,
+          "n_argmax": 70,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.996,
+          "n_argmax": 273,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.968,
+          "n_argmax": 38,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.978,
+          "n_argmax": 73,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.954,
+          "n_argmax": 46,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.995,
+          "n_argmax": 393,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 13,
+      "n_valid": 5246,
+      "held_days_recovered": 8,
+      "n_held": 8,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.704,
+          "n_argmax": 6,
+          "recovered": true
+        },
+        "Mar": {
+          "max_P": 0.999,
+          "n_argmax": 622,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.962,
+          "n_argmax": 65,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.997,
+          "n_argmax": 270,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.931,
+          "n_argmax": 36,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.981,
+          "n_argmax": 83,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.91,
+          "n_argmax": 35,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.994,
+          "n_argmax": 419,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 4,
+      "n_valid": 5923,
+      "held_days_recovered": 1,
+      "n_held": 8,
+      "frac_held_recovered": 0.125,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.074,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.028,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "May": {
+          "max_P": 0.938,
+          "n_argmax": 85,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.127,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aug": {
+          "max_P": 0.399,
+          "n_argmax": 13,
+          "recovered": false
+        },
+        "Sep": {
+          "max_P": 0.122,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Nov": {
+          "max_P": 0.255,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Dec": {
+          "max_P": 0.101,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 8,
+      "n_valid": 4457,
+      "held_days_recovered": 5,
+      "n_held": 8,
+      "frac_held_recovered": 0.625,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.277,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 1.0,
+          "n_argmax": 290,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.962,
+          "n_argmax": 32,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.984,
+          "n_argmax": 110,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.563,
+          "n_argmax": 17,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.871,
+          "n_argmax": 12,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.198,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Dec": {
+          "max_P": 0.489,
+          "n_argmax": 2,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 13,
+      "n_valid": 3639,
+      "held_days_recovered": 7,
+      "n_held": 8,
+      "frac_held_recovered": 0.875,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.104,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 1.0,
+          "n_argmax": 327,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.927,
+          "n_argmax": 14,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.998,
+          "n_argmax": 277,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.823,
+          "n_argmax": 13,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.973,
+          "n_argmax": 66,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.699,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.874,
+          "n_argmax": 4,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 20,
+      "n_valid": 2943,
+      "held_days_recovered": 7,
+      "n_held": 8,
+      "frac_held_recovered": 0.875,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.157,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.999,
+          "n_argmax": 226,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.986,
+          "n_argmax": 70,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.998,
+          "n_argmax": 260,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.813,
+          "n_argmax": 11,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.981,
+          "n_argmax": 30,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.818,
+          "n_argmax": 12,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.947,
+          "n_argmax": 28,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 40,
+      "n_valid": 1870,
+      "held_days_recovered": 8,
+      "n_held": 8,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.936,
+          "n_argmax": 2,
+          "recovered": true
+        },
+        "Mar": {
+          "max_P": 0.999,
+          "n_argmax": 178,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.981,
+          "n_argmax": 50,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.996,
+          "n_argmax": 151,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.719,
+          "n_argmax": 10,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.945,
+          "n_argmax": 18,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.9,
+          "n_argmax": 9,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.862,
+          "n_argmax": 13,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 4,
+      "n_valid": 5890,
+      "held_days_recovered": 1,
+      "n_held": 8,
+      "frac_held_recovered": 0.125,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.078,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.036,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "May": {
+          "max_P": 0.918,
+          "n_argmax": 16,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.09,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aug": {
+          "max_P": 0.388,
+          "n_argmax": 20,
+          "recovered": false
+        },
+        "Sep": {
+          "max_P": 0.166,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Nov": {
+          "max_P": 0.294,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Dec": {
+          "max_P": 0.096,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 8,
+      "n_valid": 4377,
+      "held_days_recovered": 5,
+      "n_held": 8,
+      "frac_held_recovered": 0.625,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.075,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.982,
+          "n_argmax": 28,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.945,
+          "n_argmax": 13,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.998,
+          "n_argmax": 348,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.899,
+          "n_argmax": 49,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.085,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Nov": {
+          "max_P": 0.197,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Dec": {
+          "max_P": 0.708,
+          "n_argmax": 8,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 13,
+      "n_valid": 3672,
+      "held_days_recovered": 5,
+      "n_held": 8,
+      "frac_held_recovered": 0.625,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.288,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.999,
+          "n_argmax": 257,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.489,
+          "n_argmax": 2,
+          "recovered": false
+        },
+        "Jun": {
+          "max_P": 0.999,
+          "n_argmax": 355,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.839,
+          "n_argmax": 22,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.946,
+          "n_argmax": 12,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.2,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Dec": {
+          "max_P": 0.699,
+          "n_argmax": 7,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 20,
+      "n_valid": 3023,
+      "held_days_recovered": 7,
+      "n_held": 8,
+      "frac_held_recovered": 0.875,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.074,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.998,
+          "n_argmax": 200,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.971,
+          "n_argmax": 69,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.999,
+          "n_argmax": 303,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.915,
+          "n_argmax": 20,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.971,
+          "n_argmax": 15,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.573,
+          "n_argmax": 2,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.992,
+          "n_argmax": 39,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 40,
+      "n_valid": 2083,
+      "held_days_recovered": 7,
+      "n_held": 8,
+      "frac_held_recovered": 0.875,
+      "per_day": {
+        "Feb": {
+          "max_P": 0.248,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mar": {
+          "max_P": 0.998,
+          "n_argmax": 153,
+          "recovered": true
+        },
+        "May": {
+          "max_P": 0.983,
+          "n_argmax": 56,
+          "recovered": true
+        },
+        "Jun": {
+          "max_P": 0.999,
+          "n_argmax": 241,
+          "recovered": true
+        },
+        "Aug": {
+          "max_P": 0.903,
+          "n_argmax": 15,
+          "recovered": true
+        },
+        "Sep": {
+          "max_P": 0.966,
+          "n_argmax": 16,
+          "recovered": true
+        },
+        "Nov": {
+          "max_P": 0.92,
+          "n_argmax": 4,
+          "recovered": true
+        },
+        "Dec": {
+          "max_P": 0.956,
+          "n_argmax": 14,
+          "recovered": true
+        }
+      }
+    }
+  ]
+}

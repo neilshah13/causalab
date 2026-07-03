@@ -1,0 +1,20 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.61it/s]
+L19: carrier_sanity(med Hellinger)=0.150  valid_frac_of_box=0.892  cov_gain=14.81  new_cells=1160
+L23: carrier_sanity(med Hellinger)=0.076  valid_frac_of_box=0.693  cov_gain=15.04  new_cells=1179
+L27: carrier_sanity(med Hellinger)=0.057  valid_frac_of_box=0.601  cov_gain=13.67  new_cells=1115
+L31: carrier_sanity(med Hellinger)=0.026  valid_frac_of_box=0.701  cov_gain=14.44  new_cells=1142
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.04it/s]
+L31: carrier_sanity(med Hellinger)=0.026  valid_frac_of_box=0.764  cov_gain=13.88  new_cells=1133
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.19it/s]
+L31: carrier_sanity(med Hellinger)=0.026  valid_frac_of_box=0.710  cov_gain=13.99  new_cells=1065
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.55it/s]
+L31: carrier_sanity(med Hellinger)=0.026  valid_frac_of_box=0.578  cov_gain=13.49  new_cells=1087
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 91.00it/s]
+L31: carrier_sanity(med Hellinger)=0.026  valid_frac_of_box=0.549  cov_gain=13.35  new_cells=1062
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+C1 DONE

@@ -1,0 +1,23 @@
+{
+  "model": "llama31_8b",
+  "layer": 31,
+  "mode": "shape",
+  "nn_dist": 12.648902184817674,
+  "subspace_dims": 20,
+  "n_anchors": 230,
+  "records": [
+    {
+      "n_valid_perturbations": 24979,
+      "n_total": 27600,
+      "radii": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "mean_naturalness_nn": 1.431
+    }
+  ],
+  "zero_perturbation_hellinger_to_anchor": 0.0119
+}

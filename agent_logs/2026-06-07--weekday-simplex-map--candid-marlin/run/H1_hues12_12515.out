@@ -1,0 +1,78 @@
+node=node20
+82 prompts: {'A_open': 5, 'B_neg1': 12, 'C_neg2': 12, 'D_between': 12, 'E_assoc': 16, 'F_mix': 8, 'G_letter': 11, 'H_temp': 6}
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 86.49it/s]
+concept=hues12 n=12 layers=32 n_prompts=82
+  16/82
+  32/82
+  48/82
+  64/82
+  80/82
+  82/82
+retained 47/82; PCA dims90=6; interior=0.319; all_reachable=False
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/hues12_simplex/llama31_8b/simplex_coverage
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 72.44it/s]
+L19: carrier_sanity(med Hellinger)=0.139  valid_frac_of_box=0.823  cov_gain=27.32  new_cells=1079
+L23: carrier_sanity(med Hellinger)=0.041  valid_frac_of_box=0.746  cov_gain=26.67  new_cells=1104
+L27: carrier_sanity(med Hellinger)=0.026  valid_frac_of_box=0.804  cov_gain=27.91  new_cells=1157
+L31: carrier_sanity(med Hellinger)=0.014  valid_frac_of_box=0.835  cov_gain=27.9  new_cells=1130
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/hues12_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 84.88it/s]
+{
+  "concept": "hues12",
+  "layer": 23,
+  "k": 11,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Lime",
+    "Green",
+    "Teal",
+    "Cyan",
+    "Azure",
+    "Blue",
+    "Violet",
+    "Purple",
+    "Pink",
+    "Red"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.883,
+  "fidelity_p90_hellinger": 0.995,
+  "frac_valid": 0.452,
+  "smoothness_median_step": 0.095,
+  "smoothness_max_step": 0.954
+}
+argmax sweep: Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Lime -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Green -> Green -> Blue -> Green -> Blue -> Blue -> Blue -> Blue -> Green -> Green -> Green -> Pink -> Red -> Green -> Red -> Green -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Pink -> Pink -> Pink -> Pink -> Pink -> Red -> Red -> Red -> Red
+saved -> steer_hues12_L23k11.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 91.01it/s]
+{
+  "concept": "hues12",
+  "layer": 31,
+  "k": 11,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Lime",
+    "Green",
+    "Teal",
+    "Cyan",
+    "Azure",
+    "Blue",
+    "Violet",
+    "Purple",
+    "Pink",
+    "Red"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.692,
+  "fidelity_p90_hellinger": 0.96,
+  "frac_valid": 0.397,
+  "smoothness_median_step": 0.183,
+  "smoothness_max_step": 0.873
+}
+argmax sweep: Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Lime -> Lime -> Lime -> Lime -> Lime -> Lime -> Lime -> Lime -> Lime -> Green -> Green -> Green -> Green -> Green -> Green -> Lime -> Lime -> Cyan -> Cyan -> Cyan -> Cyan -> Cyan -> Cyan -> Cyan -> Cyan -> Cyan -> Cyan -> Cyan -> Blue -> Cyan -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Red -> Red -> Red -> Red -> Yellow -> Violet -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Green -> Green -> Green -> Green -> Red -> Red -> Red -> Red
+saved -> steer_hues12_L31k11.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 88.97it/s]
+slurmstepd-node20: error: *** JOB 12515 ON node20 CANCELLED AT 2026-06-11T08:49:09 DUE TO TIME LIMIT ***

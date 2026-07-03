@@ -1,0 +1,57 @@
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Blue,Navy,Cyan,Azure,Teal,Turquoise,Sapphire,Aqua",
+  "k": 24,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 12000,
+  "region_holdout": {
+    "name": "region:Blue,Navy,Cyan,Azure,Teal,Turquoise,Sapphire,Aqua",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 3976,
+    "frac_valid_in_deleted_region": 0.073,
+    "n_valid_in_deleted_region": 289,
+    "max_P_target_recovered": 0.998,
+    "max_P_per_deleted": {
+      "Blue": 0.998,
+      "Navy": 0.023,
+      "Cyan": 0.095,
+      "Azure": 0.003,
+      "Teal": 0.001,
+      "Turquoise": 0.003,
+      "Sapphire": 0.029,
+      "Aqua": 0.01
+    },
+    "held_region_cells": 4,
+    "recovered_cells": 4,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.703,
+    "projection_recon_keeps_argmax_frac": 0.2
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 3922,
+    "frac_valid_in_deleted_region": 0.134,
+    "n_valid_in_deleted_region": 527,
+    "max_P_target_recovered": 0.998,
+    "max_P_per_deleted": {
+      "Blue": 0.998,
+      "Navy": 0.208,
+      "Cyan": 0.087,
+      "Azure": 0.025,
+      "Teal": 0.002,
+      "Turquoise": 0.005,
+      "Sapphire": 0.033,
+      "Aqua": 0.015
+    },
+    "held_region_cells": 5,
+    "recovered_cells": 3,
+    "cell_recovery_rate": 0.6,
+    "projection_recon_median_hellinger": 0.133,
+    "projection_recon_keeps_argmax_frac": 0.0
+  }
+}

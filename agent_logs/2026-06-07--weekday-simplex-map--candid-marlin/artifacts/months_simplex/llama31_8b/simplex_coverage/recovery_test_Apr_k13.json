@@ -1,0 +1,36 @@
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Apr",
+  "k": 13,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Apr",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 11838,
+    "frac_valid_in_deleted_region": 0.006,
+    "n_valid_in_deleted_region": 66,
+    "max_P_target_recovered": 0.93,
+    "held_region_cells": 15,
+    "recovered_cells": 14,
+    "cell_recovery_rate": 0.933,
+    "projection_recon_median_hellinger": 0.295,
+    "projection_recon_keeps_argmax_frac": 0.524
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12702,
+    "frac_valid_in_deleted_region": 0.049,
+    "n_valid_in_deleted_region": 628,
+    "max_P_target_recovered": 0.992,
+    "held_region_cells": 20,
+    "recovered_cells": 20,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.071,
+    "projection_recon_keeps_argmax_frac": 0.095
+  }
+}

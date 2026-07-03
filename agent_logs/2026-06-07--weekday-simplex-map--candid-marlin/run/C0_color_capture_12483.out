@@ -1,0 +1,32 @@
+node=node22
+curated single-token colors (45): ['Amber', 'Aqua', 'Azure', 'Beige', 'Black', 'Blue', 'Bronze', 'Brown', 'Charcoal', 'Copper', 'Coral', 'Cream', 'Crimson', 'Cyan', 'Emerald', 'Gold', 'Gray', 'Green', 'Grey', 'Ivory', 'Jade', 'Lavender', 'Lime', 'Mint', 'Mustard', 'Navy', 'Olive', 'Orange', 'Peach', 'Pink', 'Plum', 'Purple', 'Red', 'Rose', 'Ruby', 'Salmon', 'Sapphire', 'Scarlet', 'Silver', 'Tan', 'Teal', 'Turquoise', 'Violet', 'White', 'Yellow']
+Built 255 color prompts -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/code/methods/color_prompts/prompts.json
+  A_open          10
+  B_neg1         180
+  D_letter        18
+  D_letter_neg    18
+  F_group          5
+  F_object        14
+  F_shade          4
+  I_multi          6
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.47it/s]
+concept=colors n=45 layers=32 n_prompts=255
+  16/255
+  32/255
+  48/255
+  64/255
+  80/255
+  96/255
+  112/255
+  128/255
+  144/255
+  160/255
+  176/255
+  192/255
+  208/255
+  224/255
+  240/255
+  255/255
+retained 127/255; PCA dims90=10; interior=0.638; all_reachable=False
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage
+C0 DONE

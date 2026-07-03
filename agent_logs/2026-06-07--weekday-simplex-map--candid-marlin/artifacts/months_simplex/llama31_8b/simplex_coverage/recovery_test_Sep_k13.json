@@ -1,0 +1,43 @@
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Sep",
+  "k": 13,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Sep",
+    "n_held": 18,
+    "n_train": 212,
+    "n_valid_samples": 7554,
+    "frac_valid_in_deleted_region": 0.01,
+    "n_valid_in_deleted_region": 76,
+    "max_P_target_recovered": 0.88,
+    "max_P_per_deleted": {
+      "Sep": 0.88
+    },
+    "held_region_cells": 16,
+    "recovered_cells": 16,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.205,
+    "projection_recon_keeps_argmax_frac": 0.444
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 18,
+    "n_train": 212,
+    "n_valid_samples": 7438,
+    "frac_valid_in_deleted_region": 0.068,
+    "n_valid_in_deleted_region": 509,
+    "max_P_target_recovered": 0.996,
+    "max_P_per_deleted": {
+      "Sep": 0.996
+    },
+    "held_region_cells": 18,
+    "recovered_cells": 17,
+    "cell_recovery_rate": 0.944,
+    "projection_recon_median_hellinger": 0.076,
+    "projection_recon_keeps_argmax_frac": 0.056
+  }
+}

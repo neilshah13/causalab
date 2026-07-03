@@ -1,0 +1,43 @@
+{
+  "concept": "hues12",
+  "layer": 31,
+  "holdout": "Green",
+  "k": 11,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Green",
+    "n_held": 9,
+    "n_train": 38,
+    "n_valid_samples": 7670,
+    "frac_valid_in_deleted_region": 0.105,
+    "n_valid_in_deleted_region": 805,
+    "max_P_target_recovered": 0.997,
+    "max_P_per_deleted": {
+      "Green": 0.997
+    },
+    "held_region_cells": 8,
+    "recovered_cells": 8,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.404,
+    "projection_recon_keeps_argmax_frac": 0.889
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 9,
+    "n_train": 38,
+    "n_valid_samples": 7533,
+    "frac_valid_in_deleted_region": 0.122,
+    "n_valid_in_deleted_region": 920,
+    "max_P_target_recovered": 0.995,
+    "max_P_per_deleted": {
+      "Green": 0.995
+    },
+    "held_region_cells": 9,
+    "recovered_cells": 9,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.164,
+    "projection_recon_keeps_argmax_frac": 0.222
+  }
+}

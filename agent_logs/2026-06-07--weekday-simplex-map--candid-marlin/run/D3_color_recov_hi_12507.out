@@ -1,0 +1,419 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.30it/s]
+holdout day=Blue (td=4): 5/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Blue",
+  "k": 24,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Blue",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 6014,
+    "frac_valid_in_deleted_region": 0.053,
+    "n_valid_in_deleted_region": 317,
+    "max_P_target_recovered": 0.998,
+    "held_region_cells": 4,
+    "recovered_cells": 4,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.685,
+    "projection_recon_keeps_argmax_frac": 0.2
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 6926,
+    "frac_valid_in_deleted_region": 0.111,
+    "n_valid_in_deleted_region": 768,
+    "max_P_target_recovered": 0.998,
+    "held_region_cells": 5,
+    "recovered_cells": 5,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.093,
+    "projection_recon_keeps_argmax_frac": 0.0
+  }
+}
+saved -> recovery_test_Blue_k24.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.90it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout day=Blue (td=4): 5/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Blue",
+  "k": 32,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Blue",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 4548,
+    "frac_valid_in_deleted_region": 0.054,
+    "n_valid_in_deleted_region": 247,
+    "max_P_target_recovered": 0.995,
+    "held_region_cells": 4,
+    "recovered_cells": 4,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.667,
+    "projection_recon_keeps_argmax_frac": 0.2
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 4551,
+    "frac_valid_in_deleted_region": 0.1,
+    "n_valid_in_deleted_region": 455,
+    "max_P_target_recovered": 0.995,
+    "held_region_cells": 5,
+    "recovered_cells": 4,
+    "cell_recovery_rate": 0.8,
+    "projection_recon_median_hellinger": 0.133,
+    "projection_recon_keeps_argmax_frac": 0.0
+  }
+}
+saved -> recovery_test_Blue_k32.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.94it/s]
+holdout day=Blue (td=4): 5/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Blue",
+  "k": 40,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Blue",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 2652,
+    "frac_valid_in_deleted_region": 0.029,
+    "n_valid_in_deleted_region": 76,
+    "max_P_target_recovered": 0.985,
+    "held_region_cells": 4,
+    "recovered_cells": 4,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.458,
+    "projection_recon_keeps_argmax_frac": 0.6
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 3673,
+    "frac_valid_in_deleted_region": 0.122,
+    "n_valid_in_deleted_region": 448,
+    "max_P_target_recovered": 1.0,
+    "held_region_cells": 5,
+    "recovered_cells": 5,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.129,
+    "projection_recon_keeps_argmax_frac": 0.0
+  }
+}
+saved -> recovery_test_Blue_k40.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.59it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout day=Red (td=0): 33/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Red",
+  "k": 24,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Red",
+    "n_held": 33,
+    "n_train": 94,
+    "n_valid_samples": 5251,
+    "frac_valid_in_deleted_region": 0.13,
+    "n_valid_in_deleted_region": 685,
+    "max_P_target_recovered": 0.996,
+    "held_region_cells": 23,
+    "recovered_cells": 13,
+    "cell_recovery_rate": 0.565,
+    "projection_recon_median_hellinger": 0.167,
+    "projection_recon_keeps_argmax_frac": 0.424
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 33,
+    "n_train": 94,
+    "n_valid_samples": 7391,
+    "frac_valid_in_deleted_region": 0.216,
+    "n_valid_in_deleted_region": 1598,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 29,
+    "recovered_cells": 29,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.143,
+    "projection_recon_keeps_argmax_frac": 0.303
+  }
+}
+saved -> recovery_test_Red_k24.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.93it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout day=Red (td=0): 33/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Red",
+  "k": 32,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Red",
+    "n_held": 33,
+    "n_train": 94,
+    "n_valid_samples": 3856,
+    "frac_valid_in_deleted_region": 0.12,
+    "n_valid_in_deleted_region": 463,
+    "max_P_target_recovered": 0.997,
+    "held_region_cells": 23,
+    "recovered_cells": 16,
+    "cell_recovery_rate": 0.696,
+    "projection_recon_median_hellinger": 0.154,
+    "projection_recon_keeps_argmax_frac": 0.333
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 33,
+    "n_train": 94,
+    "n_valid_samples": 4846,
+    "frac_valid_in_deleted_region": 0.318,
+    "n_valid_in_deleted_region": 1542,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 29,
+    "recovered_cells": 21,
+    "cell_recovery_rate": 0.724,
+    "projection_recon_median_hellinger": 0.138,
+    "projection_recon_keeps_argmax_frac": 0.424
+  }
+}
+saved -> recovery_test_Red_k32.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.83it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout day=Red (td=0): 33/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Red",
+  "k": 40,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Red",
+    "n_held": 33,
+    "n_train": 94,
+    "n_valid_samples": 1899,
+    "frac_valid_in_deleted_region": 0.113,
+    "n_valid_in_deleted_region": 215,
+    "max_P_target_recovered": 0.991,
+    "held_region_cells": 23,
+    "recovered_cells": 8,
+    "cell_recovery_rate": 0.348,
+    "projection_recon_median_hellinger": 0.15,
+    "projection_recon_keeps_argmax_frac": 0.606
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 33,
+    "n_train": 94,
+    "n_valid_samples": 3410,
+    "frac_valid_in_deleted_region": 0.123,
+    "n_valid_in_deleted_region": 418,
+    "max_P_target_recovered": 0.997,
+    "held_region_cells": 28,
+    "recovered_cells": 20,
+    "cell_recovery_rate": 0.714,
+    "projection_recon_median_hellinger": 0.107,
+    "projection_recon_keeps_argmax_frac": 0.333
+  }
+}
+saved -> recovery_test_Red_k40.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.51it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout day=Green (td=3): 43/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Green",
+  "k": 24,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Green",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 5132,
+    "frac_valid_in_deleted_region": 0.078,
+    "n_valid_in_deleted_region": 398,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 23,
+    "recovered_cells": 19,
+    "cell_recovery_rate": 0.826,
+    "projection_recon_median_hellinger": 0.146,
+    "projection_recon_keeps_argmax_frac": 0.442
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 5914,
+    "frac_valid_in_deleted_region": 0.108,
+    "n_valid_in_deleted_region": 637,
+    "max_P_target_recovered": 1.0,
+    "held_region_cells": 32,
+    "recovered_cells": 29,
+    "cell_recovery_rate": 0.906,
+    "projection_recon_median_hellinger": 0.122,
+    "projection_recon_keeps_argmax_frac": 0.419
+  }
+}
+saved -> recovery_test_Green_k24.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.82it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout day=Green (td=3): 43/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Green",
+  "k": 32,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Green",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 4249,
+    "frac_valid_in_deleted_region": 0.081,
+    "n_valid_in_deleted_region": 346,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 23,
+    "recovered_cells": 18,
+    "cell_recovery_rate": 0.783,
+    "projection_recon_median_hellinger": 0.13,
+    "projection_recon_keeps_argmax_frac": 0.605
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 3922,
+    "frac_valid_in_deleted_region": 0.047,
+    "n_valid_in_deleted_region": 186,
+    "max_P_target_recovered": 0.987,
+    "held_region_cells": 33,
+    "recovered_cells": 29,
+    "cell_recovery_rate": 0.879,
+    "projection_recon_median_hellinger": 0.133,
+    "projection_recon_keeps_argmax_frac": 0.349
+  }
+}
+saved -> recovery_test_Green_k32.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.09it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout day=Green (td=3): 43/127 anchors deleted
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Green",
+  "k": 40,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Green",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 2719,
+    "frac_valid_in_deleted_region": 0.113,
+    "n_valid_in_deleted_region": 308,
+    "max_P_target_recovered": 0.995,
+    "held_region_cells": 23,
+    "recovered_cells": 17,
+    "cell_recovery_rate": 0.739,
+    "projection_recon_median_hellinger": 0.128,
+    "projection_recon_keeps_argmax_frac": 0.581
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 3776,
+    "frac_valid_in_deleted_region": 0.141,
+    "n_valid_in_deleted_region": 534,
+    "max_P_target_recovered": 0.998,
+    "held_region_cells": 38,
+    "recovered_cells": 31,
+    "cell_recovery_rate": 0.816,
+    "projection_recon_median_hellinger": 0.152,
+    "projection_recon_keeps_argmax_frac": 0.442
+  }
+}
+saved -> recovery_test_Green_k40.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.35it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+keep=Red,Green,Blue (81 anchors), held-out days=['Orange', 'Yellow', 'Purple', 'Pink', 'Brown', 'Black', 'White', 'Gray', 'Grey', 'Cyan', 'Violet', 'Turquoise', 'Teal', 'Navy', 'Olive', 'Lime', 'Aqua', 'Gold', 'Silver', 'Beige', 'Tan', 'Peach', 'Coral', 'Salmon', 'Crimson', 'Scarlet', 'Lavender', 'Plum', 'Mint', 'Ivory', 'Charcoal', 'Amber', 'Azure', 'Rose', 'Ruby', 'Emerald', 'Sapphire', 'Jade', 'Mustard', 'Cream', 'Bronze', 'Copper']
+  pca  k=16: valid= 4363 recovered 7/42 held-out days (Orange, Yellow, Pink, Black, White, Gray, Tan)
+  pca  k=24: valid= 3866 recovered 9/42 held-out days (Orange, Yellow, Purple, Pink, Black, White, Gray, Gold, Tan)
+  pca  k=32: valid= 3535 recovered 9/42 held-out days (Orange, Yellow, Purple, Pink, Brown, White, Gray, Gold, Tan)
+  pca  k=40: valid= 3193 recovered 9/42 held-out days (Orange, Yellow, Purple, Pink, Brown, White, Gray, Gold, Tan)
+  diff k=16: valid= 4145 recovered 7/42 held-out days (Orange, Yellow, Pink, White, Gray, Gold, Tan)
+  diff k=24: valid= 3734 recovered 9/42 held-out days (Orange, Yellow, Purple, Pink, Brown, White, Gray, Gold, Tan)
+  diff k=32: valid= 3303 recovered 9/42 held-out days (Orange, Yellow, Purple, Pink, Brown, White, Gray, Gold, Tan)
+  diff k=40: valid= 3065 recovered 11/42 held-out days (Orange, Yellow, Purple, Pink, Brown, White, Gray, Violet, Gold, Tan, Ruby)
+  cca  k=16: valid= 5368 recovered 11/42 held-out days (Orange, Yellow, Purple, Pink, Brown, Black, White, Gray, Lime, Gold, Tan)
+  cca  k=24: valid= 3963 recovered 13/42 held-out days (Orange, Yellow, Purple, Pink, Brown, Black, White, Gray, Grey, Gold, Silver, Tan, Ruby)
+  cca  k=32: valid= 3112 recovered 12/42 held-out days (Orange, Yellow, Purple, Pink, Brown, Black, White, Gray, Grey, Gold, Tan, Ruby)
+  cca  k=40: valid= 2220 recovered 10/42 held-out days (Orange, Yellow, Purple, Pink, Brown, White, Gray, Violet, Gold, Tan)
+saved -> sparse_recovery_RedGreenBlue.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 91.77it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+keep=Red,Orange,Yellow,Green,Blue,Purple,Pink,Brown (104 anchors), held-out days=['Black', 'White', 'Gray', 'Grey', 'Cyan', 'Violet', 'Turquoise', 'Teal', 'Navy', 'Olive', 'Lime', 'Aqua', 'Gold', 'Silver', 'Beige', 'Tan', 'Peach', 'Coral', 'Salmon', 'Crimson', 'Scarlet', 'Lavender', 'Plum', 'Mint', 'Ivory', 'Charcoal', 'Amber', 'Azure', 'Rose', 'Ruby', 'Emerald', 'Sapphire', 'Jade', 'Mustard', 'Cream', 'Bronze', 'Copper']
+  pca  k=16: valid= 2688 recovered 4/37 held-out days (White, Lime, Gold, Tan)
+  pca  k=24: valid= 2379 recovered 6/37 held-out days (Black, White, Gray, Cyan, Gold, Tan)
+  pca  k=32: valid= 2176 recovered 4/37 held-out days (White, Gray, Gold, Tan)
+  pca  k=40: valid= 1837 recovered 5/37 held-out days (Black, White, Gray, Gold, Tan)
+  diff k=16: valid= 2807 recovered 3/37 held-out days (White, Gold, Tan)
+  diff k=24: valid= 2424 recovered 5/37 held-out days (White, Gray, Gold, Silver, Tan)
+  diff k=32: valid= 2185 recovered 4/37 held-out days (White, Gray, Gold, Tan)
+  diff k=40: valid= 2002 recovered 5/37 held-out days (White, Gray, Grey, Gold, Tan)
+  cca  k=16: valid= 3611 recovered 5/37 held-out days (White, Gray, Lime, Gold, Tan)
+  cca  k=24: valid= 2886 recovered 7/37 held-out days (Black, White, Gray, Grey, Lime, Gold, Tan)
+  cca  k=32: valid= 2312 recovered 5/37 held-out days (White, Gray, Grey, Gold, Tan)
+  cca  k=40: valid= 1638 recovered 6/37 held-out days (White, Gray, Cyan, Gold, Tan, Cream)
+saved -> sparse_recovery_RedOrangeYellowGreenBluePurplePinkBrown.json
+D3 DONE

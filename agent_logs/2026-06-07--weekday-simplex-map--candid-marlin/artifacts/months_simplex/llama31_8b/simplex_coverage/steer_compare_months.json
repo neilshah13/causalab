@@ -1,0 +1,6269 @@
+{
+  "concept": "months",
+  "k": 13,
+  "n_pairs": 40,
+  "K": 20,
+  "n_carriers": 16,
+  "carrier_idx": [
+    74,
+    55,
+    75,
+    88,
+    52,
+    131,
+    158,
+    60,
+    124,
+    111,
+    202,
+    164,
+    70,
+    145,
+    76,
+    170
+  ],
+  "methods": [
+    "linear_full",
+    "manifold",
+    "subspace_inv_full",
+    "subspace_inv_resid",
+    "linear_subspace"
+  ],
+  "seed": 0,
+  "layers": {
+    "23": {
+      "linear_full": {
+        "ebc_sum": {
+          "mean": 0.8574,
+          "se": 0.0275,
+          "median": 0.8416
+        },
+        "off_mass_mean": {
+          "mean": 0.0255,
+          "se": 0.0014,
+          "median": 0.0255
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 3.425,
+          "se": 0.2724,
+          "median": 3.5
+        },
+        "smooth_max": {
+          "mean": 0.0963,
+          "se": 0.0031,
+          "median": 0.0966
+        },
+        "gen_ppl": {
+          "mean": 1.5221,
+          "se": 0.0128,
+          "median": 1.5634
+        },
+        "gen_uniq_frac": {
+          "mean": 0.631,
+          "se": 0.0164,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0833,
+          "se": 0.0703,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Feb->Aug",
+            "text": " August\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Jan->Sep",
+            "text": " September\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Sep->Jul",
+            "text": " July\nA type of animal: dog\nA type of animal that is not a dog: cat\nA type of"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 1.1026,
+            "off_mass_mean": 0.0293,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0482,
+            "smooth_max": 0.095
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.884,
+            "off_mass_mean": 0.0299,
+            "off_mass_max": 0.0335,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0448,
+            "smooth_max": 0.1108
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 1.0105,
+            "off_mass_mean": 0.0209,
+            "off_mass_max": 0.029,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0488,
+            "smooth_max": 0.0968
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.9207,
+            "off_mass_mean": 0.0273,
+            "off_mass_max": 0.0455,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.049,
+            "smooth_max": 0.101
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 1.0308,
+            "off_mass_mean": 0.0131,
+            "off_mass_max": 0.019,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0447,
+            "smooth_max": 0.1222
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.5383,
+            "off_mass_mean": 0.0257,
+            "off_mass_max": 0.0469,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0451,
+            "smooth_max": 0.0651
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.8321,
+            "off_mass_mean": 0.0279,
+            "off_mass_max": 0.0469,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0417,
+            "smooth_max": 0.0571
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.7235,
+            "off_mass_mean": 0.0187,
+            "off_mass_max": 0.0288,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0438,
+            "smooth_max": 0.0793
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.8759,
+            "off_mass_mean": 0.0285,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0412,
+            "smooth_max": 0.132
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 1.0212,
+            "off_mass_mean": 0.0116,
+            "off_mass_max": 0.013,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0418,
+            "smooth_max": 0.0681
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.7024,
+            "off_mass_mean": 0.0371,
+            "off_mass_max": 0.0469,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0452,
+            "smooth_max": 0.0919
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.6732,
+            "off_mass_mean": 0.0457,
+            "off_mass_max": 0.048,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0461,
+            "smooth_max": 0.1027
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.851,
+            "off_mass_mean": 0.0252,
+            "off_mass_max": 0.0469,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0486,
+            "smooth_max": 0.0965
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 1.1026,
+            "off_mass_mean": 0.0293,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0482,
+            "smooth_max": 0.095
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 1.0368,
+            "off_mass_mean": 0.0221,
+            "off_mass_max": 0.0285,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0441,
+            "smooth_max": 0.078
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.8262,
+            "off_mass_mean": 0.0231,
+            "off_mass_max": 0.034,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0486,
+            "smooth_max": 0.1335
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.7196,
+            "off_mass_mean": 0.0267,
+            "off_mass_max": 0.0469,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0518,
+            "smooth_max": 0.1102
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.7235,
+            "off_mass_mean": 0.0187,
+            "off_mass_max": 0.0288,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0438,
+            "smooth_max": 0.0793
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.7147,
+            "off_mass_mean": 0.0483,
+            "off_mass_max": 0.0498,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0413,
+            "smooth_max": 0.0772
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.7024,
+            "off_mass_mean": 0.0371,
+            "off_mass_max": 0.0469,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0452,
+            "smooth_max": 0.0919
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.922,
+            "off_mass_mean": 0.0185,
+            "off_mass_max": 0.0277,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0476,
+            "smooth_max": 0.1219
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.6353,
+            "off_mass_mean": 0.0243,
+            "off_mass_max": 0.0341,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0458,
+            "smooth_max": 0.1027
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.7288,
+            "off_mass_mean": 0.0294,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0425,
+            "smooth_max": 0.1177
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 1.0981,
+            "off_mass_mean": 0.0218,
+            "off_mass_max": 0.0285,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0425,
+            "smooth_max": 0.072
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 1.0212,
+            "off_mass_mean": 0.0116,
+            "off_mass_max": 0.013,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0418,
+            "smooth_max": 0.0681
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.6811,
+            "off_mass_mean": 0.0115,
+            "off_mass_max": 0.0155,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0469,
+            "smooth_max": 0.1125
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.9363,
+            "off_mass_mean": 0.02,
+            "off_mass_max": 0.028,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0481,
+            "smooth_max": 0.1087
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.8262,
+            "off_mass_mean": 0.0231,
+            "off_mass_max": 0.034,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0486,
+            "smooth_max": 0.1335
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 1.3261,
+            "off_mass_mean": 0.0261,
+            "off_mass_max": 0.0433,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0471,
+            "smooth_max": 0.0825
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.5765,
+            "off_mass_mean": 0.03,
+            "off_mass_max": 0.0469,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0486,
+            "smooth_max": 0.102
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.884,
+            "off_mass_mean": 0.0299,
+            "off_mass_max": 0.0335,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0448,
+            "smooth_max": 0.1108
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.7288,
+            "off_mass_mean": 0.0294,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0425,
+            "smooth_max": 0.1177
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 1.0105,
+            "off_mass_mean": 0.0209,
+            "off_mass_max": 0.029,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0488,
+            "smooth_max": 0.0968
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 1.0428,
+            "off_mass_mean": 0.0198,
+            "off_mass_max": 0.0286,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0485,
+            "smooth_max": 0.0816
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.7147,
+            "off_mass_mean": 0.0483,
+            "off_mass_max": 0.0498,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0413,
+            "smooth_max": 0.0772
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.9207,
+            "off_mass_mean": 0.0273,
+            "off_mass_max": 0.0455,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.049,
+            "smooth_max": 0.101
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.8214,
+            "off_mass_mean": 0.0123,
+            "off_mass_max": 0.0155,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0484,
+            "smooth_max": 0.0981
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.6326,
+            "off_mass_mean": 0.0146,
+            "off_mass_max": 0.0189,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0477,
+            "smooth_max": 0.093
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 1.0368,
+            "off_mass_mean": 0.0221,
+            "off_mass_max": 0.0285,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0441,
+            "smooth_max": 0.078
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.7611,
+            "off_mass_mean": 0.0312,
+            "off_mass_max": 0.0462,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0472,
+            "smooth_max": 0.0907
+          }
+        ]
+      },
+      "manifold": {
+        "ebc_sum": {
+          "mean": 0.8758,
+          "se": 0.0212,
+          "median": 0.9002
+        },
+        "off_mass_mean": {
+          "mean": 0.0237,
+          "se": 0.0013,
+          "median": 0.0228
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "smooth_max": {
+          "mean": 0.2931,
+          "se": 0.0217,
+          "median": 0.3125
+        },
+        "gen_ppl": {
+          "mean": 1.5504,
+          "se": 0.0196,
+          "median": 1.5624
+        },
+        "gen_uniq_frac": {
+          "mean": 0.6245,
+          "se": 0.0158,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0833,
+          "se": 0.0703,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Feb->Aug",
+            "text": " May\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Jan->Sep",
+            "text": " November\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Sep->Jul",
+            "text": " August\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 0.7017,
+            "off_mass_mean": 0.0358,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0744,
+            "smooth_max": 0.1814
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.9295,
+            "off_mass_mean": 0.0236,
+            "off_mass_max": 0.0474,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1504,
+            "smooth_max": 0.3602
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.9896,
+            "off_mass_mean": 0.0249,
+            "off_mass_max": 0.0474,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1233,
+            "smooth_max": 0.2369
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 1.0605,
+            "off_mass_mean": 0.0231,
+            "off_mass_max": 0.0463,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0963,
+            "smooth_max": 0.292
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 1.016,
+            "off_mass_mean": 0.0233,
+            "off_mass_max": 0.0463,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1847,
+            "smooth_max": 0.3331
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.5404,
+            "off_mass_mean": 0.0247,
+            "off_mass_max": 0.0447,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.044,
+            "smooth_max": 0.0726
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.7132,
+            "off_mass_mean": 0.0375,
+            "off_mass_max": 0.0501,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0729,
+            "smooth_max": 0.1838
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.7344,
+            "off_mass_mean": 0.018,
+            "off_mass_max": 0.0276,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0418,
+            "smooth_max": 0.094
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.7588,
+            "off_mass_mean": 0.0235,
+            "off_mass_max": 0.0494,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2158,
+            "smooth_max": 0.4141
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.9737,
+            "off_mass_mean": 0.0091,
+            "off_mass_max": 0.0113,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0774,
+            "smooth_max": 0.2078
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.9002,
+            "off_mass_mean": 0.0235,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2114,
+            "smooth_max": 0.4164
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.8064,
+            "off_mass_mean": 0.0188,
+            "off_mass_max": 0.0447,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2338,
+            "smooth_max": 0.4439
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.7666,
+            "off_mass_mean": 0.0282,
+            "off_mass_max": 0.0494,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1012,
+            "smooth_max": 0.2673
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 0.7017,
+            "off_mass_mean": 0.0358,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0744,
+            "smooth_max": 0.1814
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 1.1039,
+            "off_mass_mean": 0.02,
+            "off_mass_max": 0.0256,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0392,
+            "smooth_max": 0.0869
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.96,
+            "off_mass_mean": 0.0225,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1867,
+            "smooth_max": 0.4015
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.7243,
+            "off_mass_mean": 0.0176,
+            "off_mass_max": 0.0447,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1557,
+            "smooth_max": 0.3497
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.7344,
+            "off_mass_mean": 0.018,
+            "off_mass_max": 0.0276,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0418,
+            "smooth_max": 0.094
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.8506,
+            "off_mass_mean": 0.048,
+            "off_mass_max": 0.0501,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0386,
+            "smooth_max": 0.0971
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.9002,
+            "off_mass_mean": 0.0235,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2114,
+            "smooth_max": 0.4164
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.8988,
+            "off_mass_mean": 0.022,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.212,
+            "smooth_max": 0.401
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.6952,
+            "off_mass_mean": 0.0249,
+            "off_mass_max": 0.0501,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2063,
+            "smooth_max": 0.4275
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.8038,
+            "off_mass_mean": 0.0214,
+            "off_mass_max": 0.0491,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2439,
+            "smooth_max": 0.4797
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.9271,
+            "off_mass_mean": 0.0323,
+            "off_mass_max": 0.0474,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0794,
+            "smooth_max": 0.175
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.9737,
+            "off_mass_mean": 0.0091,
+            "off_mass_max": 0.0113,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0774,
+            "smooth_max": 0.2078
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.6918,
+            "off_mass_mean": 0.0262,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.185,
+            "smooth_max": 0.3446
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.8784,
+            "off_mass_mean": 0.0199,
+            "off_mass_max": 0.0474,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2728,
+            "smooth_max": 0.4663
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.96,
+            "off_mass_mean": 0.0225,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1867,
+            "smooth_max": 0.4015
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.9945,
+            "off_mass_mean": 0.0182,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0734,
+            "smooth_max": 0.1699
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.7811,
+            "off_mass_mean": 0.0163,
+            "off_mass_max": 0.0447,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2057,
+            "smooth_max": 0.4245
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.9295,
+            "off_mass_mean": 0.0236,
+            "off_mass_max": 0.0474,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1504,
+            "smooth_max": 0.3602
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.9141,
+            "off_mass_mean": 0.0224,
+            "off_mass_max": 0.0465,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2379,
+            "smooth_max": 0.499
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.9896,
+            "off_mass_mean": 0.0249,
+            "off_mass_max": 0.0474,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1233,
+            "smooth_max": 0.2369
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 0.7536,
+            "off_mass_mean": 0.0132,
+            "off_mass_max": 0.0276,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0875,
+            "smooth_max": 0.1808
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.8506,
+            "off_mass_mean": 0.048,
+            "off_mass_max": 0.0501,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0386,
+            "smooth_max": 0.0971
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 1.0605,
+            "off_mass_mean": 0.0231,
+            "off_mass_max": 0.0463,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0963,
+            "smooth_max": 0.292
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.9955,
+            "off_mass_mean": 0.0185,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2356,
+            "smooth_max": 0.5235
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.9676,
+            "off_mass_mean": 0.0203,
+            "off_mass_max": 0.0463,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1714,
+            "smooth_max": 0.4626
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 1.1039,
+            "off_mass_mean": 0.02,
+            "off_mass_max": 0.0256,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0392,
+            "smooth_max": 0.0869
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.9946,
+            "off_mass_mean": 0.02,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1513,
+            "smooth_max": 0.3553
+          }
+        ]
+      },
+      "subspace_inv_full": {
+        "ebc_sum": {
+          "mean": 0.5003,
+          "se": 0.0109,
+          "median": 0.4839
+        },
+        "off_mass_mean": {
+          "mean": 0.0256,
+          "se": 0.0013,
+          "median": 0.0243
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "smooth_max": {
+          "mean": 0.2485,
+          "se": 0.019,
+          "median": 0.2567
+        },
+        "gen_ppl": {
+          "mean": 1.5341,
+          "se": 0.0188,
+          "median": 1.5597
+        },
+        "gen_uniq_frac": {
+          "mean": 0.621,
+          "se": 0.0155,
+          "median": 0.6667
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0476,
+          "se": 0.0736,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Feb->Aug",
+            "text": " May\nA type of animal: dog\nA type of animal that is not a dog: cat\nA type of"
+          },
+          {
+            "pair": "Jan->Sep",
+            "text": " November\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Sep->Jul",
+            "text": " August\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 0.582,
+            "off_mass_mean": 0.0393,
+            "off_mass_max": 0.0538,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0967,
+            "smooth_max": 0.1548
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.4776,
+            "off_mass_mean": 0.0247,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1543,
+            "smooth_max": 0.2755
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.477,
+            "off_mass_mean": 0.0266,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1201,
+            "smooth_max": 0.204
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.4801,
+            "off_mass_mean": 0.0245,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1118,
+            "smooth_max": 0.2488
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.4553,
+            "off_mass_mean": 0.0249,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1529,
+            "smooth_max": 0.2647
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.5255,
+            "off_mass_mean": 0.0292,
+            "off_mass_max": 0.045,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0469,
+            "smooth_max": 0.0661
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.6052,
+            "off_mass_mean": 0.0394,
+            "off_mass_max": 0.0533,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0921,
+            "smooth_max": 0.1599
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.3742,
+            "off_mass_mean": 0.0206,
+            "off_mass_max": 0.0304,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0435,
+            "smooth_max": 0.0714
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.525,
+            "off_mass_mean": 0.0255,
+            "off_mass_max": 0.0529,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2241,
+            "smooth_max": 0.3508
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.5751,
+            "off_mass_mean": 0.0106,
+            "off_mass_max": 0.0133,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0738,
+            "smooth_max": 0.1748
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.545,
+            "off_mass_mean": 0.0251,
+            "off_mass_max": 0.053,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.243,
+            "smooth_max": 0.357
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.483,
+            "off_mass_mean": 0.0209,
+            "off_mass_max": 0.045,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2511,
+            "smooth_max": 0.3915
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.6175,
+            "off_mass_mean": 0.03,
+            "off_mass_max": 0.0533,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1257,
+            "smooth_max": 0.2334
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 0.582,
+            "off_mass_mean": 0.0393,
+            "off_mass_max": 0.0538,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0967,
+            "smooth_max": 0.1548
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 0.3705,
+            "off_mass_mean": 0.0214,
+            "off_mass_max": 0.0279,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0428,
+            "smooth_max": 0.0726
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.4608,
+            "off_mass_mean": 0.0237,
+            "off_mass_max": 0.0498,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2111,
+            "smooth_max": 0.3433
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.4958,
+            "off_mass_mean": 0.0195,
+            "off_mass_max": 0.045,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.186,
+            "smooth_max": 0.2677
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.3742,
+            "off_mass_mean": 0.0206,
+            "off_mass_max": 0.0304,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0435,
+            "smooth_max": 0.0714
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.6448,
+            "off_mass_mean": 0.0501,
+            "off_mass_max": 0.0538,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0428,
+            "smooth_max": 0.083
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.545,
+            "off_mass_mean": 0.0251,
+            "off_mass_max": 0.053,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.243,
+            "smooth_max": 0.357
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.465,
+            "off_mass_mean": 0.0236,
+            "off_mass_max": 0.0479,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2054,
+            "smooth_max": 0.3282
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.5158,
+            "off_mass_mean": 0.0275,
+            "off_mass_max": 0.0538,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2291,
+            "smooth_max": 0.3729
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.5076,
+            "off_mass_mean": 0.0234,
+            "off_mass_max": 0.0538,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2891,
+            "smooth_max": 0.4385
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.4496,
+            "off_mass_mean": 0.0342,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0741,
+            "smooth_max": 0.1501
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.5751,
+            "off_mass_mean": 0.0106,
+            "off_mass_max": 0.0133,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0738,
+            "smooth_max": 0.1748
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.5589,
+            "off_mass_mean": 0.0286,
+            "off_mass_max": 0.0529,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1693,
+            "smooth_max": 0.2908
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.4666,
+            "off_mass_mean": 0.0212,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2444,
+            "smooth_max": 0.413
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.4608,
+            "off_mass_mean": 0.0237,
+            "off_mass_max": 0.0498,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2111,
+            "smooth_max": 0.3433
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.4653,
+            "off_mass_mean": 0.0205,
+            "off_mass_max": 0.0435,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0771,
+            "smooth_max": 0.1375
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.4847,
+            "off_mass_mean": 0.0181,
+            "off_mass_max": 0.045,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2281,
+            "smooth_max": 0.3456
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.4776,
+            "off_mass_mean": 0.0247,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1543,
+            "smooth_max": 0.2755
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.4951,
+            "off_mass_mean": 0.0241,
+            "off_mass_max": 0.0479,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2386,
+            "smooth_max": 0.4404
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.477,
+            "off_mass_mean": 0.0266,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1201,
+            "smooth_max": 0.204
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 0.4323,
+            "off_mass_mean": 0.0152,
+            "off_mass_max": 0.0304,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0885,
+            "smooth_max": 0.1457
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.6448,
+            "off_mass_mean": 0.0501,
+            "off_mass_max": 0.0538,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0428,
+            "smooth_max": 0.083
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.4801,
+            "off_mass_mean": 0.0245,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1118,
+            "smooth_max": 0.2488
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.4963,
+            "off_mass_mean": 0.0201,
+            "off_mass_max": 0.0466,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2323,
+            "smooth_max": 0.4616
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.4812,
+            "off_mass_mean": 0.0221,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2007,
+            "smooth_max": 0.4015
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 0.3705,
+            "off_mass_mean": 0.0214,
+            "off_mass_max": 0.0279,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0428,
+            "smooth_max": 0.0726
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.5126,
+            "off_mass_mean": 0.0214,
+            "off_mass_max": 0.0498,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1672,
+            "smooth_max": 0.3106
+          }
+        ]
+      },
+      "subspace_inv_resid": {
+        "ebc_sum": {
+          "mean": 0.3335,
+          "se": 0.0112,
+          "median": 0.3496
+        },
+        "off_mass_mean": {
+          "mean": 0.0274,
+          "se": 0.0012,
+          "median": 0.0265
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "smooth_max": {
+          "mean": 0.2324,
+          "se": 0.0176,
+          "median": 0.2388
+        },
+        "gen_ppl": {
+          "mean": 1.537,
+          "se": 0.017,
+          "median": 1.5628
+        },
+        "gen_uniq_frac": {
+          "mean": 0.63,
+          "se": 0.0158,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0833,
+          "se": 0.0703,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Feb->Aug",
+            "text": " May\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Jan->Sep",
+            "text": " November\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Sep->Jul",
+            "text": " August\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 0.411,
+            "off_mass_mean": 0.0399,
+            "off_mass_max": 0.0535,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.091,
+            "smooth_max": 0.1493
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.2912,
+            "off_mass_mean": 0.0268,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1503,
+            "smooth_max": 0.2545
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.2831,
+            "off_mass_mean": 0.0288,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1033,
+            "smooth_max": 0.1928
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.2593,
+            "off_mass_mean": 0.0266,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1096,
+            "smooth_max": 0.2221
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.2596,
+            "off_mass_mean": 0.0272,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.144,
+            "smooth_max": 0.248
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.3584,
+            "off_mass_mean": 0.0302,
+            "off_mass_max": 0.0454,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0423,
+            "smooth_max": 0.0642
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.4321,
+            "off_mass_mean": 0.0403,
+            "off_mass_max": 0.0537,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0832,
+            "smooth_max": 0.153
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.3663,
+            "off_mass_mean": 0.0218,
+            "off_mass_max": 0.0314,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0423,
+            "smooth_max": 0.0725
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.3942,
+            "off_mass_mean": 0.0266,
+            "off_mass_max": 0.0528,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1988,
+            "smooth_max": 0.3291
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.3607,
+            "off_mass_mean": 0.014,
+            "off_mass_max": 0.0171,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0735,
+            "smooth_max": 0.157
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.3515,
+            "off_mass_mean": 0.0272,
+            "off_mass_max": 0.0535,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2206,
+            "smooth_max": 0.3461
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.3476,
+            "off_mass_mean": 0.0226,
+            "off_mass_max": 0.0465,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2283,
+            "smooth_max": 0.3573
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.431,
+            "off_mass_mean": 0.0316,
+            "off_mass_max": 0.0537,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.131,
+            "smooth_max": 0.2295
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 0.411,
+            "off_mass_mean": 0.0399,
+            "off_mass_max": 0.0535,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.091,
+            "smooth_max": 0.1493
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 0.174,
+            "off_mass_mean": 0.0236,
+            "off_mass_max": 0.0292,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0383,
+            "smooth_max": 0.0676
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.2697,
+            "off_mass_mean": 0.0259,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2008,
+            "smooth_max": 0.3152
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.3772,
+            "off_mass_mean": 0.021,
+            "off_mass_max": 0.0451,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1651,
+            "smooth_max": 0.2561
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.3663,
+            "off_mass_mean": 0.0218,
+            "off_mass_max": 0.0314,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0423,
+            "smooth_max": 0.0725
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.4716,
+            "off_mass_mean": 0.0502,
+            "off_mass_max": 0.0537,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0441,
+            "smooth_max": 0.0772
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.3515,
+            "off_mass_mean": 0.0272,
+            "off_mass_max": 0.0535,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2206,
+            "smooth_max": 0.3461
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.3101,
+            "off_mass_mean": 0.0254,
+            "off_mass_max": 0.0482,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1905,
+            "smooth_max": 0.3097
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.3926,
+            "off_mass_mean": 0.0287,
+            "off_mass_max": 0.0534,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2017,
+            "smooth_max": 0.347
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.3808,
+            "off_mass_mean": 0.0248,
+            "off_mass_max": 0.0534,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2486,
+            "smooth_max": 0.4165
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.2435,
+            "off_mass_mean": 0.0362,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0725,
+            "smooth_max": 0.1355
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.3607,
+            "off_mass_mean": 0.014,
+            "off_mass_max": 0.0171,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0735,
+            "smooth_max": 0.157
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.4058,
+            "off_mass_mean": 0.0299,
+            "off_mass_max": 0.0535,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1499,
+            "smooth_max": 0.2915
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.3218,
+            "off_mass_mean": 0.0231,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2207,
+            "smooth_max": 0.3718
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.2697,
+            "off_mass_mean": 0.0259,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2008,
+            "smooth_max": 0.3152
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.2947,
+            "off_mass_mean": 0.0234,
+            "off_mass_max": 0.0474,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0738,
+            "smooth_max": 0.1301
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.3651,
+            "off_mass_mean": 0.0198,
+            "off_mass_max": 0.0451,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2034,
+            "smooth_max": 0.3308
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.2912,
+            "off_mass_mean": 0.0268,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1503,
+            "smooth_max": 0.2545
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.2968,
+            "off_mass_mean": 0.0265,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2221,
+            "smooth_max": 0.4164
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.2831,
+            "off_mass_mean": 0.0288,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1033,
+            "smooth_max": 0.1928
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 0.3804,
+            "off_mass_mean": 0.0168,
+            "off_mass_max": 0.0311,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0774,
+            "smooth_max": 0.1404
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.4716,
+            "off_mass_mean": 0.0502,
+            "off_mass_max": 0.0537,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0441,
+            "smooth_max": 0.0772
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.2593,
+            "off_mass_mean": 0.0266,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1096,
+            "smooth_max": 0.2221
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.2968,
+            "off_mass_mean": 0.0228,
+            "off_mass_max": 0.0482,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.218,
+            "smooth_max": 0.4182
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.2808,
+            "off_mass_mean": 0.0247,
+            "off_mass_max": 0.0497,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1996,
+            "smooth_max": 0.3605
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 0.174,
+            "off_mass_mean": 0.0236,
+            "off_mass_max": 0.0292,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0383,
+            "smooth_max": 0.0676
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.2957,
+            "off_mass_mean": 0.0237,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.146,
+            "smooth_max": 0.2811
+          }
+        ]
+      },
+      "linear_subspace": {
+        "ebc_sum": {
+          "mean": 0.7809,
+          "se": 0.0192,
+          "median": 0.7873
+        },
+        "off_mass_mean": {
+          "mean": 0.0275,
+          "se": 0.0013,
+          "median": 0.0268
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 3.425,
+          "se": 0.2724,
+          "median": 3.5
+        },
+        "smooth_max": {
+          "mean": 0.0755,
+          "se": 0.0023,
+          "median": 0.0738
+        },
+        "gen_ppl": {
+          "mean": 1.5354,
+          "se": 0.0129,
+          "median": 1.5635
+        },
+        "gen_uniq_frac": {
+          "mean": 0.6458,
+          "se": 0.0156,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.131,
+          "se": 0.0651,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Feb->Aug",
+            "text": " August\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Jan->Sep",
+            "text": " September\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Sep->Jul",
+            "text": " July\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 0.9885,
+            "off_mass_mean": 0.0312,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0487,
+            "smooth_max": 0.0659
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.7939,
+            "off_mass_mean": 0.0298,
+            "off_mass_max": 0.032,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0505,
+            "smooth_max": 0.0873
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.6425,
+            "off_mass_mean": 0.0224,
+            "off_mass_max": 0.0296,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0465,
+            "smooth_max": 0.0866
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.6821,
+            "off_mass_mean": 0.0315,
+            "off_mass_max": 0.0504,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.051,
+            "smooth_max": 0.0834
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.7992,
+            "off_mass_mean": 0.0179,
+            "off_mass_max": 0.0231,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0465,
+            "smooth_max": 0.1027
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.5554,
+            "off_mass_mean": 0.0266,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0385,
+            "smooth_max": 0.0537
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.8571,
+            "off_mass_mean": 0.0295,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0373,
+            "smooth_max": 0.0469
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.7501,
+            "off_mass_mean": 0.0202,
+            "off_mass_max": 0.0294,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.042,
+            "smooth_max": 0.0685
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.8005,
+            "off_mass_mean": 0.0302,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0474,
+            "smooth_max": 0.1031
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.8208,
+            "off_mass_mean": 0.0171,
+            "off_mass_max": 0.0182,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0393,
+            "smooth_max": 0.0585
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.8202,
+            "off_mass_mean": 0.0371,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0442,
+            "smooth_max": 0.0738
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.7807,
+            "off_mass_mean": 0.0465,
+            "off_mass_max": 0.0504,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0462,
+            "smooth_max": 0.0748
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 1.0335,
+            "off_mass_mean": 0.0285,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.049,
+            "smooth_max": 0.0692
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 0.9885,
+            "off_mass_mean": 0.0312,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0487,
+            "smooth_max": 0.0659
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 0.6867,
+            "off_mass_mean": 0.0246,
+            "off_mass_max": 0.0287,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0363,
+            "smooth_max": 0.0615
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.8942,
+            "off_mass_mean": 0.0258,
+            "off_mass_max": 0.0314,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0506,
+            "smooth_max": 0.105
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.9414,
+            "off_mass_mean": 0.027,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0474,
+            "smooth_max": 0.0821
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.7501,
+            "off_mass_mean": 0.0202,
+            "off_mass_max": 0.0294,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.042,
+            "smooth_max": 0.0685
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.654,
+            "off_mass_mean": 0.0471,
+            "off_mass_max": 0.0482,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0401,
+            "smooth_max": 0.0581
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.8202,
+            "off_mass_mean": 0.0371,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0442,
+            "smooth_max": 0.0738
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.764,
+            "off_mass_mean": 0.0202,
+            "off_mass_max": 0.0275,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0501,
+            "smooth_max": 0.0854
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.8064,
+            "off_mass_mean": 0.026,
+            "off_mass_max": 0.0325,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0472,
+            "smooth_max": 0.0808
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.6709,
+            "off_mass_mean": 0.0319,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0487,
+            "smooth_max": 0.0905
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.8273,
+            "off_mass_mean": 0.0237,
+            "off_mass_max": 0.0285,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0418,
+            "smooth_max": 0.0523
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.8208,
+            "off_mass_mean": 0.0171,
+            "off_mass_max": 0.0182,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0393,
+            "smooth_max": 0.0585
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.7294,
+            "off_mass_mean": 0.0152,
+            "off_mass_max": 0.019,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0502,
+            "smooth_max": 0.0725
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.7377,
+            "off_mass_mean": 0.0222,
+            "off_mass_max": 0.0277,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0436,
+            "smooth_max": 0.0832
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.8942,
+            "off_mass_mean": 0.0258,
+            "off_mass_max": 0.0314,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0506,
+            "smooth_max": 0.105
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.9548,
+            "off_mass_mean": 0.0289,
+            "off_mass_max": 0.0504,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0455,
+            "smooth_max": 0.0703
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.8353,
+            "off_mass_mean": 0.0303,
+            "off_mass_max": 0.0458,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0491,
+            "smooth_max": 0.0716
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.7939,
+            "off_mass_mean": 0.0298,
+            "off_mass_max": 0.032,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0505,
+            "smooth_max": 0.0873
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.6709,
+            "off_mass_mean": 0.0319,
+            "off_mass_max": 0.0477,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0487,
+            "smooth_max": 0.0905
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.6425,
+            "off_mass_mean": 0.0224,
+            "off_mass_max": 0.0296,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0465,
+            "smooth_max": 0.0866
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 1.0434,
+            "off_mass_mean": 0.0216,
+            "off_mass_max": 0.0291,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.036,
+            "smooth_max": 0.0633
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.654,
+            "off_mass_mean": 0.0471,
+            "off_mass_max": 0.0482,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0401,
+            "smooth_max": 0.0581
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.6821,
+            "off_mass_mean": 0.0315,
+            "off_mass_max": 0.0504,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.051,
+            "smooth_max": 0.0834
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.7573,
+            "off_mass_mean": 0.0164,
+            "off_mass_max": 0.0199,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0426,
+            "smooth_max": 0.081
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.6058,
+            "off_mass_mean": 0.0193,
+            "off_mass_max": 0.0235,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0477,
+            "smooth_max": 0.0718
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 0.6867,
+            "off_mass_mean": 0.0246,
+            "off_mass_max": 0.0287,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0363,
+            "smooth_max": 0.0615
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.5983,
+            "off_mass_mean": 0.0342,
+            "off_mass_max": 0.0504,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0466,
+            "smooth_max": 0.0771
+          }
+        ]
+      }
+    },
+    "31": {
+      "linear_full": {
+        "ebc_sum": {
+          "mean": 0.8953,
+          "se": 0.0169,
+          "median": 0.9032
+        },
+        "off_mass_mean": {
+          "mean": 0.0268,
+          "se": 0.0016,
+          "median": 0.0256
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 3.425,
+          "se": 0.2724,
+          "median": 3.5
+        },
+        "smooth_max": {
+          "mean": 0.0918,
+          "se": 0.002,
+          "median": 0.092
+        },
+        "gen_ppl": {
+          "mean": 1.4934,
+          "se": 0.0111,
+          "median": 1.5465
+        },
+        "gen_uniq_frac": {
+          "mean": 0.6205,
+          "se": 0.0161,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0119,
+          "se": 0.0767,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Aug->Jun",
+            "text": " June\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Oct->Dec",
+            "text": " December\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Jul->Apr",
+            "text": " April\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 1.124,
+            "off_mass_mean": 0.0238,
+            "off_mass_max": 0.0364,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0499,
+            "smooth_max": 0.1035
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.8935,
+            "off_mass_mean": 0.0308,
+            "off_mass_max": 0.038,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0519,
+            "smooth_max": 0.1038
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.9096,
+            "off_mass_mean": 0.0256,
+            "off_mass_max": 0.0358,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0518,
+            "smooth_max": 0.083
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.8933,
+            "off_mass_mean": 0.0258,
+            "off_mass_max": 0.0387,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0505,
+            "smooth_max": 0.0956
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.9621,
+            "off_mass_mean": 0.0166,
+            "off_mass_max": 0.0256,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0523,
+            "smooth_max": 0.1023
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.7459,
+            "off_mass_mean": 0.0284,
+            "off_mass_max": 0.0449,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0492,
+            "smooth_max": 0.0862
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.9217,
+            "off_mass_mean": 0.0318,
+            "off_mass_max": 0.0467,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0476,
+            "smooth_max": 0.0681
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.6951,
+            "off_mass_mean": 0.016,
+            "off_mass_max": 0.0251,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0482,
+            "smooth_max": 0.0876
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.9307,
+            "off_mass_mean": 0.0284,
+            "off_mass_max": 0.0376,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0501,
+            "smooth_max": 0.1082
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.9662,
+            "off_mass_mean": 0.0128,
+            "off_mass_max": 0.0163,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0437,
+            "smooth_max": 0.0656
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.989,
+            "off_mass_mean": 0.0485,
+            "off_mass_max": 0.0635,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0506,
+            "smooth_max": 0.0862
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.9564,
+            "off_mass_mean": 0.0565,
+            "off_mass_max": 0.0766,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0487,
+            "smooth_max": 0.0963
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 1.0351,
+            "off_mass_mean": 0.0296,
+            "off_mass_max": 0.0473,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0544,
+            "smooth_max": 0.0912
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 1.124,
+            "off_mass_mean": 0.0238,
+            "off_mass_max": 0.0364,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0499,
+            "smooth_max": 0.1035
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 0.8223,
+            "off_mass_mean": 0.0212,
+            "off_mass_max": 0.0274,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0506,
+            "smooth_max": 0.0766
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.9298,
+            "off_mass_mean": 0.0224,
+            "off_mass_max": 0.0326,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0479,
+            "smooth_max": 0.1159
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.8769,
+            "off_mass_mean": 0.0356,
+            "off_mass_max": 0.0513,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0494,
+            "smooth_max": 0.1004
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.6951,
+            "off_mass_mean": 0.016,
+            "off_mass_max": 0.0251,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0482,
+            "smooth_max": 0.0876
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.7399,
+            "off_mass_mean": 0.0419,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0516,
+            "smooth_max": 0.0887
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.989,
+            "off_mass_mean": 0.0485,
+            "off_mass_max": 0.0635,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0506,
+            "smooth_max": 0.0862
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.908,
+            "off_mass_mean": 0.023,
+            "off_mass_max": 0.0358,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0491,
+            "smooth_max": 0.1063
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.7697,
+            "off_mass_mean": 0.0232,
+            "off_mass_max": 0.0309,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0521,
+            "smooth_max": 0.0949
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.8984,
+            "off_mass_mean": 0.0272,
+            "off_mass_max": 0.0373,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0501,
+            "smooth_max": 0.1044
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.9723,
+            "off_mass_mean": 0.0229,
+            "off_mass_max": 0.0311,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0459,
+            "smooth_max": 0.0745
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.9662,
+            "off_mass_mean": 0.0128,
+            "off_mass_max": 0.0163,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0437,
+            "smooth_max": 0.0656
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.7892,
+            "off_mass_mean": 0.014,
+            "off_mass_max": 0.021,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0493,
+            "smooth_max": 0.0995
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.9369,
+            "off_mass_mean": 0.025,
+            "off_mass_max": 0.0409,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.048,
+            "smooth_max": 0.1007
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.9298,
+            "off_mass_mean": 0.0224,
+            "off_mass_max": 0.0326,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0479,
+            "smooth_max": 0.1159
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 1.0384,
+            "off_mass_mean": 0.0292,
+            "off_mass_max": 0.041,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0512,
+            "smooth_max": 0.0823
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.8508,
+            "off_mass_mean": 0.0362,
+            "off_mass_max": 0.0541,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0524,
+            "smooth_max": 0.0947
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.8935,
+            "off_mass_mean": 0.0308,
+            "off_mass_max": 0.038,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0519,
+            "smooth_max": 0.1038
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.8984,
+            "off_mass_mean": 0.0272,
+            "off_mass_max": 0.0373,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0501,
+            "smooth_max": 0.1044
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.9096,
+            "off_mass_mean": 0.0256,
+            "off_mass_max": 0.0358,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0518,
+            "smooth_max": 0.083
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 1.047,
+            "off_mass_mean": 0.0177,
+            "off_mass_max": 0.0255,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0497,
+            "smooth_max": 0.0928
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.7399,
+            "off_mass_mean": 0.0419,
+            "off_mass_max": 0.0499,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0516,
+            "smooth_max": 0.0887
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.8933,
+            "off_mass_mean": 0.0258,
+            "off_mass_max": 0.0387,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0505,
+            "smooth_max": 0.0956
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.8054,
+            "off_mass_mean": 0.0167,
+            "off_mass_max": 0.0239,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.05,
+            "smooth_max": 0.0862
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.7704,
+            "off_mass_mean": 0.0159,
+            "off_mass_max": 0.0222,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0482,
+            "smooth_max": 0.0789
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 0.8223,
+            "off_mass_mean": 0.0212,
+            "off_mass_max": 0.0274,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0506,
+            "smooth_max": 0.0766
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.7719,
+            "off_mass_mean": 0.0312,
+            "off_mass_max": 0.0444,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0506,
+            "smooth_max": 0.0852
+          }
+        ]
+      },
+      "manifold": {
+        "ebc_sum": {
+          "mean": 0.9234,
+          "se": 0.0079,
+          "median": 0.9173
+        },
+        "off_mass_mean": {
+          "mean": 0.0227,
+          "se": 0.0012,
+          "median": 0.0222
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "smooth_max": {
+          "mean": 0.3195,
+          "se": 0.0235,
+          "median": 0.332
+        },
+        "gen_ppl": {
+          "mean": 1.5321,
+          "se": 0.0144,
+          "median": 1.5635
+        },
+        "gen_uniq_frac": {
+          "mean": 0.6275,
+          "se": 0.0158,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0595,
+          "se": 0.0726,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Aug->Jun",
+            "text": " July\nA type of animal: dog\nA type of animal that is not a dog: cat\nA type of"
+          },
+          {
+            "pair": "Oct->Dec",
+            "text": " November\nA month of the year that is neither October nor November: December\nA month of the year that is neither"
+          },
+          {
+            "pair": "Jul->Apr",
+            "text": " May\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 0.935,
+            "off_mass_mean": 0.0344,
+            "off_mass_max": 0.051,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0982,
+            "smooth_max": 0.2085
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.9042,
+            "off_mass_mean": 0.0237,
+            "off_mass_max": 0.0556,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1835,
+            "smooth_max": 0.3844
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.9764,
+            "off_mass_mean": 0.0248,
+            "off_mass_max": 0.0564,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1239,
+            "smooth_max": 0.2745
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 1.0012,
+            "off_mass_mean": 0.0228,
+            "off_mass_max": 0.0561,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1265,
+            "smooth_max": 0.2934
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.9796,
+            "off_mass_mean": 0.0226,
+            "off_mass_max": 0.0564,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1901,
+            "smooth_max": 0.3577
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.9234,
+            "off_mass_mean": 0.0265,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0402,
+            "smooth_max": 0.1092
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.8402,
+            "off_mass_mean": 0.0341,
+            "off_mass_max": 0.0511,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0829,
+            "smooth_max": 0.2036
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.8299,
+            "off_mass_mean": 0.0157,
+            "off_mass_max": 0.0258,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0422,
+            "smooth_max": 0.1057
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.8774,
+            "off_mass_mean": 0.0226,
+            "off_mass_max": 0.0491,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2241,
+            "smooth_max": 0.4728
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.9112,
+            "off_mass_mean": 0.0101,
+            "off_mass_max": 0.0138,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0979,
+            "smooth_max": 0.203
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.9106,
+            "off_mass_mean": 0.0221,
+            "off_mass_max": 0.051,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2188,
+            "smooth_max": 0.4688
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.9098,
+            "off_mass_mean": 0.0182,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2853,
+            "smooth_max": 0.5348
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.8309,
+            "off_mass_mean": 0.0265,
+            "off_mass_max": 0.0511,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1302,
+            "smooth_max": 0.3062
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 0.935,
+            "off_mass_mean": 0.0344,
+            "off_mass_max": 0.051,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0982,
+            "smooth_max": 0.2085
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 1.0058,
+            "off_mass_mean": 0.0175,
+            "off_mass_max": 0.0256,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0421,
+            "smooth_max": 0.0929
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.9219,
+            "off_mass_mean": 0.0222,
+            "off_mass_max": 0.0536,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2236,
+            "smooth_max": 0.4194
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.8671,
+            "off_mass_mean": 0.0179,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1829,
+            "smooth_max": 0.3978
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.8299,
+            "off_mass_mean": 0.0157,
+            "off_mass_max": 0.0258,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0422,
+            "smooth_max": 0.1057
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.9588,
+            "off_mass_mean": 0.0433,
+            "off_mass_max": 0.0511,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0423,
+            "smooth_max": 0.1048
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.9106,
+            "off_mass_mean": 0.0221,
+            "off_mass_max": 0.051,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2188,
+            "smooth_max": 0.4688
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.8948,
+            "off_mass_mean": 0.0218,
+            "off_mass_max": 0.0561,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.248,
+            "smooth_max": 0.4282
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.8672,
+            "off_mass_mean": 0.0235,
+            "off_mass_max": 0.048,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2174,
+            "smooth_max": 0.4835
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.8896,
+            "off_mass_mean": 0.0208,
+            "off_mass_max": 0.05,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2787,
+            "smooth_max": 0.5395
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 1.0015,
+            "off_mass_mean": 0.0312,
+            "off_mass_max": 0.0561,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0847,
+            "smooth_max": 0.184
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.9112,
+            "off_mass_mean": 0.0101,
+            "off_mass_max": 0.0138,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0979,
+            "smooth_max": 0.203
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.8834,
+            "off_mass_mean": 0.025,
+            "off_mass_max": 0.0511,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1962,
+            "smooth_max": 0.3912
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.9126,
+            "off_mass_mean": 0.0195,
+            "off_mass_max": 0.0488,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2879,
+            "smooth_max": 0.5231
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.9219,
+            "off_mass_mean": 0.0222,
+            "off_mass_max": 0.0536,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2236,
+            "smooth_max": 0.4194
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.9834,
+            "off_mass_mean": 0.0171,
+            "off_mass_max": 0.0332,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0886,
+            "smooth_max": 0.1832
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.8817,
+            "off_mass_mean": 0.0168,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2132,
+            "smooth_max": 0.4759
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.9042,
+            "off_mass_mean": 0.0237,
+            "off_mass_max": 0.0556,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1835,
+            "smooth_max": 0.3844
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.9299,
+            "off_mass_mean": 0.0213,
+            "off_mass_max": 0.0556,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2594,
+            "smooth_max": 0.512
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.9764,
+            "off_mass_mean": 0.0248,
+            "off_mass_max": 0.0564,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1239,
+            "smooth_max": 0.2745
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 0.8982,
+            "off_mass_mean": 0.0121,
+            "off_mass_max": 0.0257,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0872,
+            "smooth_max": 0.207
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.9588,
+            "off_mass_mean": 0.0433,
+            "off_mass_max": 0.0511,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0423,
+            "smooth_max": 0.1048
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 1.0012,
+            "off_mass_mean": 0.0228,
+            "off_mass_max": 0.0561,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1265,
+            "smooth_max": 0.2934
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.9511,
+            "off_mass_mean": 0.0185,
+            "off_mass_max": 0.0564,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2855,
+            "smooth_max": 0.5309
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.9625,
+            "off_mass_mean": 0.0199,
+            "off_mass_max": 0.0556,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2205,
+            "smooth_max": 0.4603
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 1.0058,
+            "off_mass_mean": 0.0175,
+            "off_mass_max": 0.0256,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0421,
+            "smooth_max": 0.0929
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.9403,
+            "off_mass_mean": 0.02,
+            "off_mass_max": 0.0536,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1797,
+            "smooth_max": 0.3667
+          }
+        ]
+      },
+      "subspace_inv_full": {
+        "ebc_sum": {
+          "mean": 0.637,
+          "se": 0.0107,
+          "median": 0.6402
+        },
+        "off_mass_mean": {
+          "mean": 0.0208,
+          "se": 0.0012,
+          "median": 0.0187
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "smooth_max": {
+          "mean": 0.255,
+          "se": 0.0196,
+          "median": 0.2511
+        },
+        "gen_ppl": {
+          "mean": 1.5257,
+          "se": 0.0125,
+          "median": 1.5635
+        },
+        "gen_uniq_frac": {
+          "mean": 0.631,
+          "se": 0.0156,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0595,
+          "se": 0.0726,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Aug->Jun",
+            "text": " July\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Oct->Dec",
+            "text": " November\nA month of the year that is neither October nor November: December\nA month of the year that is neither"
+          },
+          {
+            "pair": "Jul->Apr",
+            "text": " May\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 0.7407,
+            "off_mass_mean": 0.0308,
+            "off_mass_max": 0.0528,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0916,
+            "smooth_max": 0.1676
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.6516,
+            "off_mass_mean": 0.0196,
+            "off_mass_max": 0.0353,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1854,
+            "smooth_max": 0.3175
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.6713,
+            "off_mass_mean": 0.0187,
+            "off_mass_max": 0.0367,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1296,
+            "smooth_max": 0.2177
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.6261,
+            "off_mass_mean": 0.0185,
+            "off_mass_max": 0.0356,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1441,
+            "smooth_max": 0.2065
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.6521,
+            "off_mass_mean": 0.0176,
+            "off_mass_max": 0.0367,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1837,
+            "smooth_max": 0.2859
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.8739,
+            "off_mass_mean": 0.0173,
+            "off_mass_max": 0.0305,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0491,
+            "smooth_max": 0.0835
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.5611,
+            "off_mass_mean": 0.0373,
+            "off_mass_max": 0.0529,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0893,
+            "smooth_max": 0.1725
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.5539,
+            "off_mass_mean": 0.0203,
+            "off_mass_max": 0.034,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0488,
+            "smooth_max": 0.0768
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.6942,
+            "off_mass_mean": 0.022,
+            "off_mass_max": 0.0514,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2411,
+            "smooth_max": 0.3932
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.537,
+            "off_mass_mean": 0.0106,
+            "off_mass_max": 0.0131,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0878,
+            "smooth_max": 0.1412
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.5646,
+            "off_mass_mean": 0.0228,
+            "off_mass_max": 0.0523,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2322,
+            "smooth_max": 0.3862
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.698,
+            "off_mass_mean": 0.0157,
+            "off_mass_max": 0.0334,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2579,
+            "smooth_max": 0.4484
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.5456,
+            "off_mass_mean": 0.0286,
+            "off_mass_max": 0.0529,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1387,
+            "smooth_max": 0.2325
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 0.7407,
+            "off_mass_mean": 0.0308,
+            "off_mass_max": 0.0528,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0916,
+            "smooth_max": 0.1676
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 0.5901,
+            "off_mass_mean": 0.0158,
+            "off_mass_max": 0.0213,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0452,
+            "smooth_max": 0.0704
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.6402,
+            "off_mass_mean": 0.0187,
+            "off_mass_max": 0.035,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2148,
+            "smooth_max": 0.3422
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.7226,
+            "off_mass_mean": 0.0161,
+            "off_mass_max": 0.0338,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.184,
+            "smooth_max": 0.3264
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.5539,
+            "off_mass_mean": 0.0203,
+            "off_mass_max": 0.034,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0488,
+            "smooth_max": 0.0768
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.6192,
+            "off_mass_mean": 0.0448,
+            "off_mass_max": 0.0529,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0414,
+            "smooth_max": 0.0915
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.5646,
+            "off_mass_mean": 0.0228,
+            "off_mass_max": 0.0523,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2322,
+            "smooth_max": 0.3862
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.6367,
+            "off_mass_mean": 0.0192,
+            "off_mass_max": 0.0356,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2276,
+            "smooth_max": 0.3646
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.6496,
+            "off_mass_mean": 0.0237,
+            "off_mass_max": 0.051,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.235,
+            "smooth_max": 0.4012
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.6786,
+            "off_mass_mean": 0.0201,
+            "off_mass_max": 0.051,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2676,
+            "smooth_max": 0.4461
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.6427,
+            "off_mass_mean": 0.0233,
+            "off_mass_max": 0.0356,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0896,
+            "smooth_max": 0.1405
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.537,
+            "off_mass_mean": 0.0106,
+            "off_mass_max": 0.0131,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0878,
+            "smooth_max": 0.1412
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.6786,
+            "off_mass_mean": 0.0238,
+            "off_mass_max": 0.0523,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1889,
+            "smooth_max": 0.322
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.6665,
+            "off_mass_mean": 0.0169,
+            "off_mass_max": 0.0334,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2995,
+            "smooth_max": 0.4461
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.6402,
+            "off_mass_mean": 0.0187,
+            "off_mass_max": 0.035,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2148,
+            "smooth_max": 0.3422
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.6563,
+            "off_mass_mean": 0.0136,
+            "off_mass_max": 0.0241,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0897,
+            "smooth_max": 0.1439
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.7061,
+            "off_mass_mean": 0.0148,
+            "off_mass_max": 0.0326,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2458,
+            "smooth_max": 0.386
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.6516,
+            "off_mass_mean": 0.0196,
+            "off_mass_max": 0.0353,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1854,
+            "smooth_max": 0.3175
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.5712,
+            "off_mass_mean": 0.0197,
+            "off_mass_max": 0.0471,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2732,
+            "smooth_max": 0.3907
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.6713,
+            "off_mass_mean": 0.0187,
+            "off_mass_max": 0.0367,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1296,
+            "smooth_max": 0.2177
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 0.6649,
+            "off_mass_mean": 0.0131,
+            "off_mass_max": 0.034,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0993,
+            "smooth_max": 0.1694
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.6192,
+            "off_mass_mean": 0.0448,
+            "off_mass_max": 0.0529,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0414,
+            "smooth_max": 0.0915
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.6261,
+            "off_mass_mean": 0.0185,
+            "off_mass_max": 0.0356,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1441,
+            "smooth_max": 0.2065
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.6164,
+            "off_mass_mean": 0.0154,
+            "off_mass_max": 0.0367,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2726,
+            "smooth_max": 0.4044
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.5864,
+            "off_mass_mean": 0.0166,
+            "off_mass_max": 0.0353,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2269,
+            "smooth_max": 0.3369
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 0.5901,
+            "off_mass_mean": 0.0158,
+            "off_mass_max": 0.0213,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0452,
+            "smooth_max": 0.0704
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.5908,
+            "off_mass_mean": 0.0168,
+            "off_mass_max": 0.035,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1663,
+            "smooth_max": 0.2697
+          }
+        ]
+      },
+      "subspace_inv_resid": {
+        "ebc_sum": {
+          "mean": 0.5087,
+          "se": 0.0109,
+          "median": 0.4873
+        },
+        "off_mass_mean": {
+          "mean": 0.0242,
+          "se": 0.0014,
+          "median": 0.0222
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "smooth_max": {
+          "mean": 0.2463,
+          "se": 0.0189,
+          "median": 0.249
+        },
+        "gen_ppl": {
+          "mean": 1.5235,
+          "se": 0.0127,
+          "median": 1.5635
+        },
+        "gen_uniq_frac": {
+          "mean": 0.629,
+          "se": 0.0156,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0476,
+          "se": 0.0736,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Aug->Jun",
+            "text": " July\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Oct->Dec",
+            "text": " November\nA month of the year that is neither October nor November: December\nA month of the year that is neither"
+          },
+          {
+            "pair": "Jul->Apr",
+            "text": " May\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 0.6378,
+            "off_mass_mean": 0.0348,
+            "off_mass_max": 0.0617,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0913,
+            "smooth_max": 0.166
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.4971,
+            "off_mass_mean": 0.0231,
+            "off_mass_max": 0.0428,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1763,
+            "smooth_max": 0.3098
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.4984,
+            "off_mass_mean": 0.0229,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1288,
+            "smooth_max": 0.2076
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.4773,
+            "off_mass_mean": 0.0225,
+            "off_mass_max": 0.0452,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1425,
+            "smooth_max": 0.1952
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.4857,
+            "off_mass_mean": 0.0215,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.186,
+            "smooth_max": 0.277
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.7433,
+            "off_mass_mean": 0.0189,
+            "off_mass_max": 0.0323,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0473,
+            "smooth_max": 0.0791
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.4701,
+            "off_mass_mean": 0.0438,
+            "off_mass_max": 0.0614,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0946,
+            "smooth_max": 0.1657
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.4696,
+            "off_mass_mean": 0.021,
+            "off_mass_max": 0.0346,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0459,
+            "smooth_max": 0.0802
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.5842,
+            "off_mass_mean": 0.0243,
+            "off_mass_max": 0.0596,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2372,
+            "smooth_max": 0.3733
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.4291,
+            "off_mass_mean": 0.0135,
+            "off_mass_max": 0.0165,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.088,
+            "smooth_max": 0.1325
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.4554,
+            "off_mass_mean": 0.0271,
+            "off_mass_max": 0.0612,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2357,
+            "smooth_max": 0.3832
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.564,
+            "off_mass_mean": 0.0177,
+            "off_mass_max": 0.0337,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2566,
+            "smooth_max": 0.4205
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.4526,
+            "off_mass_mean": 0.0339,
+            "off_mass_max": 0.0614,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1301,
+            "smooth_max": 0.2379
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 0.6378,
+            "off_mass_mean": 0.0348,
+            "off_mass_max": 0.0617,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0913,
+            "smooth_max": 0.166
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 0.437,
+            "off_mass_mean": 0.0185,
+            "off_mass_max": 0.0246,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0451,
+            "smooth_max": 0.0688
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.4832,
+            "off_mass_mean": 0.0219,
+            "off_mass_max": 0.042,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2109,
+            "smooth_max": 0.331
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.6058,
+            "off_mass_mean": 0.0172,
+            "off_mass_max": 0.0341,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1831,
+            "smooth_max": 0.3027
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.4696,
+            "off_mass_mean": 0.021,
+            "off_mass_max": 0.0346,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0459,
+            "smooth_max": 0.0802
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.5444,
+            "off_mass_mean": 0.0509,
+            "off_mass_max": 0.0617,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0427,
+            "smooth_max": 0.0858
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.4554,
+            "off_mass_mean": 0.0271,
+            "off_mass_max": 0.0612,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2357,
+            "smooth_max": 0.3832
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.4918,
+            "off_mass_mean": 0.0222,
+            "off_mass_max": 0.0452,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2195,
+            "smooth_max": 0.3593
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.5458,
+            "off_mass_mean": 0.027,
+            "off_mass_max": 0.0602,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2318,
+            "smooth_max": 0.3711
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.5672,
+            "off_mass_mean": 0.0223,
+            "off_mass_max": 0.0602,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2779,
+            "smooth_max": 0.4363
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.4636,
+            "off_mass_mean": 0.0288,
+            "off_mass_max": 0.0452,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0944,
+            "smooth_max": 0.1389
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.4291,
+            "off_mass_mean": 0.0135,
+            "off_mass_max": 0.0165,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.088,
+            "smooth_max": 0.1325
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.5692,
+            "off_mass_mean": 0.0278,
+            "off_mass_max": 0.0612,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1797,
+            "smooth_max": 0.3166
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.5254,
+            "off_mass_mean": 0.0194,
+            "off_mass_max": 0.0417,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2789,
+            "smooth_max": 0.4262
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.4832,
+            "off_mass_mean": 0.0219,
+            "off_mass_max": 0.042,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2109,
+            "smooth_max": 0.331
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.4889,
+            "off_mass_mean": 0.0169,
+            "off_mass_max": 0.0304,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0905,
+            "smooth_max": 0.1408
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.5824,
+            "off_mass_mean": 0.0161,
+            "off_mass_max": 0.0323,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2405,
+            "smooth_max": 0.3794
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.4971,
+            "off_mass_mean": 0.0231,
+            "off_mass_max": 0.0428,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1763,
+            "smooth_max": 0.3098
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.4325,
+            "off_mass_mean": 0.0243,
+            "off_mass_max": 0.0561,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2731,
+            "smooth_max": 0.3741
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.4984,
+            "off_mass_mean": 0.0229,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1288,
+            "smooth_max": 0.2076
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 0.5576,
+            "off_mass_mean": 0.0141,
+            "off_mass_max": 0.0346,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0946,
+            "smooth_max": 0.16
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.5444,
+            "off_mass_mean": 0.0509,
+            "off_mass_max": 0.0617,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0427,
+            "smooth_max": 0.0858
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.4773,
+            "off_mass_mean": 0.0225,
+            "off_mass_max": 0.0452,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1425,
+            "smooth_max": 0.1952
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.4656,
+            "off_mass_mean": 0.0188,
+            "off_mass_max": 0.0441,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2636,
+            "smooth_max": 0.3919
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.4389,
+            "off_mass_mean": 0.0204,
+            "off_mass_max": 0.0428,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.2138,
+            "smooth_max": 0.3214
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 0.437,
+            "off_mass_mean": 0.0185,
+            "off_mass_max": 0.0246,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0451,
+            "smooth_max": 0.0688
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.4532,
+            "off_mass_mean": 0.0204,
+            "off_mass_max": 0.042,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.1546,
+            "smooth_max": 0.2602
+          }
+        ]
+      },
+      "linear_subspace": {
+        "ebc_sum": {
+          "mean": 0.7869,
+          "se": 0.0184,
+          "median": 0.8004
+        },
+        "off_mass_mean": {
+          "mean": 0.0308,
+          "se": 0.0016,
+          "median": 0.0298
+        },
+        "valid_frac": {
+          "mean": 1.0,
+          "se": 0.0,
+          "median": 1.0
+        },
+        "offpath_argmax_frac": {
+          "mean": 0.0,
+          "se": 0.0,
+          "median": 0.0
+        },
+        "max_cyc_jump": {
+          "mean": 3.425,
+          "se": 0.2724,
+          "median": 3.5
+        },
+        "smooth_max": {
+          "mean": 0.0811,
+          "se": 0.0015,
+          "median": 0.0823
+        },
+        "gen_ppl": {
+          "mean": 1.5053,
+          "se": 0.0132,
+          "median": 1.5553
+        },
+        "gen_uniq_frac": {
+          "mean": 0.622,
+          "se": 0.0163,
+          "median": 0.75
+        },
+        "gen_max_bigram_rep": {
+          "mean": 3.0357,
+          "se": 0.0747,
+          "median": 3.0
+        },
+        "gen_samples": [
+          {
+            "pair": "Aug->Jun",
+            "text": " June\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Oct->Dec",
+            "text": " December\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          },
+          {
+            "pair": "Jul->Apr",
+            "text": " April\nA color: red\nA fruit that is not an apple: orange\nA word that starts with the letter"
+          }
+        ],
+        "per_pair": [
+          {
+            "pair": [
+              "Dec",
+              "Feb"
+            ],
+            "ebc_sum": 1.0623,
+            "off_mass_mean": 0.0292,
+            "off_mass_max": 0.0435,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0515,
+            "smooth_max": 0.0868
+          },
+          {
+            "pair": [
+              "Jun",
+              "Oct"
+            ],
+            "ebc_sum": 0.8471,
+            "off_mass_mean": 0.0345,
+            "off_mass_max": 0.0422,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0542,
+            "smooth_max": 0.0856
+          },
+          {
+            "pair": [
+              "Jun",
+              "Sep"
+            ],
+            "ebc_sum": 0.7378,
+            "off_mass_mean": 0.0304,
+            "off_mass_max": 0.042,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0521,
+            "smooth_max": 0.0785
+          },
+          {
+            "pair": [
+              "Jul",
+              "Apr"
+            ],
+            "ebc_sum": 0.791,
+            "off_mass_mean": 0.0315,
+            "off_mass_max": 0.046,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0511,
+            "smooth_max": 0.084
+          },
+          {
+            "pair": [
+              "Sep",
+              "May"
+            ],
+            "ebc_sum": 0.8251,
+            "off_mass_mean": 0.0215,
+            "off_mass_max": 0.0327,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0495,
+            "smooth_max": 0.0946
+          },
+          {
+            "pair": [
+              "Jan",
+              "Dec"
+            ],
+            "ebc_sum": 0.6036,
+            "off_mass_mean": 0.0284,
+            "off_mass_max": 0.0435,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0472,
+            "smooth_max": 0.0736
+          },
+          {
+            "pair": [
+              "Jan",
+              "Mar"
+            ],
+            "ebc_sum": 0.7586,
+            "off_mass_mean": 0.0344,
+            "off_mass_max": 0.0473,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.049,
+            "smooth_max": 0.0629
+          },
+          {
+            "pair": [
+              "Oct",
+              "Nov"
+            ],
+            "ebc_sum": 0.578,
+            "off_mass_mean": 0.0189,
+            "off_mass_max": 0.0274,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0503,
+            "smooth_max": 0.0824
+          },
+          {
+            "pair": [
+              "Sep",
+              "Feb"
+            ],
+            "ebc_sum": 0.8576,
+            "off_mass_mean": 0.0348,
+            "off_mass_max": 0.0454,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0529,
+            "smooth_max": 0.0963
+          },
+          {
+            "pair": [
+              "Mar",
+              "May"
+            ],
+            "ebc_sum": 0.8098,
+            "off_mass_mean": 0.017,
+            "off_mass_max": 0.021,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0451,
+            "smooth_max": 0.062
+          },
+          {
+            "pair": [
+              "Jan",
+              "Jun"
+            ],
+            "ebc_sum": 0.8648,
+            "off_mass_mean": 0.0511,
+            "off_mass_max": 0.0656,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0542,
+            "smooth_max": 0.0758
+          },
+          {
+            "pair": [
+              "Jul",
+              "Jan"
+            ],
+            "ebc_sum": 0.8313,
+            "off_mass_mean": 0.0601,
+            "off_mass_max": 0.077,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0493,
+            "smooth_max": 0.0839
+          },
+          {
+            "pair": [
+              "Jan",
+              "Apr"
+            ],
+            "ebc_sum": 0.9173,
+            "off_mass_mean": 0.0318,
+            "off_mass_max": 0.0478,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0481,
+            "smooth_max": 0.0808
+          },
+          {
+            "pair": [
+              "Feb",
+              "Dec"
+            ],
+            "ebc_sum": 1.0623,
+            "off_mass_mean": 0.0292,
+            "off_mass_max": 0.0435,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0515,
+            "smooth_max": 0.0868
+          },
+          {
+            "pair": [
+              "May",
+              "Jun"
+            ],
+            "ebc_sum": 0.636,
+            "off_mass_mean": 0.0253,
+            "off_mass_max": 0.0324,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0466,
+            "smooth_max": 0.067
+          },
+          {
+            "pair": [
+              "Oct",
+              "May"
+            ],
+            "ebc_sum": 0.8708,
+            "off_mass_mean": 0.0268,
+            "off_mass_max": 0.0378,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0504,
+            "smooth_max": 0.1003
+          },
+          {
+            "pair": [
+              "Jan",
+              "Sep"
+            ],
+            "ebc_sum": 0.765,
+            "off_mass_mean": 0.0372,
+            "off_mass_max": 0.0517,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0521,
+            "smooth_max": 0.0882
+          },
+          {
+            "pair": [
+              "Nov",
+              "Oct"
+            ],
+            "ebc_sum": 0.578,
+            "off_mass_mean": 0.0189,
+            "off_mass_max": 0.0274,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0503,
+            "smooth_max": 0.0824
+          },
+          {
+            "pair": [
+              "Feb",
+              "Jan"
+            ],
+            "ebc_sum": 0.6451,
+            "off_mass_mean": 0.0462,
+            "off_mass_max": 0.0515,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0488,
+            "smooth_max": 0.0787
+          },
+          {
+            "pair": [
+              "Jun",
+              "Jan"
+            ],
+            "ebc_sum": 0.8648,
+            "off_mass_mean": 0.0511,
+            "off_mass_max": 0.0656,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0542,
+            "smooth_max": 0.0758
+          },
+          {
+            "pair": [
+              "Jun",
+              "Nov"
+            ],
+            "ebc_sum": 0.8149,
+            "off_mass_mean": 0.0268,
+            "off_mass_max": 0.0413,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0554,
+            "smooth_max": 0.0929
+          },
+          {
+            "pair": [
+              "Oct",
+              "Mar"
+            ],
+            "ebc_sum": 0.765,
+            "off_mass_mean": 0.0269,
+            "off_mass_max": 0.0347,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0535,
+            "smooth_max": 0.0821
+          },
+          {
+            "pair": [
+              "Aug",
+              "Feb"
+            ],
+            "ebc_sum": 0.8257,
+            "off_mass_mean": 0.0327,
+            "off_mass_max": 0.0435,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0519,
+            "smooth_max": 0.0911
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jun"
+            ],
+            "ebc_sum": 0.77,
+            "off_mass_mean": 0.0268,
+            "off_mass_max": 0.0346,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0463,
+            "smooth_max": 0.0681
+          },
+          {
+            "pair": [
+              "May",
+              "Mar"
+            ],
+            "ebc_sum": 0.8098,
+            "off_mass_mean": 0.017,
+            "off_mass_max": 0.021,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0451,
+            "smooth_max": 0.062
+          },
+          {
+            "pair": [
+              "Mar",
+              "Nov"
+            ],
+            "ebc_sum": 0.7211,
+            "off_mass_mean": 0.0174,
+            "off_mass_max": 0.0253,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0544,
+            "smooth_max": 0.0872
+          },
+          {
+            "pair": [
+              "Jun",
+              "Dec"
+            ],
+            "ebc_sum": 0.8743,
+            "off_mass_mean": 0.0288,
+            "off_mass_max": 0.044,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0533,
+            "smooth_max": 0.0872
+          },
+          {
+            "pair": [
+              "May",
+              "Oct"
+            ],
+            "ebc_sum": 0.8708,
+            "off_mass_mean": 0.0268,
+            "off_mass_max": 0.0378,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0504,
+            "smooth_max": 0.1003
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jul"
+            ],
+            "ebc_sum": 0.9005,
+            "off_mass_mean": 0.0349,
+            "off_mass_max": 0.0486,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0485,
+            "smooth_max": 0.0767
+          },
+          {
+            "pair": [
+              "Aug",
+              "Jan"
+            ],
+            "ebc_sum": 0.7427,
+            "off_mass_mean": 0.0374,
+            "off_mass_max": 0.053,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0532,
+            "smooth_max": 0.0841
+          },
+          {
+            "pair": [
+              "Oct",
+              "Jun"
+            ],
+            "ebc_sum": 0.8471,
+            "off_mass_mean": 0.0345,
+            "off_mass_max": 0.0422,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0542,
+            "smooth_max": 0.0856
+          },
+          {
+            "pair": [
+              "Feb",
+              "Aug"
+            ],
+            "ebc_sum": 0.8257,
+            "off_mass_mean": 0.0327,
+            "off_mass_max": 0.0435,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0519,
+            "smooth_max": 0.0911
+          },
+          {
+            "pair": [
+              "Sep",
+              "Jun"
+            ],
+            "ebc_sum": 0.7378,
+            "off_mass_mean": 0.0304,
+            "off_mass_max": 0.042,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0521,
+            "smooth_max": 0.0785
+          },
+          {
+            "pair": [
+              "Oct",
+              "Dec"
+            ],
+            "ebc_sum": 0.9702,
+            "off_mass_mean": 0.0206,
+            "off_mass_max": 0.0279,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 2,
+            "smooth_med": 0.0466,
+            "smooth_max": 0.0764
+          },
+          {
+            "pair": [
+              "Jan",
+              "Feb"
+            ],
+            "ebc_sum": 0.6451,
+            "off_mass_mean": 0.0462,
+            "off_mass_max": 0.0515,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0488,
+            "smooth_max": 0.0787
+          },
+          {
+            "pair": [
+              "Apr",
+              "Jul"
+            ],
+            "ebc_sum": 0.791,
+            "off_mass_mean": 0.0315,
+            "off_mass_max": 0.046,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 3,
+            "smooth_med": 0.0511,
+            "smooth_max": 0.084
+          },
+          {
+            "pair": [
+              "Mar",
+              "Sep"
+            ],
+            "ebc_sum": 0.7202,
+            "off_mass_mean": 0.0208,
+            "off_mass_max": 0.0285,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 6,
+            "smooth_med": 0.0533,
+            "smooth_max": 0.0767
+          },
+          {
+            "pair": [
+              "Aug",
+              "Mar"
+            ],
+            "ebc_sum": 0.6505,
+            "off_mass_mean": 0.0199,
+            "off_mass_max": 0.0266,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 5,
+            "smooth_med": 0.0475,
+            "smooth_max": 0.0725
+          },
+          {
+            "pair": [
+              "Jun",
+              "May"
+            ],
+            "ebc_sum": 0.636,
+            "off_mass_mean": 0.0253,
+            "off_mass_max": 0.0324,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 1,
+            "smooth_med": 0.0466,
+            "smooth_max": 0.067
+          },
+          {
+            "pair": [
+              "Jul",
+              "Mar"
+            ],
+            "ebc_sum": 0.6516,
+            "off_mass_mean": 0.0372,
+            "off_mass_max": 0.0514,
+            "valid_frac": 1.0,
+            "offpath_argmax_frac": 0.0,
+            "max_cyc_jump": 4,
+            "smooth_med": 0.0499,
+            "smooth_max": 0.0759
+          }
+        ]
+      }
+    }
+  }
+}

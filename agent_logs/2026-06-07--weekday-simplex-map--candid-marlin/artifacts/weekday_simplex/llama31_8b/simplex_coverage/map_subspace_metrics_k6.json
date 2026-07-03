@@ -1,0 +1,63 @@
+{
+  "model": "llama31_8b",
+  "carrier": "A day of the week:",
+  "k": 6,
+  "n_samples": 20000,
+  "margin": 0.6,
+  "layers": {
+    "25": {
+      "carrier_sanity_median_hellinger": 0.0431,
+      "cca_canonical_corr": [
+        0.977,
+        0.966,
+        0.952,
+        0.945,
+        0.932,
+        0.902
+      ],
+      "valid_fraction_of_box": 0.92,
+      "n_valid": 18405,
+      "n_samples": 20000,
+      "behaviour_cells_anchors": 157,
+      "behaviour_cells_valid_samples": 1232,
+      "behaviour_cells_new": 1075,
+      "coverage_gain_ratio": 7.85,
+      "argmax_day_counts_valid": {
+        "Mon": 3908,
+        "Tue": 2317,
+        "Wed": 1055,
+        "Thu": 2706,
+        "Fri": 3189,
+        "Sat": 2692,
+        "Sun": 2538
+      }
+    },
+    "31": {
+      "carrier_sanity_median_hellinger": 0.0113,
+      "cca_canonical_corr": [
+        0.987,
+        0.979,
+        0.973,
+        0.97,
+        0.966,
+        0.957
+      ],
+      "valid_fraction_of_box": 0.867,
+      "n_valid": 17349,
+      "n_samples": 20000,
+      "behaviour_cells_anchors": 161,
+      "behaviour_cells_valid_samples": 1223,
+      "behaviour_cells_new": 1065,
+      "coverage_gain_ratio": 7.61,
+      "argmax_day_counts_valid": {
+        "Mon": 3180,
+        "Tue": 3193,
+        "Wed": 2285,
+        "Thu": 2633,
+        "Fri": 2257,
+        "Sat": 2174,
+        "Sun": 1627
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Green",
+  "k": 32,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Green",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 4249,
+    "frac_valid_in_deleted_region": 0.081,
+    "n_valid_in_deleted_region": 346,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 23,
+    "recovered_cells": 18,
+    "cell_recovery_rate": 0.783,
+    "projection_recon_median_hellinger": 0.13,
+    "projection_recon_keeps_argmax_frac": 0.605
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 43,
+    "n_train": 84,
+    "n_valid_samples": 3922,
+    "frac_valid_in_deleted_region": 0.047,
+    "n_valid_in_deleted_region": 186,
+    "max_P_target_recovered": 0.987,
+    "held_region_cells": 33,
+    "recovered_cells": 29,
+    "cell_recovery_rate": 0.879,
+    "projection_recon_median_hellinger": 0.133,
+    "projection_recon_keeps_argmax_frac": 0.349
+  }
+}

@@ -1,0 +1,62 @@
+node=node22
+NVIDIA RTX A6000, 49140 MiB
+NVIDIA RTX A6000, 49140 MiB
+================ CAPTURE activations (base, fewshot_neutral) ================
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.78it/s]
+model=llama31_8b layers=32 hidden=4096 n_prompts=225
+  batch 0: 16/225
+  batch 1: 32/225
+  batch 2: 48/225
+  batch 3: 64/225
+  batch 4: 80/225
+  batch 5: 96/225
+  batch 6: 112/225
+  batch 7: 128/225
+  batch 8: 144/225
+  batch 9: 160/225
+  batch 10: 176/225
+  batch 11: 192/225
+  batch 12: 208/225
+  batch 13: 224/225
+  batch 14: 225/225
+saved activations (225, 33, 4096) (bf16); retained 194/225 -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage
+================ SUBSPACE comparison (behaviour vs activation) ================
+retained M=194, layers(+embed)=33, hidden=4096
+behaviour subspace: 6 dims, EVR [0.241 0.228 0.151 0.124 0.1   0.1  ]
+  L 0 actPR=  1.8 meanCanon=0.311 nCanon>0.9=0 R2cv=-13166538752.019
+  L 1 actPR= 10.0 meanCanon=0.519 nCanon>0.9=0 R2cv=-53.934
+  L 2 actPR= 10.6 meanCanon=0.518 nCanon>0.9=0 R2cv=-40.514
+  L 3 actPR= 11.5 meanCanon=0.473 nCanon>0.9=0 R2cv=-34.414
+  L 4 actPR= 12.2 meanCanon=0.418 nCanon>0.9=0 R2cv=-14.903
+  L 5 actPR= 11.6 meanCanon=0.431 nCanon>0.9=0 R2cv=-10.155
+  L 6 actPR= 10.4 meanCanon=0.390 nCanon>0.9=0 R2cv=-9.134
+  L 7 actPR= 10.4 meanCanon=0.373 nCanon>0.9=0 R2cv=-12.034
+  L 8 actPR=  9.9 meanCanon=0.423 nCanon>0.9=0 R2cv=-6.345
+  L 9 actPR= 10.0 meanCanon=0.425 nCanon>0.9=0 R2cv=-5.679
+  L10 actPR= 10.3 meanCanon=0.452 nCanon>0.9=0 R2cv=-2.733
+  L11 actPR= 10.2 meanCanon=0.441 nCanon>0.9=0 R2cv=-3.680
+  L12 actPR=  9.9 meanCanon=0.450 nCanon>0.9=0 R2cv=-5.354
+  L13 actPR= 10.5 meanCanon=0.481 nCanon>0.9=0 R2cv=-3.178
+  L14 actPR= 11.1 meanCanon=0.483 nCanon>0.9=0 R2cv=-1.088
+  L15 actPR= 11.8 meanCanon=0.528 nCanon>0.9=0 R2cv=-0.757
+  L16 actPR= 12.4 meanCanon=0.543 nCanon>0.9=0 R2cv=-0.286
+  L17 actPR= 12.7 meanCanon=0.537 nCanon>0.9=0 R2cv=-0.754
+  L18 actPR= 13.1 meanCanon=0.548 nCanon>0.9=0 R2cv=-0.395
+  L19 actPR= 16.2 meanCanon=0.821 nCanon>0.9=2 R2cv=0.362
+  L20 actPR= 16.8 meanCanon=0.831 nCanon>0.9=2 R2cv=0.317
+  L21 actPR= 17.7 meanCanon=0.839 nCanon>0.9=2 R2cv=0.337
+  L22 actPR= 18.4 meanCanon=0.854 nCanon>0.9=2 R2cv=0.423
+  L23 actPR= 19.4 meanCanon=0.900 nCanon>0.9=3 R2cv=0.573
+  L24 actPR= 19.1 meanCanon=0.923 nCanon>0.9=4 R2cv=0.641
+  L25 actPR= 18.8 meanCanon=0.924 nCanon>0.9=5 R2cv=0.694
+  L26 actPR= 17.7 meanCanon=0.929 nCanon>0.9=5 R2cv=0.711
+  L27 actPR= 17.6 meanCanon=0.934 nCanon>0.9=5 R2cv=0.724
+  L28 actPR= 17.8 meanCanon=0.942 nCanon>0.9=5 R2cv=0.763
+  L29 actPR= 17.7 meanCanon=0.951 nCanon>0.9=6 R2cv=0.812
+  L30 actPR= 17.4 meanCanon=0.957 nCanon>0.9=6 R2cv=0.832
+  L31 actPR= 18.0 meanCanon=0.965 nCanon>0.9=6 R2cv=0.858
+  L32 actPR= 18.0 meanCanon=0.962 nCanon>0.9=6 R2cv=0.813
+
+best linear-decode layer L31 R2cv=0.858; best subspace-align layer L31 meanCanon=0.965
+metrics + figures -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage
+ACTS DONE

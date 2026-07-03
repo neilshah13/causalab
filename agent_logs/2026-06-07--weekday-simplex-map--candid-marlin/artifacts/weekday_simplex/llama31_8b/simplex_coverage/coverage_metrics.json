@@ -1,0 +1,108 @@
+{
+  "model": "llama31_8b",
+  "frame": "fewshot_neutral",
+  "use_chat_template": false,
+  "n_total": 225,
+  "n_retained": 194,
+  "frac_retained": 0.862,
+  "tokenisation_all_single_token": true,
+  "per_family_yield": {
+    "A_open": {
+      "kept": 7,
+      "total": 12
+    },
+    "B_neg1": {
+      "kept": 35,
+      "total": 49
+    },
+    "C_neg2": {
+      "kept": 21,
+      "total": 21
+    },
+    "D_letter": {
+      "kept": 5,
+      "total": 10
+    },
+    "D_letter_neg": {
+      "kept": 5,
+      "total": 5
+    },
+    "E_succ": {
+      "kept": 42,
+      "total": 42
+    },
+    "F_semantic": {
+      "kept": 21,
+      "total": 24
+    },
+    "G_ordinal": {
+      "kept": 20,
+      "total": 20
+    },
+    "H_graded": {
+      "kept": 4,
+      "total": 4
+    },
+    "H_today": {
+      "kept": 14,
+      "total": 14
+    },
+    "I_multi": {
+      "kept": 20,
+      "total": 24
+    }
+  },
+  "hellinger_pca": {
+    "explained_variance_ratio": [
+      0.2417,
+      0.2274,
+      0.1515,
+      0.1236,
+      0.1003,
+      0.0996,
+      0.0517,
+      0.004
+    ],
+    "cumulative": [
+      0.2417,
+      0.4692,
+      0.6207,
+      0.7443,
+      0.8447,
+      0.9443,
+      0.996,
+      1.0
+    ],
+    "n_dims_for_90pct_var": 6,
+    "participation_ratio": 5.845
+  },
+  "entropy": {
+    "mean": 0.803,
+    "max_possible": 1.946,
+    "frac_interior_ge_half_logK": 0.392,
+    "min": 0.012,
+    "max": 1.93
+  },
+  "argmax_day_counts": {
+    "Mon": 49,
+    "Tue": 26,
+    "Wed": 31,
+    "Thu": 21,
+    "Fri": 29,
+    "Sat": 19,
+    "Sun": 19
+  },
+  "all_days_reachable": true,
+  "pairwise_hellinger": {
+    "min": 0.0088,
+    "p10": 0.3875,
+    "median": 0.7417,
+    "p90": 0.9524,
+    "max": 0.9913
+  },
+  "hull_volume_3d": {
+    "retained": 0.63637,
+    "seven_vertices_ref": 0.28974,
+    "ratio": 2.196
+  }
+}

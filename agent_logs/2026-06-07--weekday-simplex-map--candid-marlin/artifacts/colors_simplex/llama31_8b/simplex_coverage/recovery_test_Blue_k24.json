@@ -1,0 +1,36 @@
+{
+  "concept": "colors",
+  "layer": 31,
+  "holdout": "Blue",
+  "k": 24,
+  "margin": 1.5,
+  "n_samples": 20000,
+  "region_holdout": {
+    "name": "region:Blue",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 6014,
+    "frac_valid_in_deleted_region": 0.053,
+    "n_valid_in_deleted_region": 317,
+    "max_P_target_recovered": 0.998,
+    "held_region_cells": 4,
+    "recovered_cells": 4,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.685,
+    "projection_recon_keeps_argmax_frac": 0.2
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 5,
+    "n_train": 122,
+    "n_valid_samples": 6926,
+    "frac_valid_in_deleted_region": 0.111,
+    "n_valid_in_deleted_region": 768,
+    "max_P_target_recovered": 0.998,
+    "held_region_cells": 5,
+    "recovered_cells": 5,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.093,
+    "projection_recon_keeps_argmax_frac": 0.0
+  }
+}

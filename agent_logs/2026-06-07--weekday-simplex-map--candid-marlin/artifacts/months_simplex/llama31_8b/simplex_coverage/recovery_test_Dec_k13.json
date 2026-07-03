@@ -1,0 +1,43 @@
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Dec",
+  "k": 13,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Dec",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 8159,
+    "frac_valid_in_deleted_region": 0.024,
+    "n_valid_in_deleted_region": 196,
+    "max_P_target_recovered": 0.977,
+    "max_P_per_deleted": {
+      "Dec": 0.977
+    },
+    "held_region_cells": 12,
+    "recovered_cells": 11,
+    "cell_recovery_rate": 0.917,
+    "projection_recon_median_hellinger": 0.24,
+    "projection_recon_keeps_argmax_frac": 0.714
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 7426,
+    "frac_valid_in_deleted_region": 0.107,
+    "n_valid_in_deleted_region": 791,
+    "max_P_target_recovered": 0.999,
+    "max_P_per_deleted": {
+      "Dec": 0.999
+    },
+    "held_region_cells": 20,
+    "recovered_cells": 20,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.049,
+    "projection_recon_keeps_argmax_frac": 0.143
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "concept": "months",
+  "layer": 31,
+  "k": 10,
+  "n_targets": 179,
+  "edge": {
+    "n": 66,
+    "median_hellinger": 0.192,
+    "p90_hellinger": 0.369,
+    "frac_reached_0.10": 0.015,
+    "frac_reached_0.20": 0.561
+  },
+  "interior": {
+    "n": 60,
+    "median_hellinger": 0.196,
+    "p90_hellinger": 0.244,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.55
+  },
+  "sparse": {
+    "n": 40,
+    "median_hellinger": 0.243,
+    "p90_hellinger": 0.347,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.225
+  },
+  "uniform": {
+    "n": 1,
+    "median_hellinger": 0.146,
+    "p90_hellinger": 0.146,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 1.0
+  },
+  "vertex": {
+    "n": 12,
+    "median_hellinger": 0.097,
+    "p90_hellinger": 0.152,
+    "frac_reached_0.10": 0.583,
+    "frac_reached_0.20": 0.917
+  },
+  "overall_median_hellinger": 0.199,
+  "overall_frac_reached_0.20": 0.508
+}

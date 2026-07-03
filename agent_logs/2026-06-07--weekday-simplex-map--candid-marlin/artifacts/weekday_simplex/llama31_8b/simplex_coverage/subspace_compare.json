@@ -1,0 +1,520 @@
+{
+  "model": "llama31_8b",
+  "frame": "fewshot_neutral",
+  "M_retained": 194,
+  "behaviour_subspace_dims": 6,
+  "behaviour_evr": [
+    0.241,
+    0.228,
+    0.151,
+    0.124,
+    0.1,
+    0.1
+  ],
+  "act_pcs_used": 40,
+  "best_layer_linear_decode": {
+    "layer": 31,
+    "r2_cv": 0.858
+  },
+  "best_layer_subspace_align": {
+    "layer": 31,
+    "mean_canon": 0.965
+  },
+  "per_layer": [
+    {
+      "layer": 0,
+      "act_participation_ratio": 1.78,
+      "canonical_correlations": [
+        0.468,
+        0.356,
+        0.328,
+        0.299,
+        0.23,
+        0.187
+      ],
+      "mean_top_canon": 0.311,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -13166538752.019
+    },
+    {
+      "layer": 1,
+      "act_participation_ratio": 9.97,
+      "canonical_correlations": [
+        0.659,
+        0.571,
+        0.557,
+        0.507,
+        0.466,
+        0.351
+      ],
+      "mean_top_canon": 0.519,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -53.934
+    },
+    {
+      "layer": 2,
+      "act_participation_ratio": 10.62,
+      "canonical_correlations": [
+        0.646,
+        0.596,
+        0.556,
+        0.525,
+        0.453,
+        0.329
+      ],
+      "mean_top_canon": 0.518,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -40.514
+    },
+    {
+      "layer": 3,
+      "act_participation_ratio": 11.48,
+      "canonical_correlations": [
+        0.59,
+        0.576,
+        0.51,
+        0.474,
+        0.405,
+        0.282
+      ],
+      "mean_top_canon": 0.473,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -34.414
+    },
+    {
+      "layer": 4,
+      "act_participation_ratio": 12.16,
+      "canonical_correlations": [
+        0.586,
+        0.531,
+        0.492,
+        0.406,
+        0.276,
+        0.219
+      ],
+      "mean_top_canon": 0.418,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -14.903
+    },
+    {
+      "layer": 5,
+      "act_participation_ratio": 11.61,
+      "canonical_correlations": [
+        0.594,
+        0.523,
+        0.454,
+        0.425,
+        0.318,
+        0.27
+      ],
+      "mean_top_canon": 0.431,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -10.155
+    },
+    {
+      "layer": 6,
+      "act_participation_ratio": 10.41,
+      "canonical_correlations": [
+        0.548,
+        0.539,
+        0.417,
+        0.362,
+        0.28,
+        0.195
+      ],
+      "mean_top_canon": 0.39,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -9.134
+    },
+    {
+      "layer": 7,
+      "act_participation_ratio": 10.36,
+      "canonical_correlations": [
+        0.574,
+        0.534,
+        0.356,
+        0.339,
+        0.245,
+        0.193
+      ],
+      "mean_top_canon": 0.373,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -12.034
+    },
+    {
+      "layer": 8,
+      "act_participation_ratio": 9.88,
+      "canonical_correlations": [
+        0.607,
+        0.588,
+        0.433,
+        0.401,
+        0.271,
+        0.24
+      ],
+      "mean_top_canon": 0.423,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -6.345
+    },
+    {
+      "layer": 9,
+      "act_participation_ratio": 9.97,
+      "canonical_correlations": [
+        0.672,
+        0.604,
+        0.411,
+        0.348,
+        0.274,
+        0.243
+      ],
+      "mean_top_canon": 0.425,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -5.679
+    },
+    {
+      "layer": 10,
+      "act_participation_ratio": 10.25,
+      "canonical_correlations": [
+        0.715,
+        0.695,
+        0.437,
+        0.354,
+        0.283,
+        0.229
+      ],
+      "mean_top_canon": 0.452,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -2.733
+    },
+    {
+      "layer": 11,
+      "act_participation_ratio": 10.18,
+      "canonical_correlations": [
+        0.709,
+        0.691,
+        0.424,
+        0.338,
+        0.259,
+        0.227
+      ],
+      "mean_top_canon": 0.441,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -3.68
+    },
+    {
+      "layer": 12,
+      "act_participation_ratio": 9.9,
+      "canonical_correlations": [
+        0.715,
+        0.685,
+        0.441,
+        0.381,
+        0.259,
+        0.218
+      ],
+      "mean_top_canon": 0.45,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -5.354
+    },
+    {
+      "layer": 13,
+      "act_participation_ratio": 10.47,
+      "canonical_correlations": [
+        0.735,
+        0.706,
+        0.494,
+        0.387,
+        0.293,
+        0.273
+      ],
+      "mean_top_canon": 0.481,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -3.178
+    },
+    {
+      "layer": 14,
+      "act_participation_ratio": 11.14,
+      "canonical_correlations": [
+        0.73,
+        0.712,
+        0.493,
+        0.394,
+        0.315,
+        0.257
+      ],
+      "mean_top_canon": 0.483,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -1.088
+    },
+    {
+      "layer": 15,
+      "act_participation_ratio": 11.8,
+      "canonical_correlations": [
+        0.818,
+        0.759,
+        0.622,
+        0.407,
+        0.284,
+        0.276
+      ],
+      "mean_top_canon": 0.528,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -0.757
+    },
+    {
+      "layer": 16,
+      "act_participation_ratio": 12.36,
+      "canonical_correlations": [
+        0.827,
+        0.779,
+        0.583,
+        0.458,
+        0.328,
+        0.281
+      ],
+      "mean_top_canon": 0.543,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -0.286
+    },
+    {
+      "layer": 17,
+      "act_participation_ratio": 12.67,
+      "canonical_correlations": [
+        0.809,
+        0.79,
+        0.55,
+        0.456,
+        0.347,
+        0.268
+      ],
+      "mean_top_canon": 0.537,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -0.754
+    },
+    {
+      "layer": 18,
+      "act_participation_ratio": 13.14,
+      "canonical_correlations": [
+        0.796,
+        0.781,
+        0.583,
+        0.465,
+        0.371,
+        0.292
+      ],
+      "mean_top_canon": 0.548,
+      "n_canon_above_0.9": 0,
+      "linear_decode_r2_cv": -0.395
+    },
+    {
+      "layer": 19,
+      "act_participation_ratio": 16.21,
+      "canonical_correlations": [
+        0.946,
+        0.923,
+        0.854,
+        0.777,
+        0.734,
+        0.69
+      ],
+      "mean_top_canon": 0.821,
+      "n_canon_above_0.9": 2,
+      "linear_decode_r2_cv": 0.362
+    },
+    {
+      "layer": 20,
+      "act_participation_ratio": 16.83,
+      "canonical_correlations": [
+        0.953,
+        0.921,
+        0.874,
+        0.813,
+        0.742,
+        0.685
+      ],
+      "mean_top_canon": 0.831,
+      "n_canon_above_0.9": 2,
+      "linear_decode_r2_cv": 0.317
+    },
+    {
+      "layer": 21,
+      "act_participation_ratio": 17.66,
+      "canonical_correlations": [
+        0.954,
+        0.923,
+        0.879,
+        0.828,
+        0.747,
+        0.702
+      ],
+      "mean_top_canon": 0.839,
+      "n_canon_above_0.9": 2,
+      "linear_decode_r2_cv": 0.337
+    },
+    {
+      "layer": 22,
+      "act_participation_ratio": 18.44,
+      "canonical_correlations": [
+        0.97,
+        0.946,
+        0.885,
+        0.833,
+        0.776,
+        0.716
+      ],
+      "mean_top_canon": 0.854,
+      "n_canon_above_0.9": 2,
+      "linear_decode_r2_cv": 0.423
+    },
+    {
+      "layer": 23,
+      "act_participation_ratio": 19.43,
+      "canonical_correlations": [
+        0.972,
+        0.945,
+        0.918,
+        0.887,
+        0.852,
+        0.825
+      ],
+      "mean_top_canon": 0.9,
+      "n_canon_above_0.9": 3,
+      "linear_decode_r2_cv": 0.573
+    },
+    {
+      "layer": 24,
+      "act_participation_ratio": 19.06,
+      "canonical_correlations": [
+        0.974,
+        0.958,
+        0.932,
+        0.921,
+        0.886,
+        0.865
+      ],
+      "mean_top_canon": 0.923,
+      "n_canon_above_0.9": 4,
+      "linear_decode_r2_cv": 0.641
+    },
+    {
+      "layer": 25,
+      "act_participation_ratio": 18.75,
+      "canonical_correlations": [
+        0.975,
+        0.956,
+        0.94,
+        0.916,
+        0.906,
+        0.849
+      ],
+      "mean_top_canon": 0.924,
+      "n_canon_above_0.9": 5,
+      "linear_decode_r2_cv": 0.694
+    },
+    {
+      "layer": 26,
+      "act_participation_ratio": 17.68,
+      "canonical_correlations": [
+        0.975,
+        0.962,
+        0.943,
+        0.915,
+        0.914,
+        0.862
+      ],
+      "mean_top_canon": 0.929,
+      "n_canon_above_0.9": 5,
+      "linear_decode_r2_cv": 0.711
+    },
+    {
+      "layer": 27,
+      "act_participation_ratio": 17.6,
+      "canonical_correlations": [
+        0.974,
+        0.964,
+        0.951,
+        0.927,
+        0.917,
+        0.869
+      ],
+      "mean_top_canon": 0.934,
+      "n_canon_above_0.9": 5,
+      "linear_decode_r2_cv": 0.724
+    },
+    {
+      "layer": 28,
+      "act_participation_ratio": 17.82,
+      "canonical_correlations": [
+        0.976,
+        0.964,
+        0.952,
+        0.937,
+        0.925,
+        0.895
+      ],
+      "mean_top_canon": 0.942,
+      "n_canon_above_0.9": 5,
+      "linear_decode_r2_cv": 0.763
+    },
+    {
+      "layer": 29,
+      "act_participation_ratio": 17.66,
+      "canonical_correlations": [
+        0.977,
+        0.969,
+        0.958,
+        0.948,
+        0.929,
+        0.922
+      ],
+      "mean_top_canon": 0.951,
+      "n_canon_above_0.9": 6,
+      "linear_decode_r2_cv": 0.812
+    },
+    {
+      "layer": 30,
+      "act_participation_ratio": 17.44,
+      "canonical_correlations": [
+        0.979,
+        0.974,
+        0.964,
+        0.954,
+        0.94,
+        0.931
+      ],
+      "mean_top_canon": 0.957,
+      "n_canon_above_0.9": 6,
+      "linear_decode_r2_cv": 0.832
+    },
+    {
+      "layer": 31,
+      "act_participation_ratio": 18.01,
+      "canonical_correlations": [
+        0.985,
+        0.975,
+        0.971,
+        0.967,
+        0.956,
+        0.933
+      ],
+      "mean_top_canon": 0.965,
+      "n_canon_above_0.9": 6,
+      "linear_decode_r2_cv": 0.858
+    },
+    {
+      "layer": 32,
+      "act_participation_ratio": 18.01,
+      "canonical_correlations": [
+        0.984,
+        0.978,
+        0.969,
+        0.964,
+        0.946,
+        0.93
+      ],
+      "mean_top_canon": 0.962,
+      "n_canon_above_0.9": 6,
+      "linear_decode_r2_cv": 0.813
+    }
+  ]
+}

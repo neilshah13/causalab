@@ -1,0 +1,115 @@
+{
+  "concept": "colors",
+  "model": "llama31_8b",
+  "frame": "fewshot_neutral",
+  "n_tokens": 45,
+  "n_total": 255,
+  "n_retained": 127,
+  "frac_retained": 0.498,
+  "all_tokens_single": false,
+  "per_family_yield": {
+    "A_open": {
+      "kept": 6,
+      "total": 10
+    },
+    "B_neg1": {
+      "kept": 72,
+      "total": 180
+    },
+    "D_letter": {
+      "kept": 8,
+      "total": 18
+    },
+    "D_letter_neg": {
+      "kept": 18,
+      "total": 18
+    },
+    "F_group": {
+      "kept": 5,
+      "total": 5
+    },
+    "F_object": {
+      "kept": 13,
+      "total": 14
+    },
+    "F_shade": {
+      "kept": 0,
+      "total": 4
+    },
+    "I_multi": {
+      "kept": 5,
+      "total": 6
+    }
+  },
+  "hellinger_pca": {
+    "n_dims_for_90pct": 10,
+    "participation_ratio": 9.88,
+    "evr_head": [
+      0.182,
+      0.132,
+      0.118,
+      0.099,
+      0.085,
+      0.083,
+      0.069,
+      0.054,
+      0.048,
+      0.031,
+      0.026,
+      0.022
+    ]
+  },
+  "entropy": {
+    "mean": 1.764,
+    "max_logK": 3.807,
+    "frac_interior_ge_half_logK": 0.638
+  },
+  "argmax_counts": {
+    "Red": 33,
+    "Orange": 9,
+    "Yellow": 9,
+    "Green": 43,
+    "Blue": 5,
+    "Purple": 2,
+    "Pink": 1,
+    "Brown": 2,
+    "Black": 7,
+    "White": 7,
+    "Gray": 0,
+    "Grey": 0,
+    "Cyan": 0,
+    "Violet": 1,
+    "Turquoise": 0,
+    "Teal": 0,
+    "Navy": 0,
+    "Olive": 0,
+    "Lime": 0,
+    "Aqua": 0,
+    "Gold": 4,
+    "Silver": 4,
+    "Beige": 0,
+    "Tan": 0,
+    "Peach": 0,
+    "Coral": 0,
+    "Salmon": 0,
+    "Crimson": 0,
+    "Scarlet": 0,
+    "Lavender": 0,
+    "Plum": 0,
+    "Mint": 0,
+    "Ivory": 0,
+    "Charcoal": 0,
+    "Amber": 0,
+    "Azure": 0,
+    "Rose": 0,
+    "Ruby": 0,
+    "Emerald": 0,
+    "Sapphire": 0,
+    "Jade": 0,
+    "Mustard": 0,
+    "Cream": 0,
+    "Bronze": 0,
+    "Copper": 0
+  },
+  "all_tokens_reachable": false
+}

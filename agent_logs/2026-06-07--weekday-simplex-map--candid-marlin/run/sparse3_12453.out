@@ -1,0 +1,16 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.21it/s]
+keep=Mon,Tue,Wed,Thu (126 anchors), held-out days=['Fri', 'Sat', 'Sun']
+  cca  k= 4: valid=10365 recovered 1/3 held-out days (Sat)
+  cca  k= 8: valid= 7569 recovered 3/3 held-out days (Fri, Sat, Sun)
+  cca  k= 8: valid= 7555 recovered 3/3 held-out days (Fri, Sat, Sun)
+  cca  k= 8: valid= 7449 recovered 3/3 held-out days (Fri, Sat, Sun)
+  pca  k= 4: valid= 8648 recovered 1/3 held-out days (Sat)
+  pca  k= 8: valid= 4775 recovered 3/3 held-out days (Fri, Sat, Sun)
+  pca  k=12: valid= 3992 recovered 3/3 held-out days (Fri, Sat, Sun)
+  pca  k=20: valid= 2838 recovered 3/3 held-out days (Fri, Sat, Sun)
+  diff k= 4: valid= 6210 recovered 1/3 held-out days (Sat)
+  diff k= 8: valid= 4630 recovered 2/3 held-out days (Fri, Sun)
+  diff k=12: valid= 3739 recovered 3/3 held-out days (Fri, Sat, Sun)
+  diff k=20: valid= 2452 recovered 3/3 held-out days (Fri, Sat, Sun)
+saved -> sparse_recovery_MonTueWedThu.json
+SPARSE3 DONE

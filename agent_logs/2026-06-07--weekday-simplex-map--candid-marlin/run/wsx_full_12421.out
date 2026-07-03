@@ -1,0 +1,24 @@
+node=node22 gpu=0
+NVIDIA RTX A6000, 49140 MiB
+NVIDIA RTX A6000, 49140 MiB
+================ FULL llama31_8b / fewshot_neutral ================
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.21it/s]
+
+=== FULL llama31_8b ===
+retained 78/225 = 35%
+Hellinger-PCA: 5 dims for 90% var, participation ratio 4.874
+interior frac 0.192, all days reachable: True
+argmax day counts: {'Mon': 18, 'Tue': 11, 'Wed': 14, 'Thu': 5, 'Fri': 16, 'Sat': 8, 'Sun': 6}
+pairwise Hellinger median 0.8354 (min 0.0175, max 0.9575)
+artifacts -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage
+================ FULL llama31_8b_instruct / i_oneword ================
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.91it/s]
+
+=== FULL llama31_8b_instruct ===
+retained 221/225 = 98%
+Hellinger-PCA: 6 dims for 90% var, participation ratio 5.673
+interior frac 0.258, all days reachable: True
+argmax day counts: {'Mon': 75, 'Tue': 29, 'Wed': 38, 'Thu': 18, 'Fri': 20, 'Sat': 14, 'Sun': 27}
+pairwise Hellinger median 0.8642 (min 0.0008, max 0.9998)
+artifacts -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b_instruct/simplex_coverage
+FULL DONE

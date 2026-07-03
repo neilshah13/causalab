@@ -1,0 +1,43 @@
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "k": 8,
+  "n_targets": 129,
+  "edge": {
+    "n": 21,
+    "median_hellinger": 0.152,
+    "p90_hellinger": 0.225,
+    "frac_reached_0.10": 0.238,
+    "frac_reached_0.20": 0.857
+  },
+  "interior": {
+    "n": 60,
+    "median_hellinger": 0.203,
+    "p90_hellinger": 0.298,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.5
+  },
+  "sparse": {
+    "n": 40,
+    "median_hellinger": 0.218,
+    "p90_hellinger": 0.284,
+    "frac_reached_0.10": 0.025,
+    "frac_reached_0.20": 0.375
+  },
+  "uniform": {
+    "n": 1,
+    "median_hellinger": 0.165,
+    "p90_hellinger": 0.165,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 1.0
+  },
+  "vertex": {
+    "n": 7,
+    "median_hellinger": 0.03,
+    "p90_hellinger": 0.071,
+    "frac_reached_0.10": 1.0,
+    "frac_reached_0.20": 1.0
+  },
+  "overall_median_hellinger": 0.194,
+  "overall_frac_reached_0.20": 0.55
+}

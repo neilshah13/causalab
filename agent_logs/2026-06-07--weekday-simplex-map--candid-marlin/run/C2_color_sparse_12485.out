@@ -1,0 +1,13 @@
+node=node15
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 100.23it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+slurmstepd-node15: error: *** JOB 12485 ON node15 CANCELLED AT 2026-06-10T06:29:39 DUE TO TIME LIMIT ***

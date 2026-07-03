@@ -1,0 +1,10 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 90.87it/s]
+L19: dumped 30000 samples (valid 0.97) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/geometry_L19.npz
+L23: dumped 30000 samples (valid 0.88) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/geometry_L23.npz
+L27: dumped 30000 samples (valid 0.80) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/geometry_L27.npz
+L31: dumped 30000 samples (valid 0.81) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/geometry_L31.npz
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 90.88it/s]
+L23: dumped 30000 samples (valid 0.93) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/geometry_L23.npz
+L31: dumped 30000 samples (valid 0.74) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/geometry_L31.npz
+G1 DONE

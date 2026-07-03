@@ -1,0 +1,306 @@
+{
+  "concept": "weekdays",
+  "layers": {
+    "19": {
+      "n_valid": 29081,
+      "k": 8,
+      "isometry_r_global": 0.455,
+      "isometry_r_local": 0.293,
+      "isometry_r_anchors": 0.386,
+      "jacobian": {
+        "sigma_max_cv": 0.3,
+        "frobenius_cv": 0.277,
+        "principal_angle_to_global_deg_med": 75.3,
+        "principal_angle_p90": 87.3
+      },
+      "linear_forward_R2_anchors": 0.655,
+      "linear_forward_R2_box_samples": -3.735,
+      "linear_residual_hellinger_med": 1.08,
+      "density": {
+        "median_dist_to_anchor": 70.28,
+        "p90_dist_to_anchor": 90.22,
+        "median_anchor_NN_spacing": 12.33
+      },
+      "ring": {
+        "circular_order_match": "5/7",
+        "centroid_angles_deg": [
+          -57.5,
+          146.3,
+          157.6,
+          -123.4,
+          58.6,
+          -37.8,
+          33.5
+        ]
+      },
+      "chart_breakdown_by_distance": [
+        {
+          "nn_range": "1-2",
+          "n": 51,
+          "chart_resid_med": 0.302,
+          "entropy_med": 0.74,
+          "frac_near_vertex": 0.22
+        },
+        {
+          "nn_range": "2-3",
+          "n": 504,
+          "chart_resid_med": 0.465,
+          "entropy_med": 0.84,
+          "frac_near_vertex": 0.21
+        },
+        {
+          "nn_range": "3-4",
+          "n": 2272,
+          "chart_resid_med": 0.652,
+          "entropy_med": 0.75,
+          "frac_near_vertex": 0.26
+        },
+        {
+          "nn_range": "4-6",
+          "n": 14340,
+          "chart_resid_med": 0.968,
+          "entropy_med": 0.68,
+          "frac_near_vertex": 0.3
+        },
+        {
+          "nn_range": "6-10",
+          "n": 11913,
+          "chart_resid_med": 1.366,
+          "entropy_med": 0.69,
+          "frac_near_vertex": 0.29
+        }
+      ]
+    },
+    "23": {
+      "n_valid": 46280,
+      "k": 8,
+      "isometry_r_global": 0.378,
+      "isometry_r_local": 0.329,
+      "isometry_r_anchors": 0.642,
+      "jacobian": {
+        "sigma_max_cv": 0.545,
+        "frobenius_cv": 0.559,
+        "principal_angle_to_global_deg_med": 77.8,
+        "principal_angle_p90": 86.4
+      },
+      "linear_forward_R2_anchors": 0.782,
+      "linear_forward_R2_box_samples": -1.42,
+      "linear_residual_hellinger_med": 0.713,
+      "density": {
+        "median_dist_to_anchor": 60.42,
+        "p90_dist_to_anchor": 97.83,
+        "median_anchor_NN_spacing": 13.59
+      },
+      "ring": {
+        "circular_order_match": "7/7",
+        "centroid_angles_deg": [
+          76.8,
+          141.8,
+          -178.9,
+          -128.0,
+          -78.8,
+          -25.2,
+          32.3
+        ]
+      },
+      "chart_breakdown_by_distance": [
+        {
+          "nn_range": "0-1",
+          "n": 17573,
+          "chart_resid_med": 0.212,
+          "entropy_med": 0.78,
+          "frac_near_vertex": 0.29
+        },
+        {
+          "nn_range": "1-2",
+          "n": 2444,
+          "chart_resid_med": 0.245,
+          "entropy_med": 0.7,
+          "frac_near_vertex": 0.32
+        },
+        {
+          "nn_range": "2-3",
+          "n": 282,
+          "chart_resid_med": 0.479,
+          "entropy_med": 0.55,
+          "frac_near_vertex": 0.35
+        },
+        {
+          "nn_range": "3-4",
+          "n": 1414,
+          "chart_resid_med": 0.644,
+          "entropy_med": 0.44,
+          "frac_near_vertex": 0.42
+        },
+        {
+          "nn_range": "4-6",
+          "n": 11234,
+          "chart_resid_med": 0.925,
+          "entropy_med": 0.42,
+          "frac_near_vertex": 0.42
+        },
+        {
+          "nn_range": "6-10",
+          "n": 13325,
+          "chart_resid_med": 1.281,
+          "entropy_med": 0.42,
+          "frac_near_vertex": 0.42
+        }
+      ]
+    },
+    "27": {
+      "n_valid": 23960,
+      "k": 8,
+      "isometry_r_global": 0.502,
+      "isometry_r_local": 0.332,
+      "isometry_r_anchors": 0.741,
+      "jacobian": {
+        "sigma_max_cv": 0.267,
+        "frobenius_cv": 0.25,
+        "principal_angle_to_global_deg_med": 82.3,
+        "principal_angle_p90": 88.6
+      },
+      "linear_forward_R2_anchors": 0.852,
+      "linear_forward_R2_box_samples": -3.052,
+      "linear_residual_hellinger_med": 1.118,
+      "density": {
+        "median_dist_to_anchor": 94.47,
+        "p90_dist_to_anchor": 121.05,
+        "median_anchor_NN_spacing": 14.0
+      },
+      "ring": {
+        "circular_order_match": "7/7",
+        "centroid_angles_deg": [
+          79.0,
+          35.1,
+          4.5,
+          -57.8,
+          -114.2,
+          -161.7,
+          143.8
+        ]
+      },
+      "chart_breakdown_by_distance": [
+        {
+          "nn_range": "2-3",
+          "n": 134,
+          "chart_resid_med": 0.418,
+          "entropy_med": 0.49,
+          "frac_near_vertex": 0.42
+        },
+        {
+          "nn_range": "3-4",
+          "n": 702,
+          "chart_resid_med": 0.579,
+          "entropy_med": 0.47,
+          "frac_near_vertex": 0.41
+        },
+        {
+          "nn_range": "4-6",
+          "n": 6646,
+          "chart_resid_med": 0.851,
+          "entropy_med": 0.49,
+          "frac_near_vertex": 0.38
+        },
+        {
+          "nn_range": "6-10",
+          "n": 16190,
+          "chart_resid_med": 1.24,
+          "entropy_med": 0.48,
+          "frac_near_vertex": 0.38
+        },
+        {
+          "nn_range": "10-99",
+          "n": 276,
+          "chart_resid_med": 1.797,
+          "entropy_med": 0.47,
+          "frac_near_vertex": 0.38
+        }
+      ]
+    },
+    "31": {
+      "n_valid": 44251,
+      "k": 8,
+      "isometry_r_global": 0.378,
+      "isometry_r_local": 0.446,
+      "isometry_r_anchors": 0.766,
+      "jacobian": {
+        "sigma_max_cv": 0.522,
+        "frobenius_cv": 0.565,
+        "principal_angle_to_global_deg_med": 77.0,
+        "principal_angle_p90": 86.7
+      },
+      "linear_forward_R2_anchors": 0.906,
+      "linear_forward_R2_box_samples": -1.476,
+      "linear_residual_hellinger_med": 0.747,
+      "density": {
+        "median_dist_to_anchor": 64.64,
+        "p90_dist_to_anchor": 111.3,
+        "median_anchor_NN_spacing": 14.29
+      },
+      "ring": {
+        "circular_order_match": "7/7",
+        "centroid_angles_deg": [
+          83.6,
+          141.1,
+          163.3,
+          -125.7,
+          -68.5,
+          -16.3,
+          25.5
+        ]
+      },
+      "chart_breakdown_by_distance": [
+        {
+          "nn_range": "0-1",
+          "n": 1472,
+          "chart_resid_med": 0.229,
+          "entropy_med": 0.92,
+          "frac_near_vertex": 0.06
+        },
+        {
+          "nn_range": "1-2",
+          "n": 14028,
+          "chart_resid_med": 0.327,
+          "entropy_med": 0.86,
+          "frac_near_vertex": 0.22
+        },
+        {
+          "nn_range": "2-3",
+          "n": 3919,
+          "chart_resid_med": 0.556,
+          "entropy_med": 0.1,
+          "frac_near_vertex": 0.7
+        },
+        {
+          "nn_range": "3-4",
+          "n": 1600,
+          "chart_resid_med": 0.697,
+          "entropy_med": 0.08,
+          "frac_near_vertex": 0.71
+        },
+        {
+          "nn_range": "4-6",
+          "n": 7728,
+          "chart_resid_med": 0.881,
+          "entropy_med": 0.34,
+          "frac_near_vertex": 0.47
+        },
+        {
+          "nn_range": "6-10",
+          "n": 15408,
+          "chart_resid_med": 1.25,
+          "entropy_med": 0.33,
+          "frac_near_vertex": 0.48
+        },
+        {
+          "nn_range": "10-99",
+          "n": 96,
+          "chart_resid_med": 1.902,
+          "entropy_med": 0.25,
+          "frac_near_vertex": 0.56
+        }
+      ]
+    }
+  }
+}

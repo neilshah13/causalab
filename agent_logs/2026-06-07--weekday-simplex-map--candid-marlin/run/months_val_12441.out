@@ -1,0 +1,26 @@
+node=node11
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  9.08it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  8.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 12.46it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 11.44it/s]
+concept=months n=12 layers=32 n_prompts=269
+  16/269
+  32/269
+  48/269
+  64/269
+  80/269
+  96/269
+  112/269
+  128/269
+  144/269
+  160/269
+  176/269
+  192/269
+  208/269
+  224/269
+  240/269
+  256/269
+  269/269
+retained 230/269; PCA dims90=11; interior=0.396; all_reachable=True
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 260.20it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.785  cov_gain=6.2  new_cells=869
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+MONTHS_VAL DONE

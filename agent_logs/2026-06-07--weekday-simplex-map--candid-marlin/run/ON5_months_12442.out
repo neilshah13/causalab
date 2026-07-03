@@ -1,0 +1,64 @@
+node=node11
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 263.67it/s]
+concept=months n=12 layers=32 n_prompts=269
+  16/269
+  32/269
+  48/269
+  64/269
+  80/269
+  96/269
+  112/269
+  128/269
+  144/269
+  160/269
+  176/269
+  192/269
+  208/269
+  224/269
+  240/269
+  256/269
+  269/269
+retained 230/269; PCA dims90=11; interior=0.396; all_reachable=True
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage
+==== months layer sweep ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 259.38it/s]
+L16: carrier_sanity(med Hellinger)=0.478  valid_frac_of_box=0.899  cov_gain=7.66  new_cells=1099
+L18: carrier_sanity(med Hellinger)=0.342  valid_frac_of_box=0.920  cov_gain=7.37  new_cells=1076
+L20: carrier_sanity(med Hellinger)=0.150  valid_frac_of_box=0.938  cov_gain=7.04  new_cells=1014
+L22: carrier_sanity(med Hellinger)=0.053  valid_frac_of_box=0.950  cov_gain=7.65  new_cells=1078
+L24: carrier_sanity(med Hellinger)=0.027  valid_frac_of_box=0.965  cov_gain=8.07  new_cells=1103
+L26: carrier_sanity(med Hellinger)=0.027  valid_frac_of_box=0.985  cov_gain=7.74  new_cells=1098
+L28: carrier_sanity(med Hellinger)=0.026  valid_frac_of_box=0.973  cov_gain=7.51  new_cells=1054
+L30: carrier_sanity(med Hellinger)=0.020  valid_frac_of_box=0.836  cov_gain=7.39  new_cells=1041
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.787  cov_gain=7.39  new_cells=1060
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+==== months k sweep (L31) ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 263.57it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.714  cov_gain=3.48  new_cells=453
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 218.01it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.712  cov_gain=6.08  new_cells=919
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 262.39it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.732  cov_gain=7.02  new_cells=1041
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 254.68it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.749  cov_gain=6.99  new_cells=1006
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 265.74it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.784  cov_gain=7.4  new_cells=1049
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 266.86it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.792  cov_gain=6.98  new_cells=999
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+==== months margin sweep (L31) ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 259.57it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.784  cov_gain=7.45  new_cells=1070
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 258.82it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.600  cov_gain=6.79  new_cells=973
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 258.31it/s]
+L31: carrier_sanity(med Hellinger)=0.009  valid_frac_of_box=0.499  cov_gain=6.8  new_cells=981
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+ON5 DONE

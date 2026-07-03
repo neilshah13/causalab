@@ -1,0 +1,34 @@
+{
+  "layer": 31,
+  "n_valid_perturbations": 20544,
+  "n_anchors": 194,
+  "grid": 40,
+  "cells_anchors": 159,
+  "cells_perturbations": 1234,
+  "cells_new_from_perturbations": 1075,
+  "coverage_gain_ratio": 7.76,
+  "frac_perturbations_in_new_cells": 0.733,
+  "anchor_2d_std": [
+    0.361,
+    0.351
+  ],
+  "perturb_2d_std": [
+    0.361,
+    0.356
+  ],
+  "naturalness_nn": {
+    "mean": 1.413,
+    "p50": 1.428,
+    "p90": 2.675,
+    "max": 3.0
+  },
+  "argmax_day_counts_perturb": {
+    "Mon": 4292,
+    "Tue": 3082,
+    "Wed": 2734,
+    "Thu": 2153,
+    "Fri": 2999,
+    "Sat": 2533,
+    "Sun": 2751
+  }
+}

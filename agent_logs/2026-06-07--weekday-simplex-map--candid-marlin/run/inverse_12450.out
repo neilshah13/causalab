@@ -1,0 +1,95 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.83it/s]
+/workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/code/analyses/simplex_coverage/inverse_map.py:161: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(data, labels=types, showmeans=True)
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "k": 8,
+  "n_targets": 129,
+  "edge": {
+    "n": 21,
+    "median_hellinger": 0.152,
+    "p90_hellinger": 0.225,
+    "frac_reached_0.10": 0.238,
+    "frac_reached_0.20": 0.857
+  },
+  "interior": {
+    "n": 60,
+    "median_hellinger": 0.203,
+    "p90_hellinger": 0.298,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.5
+  },
+  "sparse": {
+    "n": 40,
+    "median_hellinger": 0.218,
+    "p90_hellinger": 0.284,
+    "frac_reached_0.10": 0.025,
+    "frac_reached_0.20": 0.375
+  },
+  "uniform": {
+    "n": 1,
+    "median_hellinger": 0.165,
+    "p90_hellinger": 0.165,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 1.0
+  },
+  "vertex": {
+    "n": 7,
+    "median_hellinger": 0.03,
+    "p90_hellinger": 0.071,
+    "frac_reached_0.10": 1.0,
+    "frac_reached_0.20": 1.0
+  },
+  "overall_median_hellinger": 0.194,
+  "overall_frac_reached_0.20": 0.55
+}
+saved -> inverse_map_L31.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 100.47it/s]
+/workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/code/analyses/simplex_coverage/inverse_map.py:161: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot(data, labels=types, showmeans=True)
+{
+  "concept": "weekdays",
+  "layer": 29,
+  "k": 8,
+  "n_targets": 129,
+  "edge": {
+    "n": 21,
+    "median_hellinger": 0.125,
+    "p90_hellinger": 0.245,
+    "frac_reached_0.10": 0.286,
+    "frac_reached_0.20": 0.762
+  },
+  "interior": {
+    "n": 60,
+    "median_hellinger": 0.189,
+    "p90_hellinger": 0.253,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.583
+  },
+  "sparse": {
+    "n": 40,
+    "median_hellinger": 0.22,
+    "p90_hellinger": 0.283,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 0.425
+  },
+  "uniform": {
+    "n": 1,
+    "median_hellinger": 0.157,
+    "p90_hellinger": 0.157,
+    "frac_reached_0.10": 0.0,
+    "frac_reached_0.20": 1.0
+  },
+  "vertex": {
+    "n": 7,
+    "median_hellinger": 0.059,
+    "p90_hellinger": 0.077,
+    "frac_reached_0.10": 1.0,
+    "frac_reached_0.20": 1.0
+  },
+  "overall_median_hellinger": 0.18,
+  "overall_frac_reached_0.20": 0.589
+}
+saved -> inverse_map_L29.json
+INVERSE DONE

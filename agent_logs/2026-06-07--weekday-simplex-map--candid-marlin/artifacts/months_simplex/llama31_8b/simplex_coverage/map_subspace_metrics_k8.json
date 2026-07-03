@@ -1,0 +1,43 @@
+{
+  "model": "llama31_8b",
+  "carrier": "A month of the year:",
+  "k": 8,
+  "n_samples": 20000,
+  "margin": 0.6,
+  "layers": {
+    "31": {
+      "carrier_sanity_median_hellinger": 0.0094,
+      "cca_canonical_corr": [
+        0.989,
+        0.982,
+        0.982,
+        0.977,
+        0.975,
+        0.972,
+        0.973,
+        0.968
+      ],
+      "valid_fraction_of_box": 0.749,
+      "n_valid": 14985,
+      "n_samples": 20000,
+      "behaviour_cells_anchors": 168,
+      "behaviour_cells_valid_samples": 1171,
+      "behaviour_cells_new": 1006,
+      "coverage_gain_ratio": 6.99,
+      "argmax_day_counts_valid": {
+        "Jan": 2068,
+        "Feb": 984,
+        "Mar": 403,
+        "Apr": 1758,
+        "May": 296,
+        "Jun": 2473,
+        "Jul": 1414,
+        "Aug": 1494,
+        "Sep": 157,
+        "Oct": 2110,
+        "Nov": 1299,
+        "Dec": 529
+      }
+    }
+  }
+}

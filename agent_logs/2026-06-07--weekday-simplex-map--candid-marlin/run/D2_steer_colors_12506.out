@@ -1,0 +1,162 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.66it/s]
+{
+  "concept": "colors",
+  "layer": 27,
+  "k": 16,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Red"
+  ],
+  "n_waypoints": 49,
+  "fidelity_median_hellinger": 0.128,
+  "fidelity_p90_hellinger": 0.764,
+  "frac_valid": 0.837,
+  "smoothness_median_step": 0.123,
+  "smoothness_max_step": 0.482
+}
+argmax sweep: Red -> Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red
+saved -> steer_colors_rainbow_L27k16.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.18it/s]
+{
+  "concept": "colors",
+  "layer": 27,
+  "k": 24,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Red"
+  ],
+  "n_waypoints": 49,
+  "fidelity_median_hellinger": 0.131,
+  "fidelity_p90_hellinger": 0.712,
+  "frac_valid": 0.878,
+  "smoothness_median_step": 0.114,
+  "smoothness_max_step": 0.538
+}
+argmax sweep: Red -> Red -> Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red
+saved -> steer_colors_rainbow_L27k24.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.04it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+{
+  "concept": "colors",
+  "layer": 27,
+  "k": 32,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Red"
+  ],
+  "n_waypoints": 49,
+  "fidelity_median_hellinger": 0.099,
+  "fidelity_p90_hellinger": 0.336,
+  "frac_valid": 0.939,
+  "smoothness_median_step": 0.163,
+  "smoothness_max_step": 0.488
+}
+argmax sweep: Red -> Red -> Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Purple -> Blue -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Red -> Red -> Red -> Red -> Red
+saved -> steer_colors_rainbow_L27k32.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 97.20it/s]
+{
+  "concept": "colors",
+  "layer": 31,
+  "k": 16,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Red"
+  ],
+  "n_waypoints": 49,
+  "fidelity_median_hellinger": 0.127,
+  "fidelity_p90_hellinger": 0.911,
+  "frac_valid": 0.837,
+  "smoothness_median_step": 0.124,
+  "smoothness_max_step": 0.771
+}
+argmax sweep: Red -> Red -> Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Red -> Red -> Red -> Red
+saved -> steer_colors_rainbow_L31k16.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.59it/s]
+{
+  "concept": "colors",
+  "layer": 31,
+  "k": 24,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Red"
+  ],
+  "n_waypoints": 49,
+  "fidelity_median_hellinger": 0.107,
+  "fidelity_p90_hellinger": 0.547,
+  "frac_valid": 0.816,
+  "smoothness_median_step": 0.169,
+  "smoothness_max_step": 0.582
+}
+argmax sweep: Red -> Red -> Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Red -> Purple -> Red -> Red -> Red -> Red -> Red
+saved -> steer_colors_rainbow_L31k24.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.81it/s]
+{
+  "concept": "colors",
+  "layer": 31,
+  "k": 32,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Red"
+  ],
+  "n_waypoints": 49,
+  "fidelity_median_hellinger": 0.096,
+  "fidelity_p90_hellinger": 0.181,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.139,
+  "smoothness_max_step": 0.387
+}
+argmax sweep: Red -> Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Purple -> Red -> Red -> Red -> Red -> Red
+saved -> steer_colors_rainbow_L31k32.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.65it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+{
+  "concept": "colors",
+  "layer": 31,
+  "k": 24,
+  "order": [
+    "Red",
+    "Blue"
+  ],
+  "n_waypoints": 25,
+  "fidelity_median_hellinger": 0.091,
+  "fidelity_p90_hellinger": 0.184,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.095,
+  "smoothness_max_step": 0.256
+}
+argmax sweep: Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue
+saved -> steer_colors_RedBlue.json
+D2 DONE

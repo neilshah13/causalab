@@ -1,0 +1,11 @@
+Downloading models:   0%|          | 0/1 [00:00<?, ?it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s][A
+Fetching 4 files:  25%|██▌       | 1/4 [00:12<00:36, 12.15s/it][A
+Fetching 4 files:  50%|█████     | 2/4 [00:16<00:15,  7.73s/it][AFetching 4 files: 100%|██████████| 4/4 [00:16<00:00,  4.20s/it]
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.67s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.59s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.55s/it][A
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.00it/s][ALoading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.21s/it]
+Downloading models: 100%|██████████| 1/1 [00:26<00:00, 26.99s/it]Downloading models: 100%|██████████| 1/1 [00:26<00:00, 26.99s/it]

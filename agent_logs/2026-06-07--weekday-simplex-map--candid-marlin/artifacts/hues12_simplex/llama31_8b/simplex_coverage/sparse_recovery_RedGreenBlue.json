@@ -1,0 +1,350 @@
+{
+  "concept": "hues12",
+  "layer": 31,
+  "keep": "Red,Green,Blue",
+  "held": [
+    "Orange",
+    "Yellow",
+    "Lime",
+    "Teal",
+    "Cyan",
+    "Azure",
+    "Violet",
+    "Purple",
+    "Pink"
+  ],
+  "margin": 2.0,
+  "recover_thresh": 0.5,
+  "results": [
+    {
+      "method": "pca",
+      "k": 8,
+      "n_valid": 3298,
+      "held_days_recovered": 5,
+      "n_held": 9,
+      "frac_held_recovered": 0.556,
+      "per_day": {
+        "Orange": {
+          "max_P": 0.603,
+          "n_argmax": 9,
+          "recovered": true
+        },
+        "Yellow": {
+          "max_P": 0.985,
+          "n_argmax": 193,
+          "recovered": true
+        },
+        "Lime": {
+          "max_P": 0.957,
+          "n_argmax": 100,
+          "recovered": true
+        },
+        "Teal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.026,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Purple": {
+          "max_P": 0.716,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Pink": {
+          "max_P": 0.865,
+          "n_argmax": 5,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 11,
+      "n_valid": 2702,
+      "held_days_recovered": 5,
+      "n_held": 9,
+      "frac_held_recovered": 0.556,
+      "per_day": {
+        "Orange": {
+          "max_P": 0.976,
+          "n_argmax": 86,
+          "recovered": true
+        },
+        "Yellow": {
+          "max_P": 0.996,
+          "n_argmax": 222,
+          "recovered": true
+        },
+        "Lime": {
+          "max_P": 0.948,
+          "n_argmax": 65,
+          "recovered": true
+        },
+        "Teal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.208,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Purple": {
+          "max_P": 0.871,
+          "n_argmax": 8,
+          "recovered": true
+        },
+        "Pink": {
+          "max_P": 0.94,
+          "n_argmax": 13,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 16,
+      "n_valid": 2350,
+      "held_days_recovered": 6,
+      "n_held": 9,
+      "frac_held_recovered": 0.667,
+      "per_day": {
+        "Orange": {
+          "max_P": 0.946,
+          "n_argmax": 64,
+          "recovered": true
+        },
+        "Yellow": {
+          "max_P": 0.995,
+          "n_argmax": 207,
+          "recovered": true
+        },
+        "Lime": {
+          "max_P": 0.904,
+          "n_argmax": 30,
+          "recovered": true
+        },
+        "Teal": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.03,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.831,
+          "n_argmax": 2,
+          "recovered": true
+        },
+        "Purple": {
+          "max_P": 0.695,
+          "n_argmax": 4,
+          "recovered": true
+        },
+        "Pink": {
+          "max_P": 0.986,
+          "n_argmax": 17,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 6767,
+      "held_days_recovered": 4,
+      "n_held": 9,
+      "frac_held_recovered": 0.444,
+      "per_day": {
+        "Orange": {
+          "max_P": 0.983,
+          "n_argmax": 606,
+          "recovered": true
+        },
+        "Yellow": {
+          "max_P": 0.997,
+          "n_argmax": 373,
+          "recovered": true
+        },
+        "Lime": {
+          "max_P": 0.989,
+          "n_argmax": 288,
+          "recovered": true
+        },
+        "Teal": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.056,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.019,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.468,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "Purple": {
+          "max_P": 0.646,
+          "n_argmax": 2,
+          "recovered": true
+        },
+        "Pink": {
+          "max_P": 0.425,
+          "n_argmax": 2,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 11,
+      "n_valid": 5613,
+      "held_days_recovered": 5,
+      "n_held": 9,
+      "frac_held_recovered": 0.556,
+      "per_day": {
+        "Orange": {
+          "max_P": 0.995,
+          "n_argmax": 620,
+          "recovered": true
+        },
+        "Yellow": {
+          "max_P": 0.997,
+          "n_argmax": 302,
+          "recovered": true
+        },
+        "Lime": {
+          "max_P": 0.981,
+          "n_argmax": 87,
+          "recovered": true
+        },
+        "Teal": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.065,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.9,
+          "n_argmax": 18,
+          "recovered": true
+        },
+        "Purple": {
+          "max_P": 0.923,
+          "n_argmax": 32,
+          "recovered": true
+        },
+        "Pink": {
+          "max_P": 0.211,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 13,
+      "n_valid": 4931,
+      "held_days_recovered": 5,
+      "n_held": 9,
+      "frac_held_recovered": 0.556,
+      "per_day": {
+        "Orange": {
+          "max_P": 0.997,
+          "n_argmax": 559,
+          "recovered": true
+        },
+        "Yellow": {
+          "max_P": 0.996,
+          "n_argmax": 263,
+          "recovered": true
+        },
+        "Lime": {
+          "max_P": 0.982,
+          "n_argmax": 45,
+          "recovered": true
+        },
+        "Teal": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.105,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.929,
+          "n_argmax": 11,
+          "recovered": true
+        },
+        "Purple": {
+          "max_P": 0.919,
+          "n_argmax": 12,
+          "recovered": true
+        },
+        "Pink": {
+          "max_P": 0.158,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    }
+  ]
+}

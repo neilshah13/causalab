@@ -1,0 +1,21 @@
+node=node22 mode=shape layer=31 args=--n-anchors -1 --n-dirs 24 --radii 0.5,1,1.5,2,3
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.70it/s]
+layer L31: M=194 anchors, subspace dims=20 (EVR 0.79), NN-dist=12.69
+sanity: zero-perturbation Hellinger to stored anchor dist = 0.0154 (should be ~0)
+shape: kept 20544 valid in-subspace perturbations -> region_shape_L31.npz
+[
+  {
+    "n_valid_perturbations": 20544,
+    "n_total": 23280,
+    "radii": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "mean_naturalness_nn": 1.413
+  }
+]
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/perturb_shape_L31.json
+PERTURB DONE

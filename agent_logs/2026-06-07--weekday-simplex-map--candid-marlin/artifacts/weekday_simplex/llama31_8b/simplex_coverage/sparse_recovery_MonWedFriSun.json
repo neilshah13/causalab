@@ -1,0 +1,389 @@
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "keep": "Mon,Wed,Fri,Sun",
+  "held": [
+    "Tue",
+    "Thu",
+    "Sat"
+  ],
+  "margin": 2.0,
+  "recover_thresh": 0.5,
+  "results": [
+    {
+      "method": "cca",
+      "k": 4,
+      "n_valid": 11900,
+      "held_days_recovered": 1,
+      "n_held": 3,
+      "frac_held_recovered": 0.333,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.356,
+          "n_argmax": 2,
+          "recovered": false
+        },
+        "Thu": {
+          "max_P": 0.312,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sat": {
+          "max_P": 0.969,
+          "n_argmax": 591,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 9592,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 1.0,
+          "n_argmax": 884,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.994,
+          "n_argmax": 524,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.999,
+          "n_argmax": 923,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 9643,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 1.0,
+          "n_argmax": 874,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.995,
+          "n_argmax": 538,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.999,
+          "n_argmax": 990,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 9477,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 1.0,
+          "n_argmax": 919,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.996,
+          "n_argmax": 532,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.998,
+          "n_argmax": 977,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 9549,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 1.0,
+          "n_argmax": 917,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.995,
+          "n_argmax": 547,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.999,
+          "n_argmax": 940,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 4,
+      "n_valid": 10319,
+      "held_days_recovered": 1,
+      "n_held": 3,
+      "frac_held_recovered": 0.333,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.808,
+          "n_argmax": 64,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.283,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sat": {
+          "max_P": 0.44,
+          "n_argmax": 8,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 8,
+      "n_valid": 5483,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.997,
+          "n_argmax": 215,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.817,
+          "n_argmax": 18,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.986,
+          "n_argmax": 294,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 12,
+      "n_valid": 4898,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 1.0,
+          "n_argmax": 543,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.986,
+          "n_argmax": 163,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.996,
+          "n_argmax": 525,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 20,
+      "n_valid": 3418,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.997,
+          "n_argmax": 321,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.988,
+          "n_argmax": 131,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.998,
+          "n_argmax": 328,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 40,
+      "n_valid": 1996,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.997,
+          "n_argmax": 139,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.985,
+          "n_argmax": 52,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.996,
+          "n_argmax": 192,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 4,
+      "n_valid": 9023,
+      "held_days_recovered": 2,
+      "n_held": 3,
+      "frac_held_recovered": 0.667,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.706,
+          "n_argmax": 61,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.367,
+          "n_argmax": 4,
+          "recovered": false
+        },
+        "Sat": {
+          "max_P": 0.806,
+          "n_argmax": 120,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 8,
+      "n_valid": 5152,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.908,
+          "n_argmax": 59,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.819,
+          "n_argmax": 50,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.982,
+          "n_argmax": 306,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 12,
+      "n_valid": 4931,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 1.0,
+          "n_argmax": 525,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.997,
+          "n_argmax": 155,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.999,
+          "n_argmax": 508,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 20,
+      "n_valid": 3284,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 1.0,
+          "n_argmax": 370,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.987,
+          "n_argmax": 112,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.997,
+          "n_argmax": 267,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 40,
+      "n_valid": 2029,
+      "held_days_recovered": 3,
+      "n_held": 3,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Tue": {
+          "max_P": 0.999,
+          "n_argmax": 182,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.99,
+          "n_argmax": 69,
+          "recovered": true
+        },
+        "Sat": {
+          "max_P": 0.998,
+          "n_argmax": 149,
+          "recovered": true
+        }
+      }
+    }
+  ]
+}

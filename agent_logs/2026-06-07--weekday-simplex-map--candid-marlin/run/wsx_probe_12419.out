@@ -1,0 +1,45 @@
+node=node22 gpu=0
+NVIDIA RTX A6000, 49140 MiB
+NVIDIA RTX A6000, 49140 MiB
+================ PROBE llama31_8b ================
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.42it/s]
+
+=== PROBE llama31_8b — frame comparison (n_probe=45) ===
+frame        leaks  pass% meanWmass argmax_in_intended
+fewshot      True     87%      0.93               100%
+fewshot_neutral False    78%      0.88                98%
+plain        False     0%      0.20                91%
+
+best clean frame = fewshot_neutral — per-family pass:
+  A_open:1/2  B_neg1:2/2  C_neg2:21/21  D_letter:3/3  D_letter_neg:2/2  E_succ:0/2  F_semantic:1/2  G_ordinal:0/3  H_graded:2/2  H_today:0/2  I_multi:3/4
+tokenisation single-token check:
+  Monday     canonical_single=True ids=[7159, 36339, 94299]
+  Tuesday    canonical_single=True ids=[7742, 41299]
+  Wednesday  canonical_single=True ids=[8079, 41619]
+  Thursday   canonical_single=True ids=[7950, 38888]
+  Friday     canonical_single=True ids=[6740, 35720, 80413]
+  Saturday   canonical_single=True ids=[7884, 34774]
+  Sunday     canonical_single=True ids=[7418, 37165, 93463]
+================ PROBE llama31_8b_instruct ================
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 91.15it/s]
+
+=== PROBE llama31_8b_instruct — frame comparison (n_probe=45) ===
+frame        leaks  pass% meanWmass argmax_in_intended
+i_oneword    False   100%      1.00                98%
+i_leak       True    100%      1.00                98%
+i_concise    False    98%      0.98                96%
+i_brief      False    91%      0.96                96%
+i_short      False    89%      0.95                96%
+i_word3      False    53%      0.85                98%
+
+best clean frame = i_oneword — per-family pass:
+  A_open:2/2  B_neg1:2/2  C_neg2:21/21  D_letter:3/3  D_letter_neg:2/2  E_succ:2/2  F_semantic:2/2  G_ordinal:3/3  H_graded:2/2  H_today:2/2  I_multi:4/4
+tokenisation single-token check:
+  Monday     canonical_single=True ids=[7159, 36339, 94299]
+  Tuesday    canonical_single=True ids=[7742, 41299]
+  Wednesday  canonical_single=True ids=[8079, 41619]
+  Thursday   canonical_single=True ids=[7950, 38888]
+  Friday     canonical_single=True ids=[6740, 35720, 80413]
+  Saturday   canonical_single=True ids=[7884, 34774]
+  Sunday     canonical_single=True ids=[7418, 37165, 93463]
+PROBE DONE

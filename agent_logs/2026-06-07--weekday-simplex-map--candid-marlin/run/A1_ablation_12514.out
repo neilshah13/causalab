@@ -1,0 +1,187 @@
+node=node15
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.74it/s]
+holdout=Tue (tds=[1], frac=1.0): 26/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "holdout": "Tue",
+  "k": 8,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Tue",
+    "n_held": 26,
+    "n_train": 168,
+    "n_valid_samples": 16321,
+    "frac_valid_in_deleted_region": 0.111,
+    "n_valid_in_deleted_region": 1812,
+    "max_P_target_recovered": 1.0,
+    "max_P_per_deleted": {
+      "Tue": 1.0
+    },
+    "held_region_cells": 22,
+    "recovered_cells": 22,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.201,
+    "projection_recon_keeps_argmax_frac": 0.769
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 26,
+    "n_train": 168,
+    "n_valid_samples": 17736,
+    "frac_valid_in_deleted_region": 0.239,
+    "n_valid_in_deleted_region": 4232,
+    "max_P_target_recovered": 1.0,
+    "max_P_per_deleted": {
+      "Tue": 1.0
+    },
+    "held_region_cells": 26,
+    "recovered_cells": 24,
+    "cell_recovery_rate": 0.923,
+    "projection_recon_median_hellinger": 0.09,
+    "projection_recon_keeps_argmax_frac": 0.077
+  }
+}
+saved -> recovery_test_Tue_L31.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.95it/s]
+holdout=Tue (tds=[1], frac=1.0): 26/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 23,
+  "holdout": "Tue",
+  "k": 8,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Tue",
+    "n_held": 26,
+    "n_train": 168,
+    "n_valid_samples": 16067,
+    "frac_valid_in_deleted_region": 0.053,
+    "n_valid_in_deleted_region": 849,
+    "max_P_target_recovered": 0.998,
+    "max_P_per_deleted": {
+      "Tue": 0.998
+    },
+    "held_region_cells": 22,
+    "recovered_cells": 22,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.429,
+    "projection_recon_keeps_argmax_frac": 0.308
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 26,
+    "n_train": 168,
+    "n_valid_samples": 16110,
+    "frac_valid_in_deleted_region": 0.113,
+    "n_valid_in_deleted_region": 1816,
+    "max_P_target_recovered": 0.998,
+    "max_P_per_deleted": {
+      "Tue": 0.998
+    },
+    "held_region_cells": 26,
+    "recovered_cells": 24,
+    "cell_recovery_rate": 0.923,
+    "projection_recon_median_hellinger": 0.119,
+    "projection_recon_keeps_argmax_frac": 0.077
+  }
+}
+saved -> recovery_test_Tue_L23.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 91.25it/s]
+holdout=Thu (tds=[3], frac=1.0): 20/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "holdout": "Thu",
+  "k": 8,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Thu",
+    "n_held": 20,
+    "n_train": 174,
+    "n_valid_samples": 17117,
+    "frac_valid_in_deleted_region": 0.057,
+    "n_valid_in_deleted_region": 978,
+    "max_P_target_recovered": 0.998,
+    "max_P_per_deleted": {
+      "Thu": 0.998
+    },
+    "held_region_cells": 15,
+    "recovered_cells": 15,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.087,
+    "projection_recon_keeps_argmax_frac": 0.8
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 20,
+    "n_train": 174,
+    "n_valid_samples": 17058,
+    "frac_valid_in_deleted_region": 0.116,
+    "n_valid_in_deleted_region": 1980,
+    "max_P_target_recovered": 0.996,
+    "max_P_per_deleted": {
+      "Thu": 0.996
+    },
+    "held_region_cells": 20,
+    "recovered_cells": 20,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.088,
+    "projection_recon_keeps_argmax_frac": 0.1
+  }
+}
+saved -> recovery_test_Thu_L31.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.21it/s]
+holdout=Thu (tds=[3], frac=1.0): 20/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 23,
+  "holdout": "Thu",
+  "k": 8,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Thu",
+    "n_held": 20,
+    "n_train": 174,
+    "n_valid_samples": 15848,
+    "frac_valid_in_deleted_region": 0.05,
+    "n_valid_in_deleted_region": 786,
+    "max_P_target_recovered": 0.994,
+    "max_P_per_deleted": {
+      "Thu": 0.994
+    },
+    "held_region_cells": 15,
+    "recovered_cells": 15,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.382,
+    "projection_recon_keeps_argmax_frac": 0.1
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 20,
+    "n_train": 174,
+    "n_valid_samples": 14122,
+    "frac_valid_in_deleted_region": 0.086,
+    "n_valid_in_deleted_region": 1211,
+    "max_P_target_recovered": 0.99,
+    "max_P_per_deleted": {
+      "Thu": 0.99
+    },
+    "held_region_cells": 20,
+    "recovered_cells": 20,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.195,
+    "projection_recon_keeps_argmax_frac": 0.15
+  }
+}
+saved -> recovery_test_Thu_L23.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.63it/s]
+slurmstepd-node15: error: *** JOB 12514 ON node15 CANCELLED AT 2026-06-11T10:45:09 DUE TO TIME LIMIT ***

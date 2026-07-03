@@ -1,0 +1,2059 @@
+{
+  "model": "llama31_8b_instruct",
+  "frame": "i_concise",
+  "leaks_answer_space": false,
+  "n_probe": 45,
+  "n_pass_filter": 44,
+  "frac_pass_filter": 0.978,
+  "frac_argmax_in_intended": 0.956,
+  "mean_weekday_mass": 0.982,
+  "rows": [
+    {
+      "family": "A_open",
+      "text_core": "A day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9946,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0054,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.39446
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.27111
+        },
+        {
+          "token": "Friday",
+          "prob": 0.12806
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.06855
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.06855
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.04158
+        }
+      ]
+    },
+    {
+      "family": "A_open",
+      "text_core": "An example of a day of the week is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9565,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0435,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.88642
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.04413
+        },
+        {
+          "token": "A",
+          "prob": 0.0184
+        },
+        {
+          "token": "\"",
+          "prob": 0.01624
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.00869
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00677
+        }
+      ]
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Monday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.985,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.015,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.90023
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.05755
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.01868
+        },
+        {
+          "token": "Any",
+          "prob": 0.01284
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00687
+        },
+        {
+          "token": "There",
+          "prob": 0.00135
+        }
+      ]
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Tuesday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9881,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0119,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.91175
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.03535
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.02753
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00478
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.00478
+        },
+        {
+          "token": "There",
+          "prob": 0.00422
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Tuesday:",
+      "intended_days": [
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9814,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.0186,
+      "argmax_day": "Wed",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Wednesday",
+          "prob": 0.90442
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.07424
+        },
+        {
+          "token": "Any",
+          "prob": 0.01138
+        },
+        {
+          "token": "The",
+          "prob": 0.0037
+        },
+        {
+          "token": "There",
+          "prob": 0.00154
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00106
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Wednesday:",
+      "intended_days": [
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9817,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.0183,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.71665
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.20532
+        },
+        {
+          "token": "Friday",
+          "prob": 0.03568
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.01685
+        },
+        {
+          "token": "Any",
+          "prob": 0.00547
+        },
+        {
+          "token": "The",
+          "prob": 0.00547
+        }
+      ]
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter F:",
+      "intended_days": [
+        "Fri"
+      ],
+      "weekday_mass": 0.9999,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0001,
+      "argmax_day": "Fri",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Friday",
+          "prob": 0.99931
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.00016
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00014
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00012
+        },
+        {
+          "token": "Monday",
+          "prob": 0.00012
+        },
+        {
+          "token": "There",
+          "prob": 3e-05
+        }
+      ]
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter M:",
+      "intended_days": [
+        "Mon"
+      ],
+      "weekday_mass": 0.9996,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0004,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.9984
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00049
+        },
+        {
+          "token": "Mon",
+          "prob": 0.00026
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00018
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.00016
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.00016
+        }
+      ]
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A day of the week that does not start with the letter F:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.995,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.005,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.40028
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.31174
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.14725
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.05417
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.04781
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.03286
+        }
+      ]
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A day of the week that does not start with the letter M:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.997,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.003,
+      "argmax_day": "Wed",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Wednesday",
+          "prob": 0.46837
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.28408
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.10451
+        },
+        {
+          "token": "Friday",
+          "prob": 0.06339
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.06339
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.01102
+        }
+      ]
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Monday is",
+      "intended_days": [
+        "Tue"
+      ],
+      "weekday_mass": 0.9993,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0007,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.99812
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00103
+        },
+        {
+          "token": "The",
+          "prob": 0.00071
+        },
+        {
+          "token": "Thursday",
+          "prob": 8e-05
+        },
+        {
+          "token": "Friday",
+          "prob": 1e-05
+        },
+        {
+          "token": "T",
+          "prob": 1e-05
+        }
+      ]
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Tuesday is",
+      "intended_days": [
+        "Wed"
+      ],
+      "weekday_mass": 0.9991,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0009,
+      "argmax_day": "Wed",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Wednesday",
+          "prob": 0.99047
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00857
+        },
+        {
+          "token": "The",
+          "prob": 0.0007
+        },
+        {
+          "token": "Wed",
+          "prob": 0.00011
+        },
+        {
+          "token": "Friday",
+          "prob": 7e-05
+        },
+        {
+          "token": "wed",
+          "prob": 2e-05
+        }
+      ]
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A day of the weekend:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9959,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0041,
+      "argmax_day": "Sat",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Saturday",
+          "prob": 0.61965
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.37584
+        },
+        {
+          "token": "S",
+          "prob": 0.00197
+        },
+        {
+          "token": "Both",
+          "prob": 0.00057
+        },
+        {
+          "token": "Sat",
+          "prob": 0.0005
+        },
+        {
+          "token": "There",
+          "prob": 0.00044
+        }
+      ]
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A weekend day is",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.8489,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.1511,
+      "argmax_day": "Sat",
+      "argmax_in_intended": true,
+      "passed_filter": false,
+      "top_tokens": [
+        {
+          "token": "Saturday",
+          "prob": 0.82898
+        },
+        {
+          "token": "A",
+          "prob": 0.08737
+        },
+        {
+          "token": "Either",
+          "prob": 0.04127
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.0195
+        },
+        {
+          "token": "S",
+          "prob": 0.0172
+        },
+        {
+          "token": "either",
+          "prob": 0.00205
+        }
+      ]
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The second day of the week is",
+      "intended_days": [
+        "Mon",
+        "Tue"
+      ],
+      "weekday_mass": 0.999,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.001,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.89216
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.10655
+        },
+        {
+          "token": "The",
+          "prob": 0.00092
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00014
+        },
+        {
+          "token": "Sunday",
+          "prob": 7e-05
+        },
+        {
+          "token": "Thursday",
+          "prob": 5e-05
+        }
+      ]
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The third day of the week is",
+      "intended_days": [
+        "Tue",
+        "Wed"
+      ],
+      "weekday_mass": 0.9984,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0016,
+      "argmax_day": "Wed",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Wednesday",
+          "prob": 0.9121
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.08484
+        },
+        {
+          "token": "The",
+          "prob": 0.00137
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00083
+        },
+        {
+          "token": "Monday",
+          "prob": 0.00035
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00014
+        }
+      ]
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A day near the end of the week:",
+      "intended_days": [
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9979,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0021,
+      "argmax_day": "Fri",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Friday",
+          "prob": 0.97831
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.01792
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.00147
+        },
+        {
+          "token": "A",
+          "prob": 0.00147
+        },
+        {
+          "token": "It",
+          "prob": 0.0002
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00014
+        }
+      ]
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A day near the start of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed"
+      ],
+      "weekday_mass": 0.9963,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0037,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.99258
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.00192
+        },
+        {
+          "token": "A",
+          "prob": 0.00169
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.00149
+        },
+        {
+          "token": "Mon",
+          "prob": 0.00055
+        },
+        {
+          "token": "It",
+          "prob": 0.00029
+        }
+      ]
+    },
+    {
+      "family": "H_today",
+      "text_core": "If today is Monday, tomorrow is",
+      "intended_days": [
+        "Tue"
+      ],
+      "weekday_mass": 0.9875,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0125,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.98497
+        },
+        {
+          "token": "Tomorrow",
+          "prob": 0.00966
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00215
+        },
+        {
+          "token": "If",
+          "prob": 0.00168
+        },
+        {
+          "token": "Today",
+          "prob": 0.00062
+        },
+        {
+          "token": "The",
+          "prob": 0.00026
+        }
+      ]
+    },
+    {
+      "family": "H_today",
+      "text_core": "If today is Tuesday, tomorrow is",
+      "intended_days": [
+        "Wed"
+      ],
+      "weekday_mass": 0.9982,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0018,
+      "argmax_day": "Wed",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Wednesday",
+          "prob": 0.99589
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00218
+        },
+        {
+          "token": "If",
+          "prob": 0.00103
+        },
+        {
+          "token": "Tomorrow",
+          "prob": 0.00033
+        },
+        {
+          "token": "Wed",
+          "prob": 0.00016
+        },
+        {
+          "token": "Tuesday",
+          "prob": 8e-05
+        }
+      ]
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekend day that is not Sunday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "weekday_mass": 0.9984,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.0016,
+      "argmax_day": "Sat",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Saturday",
+          "prob": 0.9975
+        },
+        {
+          "token": "A",
+          "prob": 0.00103
+        },
+        {
+          "token": "Friday",
+          "prob": 0.0008
+        },
+        {
+          "token": "Sat",
+          "prob": 0.00026
+        },
+        {
+          "token": "S",
+          "prob": 0.00011
+        },
+        {
+          "token": " Saturday",
+          "prob": 5e-05
+        }
+      ]
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekend day that is not Saturday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "weekday_mass": 0.9994,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0006,
+      "argmax_day": "Sun",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Sunday",
+          "prob": 0.99926
+        },
+        {
+          "token": "A",
+          "prob": 0.00049
+        },
+        {
+          "token": "Friday",
+          "prob": 8e-05
+        },
+        {
+          "token": "Monday",
+          "prob": 6e-05
+        },
+        {
+          "token": "Saturday",
+          "prob": 2e-05
+        },
+        {
+          "token": "S",
+          "prob": 2e-05
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Thursday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9819,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.0181,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.95886
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.01207
+        },
+        {
+          "token": "The",
+          "prob": 0.00732
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00646
+        },
+        {
+          "token": "Any",
+          "prob": 0.00646
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.0021
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Friday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9909,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.0091,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.96777
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.01564
+        },
+        {
+          "token": "Any",
+          "prob": 0.00652
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.00448
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00128
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.00113
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Saturday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "weekday_mass": 0.9718,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.0282,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.8715
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.08106
+        },
+        {
+          "token": "Any",
+          "prob": 0.02322
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.01409
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00356
+        },
+        {
+          "token": "A",
+          "prob": 0.00131
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Sunday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "weekday_mass": 0.9658,
+      "weekday_mass_canonical": 0.0001,
+      "other": 0.0342,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.92964
+        },
+        {
+          "token": "Any",
+          "prob": 0.03181
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.02477
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.01033
+        },
+        {
+          "token": "A",
+          "prob": 0.00096
+        },
+        {
+          "token": "Monday",
+          "prob": 0.00051
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9504,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0496,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.91782
+        },
+        {
+          "token": "The",
+          "prob": 0.01905
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.01681
+        },
+        {
+          "token": "There",
+          "prob": 0.01309
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.01155
+        },
+        {
+          "token": "Any",
+          "prob": 0.0102
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Thursday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9807,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0193,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.95587
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.01751
+        },
+        {
+          "token": "The",
+          "prob": 0.01203
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00304
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.00268
+        },
+        {
+          "token": "Any",
+          "prob": 0.00209
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Friday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9838,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0162,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.90887
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.03524
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.0311
+        },
+        {
+          "token": "The",
+          "prob": 0.00786
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.0054
+        },
+        {
+          "token": "Any",
+          "prob": 0.00328
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "weekday_mass": 0.9717,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0283,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.72413
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.16157
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.05944
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.02478
+        },
+        {
+          "token": "The",
+          "prob": 0.0117
+        },
+        {
+          "token": "Any",
+          "prob": 0.00912
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "weekday_mass": 0.9853,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0147,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.69032
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.19778
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.09343
+        },
+        {
+          "token": "Any",
+          "prob": 0.00767
+        },
+        {
+          "token": "The",
+          "prob": 0.0032
+        },
+        {
+          "token": "Friday",
+          "prob": 0.0022
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Thursday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9592,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0408,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.94396
+        },
+        {
+          "token": "The",
+          "prob": 0.01346
+        },
+        {
+          "token": "Any",
+          "prob": 0.01049
+        },
+        {
+          "token": "There",
+          "prob": 0.01049
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.00721
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.0034
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9803,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0197,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.94307
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.01345
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.01048
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.01048
+        },
+        {
+          "token": "Any",
+          "prob": 0.0072
+        },
+        {
+          "token": "The",
+          "prob": 0.00495
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "weekday_mass": 0.9736,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0264,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.91829
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.03142
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.01156
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.0102
+        },
+        {
+          "token": "Any",
+          "prob": 0.0102
+        },
+        {
+          "token": "There",
+          "prob": 0.00619
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "weekday_mass": 0.9815,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0185,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.89256
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.05706
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.02695
+        },
+        {
+          "token": "Any",
+          "prob": 0.00875
+        },
+        {
+          "token": "There",
+          "prob": 0.00365
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00322
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Thursday nor Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Sat",
+        "Sun"
+      ],
+      "weekday_mass": 0.9678,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0322,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.93729
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.01515
+        },
+        {
+          "token": "Any",
+          "prob": 0.01515
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.00811
+        },
+        {
+          "token": "The",
+          "prob": 0.00811
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.00632
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Thursday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sun"
+      ],
+      "weekday_mass": 0.9797,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0203,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.92212
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.04591
+        },
+        {
+          "token": "Any",
+          "prob": 0.00904
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.00798
+        },
+        {
+          "token": "The",
+          "prob": 0.00548
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00293
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Thursday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat"
+      ],
+      "weekday_mass": 0.9841,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0159,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.95532
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.01983
+        },
+        {
+          "token": "Any",
+          "prob": 0.00937
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00729
+        },
+        {
+          "token": "The",
+          "prob": 0.00237
+        },
+        {
+          "token": "There",
+          "prob": 0.00112
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Friday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sun"
+      ],
+      "weekday_mass": 0.9794,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0206,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.89891
+        },
+        {
+          "token": "Sunday",
+          "prob": 0.07379
+        },
+        {
+          "token": "Any",
+          "prob": 0.01453
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.00367
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00174
+        },
+        {
+          "token": "The",
+          "prob": 0.00174
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Friday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat"
+      ],
+      "weekday_mass": 0.9919,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0081,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.94746
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.02228
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.01053
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00638
+        },
+        {
+          "token": "Any",
+          "prob": 0.00563
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00497
+        }
+      ]
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Saturday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "weekday_mass": 0.9878,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0122,
+      "argmax_day": "Mon",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Monday",
+          "prob": 0.98413
+        },
+        {
+          "token": "Any",
+          "prob": 0.00965
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.00215
+        },
+        {
+          "token": "A",
+          "prob": 0.00115
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00062
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00062
+        }
+      ]
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter T:",
+      "intended_days": [
+        "Tue",
+        "Thu"
+      ],
+      "weekday_mass": 0.9981,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0019,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.77032
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.2207
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00357
+        },
+        {
+          "token": "Monday",
+          "prob": 0.00169
+        },
+        {
+          "token": "Friday",
+          "prob": 0.0009
+        },
+        {
+          "token": "There",
+          "prob": 0.00062
+        }
+      ]
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the third day of the week is",
+      "intended_days": [
+        "Wed"
+      ],
+      "weekday_mass": 0.9554,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.0446,
+      "argmax_day": "Tue",
+      "argmax_in_intended": false,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.64549
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.30491
+        },
+        {
+          "token": "The",
+          "prob": 0.04126
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.00384
+        },
+        {
+          "token": "Count",
+          "prob": 0.00141
+        },
+        {
+          "token": "Monday",
+          "prob": 0.00076
+        }
+      ]
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekday that starts with the letter T:",
+      "intended_days": [
+        "Tue",
+        "Thu"
+      ],
+      "weekday_mass": 0.997,
+      "weekday_mass_canonical": 0.0,
+      "other": 0.003,
+      "argmax_day": "Tue",
+      "argmax_in_intended": true,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Tuesday",
+          "prob": 0.69982
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.29173
+        },
+        {
+          "token": "Wednesday",
+          "prob": 0.00367
+        },
+        {
+          "token": "There",
+          "prob": 0.00153
+        },
+        {
+          "token": "Monday",
+          "prob": 0.00093
+        },
+        {
+          "token": "Friday",
+          "prob": 0.00064
+        }
+      ]
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day of the week that contains the letter r:",
+      "intended_days": [
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "weekday_mass": 0.9749,
+      "weekday_mass_canonical": 0.0002,
+      "other": 0.0251,
+      "argmax_day": "Wed",
+      "argmax_in_intended": false,
+      "passed_filter": true,
+      "top_tokens": [
+        {
+          "token": "Wednesday",
+          "prob": 0.67799
+        },
+        {
+          "token": "Friday",
+          "prob": 0.11782
+        },
+        {
+          "token": "Thursday",
+          "prob": 0.05565
+        },
+        {
+          "token": "Tuesday",
+          "prob": 0.03825
+        },
+        {
+          "token": "Monday",
+          "prob": 0.03825
+        },
+        {
+          "token": "Saturday",
+          "prob": 0.02629
+        }
+      ]
+    }
+  ],
+  "tokenisation": {
+    "Monday": {
+      "variant_token_ids": [
+        7159,
+        36339,
+        94299
+      ],
+      "canonical_single_token": true,
+      "encodings": {
+        " Monday": [
+          7159
+        ],
+        "Monday": [
+          36339
+        ],
+        " monday": [
+          94299
+        ],
+        "monday": [
+          1677,
+          1316
+        ]
+      }
+    },
+    "Tuesday": {
+      "variant_token_ids": [
+        7742,
+        41299
+      ],
+      "canonical_single_token": true,
+      "encodings": {
+        " Tuesday": [
+          7742
+        ],
+        "Tuesday": [
+          41299
+        ],
+        " tuesday": [
+          259,
+          7192
+        ],
+        "tuesday": [
+          83,
+          7192
+        ]
+      }
+    },
+    "Wednesday": {
+      "variant_token_ids": [
+        8079,
+        41619
+      ],
+      "canonical_single_token": true,
+      "encodings": {
+        " Wednesday": [
+          8079
+        ],
+        "Wednesday": [
+          41619
+        ],
+        " wednesday": [
+          11077,
+          7465
+        ],
+        "wednesday": [
+          68467,
+          7465
+        ]
+      }
+    },
+    "Thursday": {
+      "variant_token_ids": [
+        7950,
+        38888
+      ],
+      "canonical_single_token": true,
+      "encodings": {
+        " Thursday": [
+          7950
+        ],
+        "Thursday": [
+          38888
+        ],
+        " thursday": [
+          270,
+          7329
+        ],
+        "thursday": [
+          339,
+          7329
+        ]
+      }
+    },
+    "Friday": {
+      "variant_token_ids": [
+        6740,
+        35720,
+        80413
+      ],
+      "canonical_single_token": true,
+      "encodings": {
+        " Friday": [
+          6740
+        ],
+        "Friday": [
+          35720
+        ],
+        " friday": [
+          80413
+        ],
+        "friday": [
+          1658,
+          49978
+        ]
+      }
+    },
+    "Saturday": {
+      "variant_token_ids": [
+        7884,
+        34774
+      ],
+      "canonical_single_token": true,
+      "encodings": {
+        " Saturday": [
+          7884
+        ],
+        "Saturday": [
+          34774
+        ],
+        " saturday": [
+          274,
+          7115
+        ],
+        "saturday": [
+          82,
+          7115
+        ]
+      }
+    },
+    "Sunday": {
+      "variant_token_ids": [
+        7418,
+        37165,
+        93463
+      ],
+      "canonical_single_token": true,
+      "encodings": {
+        " Sunday": [
+          7418
+        ],
+        "Sunday": [
+          37165
+        ],
+        " sunday": [
+          93463
+        ],
+        "sunday": [
+          82,
+          6815
+        ]
+      }
+    }
+  }
+}

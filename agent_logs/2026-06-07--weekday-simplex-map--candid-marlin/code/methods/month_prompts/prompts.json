@@ -1,0 +1,3513 @@
+{
+  "n": 269,
+  "prompts": [
+    {
+      "family": "A_open",
+      "text_core": "A month of the year:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "A_open_000"
+    },
+    {
+      "family": "A_open",
+      "text_core": "An example of a month of the year is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "A_open_001"
+    },
+    {
+      "family": "A_open",
+      "text_core": "Here is a month of the year:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "A_open_002"
+    },
+    {
+      "family": "A_open",
+      "text_core": "One example of a month of the year:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "A_open_003"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A month of the year, for instance,",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "A_open_004"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A random month of the year:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 5,
+      "id": "A_open_005"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A month of the year is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 6,
+      "id": "A_open_006"
+    },
+    {
+      "family": "A_open",
+      "text_core": "One month of the year is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 7,
+      "id": "A_open_007"
+    },
+    {
+      "family": "A_open",
+      "text_core": "For example, a month of the year is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 8,
+      "id": "A_open_008"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A month (any one):",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 9,
+      "id": "A_open_009"
+    },
+    {
+      "family": "A_open",
+      "text_core": "Name a month. Answer:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 10,
+      "id": "A_open_010"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A month from the calendar:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 11,
+      "id": "A_open_011"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not January:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_012"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not February:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_013"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not March:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_014"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not April:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_015"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not May:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_016"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not June:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_017"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not July:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_018"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not August:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_019"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not September:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_020"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_021"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not November:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_022"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year that is not December:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_023"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than January is",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_024"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than February is",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_025"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than March is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_026"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than April is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_027"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than May is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_028"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than June is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_029"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than July is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_030"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than August is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_031"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than September is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_032"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than October is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_033"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than November is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_034"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year other than December is",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_035"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not January:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_036"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not February:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_037"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not March:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_038"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not April:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_039"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not May:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_040"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not June:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_041"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not July:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_042"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not August:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_043"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not September:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_044"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_045"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not November:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_046"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month of the year, but not December:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_047"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except January:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_048"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except February:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_049"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except March:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_050"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except April:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_051"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except May:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_052"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except June:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_053"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except July:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_054"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except August:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_055"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except September:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_056"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_057"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except November:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_058"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any month except December:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_059"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't January:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_060"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't February:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_061"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't March:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_062"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't April:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_063"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't May:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_064"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't June:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_065"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't July:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_066"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't August:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_067"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't September:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_068"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_069"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't November:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_070"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A month that isn't December:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_071"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither January nor February:",
+      "intended_days": [
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_072"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither January nor May:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_073"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither January nor August:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_074"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither January nor November:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_075"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither February nor April:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_076"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither February nor July:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_077"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither February nor October:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_078"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither March nor April:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_079"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither March nor July:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_080"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither March nor October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_081"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither April nor May:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_082"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither April nor August:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_083"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither April nor November:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_084"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither May nor July:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_085"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither May nor October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_086"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither June nor July:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_087"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither June nor October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_088"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither July nor August:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_089"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither July nor November:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_090"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither August nor October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_091"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither September nor October:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_092"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A month of the year that is neither October nor November:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_093"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter A:",
+      "intended_days": [
+        "Apr",
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_094"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter D:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_095"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter F:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_096"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter J:",
+      "intended_days": [
+        "Jan",
+        "Jun",
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_097"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter M:",
+      "intended_days": [
+        "Mar",
+        "May"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_098"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter N:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_099"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter O:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_100"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year that starts with the letter S:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_101"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with A is",
+      "intended_days": [
+        "Apr",
+        "Aug"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_102"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with D is",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_103"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with F is",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_104"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with J is",
+      "intended_days": [
+        "Jan",
+        "Jun",
+        "Jul"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_105"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with M is",
+      "intended_days": [
+        "Mar",
+        "May"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_106"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with N is",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_107"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with O is",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_108"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A month of the year beginning with S is",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_109"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter A:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "May",
+        "Jun",
+        "Jul",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_110"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter D:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_111"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter F:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_112"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter J:",
+      "intended_days": [
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_113"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter M:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Apr",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_114"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter N:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_115"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter O:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_116"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A month of the year that does not start with the letter S:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_117"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after January:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_118"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after February:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_119"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after March:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_120"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after April:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_121"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after May:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_122"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after June:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_123"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after July:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_124"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after August:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_125"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after September:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_126"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after October:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_127"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after November:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_128"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month after December:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_129"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before January:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_130"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before February:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_131"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before March:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_132"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before April:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_133"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before May:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_134"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before June:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_135"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before July:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_136"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before August:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_137"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before September:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_138"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before October:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_139"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before November:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_140"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The month before December:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_141"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after January:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_142"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after February:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_143"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after March:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_144"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after April:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_145"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after May:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_146"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after June:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_147"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after July:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_148"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after August:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_149"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after September:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_150"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after October:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_151"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after November:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_152"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two months after December:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_153"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after January:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_154"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after February:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_155"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after March:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_156"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after April:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_157"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after May:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_158"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after June:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_159"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after July:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_160"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after August:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_161"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after September:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_162"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after October:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_163"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after November:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_164"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three months after December:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_165"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after January:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_166"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after February:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_167"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after March:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_168"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after April:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_169"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after May:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_170"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after June:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_171"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after July:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_172"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after August:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_173"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after September:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_174"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after October:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_175"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after November:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_176"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Six months after December:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_177"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A summer month:",
+      "intended_days": [
+        "Jun",
+        "Jul",
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_178"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A winter month:",
+      "intended_days": [
+        "Dec",
+        "Jan",
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_179"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A spring month:",
+      "intended_days": [
+        "Mar",
+        "Apr",
+        "May"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_180"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "An autumn month:",
+      "intended_days": [
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_181"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A fall month:",
+      "intended_days": [
+        "Sep",
+        "Oct",
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_182"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The first month of the year:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_183"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The last month of the year:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_184"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The middle month of the year:",
+      "intended_days": [
+        "Jun",
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_185"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A month with 31 days:",
+      "intended_days": [
+        "Jan",
+        "Mar",
+        "May",
+        "Jul",
+        "Aug",
+        "Oct",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_186"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A month with 30 days:",
+      "intended_days": [
+        "Apr",
+        "Jun",
+        "Sep",
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_187"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The shortest month:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_188"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The month of Christmas:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_189"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The month of Halloween:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_190"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The hottest month of the year:",
+      "intended_days": [
+        "Jul",
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_191"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The coldest month of the year:",
+      "intended_days": [
+        "Jan",
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_192"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The month school usually starts:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_193"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The month the year begins:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_194"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The month the year ends:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_195"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A month in the first half of the year:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_196"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A month in the second half of the year:",
+      "intended_days": [
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_197"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The month after summer ends:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_198"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A holiday month:",
+      "intended_days": [
+        "Dec",
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_199"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The second month of the year:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_200"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The third month of the year:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_201"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The fourth month of the year:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_202"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The fifth month of the year:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_203"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The sixth month of the year:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_204"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The seventh month of the year:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_205"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The eighth month of the year:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_206"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The ninth month of the year:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_207"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The tenth month of the year:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_208"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The eleventh month of the year:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_209"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The twelfth month of the year:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_210"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the first month:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_211"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the second month:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_212"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the third month:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_213"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the fourth month:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_214"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the fifth month:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_215"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the sixth month:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_216"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the seventh month:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_217"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the eighth month:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_218"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the ninth month:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_219"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the tenth month:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_220"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the eleventh month:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_221"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from January, the twelfth month:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_222"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is January, next month:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_223"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is February, next month:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_224"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is March, next month:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_225"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is April, next month:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_226"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is May, next month:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_227"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is June, next month:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_228"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is July, next month:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_229"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is August, next month:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_230"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is September, next month:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_231"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is October, next month:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_232"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is November, next month:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_233"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is December, next month:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_234"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is January, last month:",
+      "intended_days": [
+        "Dec"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_235"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is February, last month:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_236"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is March, last month:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_237"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is April, last month:",
+      "intended_days": [
+        "Mar"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_238"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is May, last month:",
+      "intended_days": [
+        "Apr"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_239"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is June, last month:",
+      "intended_days": [
+        "May"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_240"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is July, last month:",
+      "intended_days": [
+        "Jun"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_241"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is August, last month:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_242"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is September, last month:",
+      "intended_days": [
+        "Aug"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_243"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is October, last month:",
+      "intended_days": [
+        "Sep"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_244"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is November, last month:",
+      "intended_days": [
+        "Oct"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_245"
+    },
+    {
+      "family": "H_today",
+      "text_core": "If this month is December, last month:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_246"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A month near the end of the year:",
+      "intended_days": [
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_247"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A month near the start of the year:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_248"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A month in the middle of the year:",
+      "intended_days": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_249"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A month close to summer:",
+      "intended_days": [
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_250"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A summer month that is not July:",
+      "intended_days": [
+        "Jun",
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_251"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A winter month that is not January:",
+      "intended_days": [
+        "Dec",
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_252"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A summer month that starts with J:",
+      "intended_days": [
+        "Jun",
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_253"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A winter month that starts with J:",
+      "intended_days": [
+        "Jan"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_254"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month with 31 days in summer:",
+      "intended_days": [
+        "Jul",
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_255"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month after June but before October:",
+      "intended_days": [
+        "Jul",
+        "Aug",
+        "Sep"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_256"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A spring month that is not May:",
+      "intended_days": [
+        "Mar",
+        "Apr"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_257"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month that comes before March:",
+      "intended_days": [
+        "Jan",
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_258"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month that comes after October:",
+      "intended_days": [
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_259"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month with 30 days in autumn:",
+      "intended_days": [
+        "Sep",
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_260"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month that starts with M:",
+      "intended_days": [
+        "Mar",
+        "May"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_261"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month that starts with A:",
+      "intended_days": [
+        "Apr",
+        "Aug"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_262"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A summer or winter month:",
+      "intended_days": [
+        "Jun",
+        "Jul",
+        "Aug",
+        "Dec",
+        "Jan",
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_263"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month that is not in summer:",
+      "intended_days": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_264"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "The month before the last month:",
+      "intended_days": [
+        "Nov"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_265"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "The month after the first month:",
+      "intended_days": [
+        "Feb"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_266"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A month between March and July:",
+      "intended_days": [
+        "Apr",
+        "May",
+        "Jun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_267"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A holiday month that is not December:",
+      "intended_days": [
+        "Jul"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_268"
+    }
+  ]
+}

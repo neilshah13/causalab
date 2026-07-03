@@ -1,0 +1,137 @@
+{
+  "model": "llama31_8b",
+  "layer": 31,
+  "mode": "radial",
+  "nn_dist": 10.637922320766755,
+  "subspace_dims": 20,
+  "n_anchors": 127,
+  "records": [
+    {
+      "dir_type": "subspace",
+      "radius_nn": 0.0,
+      "validity_rate": 1.0,
+      "mean_hellinger_to_anchor_valid": 0.005,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 0.5,
+      "validity_rate": 0.972,
+      "mean_hellinger_to_anchor_valid": 0.109,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 1.0,
+      "validity_rate": 0.951,
+      "mean_hellinger_to_anchor_valid": 0.209,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 1.5,
+      "validity_rate": 0.928,
+      "mean_hellinger_to_anchor_valid": 0.296,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 2.0,
+      "validity_rate": 0.898,
+      "mean_hellinger_to_anchor_valid": 0.37,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 3.0,
+      "validity_rate": 0.795,
+      "mean_hellinger_to_anchor_valid": 0.485,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 4.0,
+      "validity_rate": 0.672,
+      "mean_hellinger_to_anchor_valid": 0.563,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 6.0,
+      "validity_rate": 0.478,
+      "mean_hellinger_to_anchor_valid": 0.652,
+      "n": 2032
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 8.0,
+      "validity_rate": 0.359,
+      "mean_hellinger_to_anchor_valid": 0.696,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 0.0,
+      "validity_rate": 1.0,
+      "mean_hellinger_to_anchor_valid": 0.005,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 0.5,
+      "validity_rate": 0.986,
+      "mean_hellinger_to_anchor_valid": 0.031,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 1.0,
+      "validity_rate": 0.958,
+      "mean_hellinger_to_anchor_valid": 0.059,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 1.5,
+      "validity_rate": 0.923,
+      "mean_hellinger_to_anchor_valid": 0.088,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 2.0,
+      "validity_rate": 0.88,
+      "mean_hellinger_to_anchor_valid": 0.117,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 3.0,
+      "validity_rate": 0.729,
+      "mean_hellinger_to_anchor_valid": 0.178,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 4.0,
+      "validity_rate": 0.494,
+      "mean_hellinger_to_anchor_valid": 0.231,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 6.0,
+      "validity_rate": 0.069,
+      "mean_hellinger_to_anchor_valid": 0.28,
+      "n": 2032
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 8.0,
+      "validity_rate": 0.003,
+      "mean_hellinger_to_anchor_valid": 0.251,
+      "n": 2032
+    }
+  ],
+  "zero_perturbation_hellinger_to_anchor": 0.0004
+}

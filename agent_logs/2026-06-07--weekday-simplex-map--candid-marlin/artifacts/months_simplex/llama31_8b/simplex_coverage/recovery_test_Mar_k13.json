@@ -1,0 +1,43 @@
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Mar",
+  "k": 13,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Mar",
+    "n_held": 24,
+    "n_train": 206,
+    "n_valid_samples": 7700,
+    "frac_valid_in_deleted_region": 0.023,
+    "n_valid_in_deleted_region": 176,
+    "max_P_target_recovered": 0.989,
+    "max_P_per_deleted": {
+      "Mar": 0.989
+    },
+    "held_region_cells": 22,
+    "recovered_cells": 22,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.161,
+    "projection_recon_keeps_argmax_frac": 0.708
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 24,
+    "n_train": 206,
+    "n_valid_samples": 6907,
+    "frac_valid_in_deleted_region": 0.087,
+    "n_valid_in_deleted_region": 600,
+    "max_P_target_recovered": 0.998,
+    "max_P_per_deleted": {
+      "Mar": 0.998
+    },
+    "held_region_cells": 24,
+    "recovered_cells": 24,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.044,
+    "projection_recon_keeps_argmax_frac": 0.083
+  }
+}

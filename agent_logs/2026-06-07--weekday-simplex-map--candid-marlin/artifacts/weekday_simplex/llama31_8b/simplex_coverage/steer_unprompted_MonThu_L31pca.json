@@ -1,0 +1,39 @@
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "keep": "Mon,Thu",
+  "method": "pca",
+  "k": 8,
+  "n_kept_anchors": 69,
+  "steps": 150,
+  "n_held": 5,
+  "held_reached_P50_gradient": 3,
+  "held_reached_P50_linear": 3,
+  "per_held": {
+    "Tue": {
+      "P_linear_init": 0.001,
+      "P_gradient": 0.003,
+      "hellinger_to_vertex": 0.973
+    },
+    "Wed": {
+      "P_linear_init": 0.856,
+      "P_gradient": 0.947,
+      "hellinger_to_vertex": 0.164
+    },
+    "Fri": {
+      "P_linear_init": 0.512,
+      "P_gradient": 0.697,
+      "hellinger_to_vertex": 0.406
+    },
+    "Sat": {
+      "P_linear_init": 0.032,
+      "P_gradient": 0.043,
+      "hellinger_to_vertex": 0.89
+    },
+    "Sun": {
+      "P_linear_init": 0.977,
+      "P_gradient": 0.982,
+      "hellinger_to_vertex": 0.094
+    }
+  }
+}

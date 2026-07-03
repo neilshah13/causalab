@@ -1,0 +1,122 @@
+node=node22 gpu=0
+NVIDIA RTX A6000, 49140 MiB
+NVIDIA RTX A6000, 49140 MiB
+================ PROBE llama31_8b ================
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 55.85it/s]
+
+=== PROBE llama31_8b (chat=False) ===
+pass-filter 0/45 = 0%   argmax-in-intended 98%
+family          wmass  other argmax  core
+A_open           0.33   0.67    Mon  Name a day of the week.  <-FAIL
+A_open           0.28   0.72    Mon  Tell me a day of the week.  <-FAIL
+B_neg1           0.54   0.46    Tue  Name a day of the week that is not Monday.  <-FAIL
+B_neg1           0.51   0.49    Wed  Name a day of the week that is not Tuesday.  <-FAIL
+C_neg2           0.64   0.36    Wed  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.62   0.38    Tue  Name a day of the week that is neither Monday no  <-FAIL
+D_letter         0.53   0.47    Fri  Name a day of the week that starts with the lett  <-FAIL
+D_letter         0.56   0.44    Mon  Name a day of the week that starts with the lett  <-FAIL
+D_letter_neg     0.46   0.54    Mon  Name a day of the week that does not start with   <-FAIL
+D_letter_neg     0.49   0.51    Wed  Name a day of the week that does not start with   <-FAIL
+E_succ           0.72   0.28    Tue  What is the day after Monday?  <-FAIL
+E_succ           0.72   0.28    Wed  What is the day after Tuesday?  <-FAIL
+F_semantic       0.35   0.65    Sat  Name a day of the weekend.  <-FAIL
+F_semantic       0.41   0.59    Sat  Name a weekend day.  <-FAIL
+G_ordinal        0.65   0.35    Tue  What is the second day of the week?  <-FAIL
+G_ordinal        0.74   0.26    Wed  What is the third day of the week?  <-FAIL
+H_graded         0.45   0.55    Fri  Name a day near the end of the week.  <-FAIL
+H_graded         0.46   0.54    Mon  Name a day near the start of the week.  <-FAIL
+H_today          0.24   0.76    Tue  If today is Monday, what is tomorrow?  <-FAIL
+H_today          0.31   0.69    Wed  If today is Tuesday, what is tomorrow?  <-FAIL
+I_multi          0.48   0.52    Sat  Name a weekend day that is not Sunday.  <-FAIL
+I_multi          0.44   0.56    Sun  Name a weekend day that is not Saturday.  <-FAIL
+C_neg2           0.58   0.42    Wed  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.54   0.46    Tue  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.56   0.44    Wed  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.56   0.44    Tue  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.56   0.44    Thu  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.58   0.42    Wed  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.55   0.45    Mon  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.57   0.43    Wed  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.63   0.37    Thu  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.54   0.46    Tue  Name a day of the week that is neither Wednesday  <-FAIL
+C_neg2           0.54   0.46    Tue  Name a day of the week that is neither Wednesday  <-FAIL
+C_neg2           0.55   0.45    Tue  Name a day of the week that is neither Wednesday  <-FAIL
+C_neg2           0.60   0.40    Tue  Name a day of the week that is neither Wednesday  <-FAIL
+C_neg2           0.47   0.53    Wed  Name a day of the week that is neither Thursday   <-FAIL
+C_neg2           0.51   0.49    Wed  Name a day of the week that is neither Thursday   <-FAIL
+C_neg2           0.55   0.45    Tue  Name a day of the week that is neither Thursday   <-FAIL
+C_neg2           0.49   0.51    Mon  Name a day of the week that is neither Friday no  <-FAIL
+C_neg2           0.56   0.44    Mon  Name a day of the week that is neither Friday no  <-FAIL
+C_neg2           0.53   0.47    Mon  Name a day of the week that is neither Saturday   <-FAIL
+D_letter         0.59   0.41    Tue  Name a day of the week that starts with the lett  <-FAIL
+G_ordinal        0.78   0.22    Wed  Counting from Monday, what is the third day of t  <-FAIL
+I_multi          0.65   0.35    Tue  Name a weekday that starts with the letter T.  <-FAIL
+I_multi          0.35   0.65    Wed  Name a day of the week that contains the letter   <-FAIL
+tokenisation single-token check:
+  Monday     canonical_single=True ids=[7159, 36339, 94299]
+  Tuesday    canonical_single=True ids=[7742, 41299]
+  Wednesday  canonical_single=True ids=[8079, 41619]
+  Thursday   canonical_single=True ids=[7950, 38888]
+  Friday     canonical_single=True ids=[6740, 35720, 80413]
+  Saturday   canonical_single=True ids=[7884, 34774]
+  Sunday     canonical_single=True ids=[7418, 37165, 93463]
+================ PROBE llama31_8b_instruct ================
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.77it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  3.79it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  3.62it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.91it/s]
+
+=== PROBE llama31_8b_instruct (chat=True) ===
+pass-filter 19/45 = 42%   argmax-in-intended 96%
+family          wmass  other argmax  core
+A_open           1.00   0.00    Wed  Name a day of the week.
+A_open           0.99   0.01    Wed  Tell me a day of the week.
+B_neg1           0.95   0.05    Wed  Name a day of the week that is not Monday.
+B_neg1           0.84   0.16    Mon  Name a day of the week that is not Tuesday.  <-FAIL
+C_neg2           0.85   0.15    Wed  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.85   0.15    Thu  Name a day of the week that is neither Monday no  <-FAIL
+D_letter         1.00   0.00    Fri  Name a day of the week that starts with the lett
+D_letter         0.98   0.02    Mon  Name a day of the week that starts with the lett
+D_letter_neg     0.87   0.13    Mon  Name a day of the week that does not start with   <-FAIL
+D_letter_neg     0.91   0.09    Wed  Name a day of the week that does not start with 
+E_succ           0.03   0.97    Tue  What is the day after Monday?  <-FAIL
+E_succ           0.04   0.96    Wed  What is the day after Tuesday?  <-FAIL
+F_semantic       0.99   0.01    Sat  Name a day of the weekend.
+F_semantic       0.99   0.01    Sat  Name a weekend day.
+G_ordinal        0.02   0.98    Mon  What is the second day of the week?  <-FAIL
+G_ordinal        0.01   0.99    Tue  What is the third day of the week?  <-FAIL
+H_graded         0.99   0.01    Fri  Name a day near the end of the week.
+H_graded         0.97   0.03    Mon  Name a day near the start of the week.
+H_today          0.00   1.00    Tue  If today is Monday, what is tomorrow?  <-FAIL
+H_today          0.00   1.00    Wed  If today is Tuesday, what is tomorrow?  <-FAIL
+I_multi          0.95   0.05    Sat  Name a weekend day that is not Sunday.
+I_multi          0.98   0.02    Sun  Name a weekend day that is not Saturday.
+C_neg2           0.76   0.24    Tue  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.87   0.13    Tue  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.88   0.12    Wed  Name a day of the week that is neither Monday no  <-FAIL
+C_neg2           0.90   0.10    Tue  Name a day of the week that is neither Monday no
+C_neg2           0.58   0.42    Mon  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.85   0.15    Mon  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.88   0.12    Mon  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.88   0.12    Mon  Name a day of the week that is neither Tuesday n  <-FAIL
+C_neg2           0.94   0.06    Mon  Name a day of the week that is neither Tuesday n
+C_neg2           0.65   0.35    Mon  Name a day of the week that is neither Wednesday  <-FAIL
+C_neg2           0.87   0.13    Mon  Name a day of the week that is neither Wednesday  <-FAIL
+C_neg2           0.89   0.11    Mon  Name a day of the week that is neither Wednesday  <-FAIL
+C_neg2           0.92   0.08    Mon  Name a day of the week that is neither Wednesday
+C_neg2           0.76   0.24    Mon  Name a day of the week that is neither Thursday   <-FAIL
+C_neg2           0.86   0.14    Mon  Name a day of the week that is neither Thursday   <-FAIL
+C_neg2           0.88   0.12    Mon  Name a day of the week that is neither Thursday   <-FAIL
+C_neg2           0.85   0.15    Mon  Name a day of the week that is neither Friday no  <-FAIL
+C_neg2           0.91   0.09    Mon  Name a day of the week that is neither Friday no
+C_neg2           0.90   0.10    Mon  Name a day of the week that is neither Saturday   <-FAIL
+D_letter         0.96   0.04    Tue  Name a day of the week that starts with the lett
+G_ordinal        0.04   0.96    Mon  Counting from Monday, what is the third day of t  <-FAIL
+I_multi          0.97   0.03    Tue  Name a weekday that starts with the letter T.
+I_multi          0.96   0.04    Wed  Name a day of the week that contains the letter 
+tokenisation single-token check:
+  Monday     canonical_single=True ids=[7159, 36339, 94299]
+  Tuesday    canonical_single=True ids=[7742, 41299]
+  Wednesday  canonical_single=True ids=[8079, 41619]
+  Thursday   canonical_single=True ids=[7950, 38888]
+  Friday     canonical_single=True ids=[6740, 35720, 80413]
+  Saturday   canonical_single=True ids=[7884, 34774]
+  Sunday     canonical_single=True ids=[7418, 37165, 93463]
+PROBE DONE

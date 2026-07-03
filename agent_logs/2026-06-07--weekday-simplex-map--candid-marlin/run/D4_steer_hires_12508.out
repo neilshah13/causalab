@@ -1,0 +1,78 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 91.04it/s]
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "k": 8,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 141,
+  "fidelity_median_hellinger": 0.107,
+  "fidelity_p90_hellinger": 0.22,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.1,
+  "smoothness_max_step": 0.466
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_hires.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.68it/s]
+{
+  "concept": "months",
+  "layer": 31,
+  "k": 13,
+  "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "n_waypoints": 169,
+  "fidelity_median_hellinger": 0.104,
+  "fidelity_p90_hellinger": 0.188,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.113,
+  "smoothness_max_step": 0.467
+}
+argmax sweep: Jan -> Jan -> Jan -> Jan -> Jan -> Jan -> Jan -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> May -> Apr -> May -> May -> May -> May -> May -> May -> May -> May -> May -> May -> May -> May -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Jan -> Jan -> Jan -> Jan -> Jan -> Jan -> Jan -> Jan
+saved -> steer_months_hires.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 89.79it/s]
+{
+  "concept": "colors",
+  "layer": 31,
+  "k": 24,
+  "order": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Red"
+  ],
+  "n_waypoints": 97,
+  "fidelity_median_hellinger": 0.12,
+  "fidelity_p90_hellinger": 0.7,
+  "frac_valid": 0.825,
+  "smoothness_median_step": 0.105,
+  "smoothness_max_step": 0.432
+}
+argmax sweep: Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Orange -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Yellow -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Green -> Blue -> Green -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Blue -> Purple -> Purple -> Purple -> Purple -> Red -> Purple -> Purple -> Purple -> Purple -> Purple -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red -> Red
+saved -> steer_colors_hires.json
+D4 DONE

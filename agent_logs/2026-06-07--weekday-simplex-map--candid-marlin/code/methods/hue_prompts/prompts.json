@@ -1,0 +1,347 @@
+{
+ "n": 12,
+ "hues": [
+  "Red",
+  "Orange",
+  "Yellow",
+  "Lime",
+  "Green",
+  "Teal",
+  "Cyan",
+  "Azure",
+  "Blue",
+  "Violet",
+  "Purple",
+  "Pink"
+ ],
+ "prompts": [
+  {
+   "text_core": "A color:",
+   "family": "A_open"
+  },
+  {
+   "text_core": "A color of the rainbow:",
+   "family": "A_open"
+  },
+  {
+   "text_core": "A bright color:",
+   "family": "A_open"
+  },
+  {
+   "text_core": "A primary color:",
+   "family": "A_open"
+  },
+  {
+   "text_core": "A color of the visible spectrum:",
+   "family": "A_open"
+  },
+  {
+   "text_core": "A color of the rainbow that is not red:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not orange:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not yellow:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not lime:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not green:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not teal:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not cyan:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not azure:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not blue:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not violet:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not purple:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color of the rainbow that is not pink:",
+   "family": "B_neg1"
+  },
+  {
+   "text_core": "A color that is neither red nor orange:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither orange nor yellow:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither yellow nor lime:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither lime nor green:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither green nor teal:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither teal nor cyan:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither cyan nor azure:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither azure nor blue:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither blue nor violet:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither violet nor purple:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither purple nor pink:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "A color that is neither pink nor red:",
+   "family": "C_neg2"
+  },
+  {
+   "text_core": "The color between red and yellow on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between orange and lime on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between yellow and green on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between lime and teal on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between green and cyan on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between teal and azure on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between cyan and blue on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between azure and violet on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between blue and purple on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between violet and pink on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between purple and red on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color between pink and orange on the color wheel:",
+   "family": "D_between"
+  },
+  {
+   "text_core": "The color of the sky on a clear day:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of fresh grass:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a ripe lemon:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of blood:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a carrot:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a flamingo:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of an eggplant:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a pumpkin:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of the deep ocean:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a lime:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a violet flower:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a stop sign:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of a banana:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of cotton candy:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of tropical shallow water:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "The color of new spring leaves:",
+   "family": "E_assoc"
+  },
+  {
+   "text_core": "Mixing red and yellow paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "Mixing blue and yellow paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "Mixing red and blue paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "Mixing red and white paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "Mixing green and blue paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "Mixing orange and red paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "Mixing yellow and green paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "Mixing blue and purple paint gives:",
+   "family": "F_mix"
+  },
+  {
+   "text_core": "A color that starts with the letter R:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter O:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter Y:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter L:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter G:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter T:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter C:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter A:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter B:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter V:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A color that starts with the letter P:",
+   "family": "G_letter"
+  },
+  {
+   "text_core": "A warm color:",
+   "family": "H_temp"
+  },
+  {
+   "text_core": "A cool color:",
+   "family": "H_temp"
+  },
+  {
+   "text_core": "The warmest color:",
+   "family": "H_temp"
+  },
+  {
+   "text_core": "The coolest color:",
+   "family": "H_temp"
+  },
+  {
+   "text_core": "A pastel color:",
+   "family": "H_temp"
+  },
+  {
+   "text_core": "A neon color:",
+   "family": "H_temp"
+  }
+ ]
+}

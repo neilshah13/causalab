@@ -1,0 +1,13 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 102.54it/s]
+L16: carrier_sanity(med Hellinger)=0.382  valid_frac_of_box=0.977  cov_gain=7.66  new_cells=1079
+L18: carrier_sanity(med Hellinger)=0.321  valid_frac_of_box=0.891  cov_gain=7.8  new_cells=1088
+L20: carrier_sanity(med Hellinger)=0.115  valid_frac_of_box=0.940  cov_gain=7.75  new_cells=1073
+L22: carrier_sanity(med Hellinger)=0.065  valid_frac_of_box=0.894  cov_gain=7.82  new_cells=1078
+L24: carrier_sanity(med Hellinger)=0.042  valid_frac_of_box=0.845  cov_gain=7.8  new_cells=1074
+L26: carrier_sanity(med Hellinger)=0.044  valid_frac_of_box=0.749  cov_gain=7.65  new_cells=1070
+L28: carrier_sanity(med Hellinger)=0.036  valid_frac_of_box=0.806  cov_gain=7.83  new_cells=1073
+L30: carrier_sanity(med Hellinger)=0.020  valid_frac_of_box=0.798  cov_gain=7.98  new_cells=1082
+L31: carrier_sanity(med Hellinger)=0.011  valid_frac_of_box=0.806  cov_gain=7.81  new_cells=1069
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+ON1 DONE

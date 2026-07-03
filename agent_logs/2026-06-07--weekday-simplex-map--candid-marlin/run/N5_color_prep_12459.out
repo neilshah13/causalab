@@ -1,0 +1,50 @@
+node=node11
+single-token colors (80): ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple', 'Pink', 'Brown', 'Black', 'White', 'Gray', 'Grey', 'Cyan', 'Violet', 'Turquoise', 'Teal', 'Navy', 'Olive', 'Lime', 'Aqua', 'Gold', 'Silver', 'Beige', 'Tan', 'Peach', 'Coral', 'Salmon', 'Crimson', 'Scarlet', 'Lavender', 'Plum', 'Mint', 'Ivory', 'Charcoal', 'Amber', 'Azure', 'Rose', 'Ruby', 'Emerald', 'Sapphire', 'Jade', 'Mustard', 'Bronze', 'Copper', 'Brass', 'Rust', 'Wine', 'Cream', 'Snow', 'Ebony', 'Jet', 'Slate', 'Steel', 'Ash', 'Stone', 'Sand', 'Clay', 'Blush', 'Lemon', 'Honey', 'Raspberry', 'Cherry', 'Brick', 'Forest', 'Moss', 'Sage', 'Fern', 'Pine', 'Sky', 'Ocean', 'Sea', 'Denim', 'Royal', 'Midnight', 'Ink', 'Pearl', 'Platinum', 'Titanium', 'Graphite', 'Coal']
+dropped (multi-token, 22): ['Magenta', 'Indigo', 'Maroon', 'Cerulean', 'Vermilion', 'Ochre', 'Sienna', 'Umber', 'Mauve', 'Fuchsia', 'Chartreuse', 'Burgundy', 'Cobalt', 'Khaki', 'Apricot', 'Tangerine', 'Lilac', 'Periwinkle', 'Orchid', 'Fuschia', 'Terracotta', 'Onyx']
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/code/methods/color_prompts/colors.json
+available single-token colors (80): ['Amber', 'Aqua', 'Ash', 'Azure', 'Beige', 'Black', 'Blue', 'Blush', 'Brass', 'Brick', 'Bronze', 'Brown', 'Charcoal', 'Cherry', 'Clay', 'Coal', 'Copper', 'Coral', 'Cream', 'Crimson', 'Cyan', 'Denim', 'Ebony', 'Emerald', 'Fern', 'Forest', 'Gold', 'Graphite', 'Gray', 'Green', 'Grey', 'Honey', 'Ink', 'Ivory', 'Jade', 'Jet', 'Lavender', 'Lemon', 'Lime', 'Midnight', 'Mint', 'Moss', 'Mustard', 'Navy', 'Ocean', 'Olive', 'Orange', 'Peach', 'Pearl', 'Pine', 'Pink', 'Platinum', 'Plum', 'Purple', 'Raspberry', 'Red', 'Rose', 'Royal', 'Ruby', 'Rust', 'Sage', 'Salmon', 'Sand', 'Sapphire', 'Scarlet', 'Sea', 'Silver', 'Sky', 'Slate', 'Snow', 'Steel', 'Stone', 'Tan', 'Teal', 'Titanium', 'Turquoise', 'Violet', 'White', 'Wine', 'Yellow']
+Built 401 color prompts -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/code/methods/color_prompts/prompts.json
+  A_open          10
+  B_neg1         320
+  D_letter        21
+  D_letter_neg    21
+  F_group          5
+  F_object        14
+  F_shade          4
+  I_multi          6
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 259.10it/s]
+concept=colors n=80 layers=32 n_prompts=401
+  16/401
+  32/401
+  48/401
+  64/401
+  80/401
+  96/401
+  112/401
+  128/401
+  144/401
+  160/401
+  176/401
+  192/401
+  208/401
+  224/401
+  240/401
+  256/401
+  272/401
+  288/401
+  304/401
+  320/401
+  336/401
+  352/401
+  368/401
+  384/401
+  400/401
+  401/401
+retained 149/401; PCA dims90=11; interior=0.456; all_reachable=False
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 251.13it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+L31: carrier_sanity(med Hellinger)=0.027  valid_frac_of_box=0.639  cov_gain=9.76  new_cells=937
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/colors_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+N5 DONE

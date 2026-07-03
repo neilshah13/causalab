@@ -1,0 +1,36 @@
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Jul",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Jul",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12893,
+    "frac_valid_in_deleted_region": 0.0,
+    "n_valid_in_deleted_region": 0,
+    "max_P_target_recovered": 0.108,
+    "held_region_cells": 15,
+    "recovered_cells": 8,
+    "cell_recovery_rate": 0.533,
+    "projection_recon_median_hellinger": 0.703,
+    "projection_recon_keeps_argmax_frac": 0.0
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12700,
+    "frac_valid_in_deleted_region": 0.101,
+    "n_valid_in_deleted_region": 1283,
+    "max_P_target_recovered": 0.995,
+    "held_region_cells": 20,
+    "recovered_cells": 18,
+    "cell_recovery_rate": 0.9,
+    "projection_recon_median_hellinger": 0.17,
+    "projection_recon_keeps_argmax_frac": 0.19
+  }
+}

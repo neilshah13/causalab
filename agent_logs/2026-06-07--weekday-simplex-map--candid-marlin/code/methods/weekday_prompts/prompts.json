@@ -1,0 +1,2536 @@
+{
+  "n": 225,
+  "prompts": [
+    {
+      "family": "A_open",
+      "text_core": "A day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "A_open_000"
+    },
+    {
+      "family": "A_open",
+      "text_core": "An example of a day of the week is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "A_open_001"
+    },
+    {
+      "family": "A_open",
+      "text_core": "Here is a day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "A_open_002"
+    },
+    {
+      "family": "A_open",
+      "text_core": "One example of a day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "A_open_003"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A day of the week, for example,",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "A_open_004"
+    },
+    {
+      "family": "A_open",
+      "text_core": "My favorite example of a day of the week is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "A_open_005"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A random day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 6,
+      "id": "A_open_006"
+    },
+    {
+      "family": "A_open",
+      "text_core": "Pick a day of the week. Answer:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 7,
+      "id": "A_open_007"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A day of the week is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 8,
+      "id": "A_open_008"
+    },
+    {
+      "family": "A_open",
+      "text_core": "One day of the week is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 9,
+      "id": "A_open_009"
+    },
+    {
+      "family": "A_open",
+      "text_core": "For example, a day of the week is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 10,
+      "id": "A_open_010"
+    },
+    {
+      "family": "A_open",
+      "text_core": "A day of the week (any one):",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 11,
+      "id": "A_open_011"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Monday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_012"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Tuesday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_013"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_014"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Thursday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_015"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_016"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_017"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that is not Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "B_neg1_018"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week other than Monday is",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_019"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week other than Tuesday is",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_020"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week other than Wednesday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_021"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week other than Thursday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_022"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week other than Friday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_023"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week other than Saturday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_024"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week other than Sunday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 1,
+      "id": "B_neg1_025"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week, but not Monday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_026"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week, but not Tuesday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_027"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week, but not Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_028"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week, but not Thursday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_029"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week, but not Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_030"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week, but not Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_031"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week, but not Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 2,
+      "id": "B_neg1_032"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any day of the week except Monday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_033"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any day of the week except Tuesday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_034"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any day of the week except Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_035"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any day of the week except Thursday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_036"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any day of the week except Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_037"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any day of the week except Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_038"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Any day of the week except Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 3,
+      "id": "B_neg1_039"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that isn't Monday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_040"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that isn't Tuesday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_041"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that isn't Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_042"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that isn't Thursday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_043"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that isn't Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_044"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that isn't Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_045"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A day of the week that isn't Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 4,
+      "id": "B_neg1_046"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Not Monday, but another day of the week:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "B_neg1_047"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Not Tuesday, but another day of the week:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "B_neg1_048"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Not Wednesday, but another day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "B_neg1_049"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Not Thursday, but another day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "B_neg1_050"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Not Friday, but another day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "B_neg1_051"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Not Saturday, but another day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "B_neg1_052"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "Not Sunday, but another day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 5,
+      "id": "B_neg1_053"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A weekday or weekend day other than Monday is",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 6,
+      "id": "B_neg1_054"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A weekday or weekend day other than Tuesday is",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 6,
+      "id": "B_neg1_055"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A weekday or weekend day other than Wednesday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 6,
+      "id": "B_neg1_056"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A weekday or weekend day other than Thursday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 6,
+      "id": "B_neg1_057"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A weekday or weekend day other than Friday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 6,
+      "id": "B_neg1_058"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A weekday or weekend day other than Saturday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 6,
+      "id": "B_neg1_059"
+    },
+    {
+      "family": "B_neg1",
+      "text_core": "A weekday or weekend day other than Sunday is",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 6,
+      "id": "B_neg1_060"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Tuesday:",
+      "intended_days": [
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_061"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Wednesday:",
+      "intended_days": [
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_062"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Thursday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_063"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Friday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_064"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Saturday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_065"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Monday nor Sunday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_066"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_067"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Thursday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_068"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Friday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_069"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_070"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Tuesday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_071"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Thursday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_072"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_073"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_074"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Wednesday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_075"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Thursday nor Friday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_076"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Thursday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_077"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Thursday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_078"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Friday nor Saturday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_079"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Friday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_080"
+    },
+    {
+      "family": "C_neg2",
+      "text_core": "A day of the week that is neither Saturday nor Sunday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "C_neg2_081"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter F:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_082"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter M:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_083"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter S:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_084"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter T:",
+      "intended_days": [
+        "Tue",
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_085"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week that starts with the letter W:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_086"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week beginning with F is",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_087"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week beginning with M is",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_088"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week beginning with S is",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_089"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week beginning with T is",
+      "intended_days": [
+        "Tue",
+        "Thu"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_090"
+    },
+    {
+      "family": "D_letter",
+      "text_core": "A day of the week beginning with W is",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 1,
+      "id": "D_letter_091"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A day of the week that does not start with the letter F:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_092"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A day of the week that does not start with the letter M:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_093"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A day of the week that does not start with the letter S:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_094"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A day of the week that does not start with the letter T:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_095"
+    },
+    {
+      "family": "D_letter_neg",
+      "text_core": "A day of the week that does not start with the letter W:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "D_letter_neg_096"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Monday:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_097"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Tuesday:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_098"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Wednesday:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_099"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Thursday:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_100"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Friday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_101"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Saturday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_102"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day after Sunday:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 0,
+      "id": "E_succ_103"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day before Monday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_104"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day before Tuesday:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_105"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day before Wednesday:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_106"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day before Thursday:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_107"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day before Friday:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_108"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day before Saturday:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_109"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day before Sunday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 1,
+      "id": "E_succ_110"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days after Monday:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_111"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days after Tuesday:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_112"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days after Wednesday:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_113"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days after Thursday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_114"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days after Friday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_115"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days after Saturday:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_116"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days after Sunday:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 2,
+      "id": "E_succ_117"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three days after Monday:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_118"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three days after Tuesday:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_119"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three days after Wednesday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_120"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three days after Thursday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_121"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three days after Friday:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_122"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three days after Saturday:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_123"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Three days after Sunday:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 3,
+      "id": "E_succ_124"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days before Monday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_125"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days before Tuesday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_126"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days before Wednesday:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_127"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days before Thursday:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_128"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days before Friday:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_129"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days before Saturday:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_130"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "Two days before Sunday:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 4,
+      "id": "E_succ_131"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day right after Monday:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 5,
+      "id": "E_succ_132"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day right after Tuesday:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 5,
+      "id": "E_succ_133"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day right after Wednesday:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 5,
+      "id": "E_succ_134"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day right after Thursday:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 5,
+      "id": "E_succ_135"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day right after Friday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 5,
+      "id": "E_succ_136"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day right after Saturday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 5,
+      "id": "E_succ_137"
+    },
+    {
+      "family": "E_succ",
+      "text_core": "The day right after Sunday:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 5,
+      "id": "E_succ_138"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A day of the weekend:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_139"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A weekend day:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_140"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A weekday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_141"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A work day:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_142"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "A school day:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_143"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The first day of the week:",
+      "intended_days": [
+        "Mon",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_144"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The last day of the week:",
+      "intended_days": [
+        "Sun",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_145"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day in the middle of the week:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_146"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day right before the weekend:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_147"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The first day of the weekend:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_148"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The last day of the weekend:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_149"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The first day after the weekend:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_150"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day most people start work:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_151"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day most people relax:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_152"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The busiest day of the work week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_153"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The middle day of the work week:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_154"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day most offices are closed:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_155"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day children go to school:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_156"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day people typically do not work:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_157"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day banks are usually open:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_158"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day often called hump day:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_159"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day that ends the work week:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_160"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day that starts the work week:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_161"
+    },
+    {
+      "family": "F_semantic",
+      "text_core": "The day church services are common:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "F_semantic_162"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The second day of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_163"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The third day of the week:",
+      "intended_days": [
+        "Tue",
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_164"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The fourth day of the week:",
+      "intended_days": [
+        "Wed",
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_165"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The fifth day of the week:",
+      "intended_days": [
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_166"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The sixth day of the week:",
+      "intended_days": [
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_167"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "The seventh day of the week:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "G_ordinal_168"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the first day of the week:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_169"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the second day of the week:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_170"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the third day of the week:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_171"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the fourth day of the week:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_172"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the fifth day of the week:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_173"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the sixth day of the week:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_174"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "Counting from Monday, the seventh day of the week:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "G_ordinal_175"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "If the week starts on Sunday, the first day:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 2,
+      "id": "G_ordinal_176"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "If the week starts on Sunday, the second day:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 2,
+      "id": "G_ordinal_177"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "If the week starts on Sunday, the third day:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 2,
+      "id": "G_ordinal_178"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "If the week starts on Sunday, the fourth day:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 2,
+      "id": "G_ordinal_179"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "If the week starts on Sunday, the fifth day:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 2,
+      "id": "G_ordinal_180"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "If the week starts on Sunday, the sixth day:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 2,
+      "id": "G_ordinal_181"
+    },
+    {
+      "family": "G_ordinal",
+      "text_core": "If the week starts on Sunday, the seventh day:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 2,
+      "id": "G_ordinal_182"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Monday; tomorrow:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_183"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Tuesday; tomorrow:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_184"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Wednesday; tomorrow:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_185"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Thursday; tomorrow:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_186"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Friday; tomorrow:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_187"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Saturday; tomorrow:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_188"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Sunday; tomorrow:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_today_189"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Monday; yesterday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_190"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Tuesday; yesterday:",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_191"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Wednesday; yesterday:",
+      "intended_days": [
+        "Tue"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_192"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Thursday; yesterday:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_193"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Friday; yesterday:",
+      "intended_days": [
+        "Thu"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_194"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Saturday; yesterday:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_195"
+    },
+    {
+      "family": "H_today",
+      "text_core": "Today is Sunday; yesterday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 1,
+      "id": "H_today_196"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A day near the end of the week:",
+      "intended_days": [
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_197"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A day near the start of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_198"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A day in the middle of the week:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_199"
+    },
+    {
+      "family": "H_graded",
+      "text_core": "A day close to the weekend:",
+      "intended_days": [
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "H_graded_200"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekend day that is not Sunday:",
+      "intended_days": [
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_201"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekend day that is not Saturday:",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_202"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekday that starts with the letter T:",
+      "intended_days": [
+        "Tue",
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_203"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A work day that is not Monday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_204"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day between Monday and Friday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_205"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day after Wednesday but before Sunday:",
+      "intended_days": [
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_206"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekday that is not Monday or Friday:",
+      "intended_days": [
+        "Tue",
+        "Wed",
+        "Thu"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_207"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day that comes before Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Tue"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_208"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day that comes after Thursday:",
+      "intended_days": [
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_209"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day of the week that contains the letter r:",
+      "intended_days": [
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_210"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekday that starts with the letter W:",
+      "intended_days": [
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_211"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekday that starts with the letter F:",
+      "intended_days": [
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_212"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekend day that starts with the letter S:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_213"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "The day after Saturday is",
+      "intended_days": [
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_214"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "The day before Tuesday is",
+      "intended_days": [
+        "Mon"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_215"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A work day in the second half of the week:",
+      "intended_days": [
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_216"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day that is not a weekday:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_217"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day that is not a weekend day:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_218"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekday other than Wednesday:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_219"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day in the first half of the week:",
+      "intended_days": [
+        "Mon",
+        "Tue",
+        "Wed"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_220"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A day between Wednesday and Saturday:",
+      "intended_days": [
+        "Thu",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_221"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "A weekday that does not start with the letter T:",
+      "intended_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_222"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "The day immediately after a weekend day:",
+      "intended_days": [
+        "Mon",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_223"
+    },
+    {
+      "family": "I_multi",
+      "text_core": "One of the two days that start with the letter S:",
+      "intended_days": [
+        "Sat",
+        "Sun"
+      ],
+      "paraphrase_id": 0,
+      "id": "I_multi_224"
+    }
+  ]
+}

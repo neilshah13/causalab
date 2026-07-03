@@ -1,0 +1,12 @@
+node=node15
+==== margin=0.6 ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.74it/s]
+L31: carrier_sanity(med Hellinger)=0.011  valid_frac_of_box=0.812  cov_gain=7.88  new_cells=1060
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+==== margin=1.0 ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  7.18it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  7.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  7.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  9.01it/s]
+L31: carrier_sanity(med Hellinger)=0.011  valid_frac_of_box=0.687  cov_gain=7.56  new_cells=1037
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+==== margin=1.5 ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 100.92it/s]
+slurmstepd-node15: error: *** JOB 12439 ON node15 CANCELLED AT 2026-06-08T18:20:10 DUE TO TIME LIMIT ***

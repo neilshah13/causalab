@@ -1,0 +1,325 @@
+node=node22
+=== N4 redo: weekday sparse (logits_to_keep fix) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 57.68it/s]
+keep=Mon (49 anchors), held-out days=['Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  cca  k= 3: valid= 8162 recovered 3/6 held-out days (Tue, Fri, Sun)
+  cca  k= 5: valid= 5227 recovered 5/6 held-out days (Tue, Thu, Fri, Sat, Sun)
+  cca  k= 6: valid= 4771 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  cca  k= 7: valid= 4313 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  cca  k= 8: valid= 3955 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  cca  k= 8: valid= 3993 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  pca  k= 3: valid= 4954 recovered 3/6 held-out days (Tue, Thu, Sun)
+  pca  k= 5: valid= 3001 recovered 4/6 held-out days (Tue, Wed, Thu, Sun)
+  pca  k= 6: valid= 2602 recovered 5/6 held-out days (Tue, Wed, Thu, Sat, Sun)
+  pca  k= 7: valid= 2339 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  pca  k= 8: valid= 1959 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  pca  k=12: valid= 1418 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  diff k= 3: valid= 4775 recovered 3/6 held-out days (Tue, Thu, Sun)
+  diff k= 5: valid= 2833 recovered 4/6 held-out days (Tue, Thu, Sat, Sun)
+  diff k= 6: valid= 2443 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  diff k= 7: valid= 1813 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  diff k= 8: valid= 2002 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+  diff k=12: valid= 1348 recovered 6/6 held-out days (Tue, Wed, Thu, Fri, Sat, Sun)
+saved -> sparse_recovery_Mon.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.53it/s]
+keep=Sat,Sun (38 anchors), held-out days=['Mon', 'Tue', 'Wed', 'Thu', 'Fri']
+  cca  k= 3: valid= 8402 recovered 3/5 held-out days (Mon, Tue, Fri)
+  cca  k= 5: valid= 6628 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  cca  k= 6: valid= 6061 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  cca  k= 7: valid= 4963 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  cca  k= 8: valid= 4994 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  cca  k= 8: valid= 4842 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  pca  k= 3: valid= 5011 recovered 2/5 held-out days (Mon, Tue)
+  pca  k= 5: valid= 3805 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  pca  k= 6: valid= 2762 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  pca  k= 7: valid= 2155 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  pca  k= 8: valid= 1945 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  pca  k=12: valid= 1462 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  diff k= 3: valid= 4256 recovered 2/5 held-out days (Mon, Tue)
+  diff k= 5: valid= 2977 recovered 4/5 held-out days (Mon, Tue, Thu, Fri)
+  diff k= 6: valid= 2396 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  diff k= 7: valid= 1962 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  diff k= 8: valid= 1906 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+  diff k=12: valid= 1376 recovered 5/5 held-out days (Mon, Tue, Wed, Thu, Fri)
+saved -> sparse_recovery_SatSun.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.06it/s]
+keep=Mon,Tue,Wed,Thu (126 anchors), held-out days=['Fri', 'Sat', 'Sun']
+  cca  k= 3: valid= 8479 recovered 1/3 held-out days (Sat)
+  cca  k= 5: valid= 7887 recovered 2/3 held-out days (Fri, Sat)
+  cca  k= 6: valid= 7151 recovered 3/3 held-out days (Fri, Sat, Sun)
+  cca  k= 7: valid= 6275 recovered 3/3 held-out days (Fri, Sat, Sun)
+  cca  k= 8: valid= 5966 recovered 3/3 held-out days (Fri, Sat, Sun)
+  cca  k= 8: valid= 6065 recovered 3/3 held-out days (Fri, Sat, Sun)
+  pca  k= 3: valid= 6971 recovered 1/3 held-out days (Sat)
+  pca  k= 5: valid= 5456 recovered 1/3 held-out days (Sat)
+  pca  k= 6: valid= 4820 recovered 2/3 held-out days (Sat, Sun)
+  pca  k= 7: valid= 4162 recovered 3/3 held-out days (Fri, Sat, Sun)
+  pca  k= 8: valid= 3808 recovered 3/3 held-out days (Fri, Sat, Sun)
+  pca  k=12: valid= 3198 recovered 3/3 held-out days (Fri, Sat, Sun)
+  diff k= 3: valid= 7167 recovered 0/3 held-out days ()
+  diff k= 5: valid= 4234 recovered 1/3 held-out days (Sun)
+  diff k= 6: valid= 4808 recovered 1/3 held-out days (Sun)
+  diff k= 7: valid= 4278 recovered 2/3 held-out days (Sat, Sun)
+  diff k= 8: valid= 3736 recovered 2/3 held-out days (Fri, Sun)
+  diff k=12: valid= 2990 recovered 3/3 held-out days (Fri, Sat, Sun)
+saved -> sparse_recovery_MonTueWedThu.json
+=== months recovery at CORRECT k=13 (was false-negative at k=8) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.64it/s]
+holdout day=Jul (td=6): 21/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Jul",
+  "k": 13,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Jul",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 13193,
+    "frac_valid_in_deleted_region": 0.02,
+    "n_valid_in_deleted_region": 263,
+    "max_P_target_recovered": 0.973,
+    "held_region_cells": 15,
+    "recovered_cells": 14,
+    "cell_recovery_rate": 0.933,
+    "projection_recon_median_hellinger": 0.174,
+    "projection_recon_keeps_argmax_frac": 0.619
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12551,
+    "frac_valid_in_deleted_region": 0.058,
+    "n_valid_in_deleted_region": 728,
+    "max_P_target_recovered": 0.998,
+    "held_region_cells": 20,
+    "recovered_cells": 20,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.078,
+    "projection_recon_keeps_argmax_frac": 0.095
+  }
+}
+saved -> recovery_test_Jul_k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.40it/s]
+holdout day=Jan (td=0): 14/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Jan",
+  "k": 13,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Jan",
+    "n_held": 14,
+    "n_train": 216,
+    "n_valid_samples": 12231,
+    "frac_valid_in_deleted_region": 0.016,
+    "n_valid_in_deleted_region": 198,
+    "max_P_target_recovered": 0.967,
+    "held_region_cells": 12,
+    "recovered_cells": 12,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.135,
+    "projection_recon_keeps_argmax_frac": 0.429
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 14,
+    "n_train": 216,
+    "n_valid_samples": 11978,
+    "frac_valid_in_deleted_region": 0.115,
+    "n_valid_in_deleted_region": 1382,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 14,
+    "recovered_cells": 14,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.07,
+    "projection_recon_keeps_argmax_frac": 0.143
+  }
+}
+saved -> recovery_test_Jan_k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 102.69it/s]
+holdout day=Apr (td=3): 21/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Apr",
+  "k": 13,
+  "margin": 1.5,
+  "n_samples": 25000,
+  "region_holdout": {
+    "name": "region:Apr",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 11838,
+    "frac_valid_in_deleted_region": 0.006,
+    "n_valid_in_deleted_region": 66,
+    "max_P_target_recovered": 0.93,
+    "held_region_cells": 15,
+    "recovered_cells": 14,
+    "cell_recovery_rate": 0.933,
+    "projection_recon_median_hellinger": 0.295,
+    "projection_recon_keeps_argmax_frac": 0.524
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 21,
+    "n_train": 209,
+    "n_valid_samples": 12702,
+    "frac_valid_in_deleted_region": 0.049,
+    "n_valid_in_deleted_region": 628,
+    "max_P_target_recovered": 0.992,
+    "held_region_cells": 20,
+    "recovered_cells": 20,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.071,
+    "projection_recon_keeps_argmax_frac": 0.095
+  }
+}
+saved -> recovery_test_Apr_k13.json
+=== months walk (N3 truncated piece) ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 90.08it/s]
+layer L31: M=230 anchors, subspace dims=20 (EVR 0.75), NN-dist=12.65
+sanity: zero-perturbation Hellinger to stored anchor dist = 0.0178 (should be ~0)
+[
+  {
+    "dir_type": "subspace",
+    "frac_valid_by_step": [
+      1.0,
+      1.0,
+      0.992,
+      0.982,
+      0.977,
+      0.961,
+      0.947,
+      0.939,
+      0.92,
+      0.9,
+      0.873,
+      0.861,
+      0.844,
+      0.832,
+      0.818,
+      0.797,
+      0.777,
+      0.762,
+      0.746,
+      0.725,
+      0.713,
+      0.695,
+      0.682,
+      0.672,
+      0.664,
+      0.656,
+      0.639,
+      0.631,
+      0.621,
+      0.613,
+      0.609,
+      0.605,
+      0.596,
+      0.586,
+      0.57,
+      0.562,
+      0.553,
+      0.545,
+      0.541,
+      0.527,
+      0.516,
+      0.506,
+      0.502,
+      0.496,
+      0.494,
+      0.484,
+      0.471,
+      0.465,
+      0.455,
+      0.449,
+      0.441,
+      0.432,
+      0.42,
+      0.418,
+      0.406,
+      0.4,
+      0.387,
+      0.383,
+      0.377,
+      0.373,
+      0.371
+    ],
+    "n_walks": 512
+  },
+  {
+    "dir_type": "full",
+    "frac_valid_by_step": [
+      1.0,
+      0.998,
+      0.994,
+      0.988,
+      0.986,
+      0.984,
+      0.977,
+      0.973,
+      0.963,
+      0.955,
+      0.953,
+      0.949,
+      0.945,
+      0.943,
+      0.936,
+      0.916,
+      0.912,
+      0.9,
+      0.891,
+      0.883,
+      0.869,
+      0.859,
+      0.852,
+      0.834,
+      0.822,
+      0.814,
+      0.803,
+      0.787,
+      0.777,
+      0.766,
+      0.754,
+      0.736,
+      0.73,
+      0.719,
+      0.695,
+      0.686,
+      0.658,
+      0.646,
+      0.623,
+      0.604,
+      0.586,
+      0.578,
+      0.562,
+      0.551,
+      0.547,
+      0.533,
+      0.52,
+      0.494,
+      0.482,
+      0.475,
+      0.465,
+      0.455,
+      0.438,
+      0.422,
+      0.4,
+      0.396,
+      0.385,
+      0.367,
+      0.359,
+      0.34,
+      0.332
+    ],
+    "n_walks": 512
+  }
+]
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/months_simplex/llama31_8b/simplex_coverage/perturb_walk_L31.json
+R1 DONE

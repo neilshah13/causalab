@@ -1,0 +1,413 @@
+node=node22
+=== ON3 remaining margins ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.89it/s]
+L31: carrier_sanity(med Hellinger)=0.011  valid_frac_of_box=0.555  cov_gain=7.0  new_cells=960
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.22it/s]
+L31: carrier_sanity(med Hellinger)=0.011  valid_frac_of_box=0.386  cov_gain=5.77  new_cells=773
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 90.16it/s]
+L31: carrier_sanity(med Hellinger)=0.011  valid_frac_of_box=0.287  cov_gain=4.54  new_cells=573
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+=== ON4 remaining perturb ===
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 99.70it/s]
+layer L27: M=194 anchors, subspace dims=20 (EVR 0.79), NN-dist=8.54
+sanity: zero-perturbation Hellinger to stored anchor dist = 0.0210 (should be ~0)
+[
+  {
+    "dir_type": "subspace",
+    "radius_nn": 0.0,
+    "validity_rate": 1.0,
+    "mean_hellinger_to_anchor_valid": 0.006,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 0.5,
+    "validity_rate": 0.992,
+    "mean_hellinger_to_anchor_valid": 0.111,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 1.0,
+    "validity_rate": 0.982,
+    "mean_hellinger_to_anchor_valid": 0.213,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 1.5,
+    "validity_rate": 0.969,
+    "mean_hellinger_to_anchor_valid": 0.302,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 2.0,
+    "validity_rate": 0.948,
+    "mean_hellinger_to_anchor_valid": 0.375,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 3.0,
+    "validity_rate": 0.843,
+    "mean_hellinger_to_anchor_valid": 0.488,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 4.0,
+    "validity_rate": 0.643,
+    "mean_hellinger_to_anchor_valid": 0.559,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 6.0,
+    "validity_rate": 0.345,
+    "mean_hellinger_to_anchor_valid": 0.625,
+    "n": 2328
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 8.0,
+    "validity_rate": 0.189,
+    "mean_hellinger_to_anchor_valid": 0.661,
+    "n": 2328
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 0.0,
+    "validity_rate": 1.0,
+    "mean_hellinger_to_anchor_valid": 0.006,
+    "n": 2328
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 0.5,
+    "validity_rate": 0.996,
+    "mean_hellinger_to_anchor_valid": 0.022,
+    "n": 2328
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 1.0,
+    "validity_rate": 0.992,
+    "mean_hellinger_to_anchor_valid": 0.041,
+    "n": 2328
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 1.5,
+    "validity_rate": 0.986,
+    "mean_hellinger_to_anchor_valid": 0.061,
+    "n": 2328
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 2.0,
+    "validity_rate": 0.983,
+    "mean_hellinger_to_anchor_valid": 0.08
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/perturb_radial_L27.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 97.66it/s]
+layer L25: M=194 anchors, subspace dims=20 (EVR 0.79), NN-dist=7.72
+sanity: zero-perturbation Hellinger to stored anchor dist = 0.0211 (should be ~0)
+[
+  {
+    "dir_type": "subspace",
+    "frac_valid_by_step": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.998,
+      0.996,
+      0.996,
+      0.99,
+      0.988,
+      0.988,
+      0.984,
+      0.98,
+      0.973,
+      0.963,
+      0.953,
+      0.945,
+      0.939,
+      0.926,
+      0.914,
+      0.902,
+      0.895,
+      0.873,
+      0.863,
+      0.855,
+      0.846,
+      0.84,
+      0.824,
+      0.814,
+      0.811,
+      0.799,
+      0.777,
+      0.766,
+      0.758,
+      0.74,
+      0.73,
+      0.715,
+      0.703,
+      0.697,
+      0.684,
+      0.674,
+      0.652,
+      0.639,
+      0.631,
+      0.625,
+      0.609,
+      0.598,
+      0.58,
+      0.566,
+      0.555,
+      0.543,
+      0.531,
+      0.523,
+      0.512,
+      0.498,
+      0.479,
+      0.473,
+      0.467,
+      0.463,
+      0.451,
+      0.443,
+      0.434
+    ],
+    "n_walks": 512
+  },
+  {
+    "dir_type": "full",
+    "frac_valid_by_step": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.998,
+      0.992,
+      0.992,
+      0.992,
+      0.992,
+      0.992,
+      0.99,
+      0.99,
+      0.988,
+      0.988,
+      0.986,
+      0.986,
+      0.986,
+      0.982,
+      0.982,
+      0.98,
+      0.977,
+      0.977,
+      0.975,
+      0.973,
+      0.969,
+      0.957,
+      0.957,
+      0.951,
+      0.949,
+      0.949,
+      0.947,
+      0.945,
+      0.941,
+      0.938,
+      0.932,
+      0.926,
+      0.922,
+      0.918,
+      0.914,
+      0.904,
+      0.896,
+      0.893,
+      0.887,
+      0.879,
+      0.877,
+      0.875,
+      0.861,
+      0.85,
+      0.848,
+      0.836,
+      0.832,
+      0.83,
+      0.818,
+      0.805,
+      0.795
+    ],
+    "n_walks": 512
+  }
+]
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/perturb_walk_L25.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 100.05it/s]
+layer L29: M=194 anchors, subspace dims=20 (EVR 0.79), NN-dist=9.88
+sanity: zero-perturbation Hellinger to stored anchor dist = 0.0021 (should be ~0)
+[
+  {
+    "dir_type": "subspace",
+    "frac_valid_by_step": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.996,
+      0.994,
+      0.986,
+      0.979,
+      0.975,
+      0.967,
+      0.959,
+      0.945,
+      0.943,
+      0.934,
+      0.916,
+      0.896,
+      0.885,
+      0.867,
+      0.855,
+      0.844,
+      0.838,
+      0.822,
+      0.809,
+      0.787,
+      0.779,
+      0.771,
+      0.754,
+      0.744,
+      0.732,
+      0.729,
+      0.719,
+      0.711,
+      0.701,
+      0.689,
+      0.676,
+      0.662,
+      0.641,
+      0.631,
+      0.613,
+      0.607,
+      0.596,
+      0.588,
+      0.582,
+      0.578,
+      0.566,
+      0.555,
+      0.547,
+      0.545,
+      0.535,
+      0.531,
+      0.527,
+      0.518,
+      0.51,
+      0.506,
+      0.492,
+      0.486,
+      0.482,
+      0.475,
+      0.469,
+      0.461
+    ],
+    "n_walks": 512
+  },
+  {
+    "dir_type": "full",
+    "frac_valid_by_step": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.998,
+      0.998,
+      0.996,
+      0.996,
+      0.996,
+      0.994,
+      0.99,
+      0.99,
+      0.99,
+      0.988,
+      0.988,
+      0.984,
+      0.982,
+      0.98,
+      0.979,
+      0.973,
+      0.971,
+      0.965,
+      0.959,
+      0.953,
+      0.949,
+      0.941,
+      0.938,
+      0.93,
+      0.924,
+      0.918,
+      0.904,
+      0.9,
+      0.895,
+      0.879,
+      0.869,
+      0.855,
+      0.844,
+      0.824,
+      0.805,
+      0.789,
+      0.777,
+      0.764,
+      0.748,
+      0.729,
+      0.713,
+      0.697,
+      0.686,
+      0.672,
+      0.646,
+      0.629
+    ],
+    "n_walks": 512
+  }
+]
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/perturb_walk_L29.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 99.76it/s]
+layer L27: M=194 anchors, subspace dims=20 (EVR 0.79), NN-dist=8.54
+sanity: zero-perturbation Hellinger to stored anchor dist = 0.0210 (should be ~0)
+shape: kept 21988 valid in-subspace perturbations -> region_shape_L27.npz
+[
+  {
+    "n_valid_perturbations": 21988,
+    "n_total": 23280,
+    "radii": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "mean_naturalness_nn": 1.465
+  }
+]
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/perturb_shape_L27.json
+ON_FINISH DONE

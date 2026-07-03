@@ -1,0 +1,59 @@
+{
+  "concept": "hues12",
+  "layer": 31,
+  "keep": "Red,Green,Blue",
+  "method": "pca",
+  "k": 8,
+  "n_kept_anchors": 24,
+  "steps": 150,
+  "n_held": 9,
+  "held_reached_P50_gradient": 1,
+  "held_reached_P50_linear": 0,
+  "per_held": {
+    "Orange": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.993
+    },
+    "Yellow": {
+      "P_linear_init": 0.464,
+      "P_gradient": 0.611,
+      "hellinger_to_vertex": 0.467
+    },
+    "Lime": {
+      "P_linear_init": 0.002,
+      "P_gradient": 0.003,
+      "hellinger_to_vertex": 0.973
+    },
+    "Teal": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.004,
+      "hellinger_to_vertex": 0.969
+    },
+    "Cyan": {
+      "P_linear_init": 0.006,
+      "P_gradient": 0.023,
+      "hellinger_to_vertex": 0.922
+    },
+    "Azure": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.998
+    },
+    "Violet": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.994
+    },
+    "Purple": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.999
+    },
+    "Pink": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.991
+    }
+  }
+}

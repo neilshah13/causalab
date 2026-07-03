@@ -1,0 +1,2388 @@
+{
+  "concept": "colors",
+  "layer": 31,
+  "keep": "Red,Orange,Yellow,Green,Blue,Purple,Pink,Brown",
+  "held": [
+    "Black",
+    "White",
+    "Gray",
+    "Grey",
+    "Cyan",
+    "Violet",
+    "Turquoise",
+    "Teal",
+    "Navy",
+    "Olive",
+    "Lime",
+    "Aqua",
+    "Gold",
+    "Silver",
+    "Beige",
+    "Tan",
+    "Peach",
+    "Coral",
+    "Salmon",
+    "Crimson",
+    "Scarlet",
+    "Lavender",
+    "Plum",
+    "Mint",
+    "Ivory",
+    "Charcoal",
+    "Amber",
+    "Azure",
+    "Rose",
+    "Ruby",
+    "Emerald",
+    "Sapphire",
+    "Jade",
+    "Mustard",
+    "Cream",
+    "Bronze",
+    "Copper"
+  ],
+  "margin": 2.0,
+  "recover_thresh": 0.5,
+  "results": [
+    {
+      "method": "pca",
+      "k": 16,
+      "n_valid": 2688,
+      "held_days_recovered": 4,
+      "n_held": 37,
+      "frac_held_recovered": 0.108,
+      "per_day": {
+        "Black": {
+          "max_P": 0.43,
+          "n_argmax": 2,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.979,
+          "n_argmax": 141,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.066,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Grey": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.076,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.048,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.017,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.136,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.624,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Aqua": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.942,
+          "n_argmax": 23,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.251,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.919,
+          "n_argmax": 8,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.022,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.039,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.028,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.054,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.031,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.029,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.03,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.023,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.021,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.022,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.057,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 24,
+      "n_valid": 2379,
+      "held_days_recovered": 6,
+      "n_held": 37,
+      "frac_held_recovered": 0.162,
+      "per_day": {
+        "Black": {
+          "max_P": 0.629,
+          "n_argmax": 5,
+          "recovered": true
+        },
+        "White": {
+          "max_P": 0.963,
+          "n_argmax": 95,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.67,
+          "n_argmax": 3,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.149,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.509,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Violet": {
+          "max_P": 0.07,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.019,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.154,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.018,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.068,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.95,
+          "n_argmax": 30,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.405,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.901,
+          "n_argmax": 10,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.013,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.019,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.026,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.041,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.013,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.072,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.021,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.017,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.036,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.033,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.045,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.038,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 32,
+      "n_valid": 2176,
+      "held_days_recovered": 4,
+      "n_held": 37,
+      "frac_held_recovered": 0.108,
+      "per_day": {
+        "Black": {
+          "max_P": 0.422,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.969,
+          "n_argmax": 85,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.761,
+          "n_argmax": 3,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.085,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.084,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.39,
+          "n_argmax": 2,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.075,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.144,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.932,
+          "n_argmax": 24,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.166,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.859,
+          "n_argmax": 5,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.096,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.043,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.011,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.025,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.048,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.027,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.126,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.037,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 40,
+      "n_valid": 1837,
+      "held_days_recovered": 5,
+      "n_held": 37,
+      "frac_held_recovered": 0.135,
+      "per_day": {
+        "Black": {
+          "max_P": 0.802,
+          "n_argmax": 3,
+          "recovered": true
+        },
+        "White": {
+          "max_P": 0.949,
+          "n_argmax": 81,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.925,
+          "n_argmax": 6,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.341,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.295,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.212,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.102,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.03,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.071,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.915,
+          "n_argmax": 17,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.061,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.947,
+          "n_argmax": 3,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.035,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.063,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.017,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.011,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.009,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.035,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.021,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.147,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.021,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.12,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 16,
+      "n_valid": 2807,
+      "held_days_recovered": 3,
+      "n_held": 37,
+      "frac_held_recovered": 0.081,
+      "per_day": {
+        "Black": {
+          "max_P": 0.201,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.95,
+          "n_argmax": 135,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.223,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Grey": {
+          "max_P": 0.124,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.052,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.046,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.052,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.27,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.988,
+          "n_argmax": 97,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.293,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.027,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.908,
+          "n_argmax": 18,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.043,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.037,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.026,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.154,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.009,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.029,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.063,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.04,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.028,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.04,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.22,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.063,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 24,
+      "n_valid": 2424,
+      "held_days_recovered": 5,
+      "n_held": 37,
+      "frac_held_recovered": 0.135,
+      "per_day": {
+        "Black": {
+          "max_P": 0.285,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.977,
+          "n_argmax": 114,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.771,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.193,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.028,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.041,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.182,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.022,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.17,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.017,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.984,
+          "n_argmax": 66,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.603,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Beige": {
+          "max_P": 0.019,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.941,
+          "n_argmax": 20,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.046,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.092,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.041,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.251,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.032,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.108,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.013,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.085,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.034,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.046,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.019,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 32,
+      "n_valid": 2185,
+      "held_days_recovered": 4,
+      "n_held": 37,
+      "frac_held_recovered": 0.108,
+      "per_day": {
+        "Black": {
+          "max_P": 0.21,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.967,
+          "n_argmax": 101,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.834,
+          "n_argmax": 6,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.22,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.061,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.087,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.046,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.017,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.096,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.009,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.97,
+          "n_argmax": 67,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.267,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.97,
+          "n_argmax": 10,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.017,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.212,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.025,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.029,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.019,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.032,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.026,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.024,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.055,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.165,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 40,
+      "n_valid": 2002,
+      "held_days_recovered": 5,
+      "n_held": 37,
+      "frac_held_recovered": 0.135,
+      "per_day": {
+        "Black": {
+          "max_P": 0.318,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.969,
+          "n_argmax": 75,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.871,
+          "n_argmax": 12,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.644,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Cyan": {
+          "max_P": 0.111,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.147,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.051,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.042,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.009,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.986,
+          "n_argmax": 55,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.286,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.967,
+          "n_argmax": 15,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.107,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.06,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.018,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.039,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.055,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.033,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.037,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.312,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.021,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 16,
+      "n_valid": 3611,
+      "held_days_recovered": 5,
+      "n_held": 37,
+      "frac_held_recovered": 0.135,
+      "per_day": {
+        "Black": {
+          "max_P": 0.208,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.944,
+          "n_argmax": 88,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.807,
+          "n_argmax": 5,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.143,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.029,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.044,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.024,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.024,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.036,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.658,
+          "n_argmax": 3,
+          "recovered": true
+        },
+        "Aqua": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.969,
+          "n_argmax": 23,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.029,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.006,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.956,
+          "n_argmax": 31,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.009,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.036,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.014,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.009,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.022,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.203,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.026,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.014,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.037,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.301,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.017,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.011,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 24,
+      "n_valid": 2886,
+      "held_days_recovered": 7,
+      "n_held": 37,
+      "frac_held_recovered": 0.189,
+      "per_day": {
+        "Black": {
+          "max_P": 0.51,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "White": {
+          "max_P": 0.976,
+          "n_argmax": 79,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.876,
+          "n_argmax": 13,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.502,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Cyan": {
+          "max_P": 0.033,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.187,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.062,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.043,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.578,
+          "n_argmax": 2,
+          "recovered": true
+        },
+        "Aqua": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.959,
+          "n_argmax": 18,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.033,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.974,
+          "n_argmax": 8,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.024,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.011,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.023,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.079,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.03,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.018,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.026,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.031,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 32,
+      "n_valid": 2312,
+      "held_days_recovered": 5,
+      "n_held": 37,
+      "frac_held_recovered": 0.135,
+      "per_day": {
+        "Black": {
+          "max_P": 0.409,
+          "n_argmax": 2,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.992,
+          "n_argmax": 53,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.843,
+          "n_argmax": 19,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.545,
+          "n_argmax": 2,
+          "recovered": true
+        },
+        "Cyan": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Violet": {
+          "max_P": 0.105,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.25,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.137,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.008,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.971,
+          "n_argmax": 25,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.102,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.959,
+          "n_argmax": 9,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.011,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.236,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.039,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.023,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.018,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.013,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Bronze": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 40,
+      "n_valid": 1638,
+      "held_days_recovered": 6,
+      "n_held": 37,
+      "frac_held_recovered": 0.162,
+      "per_day": {
+        "Black": {
+          "max_P": 0.152,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "White": {
+          "max_P": 0.963,
+          "n_argmax": 29,
+          "recovered": true
+        },
+        "Gray": {
+          "max_P": 0.637,
+          "n_argmax": 6,
+          "recovered": true
+        },
+        "Grey": {
+          "max_P": 0.413,
+          "n_argmax": 1,
+          "recovered": false
+        },
+        "Cyan": {
+          "max_P": 0.534,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Violet": {
+          "max_P": 0.13,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Turquoise": {
+          "max_P": 0.01,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Teal": {
+          "max_P": 0.003,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Navy": {
+          "max_P": 0.015,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Olive": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lime": {
+          "max_P": 0.075,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Aqua": {
+          "max_P": 0.011,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Gold": {
+          "max_P": 0.967,
+          "n_argmax": 10,
+          "recovered": true
+        },
+        "Silver": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Beige": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Tan": {
+          "max_P": 0.981,
+          "n_argmax": 14,
+          "recovered": true
+        },
+        "Peach": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Coral": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Salmon": {
+          "max_P": 0.02,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Crimson": {
+          "max_P": 0.016,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Scarlet": {
+          "max_P": 0.013,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Lavender": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Plum": {
+          "max_P": 0.002,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mint": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ivory": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Charcoal": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Amber": {
+          "max_P": 0.111,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Azure": {
+          "max_P": 0.007,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Rose": {
+          "max_P": 0.028,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Ruby": {
+          "max_P": 0.012,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Emerald": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Sapphire": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Jade": {
+          "max_P": 0.004,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Mustard": {
+          "max_P": 0.005,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Cream": {
+          "max_P": 0.795,
+          "n_argmax": 1,
+          "recovered": true
+        },
+        "Bronze": {
+          "max_P": 0.001,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Copper": {
+          "max_P": 0.0,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    }
+  ]
+}

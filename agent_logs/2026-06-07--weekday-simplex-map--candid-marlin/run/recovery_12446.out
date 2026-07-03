@@ -1,0 +1,162 @@
+node=node22
+==== holdout Wed ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 97.20it/s]
+holdout day=Wed (td=2): 31/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "holdout": "Wed",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Wed",
+    "n_held": 31,
+    "n_train": 163,
+    "n_valid_samples": 15738,
+    "frac_valid_in_deleted_region": 0.067,
+    "n_valid_in_deleted_region": 1050,
+    "max_P_target_recovered": 0.997,
+    "held_region_cells": 27,
+    "recovered_cells": 26,
+    "cell_recovery_rate": 0.963,
+    "projection_recon_median_hellinger": 0.148,
+    "projection_recon_keeps_argmax_frac": 0.774
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 31,
+    "n_train": 163,
+    "n_valid_samples": 17048,
+    "frac_valid_in_deleted_region": 0.18,
+    "n_valid_in_deleted_region": 3077,
+    "max_P_target_recovered": 1.0,
+    "held_region_cells": 30,
+    "recovered_cells": 28,
+    "cell_recovery_rate": 0.933,
+    "projection_recon_median_hellinger": 0.084,
+    "projection_recon_keeps_argmax_frac": 0.129
+  }
+}
+saved -> recovery_test_Wed.json
+==== holdout Sat ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.40it/s]
+holdout day=Sat (td=5): 19/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "holdout": "Sat",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Sat",
+    "n_held": 19,
+    "n_train": 175,
+    "n_valid_samples": 17539,
+    "frac_valid_in_deleted_region": 0.096,
+    "n_valid_in_deleted_region": 1686,
+    "max_P_target_recovered": 0.998,
+    "held_region_cells": 14,
+    "recovered_cells": 14,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.13,
+    "projection_recon_keeps_argmax_frac": 0.737
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 19,
+    "n_train": 175,
+    "n_valid_samples": 15658,
+    "frac_valid_in_deleted_region": 0.124,
+    "n_valid_in_deleted_region": 1935,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 19,
+    "recovered_cells": 19,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.101,
+    "projection_recon_keeps_argmax_frac": 0.053
+  }
+}
+saved -> recovery_test_Sat.json
+==== holdout Mon ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.02it/s]
+holdout day=Mon (td=0): 49/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "holdout": "Mon",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Mon",
+    "n_held": 49,
+    "n_train": 145,
+    "n_valid_samples": 17941,
+    "frac_valid_in_deleted_region": 0.028,
+    "n_valid_in_deleted_region": 503,
+    "max_P_target_recovered": 0.997,
+    "held_region_cells": 39,
+    "recovered_cells": 34,
+    "cell_recovery_rate": 0.872,
+    "projection_recon_median_hellinger": 0.158,
+    "projection_recon_keeps_argmax_frac": 0.796
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 49,
+    "n_train": 145,
+    "n_valid_samples": 17687,
+    "frac_valid_in_deleted_region": 0.112,
+    "n_valid_in_deleted_region": 1975,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 47,
+    "recovered_cells": 46,
+    "cell_recovery_rate": 0.979,
+    "projection_recon_median_hellinger": 0.085,
+    "projection_recon_keeps_argmax_frac": 0.245
+  }
+}
+saved -> recovery_test_Mon.json
+==== holdout Fri ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 100.00it/s]
+holdout day=Fri (td=4): 30/194 anchors deleted
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "holdout": "Fri",
+  "k": 8,
+  "margin": 1.5,
+  "n_samples": 30000,
+  "region_holdout": {
+    "name": "region:Fri",
+    "n_held": 30,
+    "n_train": 164,
+    "n_valid_samples": 17060,
+    "frac_valid_in_deleted_region": 0.101,
+    "n_valid_in_deleted_region": 1721,
+    "max_P_target_recovered": 0.999,
+    "held_region_cells": 24,
+    "recovered_cells": 24,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.193,
+    "projection_recon_keeps_argmax_frac": 0.667
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 30,
+    "n_train": 164,
+    "n_valid_samples": 16033,
+    "frac_valid_in_deleted_region": 0.124,
+    "n_valid_in_deleted_region": 1993,
+    "max_P_target_recovered": 1.0,
+    "held_region_cells": 30,
+    "recovered_cells": 27,
+    "cell_recovery_rate": 0.9,
+    "projection_recon_median_hellinger": 0.082,
+    "projection_recon_keeps_argmax_frac": 0.1
+  }
+}
+saved -> recovery_test_Fri.json
+RECOVERY DONE

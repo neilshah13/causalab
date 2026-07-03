@@ -1,0 +1,270 @@
+{
+  "model": "llama31_8b",
+  "carrier": "A day of the week:",
+  "k": 8,
+  "n_samples": 40000,
+  "margin": 0.6,
+  "layers": {
+    "16": {
+      "carrier_sanity_median_hellinger": 0.3815,
+      "cca_canonical_corr": [
+        0.963,
+        0.927,
+        0.801,
+        0.765,
+        0.563,
+        0.459,
+        0.316,
+        0.254
+      ],
+      "valid_fraction_of_box": 0.977,
+      "n_valid": 39063,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 162,
+      "behaviour_cells_valid_samples": 1240,
+      "behaviour_cells_new": 1079,
+      "coverage_gain_ratio": 7.66,
+      "argmax_day_counts_valid": {
+        "Mon": 16155,
+        "Tue": 2324,
+        "Wed": 2465,
+        "Thu": 1327,
+        "Fri": 7541,
+        "Sat": 5301,
+        "Sun": 3950
+      }
+    },
+    "18": {
+      "carrier_sanity_median_hellinger": 0.3214,
+      "cca_canonical_corr": [
+        0.966,
+        0.909,
+        0.795,
+        0.753,
+        0.578,
+        0.443,
+        0.362,
+        0.291
+      ],
+      "valid_fraction_of_box": 0.891,
+      "n_valid": 35650,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 160,
+      "behaviour_cells_valid_samples": 1248,
+      "behaviour_cells_new": 1088,
+      "coverage_gain_ratio": 7.8,
+      "argmax_day_counts_valid": {
+        "Mon": 11310,
+        "Tue": 2501,
+        "Wed": 2397,
+        "Thu": 1304,
+        "Fri": 5009,
+        "Sat": 5863,
+        "Sun": 7266
+      }
+    },
+    "20": {
+      "carrier_sanity_median_hellinger": 0.1151,
+      "cca_canonical_corr": [
+        0.962,
+        0.953,
+        0.93,
+        0.899,
+        0.869,
+        0.786,
+        0.729,
+        0.676
+      ],
+      "valid_fraction_of_box": 0.94,
+      "n_valid": 37582,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 159,
+      "behaviour_cells_valid_samples": 1231,
+      "behaviour_cells_new": 1073,
+      "coverage_gain_ratio": 7.75,
+      "argmax_day_counts_valid": {
+        "Mon": 8954,
+        "Tue": 3273,
+        "Wed": 3515,
+        "Thu": 4751,
+        "Fri": 5534,
+        "Sat": 4565,
+        "Sun": 6990
+      }
+    },
+    "22": {
+      "carrier_sanity_median_hellinger": 0.0649,
+      "cca_canonical_corr": [
+        0.972,
+        0.963,
+        0.949,
+        0.898,
+        0.88,
+        0.807,
+        0.765,
+        0.708
+      ],
+      "valid_fraction_of_box": 0.894,
+      "n_valid": 35764,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 158,
+      "behaviour_cells_valid_samples": 1236,
+      "behaviour_cells_new": 1078,
+      "coverage_gain_ratio": 7.82,
+      "argmax_day_counts_valid": {
+        "Mon": 5874,
+        "Tue": 4050,
+        "Wed": 3973,
+        "Thu": 4317,
+        "Fri": 5952,
+        "Sat": 4969,
+        "Sun": 6629
+      }
+    },
+    "24": {
+      "carrier_sanity_median_hellinger": 0.0417,
+      "cca_canonical_corr": [
+        0.976,
+        0.968,
+        0.953,
+        0.943,
+        0.922,
+        0.892,
+        0.878,
+        0.81
+      ],
+      "valid_fraction_of_box": 0.845,
+      "n_valid": 33819,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 158,
+      "behaviour_cells_valid_samples": 1231,
+      "behaviour_cells_new": 1074,
+      "coverage_gain_ratio": 7.8,
+      "argmax_day_counts_valid": {
+        "Mon": 6312,
+        "Tue": 3958,
+        "Wed": 4437,
+        "Thu": 4771,
+        "Fri": 5084,
+        "Sat": 5006,
+        "Sun": 4251
+      }
+    },
+    "26": {
+      "carrier_sanity_median_hellinger": 0.0437,
+      "cca_canonical_corr": [
+        0.978,
+        0.968,
+        0.958,
+        0.949,
+        0.928,
+        0.908,
+        0.885,
+        0.826
+      ],
+      "valid_fraction_of_box": 0.749,
+      "n_valid": 29945,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 161,
+      "behaviour_cells_valid_samples": 1231,
+      "behaviour_cells_new": 1070,
+      "coverage_gain_ratio": 7.65,
+      "argmax_day_counts_valid": {
+        "Mon": 6845,
+        "Tue": 3878,
+        "Wed": 3131,
+        "Thu": 3219,
+        "Fri": 5080,
+        "Sat": 3691,
+        "Sun": 4101
+      }
+    },
+    "28": {
+      "carrier_sanity_median_hellinger": 0.0365,
+      "cca_canonical_corr": [
+        0.978,
+        0.966,
+        0.961,
+        0.959,
+        0.938,
+        0.925,
+        0.9,
+        0.869
+      ],
+      "valid_fraction_of_box": 0.806,
+      "n_valid": 32255,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 157,
+      "behaviour_cells_valid_samples": 1230,
+      "behaviour_cells_new": 1073,
+      "coverage_gain_ratio": 7.83,
+      "argmax_day_counts_valid": {
+        "Mon": 5881,
+        "Tue": 3748,
+        "Wed": 3711,
+        "Thu": 3947,
+        "Fri": 6472,
+        "Sat": 3145,
+        "Sun": 5351
+      }
+    },
+    "30": {
+      "carrier_sanity_median_hellinger": 0.0201,
+      "cca_canonical_corr": [
+        0.98,
+        0.974,
+        0.969,
+        0.969,
+        0.954,
+        0.942,
+        0.93,
+        0.886
+      ],
+      "valid_fraction_of_box": 0.798,
+      "n_valid": 31907,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 155,
+      "behaviour_cells_valid_samples": 1237,
+      "behaviour_cells_new": 1082,
+      "coverage_gain_ratio": 7.98,
+      "argmax_day_counts_valid": {
+        "Mon": 4351,
+        "Tue": 3740,
+        "Wed": 3831,
+        "Thu": 4703,
+        "Fri": 5660,
+        "Sat": 4074,
+        "Sun": 5548
+      }
+    },
+    "31": {
+      "carrier_sanity_median_hellinger": 0.0113,
+      "cca_canonical_corr": [
+        0.987,
+        0.979,
+        0.973,
+        0.97,
+        0.966,
+        0.957,
+        0.933,
+        0.886
+      ],
+      "valid_fraction_of_box": 0.806,
+      "n_valid": 32259,
+      "n_samples": 40000,
+      "behaviour_cells_anchors": 157,
+      "behaviour_cells_valid_samples": 1226,
+      "behaviour_cells_new": 1069,
+      "coverage_gain_ratio": 7.81,
+      "argmax_day_counts_valid": {
+        "Mon": 4893,
+        "Tue": 5812,
+        "Wed": 4071,
+        "Thu": 4141,
+        "Fri": 4340,
+        "Sat": 5070,
+        "Sun": 3932
+      }
+    }
+  }
+}

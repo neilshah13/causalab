@@ -1,0 +1,82 @@
+{
+  "concept": "hues12",
+  "model": "llama31_8b",
+  "frame": "fewshot_neutral",
+  "n_tokens": 12,
+  "n_total": 82,
+  "n_retained": 47,
+  "frac_retained": 0.573,
+  "all_tokens_single": false,
+  "per_family_yield": {
+    "A_open": {
+      "kept": 4,
+      "total": 5
+    },
+    "B_neg1": {
+      "kept": 9,
+      "total": 12
+    },
+    "C_neg2": {
+      "kept": 3,
+      "total": 12
+    },
+    "D_between": {
+      "kept": 2,
+      "total": 12
+    },
+    "E_assoc": {
+      "kept": 15,
+      "total": 16
+    },
+    "F_mix": {
+      "kept": 4,
+      "total": 8
+    },
+    "G_letter": {
+      "kept": 6,
+      "total": 11
+    },
+    "H_temp": {
+      "kept": 4,
+      "total": 6
+    }
+  },
+  "hellinger_pca": {
+    "n_dims_for_90pct": 6,
+    "participation_ratio": 6.57,
+    "evr_head": [
+      0.208,
+      0.184,
+      0.172,
+      0.152,
+      0.102,
+      0.085,
+      0.057,
+      0.034,
+      0.004,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "entropy": {
+    "mean": 0.67,
+    "max_logK": 2.485,
+    "frac_interior_ge_half_logK": 0.319
+  },
+  "argmax_counts": {
+    "Red": 12,
+    "Orange": 8,
+    "Yellow": 7,
+    "Lime": 0,
+    "Green": 9,
+    "Teal": 0,
+    "Cyan": 0,
+    "Azure": 0,
+    "Blue": 3,
+    "Violet": 1,
+    "Purple": 4,
+    "Pink": 3
+  },
+  "all_tokens_reachable": false
+}

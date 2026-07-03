@@ -1,0 +1,115 @@
+node=node11
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 239.63it/s]
+keep=Red,Green,Blue (24 anchors), held-out days=['Orange', 'Yellow', 'Lime', 'Teal', 'Cyan', 'Azure', 'Violet', 'Purple', 'Pink']
+  pca  k= 8: valid= 3298 recovered 5/9 held-out days (Orange, Yellow, Lime, Purple, Pink)
+  pca  k=11: valid= 2702 recovered 5/9 held-out days (Orange, Yellow, Lime, Purple, Pink)
+  pca  k=16: valid= 2350 recovered 6/9 held-out days (Orange, Yellow, Lime, Violet, Purple, Pink)
+  cca  k= 8: valid= 6767 recovered 4/9 held-out days (Orange, Yellow, Lime, Purple)
+  cca  k=11: valid= 5613 recovered 5/9 held-out days (Orange, Yellow, Lime, Violet, Purple)
+  cca  k=13: valid= 4931 recovered 5/9 held-out days (Orange, Yellow, Lime, Violet, Purple)
+saved -> sparse_recovery_RedGreenBlue.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 239.89it/s]
+keep=Red,Yellow,Blue (22 anchors), held-out days=['Orange', 'Lime', 'Green', 'Teal', 'Cyan', 'Azure', 'Violet', 'Purple', 'Pink']
+  pca  k= 8: valid= 2651 recovered 3/9 held-out days (Orange, Lime, Pink)
+  pca  k=11: valid= 2157 recovered 4/9 held-out days (Orange, Lime, Green, Pink)
+  pca  k=16: valid= 1822 recovered 4/9 held-out days (Orange, Lime, Green, Pink)
+  cca  k= 8: valid= 6480 recovered 4/9 held-out days (Orange, Green, Purple, Pink)
+  cca  k=11: valid= 4898 recovered 4/9 held-out days (Orange, Green, Purple, Pink)
+  cca  k=13: valid= 4464 recovered 5/9 held-out days (Orange, Lime, Green, Purple, Pink)
+saved -> sparse_recovery_RedYellowBlue.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 217.82it/s]
+holdout=Green (tds=[4], frac=1.0): 9/47 anchors deleted
+{
+  "concept": "hues12",
+  "layer": 31,
+  "holdout": "Green",
+  "k": 11,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Green",
+    "n_held": 9,
+    "n_train": 38,
+    "n_valid_samples": 7670,
+    "frac_valid_in_deleted_region": 0.105,
+    "n_valid_in_deleted_region": 805,
+    "max_P_target_recovered": 0.997,
+    "max_P_per_deleted": {
+      "Green": 0.997
+    },
+    "held_region_cells": 8,
+    "recovered_cells": 8,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.404,
+    "projection_recon_keeps_argmax_frac": 0.889
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 9,
+    "n_train": 38,
+    "n_valid_samples": 7533,
+    "frac_valid_in_deleted_region": 0.122,
+    "n_valid_in_deleted_region": 920,
+    "max_P_target_recovered": 0.995,
+    "max_P_per_deleted": {
+      "Green": 0.995
+    },
+    "held_region_cells": 9,
+    "recovered_cells": 9,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.164,
+    "projection_recon_keeps_argmax_frac": 0.222
+  }
+}
+saved -> recovery_test_Green.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 231.03it/s]
+holdout=Blue (tds=[8], frac=1.0): 3/47 anchors deleted
+{
+  "concept": "hues12",
+  "layer": 31,
+  "holdout": "Blue",
+  "k": 11,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Blue",
+    "n_held": 3,
+    "n_train": 44,
+    "n_valid_samples": 9486,
+    "frac_valid_in_deleted_region": 0.116,
+    "n_valid_in_deleted_region": 1099,
+    "max_P_target_recovered": 1.0,
+    "max_P_per_deleted": {
+      "Blue": 1.0
+    },
+    "held_region_cells": 2,
+    "recovered_cells": 2,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.474,
+    "projection_recon_keeps_argmax_frac": 0.667
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 3,
+    "n_train": 44,
+    "n_valid_samples": 7622,
+    "frac_valid_in_deleted_region": 0.158,
+    "n_valid_in_deleted_region": 1206,
+    "max_P_target_recovered": 1.0,
+    "max_P_per_deleted": {
+      "Blue": 1.0
+    },
+    "held_region_cells": 3,
+    "recovered_cells": 3,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.107,
+    "projection_recon_keeps_argmax_frac": 0.333
+  }
+}
+saved -> recovery_test_Blue.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 217.49it/s]
+L23: dumped 20000 samples (valid 0.75) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/hues12_simplex/llama31_8b/simplex_coverage/geometry_L23.npz
+L31: dumped 20000 samples (valid 0.84) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/hues12_simplex/llama31_8b/simplex_coverage/geometry_L31.npz
+H2 DONE

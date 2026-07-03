@@ -1,0 +1,75 @@
+{
+  "layer": 23,
+  "k": 8,
+  "results": [
+    {
+      "carrier": "I glanced at the calendar on the wall to check the day. It was",
+      "unsteered": {
+        "text": " the 15th of the month. I had been in the hospital for 15 days. I had been in the hospital for 15",
+        "top_day": "Fri",
+        "P": 0.057
+      },
+      "Wed": {
+        "text": " Wednesday. I was in the middle of a week-long vacation. I had been looking forward to this week for a long time. I had",
+        "P_target": 0.994,
+        "argmax_is_target": true
+      },
+      "Sat": {
+        "text": " Saturday, and I was in the middle of a long weekend. I had been working on a project for a few days, and I was",
+        "P_target": 0.994,
+        "argmax_is_target": true
+      },
+      "Sun": {
+        "text": " Sunday, and I was in the middle of a long weekend. I had been working on a project for a few days, and I was",
+        "P_target": 0.997,
+        "argmax_is_target": true
+      }
+    },
+    {
+      "carrier": "She asked me what my favorite day of the week was, and I said",
+      "unsteered": {
+        "text": ", \u201cSunday.\u201d She said, \u201cWhy?\u201d I said, \u201cBecause it\u2019s the day I get to see you.\u201d She said,",
+        "top_day": "Fri",
+        "P": 0.093
+      },
+      "Wed": {
+        "text": " Wednesday. She asked me why, and I said because it was the day I got to see her. She asked me what my favorite color",
+        "P_target": 0.988,
+        "argmax_is_target": true
+      },
+      "Sat": {
+        "text": " Saturday. She asked me why, and I said because I get to sleep in. She asked me what my favorite month of the year was",
+        "P_target": 0.989,
+        "argmax_is_target": true
+      },
+      "Sun": {
+        "text": " Sunday. She asked me why, and I said because it was the day of rest. She asked me what I did on Sunday, and",
+        "P_target": 0.996,
+        "argmax_is_target": true
+      }
+    },
+    {
+      "carrier": "The meeting got moved again. It will now happen on",
+      "unsteered": {
+        "text": " Tuesday, 10/23 at 6:30pm at the library. I hope to see you there.<|end_of_text|><|begin_of_text|>://--><|end_of_text|>",
+        "top_day": "Tue",
+        "P": 0.097
+      },
+      "Wed": {
+        "text": " Wednesday, 2/13/2019 at 6:30pm at the library. We will be discussing the 2019 budget",
+        "P_target": 0.987,
+        "argmax_is_target": true
+      },
+      "Sat": {
+        "text": " Saturday, April 27th at 10:00am. The location is still the same, the library in the Village of New P",
+        "P_target": 0.987,
+        "argmax_is_target": true
+      },
+      "Sun": {
+        "text": " Sunday, 10/28 at 2pm. The location is still the same, the library in the Village of the Branch.<|end_of_text|>",
+        "P_target": 0.995,
+        "argmax_is_target": true
+      }
+    }
+  ]
+}

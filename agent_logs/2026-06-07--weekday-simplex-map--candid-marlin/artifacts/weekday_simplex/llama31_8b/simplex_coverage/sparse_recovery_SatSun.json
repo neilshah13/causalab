@@ -1,0 +1,646 @@
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "keep": "Sat,Sun",
+  "held": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+  ],
+  "margin": 2.0,
+  "recover_thresh": 0.5,
+  "results": [
+    {
+      "method": "cca",
+      "k": 3,
+      "n_valid": 8402,
+      "held_days_recovered": 3,
+      "n_held": 5,
+      "frac_held_recovered": 0.6,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.988,
+          "n_argmax": 1511,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.969,
+          "n_argmax": 1653,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.32,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Thu": {
+          "max_P": 0.009,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Fri": {
+          "max_P": 0.997,
+          "n_argmax": 1649,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 5,
+      "n_valid": 6628,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.994,
+          "n_argmax": 1030,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.966,
+          "n_argmax": 538,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.991,
+          "n_argmax": 889,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.993,
+          "n_argmax": 827,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.998,
+          "n_argmax": 1124,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 6,
+      "n_valid": 6061,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.996,
+          "n_argmax": 975,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.99,
+          "n_argmax": 567,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.998,
+          "n_argmax": 869,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.996,
+          "n_argmax": 655,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.999,
+          "n_argmax": 1288,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 7,
+      "n_valid": 4963,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.997,
+          "n_argmax": 690,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.986,
+          "n_argmax": 346,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.998,
+          "n_argmax": 694,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.995,
+          "n_argmax": 539,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.999,
+          "n_argmax": 1026,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 4994,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.997,
+          "n_argmax": 362,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.985,
+          "n_argmax": 221,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.997,
+          "n_argmax": 511,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.992,
+          "n_argmax": 338,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.999,
+          "n_argmax": 593,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "cca",
+      "k": 8,
+      "n_valid": 4842,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.995,
+          "n_argmax": 341,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.981,
+          "n_argmax": 207,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.998,
+          "n_argmax": 469,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.993,
+          "n_argmax": 292,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.999,
+          "n_argmax": 633,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 3,
+      "n_valid": 5011,
+      "held_days_recovered": 2,
+      "n_held": 5,
+      "frac_held_recovered": 0.4,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.828,
+          "n_argmax": 518,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.805,
+          "n_argmax": 339,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.148,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Thu": {
+          "max_P": 0.115,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Fri": {
+          "max_P": 0.102,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 5,
+      "n_valid": 3805,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.98,
+          "n_argmax": 281,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.912,
+          "n_argmax": 341,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.683,
+          "n_argmax": 82,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.739,
+          "n_argmax": 90,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.961,
+          "n_argmax": 120,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 6,
+      "n_valid": 2762,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.96,
+          "n_argmax": 143,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.922,
+          "n_argmax": 164,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.875,
+          "n_argmax": 102,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.686,
+          "n_argmax": 33,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.997,
+          "n_argmax": 269,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 7,
+      "n_valid": 2155,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.959,
+          "n_argmax": 71,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.934,
+          "n_argmax": 182,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.816,
+          "n_argmax": 59,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.694,
+          "n_argmax": 11,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.995,
+          "n_argmax": 164,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 8,
+      "n_valid": 1945,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.958,
+          "n_argmax": 57,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.913,
+          "n_argmax": 112,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.883,
+          "n_argmax": 57,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.843,
+          "n_argmax": 15,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.999,
+          "n_argmax": 398,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "pca",
+      "k": 12,
+      "n_valid": 1462,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.967,
+          "n_argmax": 37,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.931,
+          "n_argmax": 91,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.908,
+          "n_argmax": 39,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.98,
+          "n_argmax": 16,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.995,
+          "n_argmax": 163,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 3,
+      "n_valid": 4256,
+      "held_days_recovered": 2,
+      "n_held": 5,
+      "frac_held_recovered": 0.4,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.791,
+          "n_argmax": 621,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.608,
+          "n_argmax": 67,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.119,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Thu": {
+          "max_P": 0.037,
+          "n_argmax": 0,
+          "recovered": false
+        },
+        "Fri": {
+          "max_P": 0.241,
+          "n_argmax": 0,
+          "recovered": false
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 5,
+      "n_valid": 2977,
+      "held_days_recovered": 4,
+      "n_held": 5,
+      "frac_held_recovered": 0.8,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.934,
+          "n_argmax": 185,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.887,
+          "n_argmax": 190,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.33,
+          "n_argmax": 2,
+          "recovered": false
+        },
+        "Thu": {
+          "max_P": 0.629,
+          "n_argmax": 27,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.982,
+          "n_argmax": 255,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 6,
+      "n_valid": 2396,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.944,
+          "n_argmax": 86,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.853,
+          "n_argmax": 125,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.782,
+          "n_argmax": 114,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.675,
+          "n_argmax": 52,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.981,
+          "n_argmax": 134,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 7,
+      "n_valid": 1962,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.939,
+          "n_argmax": 61,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.923,
+          "n_argmax": 166,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.8,
+          "n_argmax": 57,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.726,
+          "n_argmax": 20,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.983,
+          "n_argmax": 94,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 8,
+      "n_valid": 1906,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.941,
+          "n_argmax": 26,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.908,
+          "n_argmax": 116,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.811,
+          "n_argmax": 38,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.974,
+          "n_argmax": 27,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.997,
+          "n_argmax": 404,
+          "recovered": true
+        }
+      }
+    },
+    {
+      "method": "diff",
+      "k": 12,
+      "n_valid": 1376,
+      "held_days_recovered": 5,
+      "n_held": 5,
+      "frac_held_recovered": 1.0,
+      "per_day": {
+        "Mon": {
+          "max_P": 0.978,
+          "n_argmax": 50,
+          "recovered": true
+        },
+        "Tue": {
+          "max_P": 0.956,
+          "n_argmax": 127,
+          "recovered": true
+        },
+        "Wed": {
+          "max_P": 0.848,
+          "n_argmax": 26,
+          "recovered": true
+        },
+        "Thu": {
+          "max_P": 0.992,
+          "n_argmax": 32,
+          "recovered": true
+        },
+        "Fri": {
+          "max_P": 0.995,
+          "n_argmax": 224,
+          "recovered": true
+        }
+      }
+    }
+  ]
+}

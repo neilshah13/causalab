@@ -1,0 +1,5 @@
+node=node22 layers=31 n_samples=8000
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.95it/s]
+L31: carrier_sanity(med Hellinger)=0.011  valid_frac_of_box=0.799  cov_gain=6.75  new_cells=914
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/map_subspace_metrics.json
+MAPSUB DONE

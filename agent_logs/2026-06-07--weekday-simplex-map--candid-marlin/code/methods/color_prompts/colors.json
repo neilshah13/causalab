@@ -1,0 +1,1084 @@
+{
+  "n_single": 80,
+  "single_token_colors": [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Pink",
+    "Brown",
+    "Black",
+    "White",
+    "Gray",
+    "Grey",
+    "Cyan",
+    "Violet",
+    "Turquoise",
+    "Teal",
+    "Navy",
+    "Olive",
+    "Lime",
+    "Aqua",
+    "Gold",
+    "Silver",
+    "Beige",
+    "Tan",
+    "Peach",
+    "Coral",
+    "Salmon",
+    "Crimson",
+    "Scarlet",
+    "Lavender",
+    "Plum",
+    "Mint",
+    "Ivory",
+    "Charcoal",
+    "Amber",
+    "Azure",
+    "Rose",
+    "Ruby",
+    "Emerald",
+    "Sapphire",
+    "Jade",
+    "Mustard",
+    "Bronze",
+    "Copper",
+    "Brass",
+    "Rust",
+    "Wine",
+    "Cream",
+    "Snow",
+    "Ebony",
+    "Jet",
+    "Slate",
+    "Steel",
+    "Ash",
+    "Stone",
+    "Sand",
+    "Clay",
+    "Blush",
+    "Lemon",
+    "Honey",
+    "Raspberry",
+    "Cherry",
+    "Brick",
+    "Forest",
+    "Moss",
+    "Sage",
+    "Fern",
+    "Pine",
+    "Sky",
+    "Ocean",
+    "Sea",
+    "Denim",
+    "Royal",
+    "Midnight",
+    "Ink",
+    "Pearl",
+    "Platinum",
+    "Titanium",
+    "Graphite",
+    "Coal"
+  ],
+  "detail": [
+    {
+      "color": "Red",
+      "lower": "red",
+      "id_space_cap": [
+        3816
+      ],
+      "id_space_lower": [
+        2579
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Orange",
+      "lower": "orange",
+      "id_space_cap": [
+        22725
+      ],
+      "id_space_lower": [
+        19087
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Yellow",
+      "lower": "yellow",
+      "id_space_cap": [
+        26541
+      ],
+      "id_space_lower": [
+        14071
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Green",
+      "lower": "green",
+      "id_space_cap": [
+        7997
+      ],
+      "id_space_lower": [
+        6307
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Blue",
+      "lower": "blue",
+      "id_space_cap": [
+        8868
+      ],
+      "id_space_lower": [
+        6437
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Purple",
+      "lower": "purple",
+      "id_space_cap": [
+        41489
+      ],
+      "id_space_lower": [
+        25977
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Pink",
+      "lower": "pink",
+      "id_space_cap": [
+        27211
+      ],
+      "id_space_lower": [
+        18718
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Brown",
+      "lower": "brown",
+      "id_space_cap": [
+        10690
+      ],
+      "id_space_lower": [
+        14198
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Black",
+      "lower": "black",
+      "id_space_cap": [
+        5348
+      ],
+      "id_space_lower": [
+        3776
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "White",
+      "lower": "white",
+      "id_space_cap": [
+        5929
+      ],
+      "id_space_lower": [
+        4251
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Gray",
+      "lower": "gray",
+      "id_space_cap": [
+        24255
+      ],
+      "id_space_lower": [
+        18004
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Grey",
+      "lower": "grey",
+      "id_space_cap": [
+        26769
+      ],
+      "id_space_lower": [
+        20366
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Cyan",
+      "lower": "cyan",
+      "id_space_cap": [
+        93243
+      ],
+      "id_space_lower": [
+        58988
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Violet",
+      "lower": "violet",
+      "id_space_cap": [
+        74574
+      ],
+      "id_space_lower": [
+        80836
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Turquoise",
+      "lower": "turquoise",
+      "id_space_cap": [
+        8877,
+        59770
+      ],
+      "id_space_lower": [
+        97047
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Teal",
+      "lower": "teal",
+      "id_space_cap": [
+        2722,
+        278
+      ],
+      "id_space_lower": [
+        95707
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Navy",
+      "lower": "navy",
+      "id_space_cap": [
+        19574
+      ],
+      "id_space_lower": [
+        45874
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Olive",
+      "lower": "olive",
+      "id_space_cap": [
+        47814
+      ],
+      "id_space_lower": [
+        33213
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Lime",
+      "lower": "lime",
+      "id_space_cap": [
+        71596
+      ],
+      "id_space_lower": [
+        42819
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Aqua",
+      "lower": "aqua",
+      "id_space_cap": [
+        72507
+      ],
+      "id_space_lower": [
+        15715,
+        64
+      ],
+      "single_cap": true,
+      "single_lower": false
+    },
+    {
+      "color": "Gold",
+      "lower": "gold",
+      "id_space_cap": [
+        7573
+      ],
+      "id_space_lower": [
+        6761
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Silver",
+      "lower": "silver",
+      "id_space_cap": [
+        15347
+      ],
+      "id_space_lower": [
+        15310
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Beige",
+      "lower": "beige",
+      "id_space_cap": [
+        2893,
+        7404
+      ],
+      "id_space_lower": [
+        79365
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Tan",
+      "lower": "tan",
+      "id_space_cap": [
+        25566
+      ],
+      "id_space_lower": [
+        14531
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Peach",
+      "lower": "peach",
+      "id_space_cap": [
+        64695
+      ],
+      "id_space_lower": [
+        73188
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Coral",
+      "lower": "coral",
+      "id_space_cap": [
+        64916
+      ],
+      "id_space_lower": [
+        53103
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Salmon",
+      "lower": "salmon",
+      "id_space_cap": [
+        62826
+      ],
+      "id_space_lower": [
+        41420
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Crimson",
+      "lower": "crimson",
+      "id_space_cap": [
+        67177
+      ],
+      "id_space_lower": [
+        97119
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Scarlet",
+      "lower": "scarlet",
+      "id_space_cap": [
+        81818
+      ],
+      "id_space_lower": [
+        23087,
+        1169
+      ],
+      "single_cap": true,
+      "single_lower": false
+    },
+    {
+      "color": "Lavender",
+      "lower": "lavender",
+      "id_space_cap": [
+        43950,
+        1693
+      ],
+      "id_space_lower": [
+        81460
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Plum",
+      "lower": "plum",
+      "id_space_cap": [
+        84409
+      ],
+      "id_space_lower": [
+        42272
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Mint",
+      "lower": "mint",
+      "id_space_cap": [
+        42410
+      ],
+      "id_space_lower": [
+        29437
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Ivory",
+      "lower": "ivory",
+      "id_space_cap": [
+        77709
+      ],
+      "id_space_lower": [
+        70916
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Charcoal",
+      "lower": "charcoal",
+      "id_space_cap": [
+        4969,
+        41565
+      ],
+      "id_space_lower": [
+        61203
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Amber",
+      "lower": "amber",
+      "id_space_cap": [
+        47764
+      ],
+      "id_space_lower": [
+        68705
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Azure",
+      "lower": "azure",
+      "id_space_cap": [
+        35219
+      ],
+      "id_space_lower": [
+        77630
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Rose",
+      "lower": "rose",
+      "id_space_cap": [
+        16344
+      ],
+      "id_space_lower": [
+        16392
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Ruby",
+      "lower": "ruby",
+      "id_space_cap": [
+        24658
+      ],
+      "id_space_lower": [
+        46307
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Emerald",
+      "lower": "emerald",
+      "id_space_cap": [
+        64196
+      ],
+      "id_space_lower": [
+        991,
+        25380
+      ],
+      "single_cap": true,
+      "single_lower": false
+    },
+    {
+      "color": "Sapphire",
+      "lower": "sapphire",
+      "id_space_cap": [
+        83099
+      ],
+      "id_space_lower": [
+        274,
+        56205
+      ],
+      "single_cap": true,
+      "single_lower": false
+    },
+    {
+      "color": "Jade",
+      "lower": "jade",
+      "id_space_cap": [
+        58627
+      ],
+      "id_space_lower": [
+        86115
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Mustard",
+      "lower": "mustard",
+      "id_space_cap": [
+        15832,
+        569
+      ],
+      "id_space_lower": [
+        65407
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Bronze",
+      "lower": "bronze",
+      "id_space_cap": [
+        45967
+      ],
+      "id_space_lower": [
+        40907
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Copper",
+      "lower": "copper",
+      "id_space_cap": [
+        43640
+      ],
+      "id_space_lower": [
+        24166
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Brass",
+      "lower": "brass",
+      "id_space_cap": [
+        59129
+      ],
+      "id_space_lower": [
+        37138
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Rust",
+      "lower": "rust",
+      "id_space_cap": [
+        34889
+      ],
+      "id_space_lower": [
+        23941
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Wine",
+      "lower": "wine",
+      "id_space_cap": [
+        32926
+      ],
+      "id_space_lower": [
+        13378
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Cream",
+      "lower": "cream",
+      "id_space_cap": [
+        30800
+      ],
+      "id_space_lower": [
+        12932
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Snow",
+      "lower": "snow",
+      "id_space_cap": [
+        19435
+      ],
+      "id_space_lower": [
+        12056
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Ebony",
+      "lower": "ebony",
+      "id_space_cap": [
+        73214
+      ],
+      "id_space_lower": [
+        54196
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Jet",
+      "lower": "jet",
+      "id_space_cap": [
+        25365
+      ],
+      "id_space_lower": [
+        17004
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Slate",
+      "lower": "slate",
+      "id_space_cap": [
+        69419
+      ],
+      "id_space_lower": [
+        51680
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Steel",
+      "lower": "steel",
+      "id_space_cap": [
+        12783
+      ],
+      "id_space_lower": [
+        9699
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Ash",
+      "lower": "ash",
+      "id_space_cap": [
+        14937
+      ],
+      "id_space_lower": [
+        24767
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Stone",
+      "lower": "stone",
+      "id_space_cap": [
+        14637
+      ],
+      "id_space_lower": [
+        9998
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Sand",
+      "lower": "sand",
+      "id_space_cap": [
+        8847
+      ],
+      "id_space_lower": [
+        9462
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Clay",
+      "lower": "clay",
+      "id_space_cap": [
+        32501
+      ],
+      "id_space_lower": [
+        37148
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Blush",
+      "lower": "blush",
+      "id_space_cap": [
+        2563,
+        1136
+      ],
+      "id_space_lower": [
+        70326
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Lemon",
+      "lower": "lemon",
+      "id_space_cap": [
+        52310
+      ],
+      "id_space_lower": [
+        30564
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Honey",
+      "lower": "honey",
+      "id_space_cap": [
+        40715
+      ],
+      "id_space_lower": [
+        26828
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Raspberry",
+      "lower": "raspberry",
+      "id_space_cap": [
+        48665
+      ],
+      "id_space_lower": [
+        94802
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Cherry",
+      "lower": "cherry",
+      "id_space_cap": [
+        45805
+      ],
+      "id_space_lower": [
+        41980
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Brick",
+      "lower": "brick",
+      "id_space_cap": [
+        45714
+      ],
+      "id_space_lower": [
+        25878
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Forest",
+      "lower": "forest",
+      "id_space_cap": [
+        20585
+      ],
+      "id_space_lower": [
+        13952
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Moss",
+      "lower": "moss",
+      "id_space_cap": [
+        44610
+      ],
+      "id_space_lower": [
+        78343
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Sage",
+      "lower": "sage",
+      "id_space_cap": [
+        54384
+      ],
+      "id_space_lower": [
+        39361
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Fern",
+      "lower": "fern",
+      "id_space_cap": [
+        27077
+      ],
+      "id_space_lower": [
+        88124
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Pine",
+      "lower": "pine",
+      "id_space_cap": [
+        42609
+      ],
+      "id_space_lower": [
+        34697
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Sky",
+      "lower": "sky",
+      "id_space_cap": [
+        15064
+      ],
+      "id_space_lower": [
+        13180
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Ocean",
+      "lower": "ocean",
+      "id_space_cap": [
+        22302
+      ],
+      "id_space_lower": [
+        18435
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Sea",
+      "lower": "sea",
+      "id_space_cap": [
+        15379
+      ],
+      "id_space_lower": [
+        9581
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Denim",
+      "lower": "denim",
+      "id_space_cap": [
+        9973,
+        318
+      ],
+      "id_space_lower": [
+        64905
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Royal",
+      "lower": "royal",
+      "id_space_cap": [
+        16591
+      ],
+      "id_space_lower": [
+        30336
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Midnight",
+      "lower": "midnight",
+      "id_space_cap": [
+        64680
+      ],
+      "id_space_lower": [
+        33433
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Ink",
+      "lower": "ink",
+      "id_space_cap": [
+        42183
+      ],
+      "id_space_lower": [
+        27513
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Pearl",
+      "lower": "pearl",
+      "id_space_cap": [
+        37343
+      ],
+      "id_space_lower": [
+        70723
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Platinum",
+      "lower": "platinum",
+      "id_space_cap": [
+        45092
+      ],
+      "id_space_lower": [
+        63327
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Titanium",
+      "lower": "titanium",
+      "id_space_cap": [
+        80454
+      ],
+      "id_space_lower": [
+        71404
+      ],
+      "single_cap": true,
+      "single_lower": true
+    },
+    {
+      "color": "Graphite",
+      "lower": "graphite",
+      "id_space_cap": [
+        12441,
+        635
+      ],
+      "id_space_lower": [
+        95273
+      ],
+      "single_cap": false,
+      "single_lower": true
+    },
+    {
+      "color": "Coal",
+      "lower": "coal",
+      "id_space_cap": [
+        25850
+      ],
+      "id_space_lower": [
+        11756
+      ],
+      "single_cap": true,
+      "single_lower": true
+    }
+  ],
+  "multi_token_dropped": [
+    "Magenta",
+    "Indigo",
+    "Maroon",
+    "Cerulean",
+    "Vermilion",
+    "Ochre",
+    "Sienna",
+    "Umber",
+    "Mauve",
+    "Fuchsia",
+    "Chartreuse",
+    "Burgundy",
+    "Cobalt",
+    "Khaki",
+    "Apricot",
+    "Tangerine",
+    "Lilac",
+    "Periwinkle",
+    "Orchid",
+    "Fuschia",
+    "Terracotta",
+    "Onyx"
+  ]
+}

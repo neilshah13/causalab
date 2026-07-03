@@ -1,0 +1,38 @@
+{
+  "model": "llama31_8b",
+  "carrier": "A day of the week:",
+  "k": 8,
+  "n_samples": 30000,
+  "margin": 4.0,
+  "layers": {
+    "31": {
+      "carrier_sanity_median_hellinger": 0.0113,
+      "cca_canonical_corr": [
+        0.986,
+        0.979,
+        0.974,
+        0.97,
+        0.966,
+        0.957,
+        0.932,
+        0.886
+      ],
+      "valid_fraction_of_box": 0.287,
+      "n_valid": 8619,
+      "n_samples": 30000,
+      "behaviour_cells_anchors": 162,
+      "behaviour_cells_valid_samples": 684,
+      "behaviour_cells_new": 573,
+      "coverage_gain_ratio": 4.54,
+      "argmax_day_counts_valid": {
+        "Mon": 421,
+        "Tue": 2568,
+        "Wed": 1720,
+        "Thu": 1240,
+        "Fri": 682,
+        "Sat": 588,
+        "Sun": 1400
+      }
+    }
+  }
+}

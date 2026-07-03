@@ -1,0 +1,38 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 100.25it/s]
+keep=Mon,Thu (69 anchors), held-out days=['Tue', 'Wed', 'Fri', 'Sat', 'Sun']
+  cca  k= 4: valid=13363 recovered 3/5 held-out days (Wed, Fri, Sun)
+  cca  k= 8: valid= 9220 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  cca  k= 8: valid= 9228 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  cca  k= 8: valid= 9234 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  cca  k= 8: valid= 9380 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  pca  k= 4: valid= 8375 recovered 4/5 held-out days (Wed, Fri, Sat, Sun)
+  pca  k= 8: valid= 5539 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  pca  k=12: valid= 4111 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  pca  k=20: valid= 1968 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  pca  k=40: valid= 1405 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  diff k= 4: valid= 7035 recovered 3/5 held-out days (Tue, Fri, Sun)
+  diff k= 8: valid= 5441 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  diff k=12: valid= 4069 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  diff k=20: valid= 2760 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+  diff k=40: valid= 1828 recovered 5/5 held-out days (Tue, Wed, Fri, Sat, Sun)
+saved -> sparse_recovery_MonThu.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 102.29it/s]
+keep=Mon,Wed,Fri,Sun (129 anchors), held-out days=['Tue', 'Thu', 'Sat']
+  cca  k= 4: valid=11900 recovered 1/3 held-out days (Sat)
+  cca  k= 8: valid= 9592 recovered 3/3 held-out days (Tue, Thu, Sat)
+  cca  k= 8: valid= 9643 recovered 3/3 held-out days (Tue, Thu, Sat)
+  cca  k= 8: valid= 9477 recovered 3/3 held-out days (Tue, Thu, Sat)
+  cca  k= 8: valid= 9549 recovered 3/3 held-out days (Tue, Thu, Sat)
+  pca  k= 4: valid=10319 recovered 1/3 held-out days (Tue)
+  pca  k= 8: valid= 5483 recovered 3/3 held-out days (Tue, Thu, Sat)
+  pca  k=12: valid= 4898 recovered 3/3 held-out days (Tue, Thu, Sat)
+  pca  k=20: valid= 3418 recovered 3/3 held-out days (Tue, Thu, Sat)
+  pca  k=40: valid= 1996 recovered 3/3 held-out days (Tue, Thu, Sat)
+  diff k= 4: valid= 9023 recovered 2/3 held-out days (Tue, Sat)
+  diff k= 8: valid= 5152 recovered 3/3 held-out days (Tue, Thu, Sat)
+  diff k=12: valid= 4931 recovered 3/3 held-out days (Tue, Thu, Sat)
+  diff k=20: valid= 3284 recovered 3/3 held-out days (Tue, Thu, Sat)
+  diff k=40: valid= 2029 recovered 3/3 held-out days (Tue, Thu, Sat)
+saved -> sparse_recovery_MonWedFriSun.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 99.58it/s]
+slurmstepd-node22: error: *** JOB 12451 ON node22 CANCELLED AT 2026-06-09T13:43:03 ***

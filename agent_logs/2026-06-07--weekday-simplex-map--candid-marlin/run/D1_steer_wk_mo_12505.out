@@ -1,0 +1,368 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 99.51it/s]
+{
+  "concept": "weekdays",
+  "layer": 19,
+  "k": 6,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.153,
+  "fidelity_p90_hellinger": 0.218,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.119,
+  "smoothness_max_step": 0.435
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L19k6.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.20it/s]
+{
+  "concept": "weekdays",
+  "layer": 19,
+  "k": 8,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.158,
+  "fidelity_p90_hellinger": 0.237,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.126,
+  "smoothness_max_step": 0.471
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L19k8.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.99it/s]
+{
+  "concept": "weekdays",
+  "layer": 23,
+  "k": 6,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.124,
+  "fidelity_p90_hellinger": 0.212,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.114,
+  "smoothness_max_step": 0.476
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L23k6.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.88it/s]
+{
+  "concept": "weekdays",
+  "layer": 23,
+  "k": 8,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.124,
+  "fidelity_p90_hellinger": 0.221,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.117,
+  "smoothness_max_step": 0.601
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L23k8.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.62it/s]
+{
+  "concept": "weekdays",
+  "layer": 27,
+  "k": 6,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.121,
+  "fidelity_p90_hellinger": 0.25,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.126,
+  "smoothness_max_step": 0.385
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L27k6.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.13it/s]
+{
+  "concept": "weekdays",
+  "layer": 27,
+  "k": 8,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.109,
+  "fidelity_p90_hellinger": 0.197,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.15,
+  "smoothness_max_step": 0.497
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L27k8.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 97.28it/s]
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "k": 6,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.112,
+  "fidelity_p90_hellinger": 0.214,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.13,
+  "smoothness_max_step": 0.477
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L31k6.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.85it/s]
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "k": 8,
+  "order": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon"
+  ],
+  "n_waypoints": 57,
+  "fidelity_median_hellinger": 0.095,
+  "fidelity_p90_hellinger": 0.206,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.124,
+  "smoothness_max_step": 0.497
+}
+argmax sweep: Mon -> Mon -> Mon -> Mon -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Tue -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Wed -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Thu -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Fri -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sat -> Sun -> Sun -> Sun -> Sun -> Sun -> Sun -> Mon -> Sun -> Mon -> Mon -> Mon -> Mon
+saved -> steer_weekdays_L31k8.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 97.50it/s]
+{
+  "concept": "months",
+  "layer": 23,
+  "k": 11,
+  "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.12,
+  "fidelity_p90_hellinger": 0.236,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.157,
+  "smoothness_max_step": 0.851
+}
+argmax sweep: Jan -> Jan -> Jan -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> May -> May -> May -> May -> May -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Aug -> Aug -> Aug -> Aug -> Aug -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Jan -> Jan -> Jan
+saved -> steer_months_L23k11.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.36it/s]
+{
+  "concept": "months",
+  "layer": 23,
+  "k": 13,
+  "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.119,
+  "fidelity_p90_hellinger": 0.219,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.162,
+  "smoothness_max_step": 0.636
+}
+argmax sweep: Jan -> Jan -> Jan -> Jan -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Mar -> Mar -> Mar -> Mar -> Mar -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> May -> May -> May -> May -> May -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Sep -> Sep -> Sep -> Sep -> Sep -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Jan -> Jan -> Jan
+saved -> steer_months_L23k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.66it/s]
+{
+  "concept": "months",
+  "layer": 27,
+  "k": 11,
+  "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.128,
+  "fidelity_p90_hellinger": 0.239,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.164,
+  "smoothness_max_step": 0.647
+}
+argmax sweep: Jan -> Jan -> Jan -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> May -> May -> May -> May -> May -> May -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jul -> Jul -> Jul -> Jul -> Jul -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Jan -> Jan -> Jan
+saved -> steer_months_L27k11.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 95.58it/s]
+{
+  "concept": "months",
+  "layer": 27,
+  "k": 13,
+  "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.117,
+  "fidelity_p90_hellinger": 0.208,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.144,
+  "smoothness_max_step": 0.586
+}
+argmax sweep: Jan -> Jan -> Jan -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> May -> May -> May -> May -> May -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jul -> Jul -> Jul -> Jul -> Jul -> Jul -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Sep -> Sep -> Sep -> Sep -> Sep -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Dec -> Dec -> Dec -> Dec -> Dec -> Jan -> Jan -> Jan -> Jan
+saved -> steer_months_L27k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 98.35it/s]
+{
+  "concept": "months",
+  "layer": 31,
+  "k": 11,
+  "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.125,
+  "fidelity_p90_hellinger": 0.208,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.137,
+  "smoothness_max_step": 0.487
+}
+argmax sweep: Jan -> Jan -> Jan -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> May -> May -> May -> May -> May -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jul -> Jul -> Jul -> Jul -> Jul -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Sep -> Sep -> Sep -> Sep -> Sep -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Jan -> Jan -> Jan
+saved -> steer_months_L31k11.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.96it/s]
+{
+  "concept": "months",
+  "layer": 31,
+  "k": 13,
+  "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan"
+  ],
+  "n_waypoints": 73,
+  "fidelity_median_hellinger": 0.105,
+  "fidelity_p90_hellinger": 0.206,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.133,
+  "smoothness_max_step": 0.458
+}
+argmax sweep: Jan -> Jan -> Jan -> Feb -> Feb -> Feb -> Feb -> Feb -> Feb -> Mar -> Mar -> Mar -> Mar -> Mar -> Mar -> Apr -> Apr -> Apr -> Apr -> Apr -> Apr -> May -> May -> May -> May -> May -> May -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jun -> Jul -> Jul -> Jul -> Jul -> Jul -> Aug -> Aug -> Aug -> Aug -> Aug -> Aug -> Sep -> Sep -> Sep -> Sep -> Sep -> Sep -> Oct -> Oct -> Oct -> Oct -> Oct -> Oct -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Nov -> Dec -> Dec -> Dec -> Dec -> Dec -> Dec -> Jan -> Jan -> Jan
+saved -> steer_months_L31k13.json
+D1 DONE

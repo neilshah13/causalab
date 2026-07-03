@@ -1,0 +1,43 @@
+{
+  "concept": "weekdays",
+  "layer": 31,
+  "holdout": "Wed",
+  "k": 8,
+  "holdout_frac": 0.5,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Wed",
+    "n_held": 16,
+    "n_train": 178,
+    "n_valid_samples": 7832,
+    "frac_valid_in_deleted_region": 0.165,
+    "n_valid_in_deleted_region": 1296,
+    "max_P_target_recovered": 1.0,
+    "max_P_per_deleted": {
+      "Wed": 1.0
+    },
+    "held_region_cells": 16,
+    "recovered_cells": 15,
+    "cell_recovery_rate": 0.938,
+    "projection_recon_median_hellinger": 0.103,
+    "projection_recon_keeps_argmax_frac": 0.812
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 16,
+    "n_train": 178,
+    "n_valid_samples": 8602,
+    "frac_valid_in_deleted_region": 0.169,
+    "n_valid_in_deleted_region": 1457,
+    "max_P_target_recovered": 1.0,
+    "max_P_per_deleted": {
+      "Wed": 1.0
+    },
+    "held_region_cells": 16,
+    "recovered_cells": 13,
+    "cell_recovery_rate": 0.812,
+    "projection_recon_median_hellinger": 0.084,
+    "projection_recon_keeps_argmax_frac": 0.188
+  }
+}

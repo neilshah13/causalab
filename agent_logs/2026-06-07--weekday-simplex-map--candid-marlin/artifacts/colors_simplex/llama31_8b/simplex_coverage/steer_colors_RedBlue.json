@@ -1,0 +1,42 @@
+{
+  "concept": "colors",
+  "layer": 31,
+  "k": 24,
+  "order": [
+    "Red",
+    "Blue"
+  ],
+  "n_waypoints": 25,
+  "fidelity_median_hellinger": 0.091,
+  "fidelity_p90_hellinger": 0.184,
+  "frac_valid": 1.0,
+  "smoothness_median_step": 0.095,
+  "smoothness_max_step": 0.256,
+  "achieved_argmax_seq": [
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Red",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue",
+    "Blue"
+  ]
+}

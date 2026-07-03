@@ -1,0 +1,165 @@
+{
+  "model": "llama31_8b",
+  "layer": 29,
+  "mode": "radial",
+  "nn_dist": 9.880383004545356,
+  "subspace_dims": 20,
+  "n_anchors": 194,
+  "records": [
+    {
+      "dir_type": "subspace",
+      "radius_nn": 0.0,
+      "validity_rate": 1.0,
+      "mean_hellinger_to_anchor_valid": 0.003,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 0.25,
+      "validity_rate": 0.995,
+      "mean_hellinger_to_anchor_valid": 0.059,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 0.5,
+      "validity_rate": 0.994,
+      "mean_hellinger_to_anchor_valid": 0.116,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 0.75,
+      "validity_rate": 0.991,
+      "mean_hellinger_to_anchor_valid": 0.171,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 1.0,
+      "validity_rate": 0.986,
+      "mean_hellinger_to_anchor_valid": 0.223,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 1.5,
+      "validity_rate": 0.964,
+      "mean_hellinger_to_anchor_valid": 0.316,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 2.0,
+      "validity_rate": 0.922,
+      "mean_hellinger_to_anchor_valid": 0.395,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 3.0,
+      "validity_rate": 0.781,
+      "mean_hellinger_to_anchor_valid": 0.504,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 4.0,
+      "validity_rate": 0.58,
+      "mean_hellinger_to_anchor_valid": 0.573,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 6.0,
+      "validity_rate": 0.303,
+      "mean_hellinger_to_anchor_valid": 0.647,
+      "n": 3104
+    },
+    {
+      "dir_type": "subspace",
+      "radius_nn": 8.0,
+      "validity_rate": 0.202,
+      "mean_hellinger_to_anchor_valid": 0.684,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 0.0,
+      "validity_rate": 1.0,
+      "mean_hellinger_to_anchor_valid": 0.003,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 0.25,
+      "validity_rate": 0.998,
+      "mean_hellinger_to_anchor_valid": 0.013,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 0.5,
+      "validity_rate": 0.997,
+      "mean_hellinger_to_anchor_valid": 0.021,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 0.75,
+      "validity_rate": 0.997,
+      "mean_hellinger_to_anchor_valid": 0.03,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 1.0,
+      "validity_rate": 0.994,
+      "mean_hellinger_to_anchor_valid": 0.039,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 1.5,
+      "validity_rate": 0.988,
+      "mean_hellinger_to_anchor_valid": 0.059,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 2.0,
+      "validity_rate": 0.972,
+      "mean_hellinger_to_anchor_valid": 0.079,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 3.0,
+      "validity_rate": 0.894,
+      "mean_hellinger_to_anchor_valid": 0.124,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 4.0,
+      "validity_rate": 0.568,
+      "mean_hellinger_to_anchor_valid": 0.165,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 6.0,
+      "validity_rate": 0.014,
+      "mean_hellinger_to_anchor_valid": 0.18,
+      "n": 3104
+    },
+    {
+      "dir_type": "full",
+      "radius_nn": 8.0,
+      "validity_rate": 0.0,
+      "mean_hellinger_to_anchor_valid": 0.0,
+      "n": 3104
+    }
+  ],
+  "zero_perturbation_hellinger_to_anchor": 0.0021
+}

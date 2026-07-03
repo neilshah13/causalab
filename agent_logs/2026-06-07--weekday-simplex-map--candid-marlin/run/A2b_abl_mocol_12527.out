@@ -1,0 +1,188 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 89.12it/s]
+/workdir2/johan.boscher/causalab/.venv/lib/python3.10/site-packages/sklearn/cross_decomposition/_pls.py:104: ConvergenceWarning: Maximum number of iterations reached
+  warnings.warn("Maximum number of iterations reached", ConvergenceWarning)
+holdout=Feb (tds=[1], frac=1.0): 20/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Feb",
+  "k": 13,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Feb",
+    "n_held": 20,
+    "n_train": 210,
+    "n_valid_samples": 8077,
+    "frac_valid_in_deleted_region": 0.001,
+    "n_valid_in_deleted_region": 8,
+    "max_P_target_recovered": 0.813,
+    "max_P_per_deleted": {
+      "Feb": 0.813
+    },
+    "held_region_cells": 16,
+    "recovered_cells": 14,
+    "cell_recovery_rate": 0.875,
+    "projection_recon_median_hellinger": 0.231,
+    "projection_recon_keeps_argmax_frac": 0.65
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 20,
+    "n_train": 210,
+    "n_valid_samples": 7100,
+    "frac_valid_in_deleted_region": 0.034,
+    "n_valid_in_deleted_region": 244,
+    "max_P_target_recovered": 0.988,
+    "max_P_per_deleted": {
+      "Feb": 0.988
+    },
+    "held_region_cells": 19,
+    "recovered_cells": 17,
+    "cell_recovery_rate": 0.895,
+    "projection_recon_median_hellinger": 0.069,
+    "projection_recon_keeps_argmax_frac": 0.0
+  }
+}
+saved -> recovery_test_Feb_k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.74it/s]
+holdout=Mar (tds=[2], frac=1.0): 24/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Mar",
+  "k": 13,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Mar",
+    "n_held": 24,
+    "n_train": 206,
+    "n_valid_samples": 7700,
+    "frac_valid_in_deleted_region": 0.023,
+    "n_valid_in_deleted_region": 176,
+    "max_P_target_recovered": 0.989,
+    "max_P_per_deleted": {
+      "Mar": 0.989
+    },
+    "held_region_cells": 22,
+    "recovered_cells": 22,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.161,
+    "projection_recon_keeps_argmax_frac": 0.708
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 24,
+    "n_train": 206,
+    "n_valid_samples": 6907,
+    "frac_valid_in_deleted_region": 0.087,
+    "n_valid_in_deleted_region": 600,
+    "max_P_target_recovered": 0.998,
+    "max_P_per_deleted": {
+      "Mar": 0.998
+    },
+    "held_region_cells": 24,
+    "recovered_cells": 24,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.044,
+    "projection_recon_keeps_argmax_frac": 0.083
+  }
+}
+saved -> recovery_test_Mar_k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 92.18it/s]
+holdout=May (tds=[4], frac=1.0): 18/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "May",
+  "k": 13,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:May",
+    "n_held": 18,
+    "n_train": 212,
+    "n_valid_samples": 6934,
+    "frac_valid_in_deleted_region": 0.036,
+    "n_valid_in_deleted_region": 253,
+    "max_P_target_recovered": 0.969,
+    "max_P_per_deleted": {
+      "May": 0.969
+    },
+    "held_region_cells": 17,
+    "recovered_cells": 17,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.252,
+    "projection_recon_keeps_argmax_frac": 0.556
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 18,
+    "n_train": 212,
+    "n_valid_samples": 7548,
+    "frac_valid_in_deleted_region": 0.193,
+    "n_valid_in_deleted_region": 1458,
+    "max_P_target_recovered": 0.999,
+    "max_P_per_deleted": {
+      "May": 0.999
+    },
+    "held_region_cells": 18,
+    "recovered_cells": 18,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.074,
+    "projection_recon_keeps_argmax_frac": 0.0
+  }
+}
+saved -> recovery_test_May_k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 93.33it/s]
+holdout=Jun (tds=[5], frac=1.0): 22/230 anchors deleted
+{
+  "concept": "months",
+  "layer": 31,
+  "holdout": "Jun",
+  "k": 13,
+  "holdout_frac": 1.0,
+  "margin": 1.5,
+  "n_samples": 15000,
+  "region_holdout": {
+    "name": "region:Jun",
+    "n_held": 22,
+    "n_train": 208,
+    "n_valid_samples": 7260,
+    "frac_valid_in_deleted_region": 0.037,
+    "n_valid_in_deleted_region": 270,
+    "max_P_target_recovered": 0.991,
+    "max_P_per_deleted": {
+      "Jun": 0.991
+    },
+    "held_region_cells": 18,
+    "recovered_cells": 17,
+    "cell_recovery_rate": 0.944,
+    "projection_recon_median_hellinger": 0.105,
+    "projection_recon_keeps_argmax_frac": 0.636
+  },
+  "random_control": {
+    "name": "random_matched",
+    "n_held": 22,
+    "n_train": 208,
+    "n_valid_samples": 7724,
+    "frac_valid_in_deleted_region": 0.073,
+    "n_valid_in_deleted_region": 565,
+    "max_P_target_recovered": 0.995,
+    "max_P_per_deleted": {
+      "Jun": 0.995
+    },
+    "held_region_cells": 21,
+    "recovered_cells": 21,
+    "cell_recovery_rate": 1.0,
+    "projection_recon_median_hellinger": 0.044,
+    "projection_recon_keeps_argmax_frac": 0.182
+  }
+}
+saved -> recovery_test_Jun_k13.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 91.32it/s]

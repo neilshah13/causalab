@@ -1,0 +1,106 @@
+node=node20
+==== radial L25 ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.85it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.51it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.44it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.28it/s]
+layer L25: M=194 anchors, subspace dims=20 (EVR 0.79), NN-dist=7.72
+sanity: zero-perturbation Hellinger to stored anchor dist = 0.0151 (should be ~0)
+[
+  {
+    "dir_type": "subspace",
+    "radius_nn": 0.0,
+    "validity_rate": 1.0,
+    "mean_hellinger_to_anchor_valid": 0.006,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 0.25,
+    "validity_rate": 0.996,
+    "mean_hellinger_to_anchor_valid": 0.062,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 0.5,
+    "validity_rate": 0.991,
+    "mean_hellinger_to_anchor_valid": 0.12,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 0.75,
+    "validity_rate": 0.987,
+    "mean_hellinger_to_anchor_valid": 0.176,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 1.0,
+    "validity_rate": 0.982,
+    "mean_hellinger_to_anchor_valid": 0.229,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 1.5,
+    "validity_rate": 0.966,
+    "mean_hellinger_to_anchor_valid": 0.323,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 2.0,
+    "validity_rate": 0.93,
+    "mean_hellinger_to_anchor_valid": 0.399,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 3.0,
+    "validity_rate": 0.762,
+    "mean_hellinger_to_anchor_valid": 0.505,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 4.0,
+    "validity_rate": 0.539,
+    "mean_hellinger_to_anchor_valid": 0.569,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 6.0,
+    "validity_rate": 0.242,
+    "mean_hellinger_to_anchor_valid": 0.646,
+    "n": 3104
+  },
+  {
+    "dir_type": "subspace",
+    "radius_nn": 8.0,
+    "validity_rate": 0.13,
+    "mean_hellinger_to_anchor_valid": 0.689,
+    "n": 3104
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 0.0,
+    "validity_rate": 1.0,
+    "mean_hellinger_to_anchor_valid": 0.006,
+    "n": 3104
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 0.25,
+    "validity_rate": 0.998,
+    "mean_hellinger_to_anchor_valid": 0.015,
+    "n": 3104
+  },
+  {
+    "dir_type": "full",
+    "radius_nn": 0.5,
+    "validity_rate": 0.997,
+    "mean_hellinger_to_anchor_vali
+saved -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/perturb_radial_L25.json
+==== radial L27 ====
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 79.18it/s]
+slurmstepd-node20: error: *** JOB 12440 ON node20 CANCELLED AT 2026-06-08T19:20:10 DUE TO TIME LIMIT ***

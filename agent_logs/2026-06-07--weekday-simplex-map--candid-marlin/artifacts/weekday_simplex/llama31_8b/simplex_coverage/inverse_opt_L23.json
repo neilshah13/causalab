@@ -1,0 +1,138 @@
+{
+  "concept": "weekdays",
+  "layer": 23,
+  "k": 8,
+  "steps": 150,
+  "lr": 0.08,
+  "n_targets": 129,
+  "optimiser": "adam_through_model",
+  "edge": {
+    "n": 21,
+    "median_hellinger": 0.073,
+    "p90_hellinger": 0.092,
+    "frac_reached_0.10": 0.952,
+    "frac_reached_0.20": 1.0
+  },
+  "interior": {
+    "n": 60,
+    "median_hellinger": 0.08,
+    "p90_hellinger": 0.095,
+    "frac_reached_0.10": 0.933,
+    "frac_reached_0.20": 1.0
+  },
+  "sparse": {
+    "n": 40,
+    "median_hellinger": 0.086,
+    "p90_hellinger": 0.117,
+    "frac_reached_0.10": 0.725,
+    "frac_reached_0.20": 1.0
+  },
+  "uniform": {
+    "n": 1,
+    "median_hellinger": 0.082,
+    "p90_hellinger": 0.082,
+    "frac_reached_0.10": 1.0,
+    "frac_reached_0.20": 1.0
+  },
+  "vertex": {
+    "n": 7,
+    "median_hellinger": 0.028,
+    "p90_hellinger": 0.059,
+    "frac_reached_0.10": 1.0,
+    "frac_reached_0.20": 1.0
+  },
+  "overall_median_hellinger": 0.08,
+  "overall_frac_reached_0.20": 1.0,
+  "trace": [
+    {
+      "chunk": 0,
+      "iter": 0,
+      "mean_h": 0.1535
+    },
+    {
+      "chunk": 0,
+      "iter": 25,
+      "mean_h": 0.0991
+    },
+    {
+      "chunk": 0,
+      "iter": 50,
+      "mean_h": 0.0863
+    },
+    {
+      "chunk": 0,
+      "iter": 75,
+      "mean_h": 0.0811
+    },
+    {
+      "chunk": 0,
+      "iter": 100,
+      "mean_h": 0.0802
+    },
+    {
+      "chunk": 0,
+      "iter": 125,
+      "mean_h": 0.0783
+    },
+    {
+      "chunk": 1,
+      "iter": 0,
+      "mean_h": 0.1985
+    },
+    {
+      "chunk": 1,
+      "iter": 25,
+      "mean_h": 0.1404
+    },
+    {
+      "chunk": 1,
+      "iter": 50,
+      "mean_h": 0.1106
+    },
+    {
+      "chunk": 1,
+      "iter": 75,
+      "mean_h": 0.0978
+    },
+    {
+      "chunk": 1,
+      "iter": 100,
+      "mean_h": 0.0916
+    },
+    {
+      "chunk": 1,
+      "iter": 125,
+      "mean_h": 0.0885
+    },
+    {
+      "chunk": 2,
+      "iter": 0,
+      "mean_h": 0.2341
+    },
+    {
+      "chunk": 2,
+      "iter": 25,
+      "mean_h": 0.17
+    },
+    {
+      "chunk": 2,
+      "iter": 50,
+      "mean_h": 0.1303
+    },
+    {
+      "chunk": 2,
+      "iter": 75,
+      "mean_h": 0.1125
+    },
+    {
+      "chunk": 2,
+      "iter": 100,
+      "mean_h": 0.1021
+    },
+    {
+      "chunk": 2,
+      "iter": 125,
+      "mean_h": 0.0959
+    }
+  ]
+}

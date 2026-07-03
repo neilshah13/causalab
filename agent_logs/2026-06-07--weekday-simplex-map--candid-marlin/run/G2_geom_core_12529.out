@@ -1,0 +1,5 @@
+node=node11
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 242.13it/s]
+L23: dumped 20000 samples (valid 1.00) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/geometry_core_L23.npz
+L31: dumped 20000 samples (valid 1.00) -> /workdir2/johan.boscher/causalab/agent_logs/2026-06-07--weekday-simplex-map--candid-marlin/artifacts/weekday_simplex/llama31_8b/simplex_coverage/geometry_core_L31.npz
+G2 DONE

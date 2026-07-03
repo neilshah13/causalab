@@ -1,0 +1,7 @@
+[2026-06-07] Objective checkpoint.
+- RESEARCH_OBJECTIVE.md presented (summary + flags).
+- Decided (per user "decide the number" instruction): prompt count ~250 (band 200-300).
+- User decision on model/format fork: "Test both, then decide" — write prompts in neutral
+  semantic form, debug-pass on BOTH base llama31_8b (Q/A completion) and llama31_8b_instruct
+  (chat), compare weekday-mass + instruction-following, commit winner for the full run.
+- Proceeding to build PLAN.md (§B-F).

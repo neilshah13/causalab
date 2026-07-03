@@ -1,0 +1,38 @@
+node=node11
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 239.39it/s]
+chart from 81 kept anchors (Red,Green,Blue); steering to 42 held-out values
+chunk 0 it 0: mean best P(held) 0.044
+chunk 0 it 50: mean best P(held) 0.048
+chunk 0 it 100: mean best P(held) 0.054
+{
+  "concept": "colors",
+  "layer": 31,
+  "keep": "Red,Green,Blue",
+  "method": "pca",
+  "k": 12,
+  "n_kept_anchors": 81,
+  "steps": 150,
+  "n_held": 42,
+  "held_reached_P50_gradient": 2,
+  "held_reached_P50_linear": 2
+}
+saved -> steer_unprompted_RGB_L31pca.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 237.04it/s]
+chart from 81 kept anchors (Red,Green,Blue); steering to 42 held-out values
+chunk 0 it 0: mean best P(held) 0.066
+chunk 0 it 50: mean best P(held) 0.080
+chunk 0 it 100: mean best P(held) 0.094
+{
+  "concept": "colors",
+  "layer": 27,
+  "keep": "Red,Green,Blue",
+  "method": "pca",
+  "k": 12,
+  "n_kept_anchors": 81,
+  "steps": 150,
+  "n_held": 42,
+  "held_reached_P50_gradient": 3,
+  "held_reached_P50_linear": 1
+}
+saved -> steer_unprompted_RGB_L27pca.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 236.65it/s]

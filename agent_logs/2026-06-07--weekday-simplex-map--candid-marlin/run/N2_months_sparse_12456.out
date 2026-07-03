@@ -1,0 +1,38 @@
+node=node22
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.37it/s]
+keep=Jan,Jul (35 anchors), held-out days=['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  cca  k= 4: valid= 7167 recovered 4/10 held-out days (May, Jun, Aug, Dec)
+  cca  k= 8: valid= 5412 recovered 7/10 held-out days (Feb, Mar, May, Jun, Aug, Sep, Dec)
+  cca  k=13: valid= 4085 recovered 9/10 held-out days (Feb, Mar, May, Jun, Aug, Sep, Oct, Nov, Dec)
+  cca  k=13: valid= 4173 recovered 8/10 held-out days (Feb, Mar, May, Jun, Aug, Oct, Nov, Dec)
+  cca  k=13: valid= 4178 recovered 9/10 held-out days (Feb, Mar, May, Jun, Aug, Sep, Oct, Nov, Dec)
+  pca  k= 4: valid= 5824 recovered 3/10 held-out days (Mar, May, Jun)
+  pca  k= 8: valid= 4311 recovered 5/10 held-out days (Mar, May, Jun, Nov, Dec)
+  pca  k=13: valid= 3576 recovered 8/10 held-out days (Feb, Mar, May, Jun, Aug, Oct, Nov, Dec)
+  pca  k=20: valid= 2960 recovered 8/10 held-out days (Feb, Mar, May, Jun, Aug, Oct, Nov, Dec)
+  pca  k=34: valid= 2624 recovered 8/10 held-out days (Feb, Mar, May, Jun, Aug, Oct, Nov, Dec)
+  diff k= 4: valid= 5993 recovered 4/10 held-out days (Mar, May, Jun, Nov)
+  diff k= 8: valid= 4582 recovered 6/10 held-out days (Mar, May, Jun, Aug, Nov, Dec)
+  diff k=13: valid= 3487 recovered 6/10 held-out days (May, Jun, Aug, Oct, Nov, Dec)
+  diff k=20: valid= 2837 recovered 7/10 held-out days (Feb, Mar, May, Jun, Aug, Nov, Dec)
+  diff k=34: valid= 2217 recovered 7/10 held-out days (Mar, May, Jun, Aug, Oct, Nov, Dec)
+saved -> sparse_recovery_JanJul.json
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 100.98it/s]
+keep=Jan,Apr,Jul,Oct (73 anchors), held-out days=['Feb', 'Mar', 'May', 'Jun', 'Aug', 'Sep', 'Nov', 'Dec']
+  cca  k= 4: valid= 5745 recovered 3/8 held-out days (Mar, May, Dec)
+  cca  k= 8: valid= 5856 recovered 6/8 held-out days (Mar, May, Jun, Sep, Nov, Dec)
+  cca  k=13: valid= 5345 recovered 8/8 held-out days (Feb, Mar, May, Jun, Aug, Sep, Nov, Dec)
+  cca  k=13: valid= 5380 recovered 7/8 held-out days (Mar, May, Jun, Aug, Sep, Nov, Dec)
+  cca  k=13: valid= 5246 recovered 8/8 held-out days (Feb, Mar, May, Jun, Aug, Sep, Nov, Dec)
+  pca  k= 4: valid= 5923 recovered 1/8 held-out days (May)
+  pca  k= 8: valid= 4457 recovered 5/8 held-out days (Mar, May, Jun, Aug, Sep)
+  pca  k=13: valid= 3639 recovered 7/8 held-out days (Mar, May, Jun, Aug, Sep, Nov, Dec)
+  pca  k=20: valid= 2943 recovered 7/8 held-out days (Mar, May, Jun, Aug, Sep, Nov, Dec)
+  pca  k=40: valid= 1870 recovered 8/8 held-out days (Feb, Mar, May, Jun, Aug, Sep, Nov, Dec)
+  diff k= 4: valid= 5890 recovered 1/8 held-out days (May)
+  diff k= 8: valid= 4377 recovered 5/8 held-out days (Mar, May, Jun, Aug, Dec)
+  diff k=13: valid= 3672 recovered 5/8 held-out days (Mar, Jun, Aug, Sep, Dec)
+  diff k=20: valid= 3023 recovered 7/8 held-out days (Mar, May, Jun, Aug, Sep, Nov, Dec)
+  diff k=40: valid= 2083 recovered 7/8 held-out days (Mar, May, Jun, Aug, Sep, Nov, Dec)
+saved -> sparse_recovery_JanAprJulOct.json
+N2 DONE

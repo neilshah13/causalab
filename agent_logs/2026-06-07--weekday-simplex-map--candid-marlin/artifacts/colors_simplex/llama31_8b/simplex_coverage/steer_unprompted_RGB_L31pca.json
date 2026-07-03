@@ -1,0 +1,224 @@
+{
+  "concept": "colors",
+  "layer": 31,
+  "keep": "Red,Green,Blue",
+  "method": "pca",
+  "k": 12,
+  "n_kept_anchors": 81,
+  "steps": 150,
+  "n_held": 42,
+  "held_reached_P50_gradient": 2,
+  "held_reached_P50_linear": 2,
+  "per_held": {
+    "Orange": {
+      "P_linear_init": 0.572,
+      "P_gradient": 0.72,
+      "hellinger_to_vertex": 0.389
+    },
+    "Yellow": {
+      "P_linear_init": 0.986,
+      "P_gradient": 0.993,
+      "hellinger_to_vertex": 0.057
+    },
+    "Purple": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.999
+    },
+    "Pink": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.993
+    },
+    "Brown": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.001,
+      "hellinger_to_vertex": 0.985
+    },
+    "Black": {
+      "P_linear_init": 0.118,
+      "P_gradient": 0.293,
+      "hellinger_to_vertex": 0.677
+    },
+    "White": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.999
+    },
+    "Gray": {
+      "P_linear_init": 0.001,
+      "P_gradient": 0.012,
+      "hellinger_to_vertex": 0.943
+    },
+    "Grey": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.994
+    },
+    "Cyan": {
+      "P_linear_init": 0.124,
+      "P_gradient": 0.242,
+      "hellinger_to_vertex": 0.713
+    },
+    "Violet": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 1.0
+    },
+    "Turquoise": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.999
+    },
+    "Teal": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.993
+    },
+    "Navy": {
+      "P_linear_init": 0.002,
+      "P_gradient": 0.009,
+      "hellinger_to_vertex": 0.951
+    },
+    "Olive": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.005,
+      "hellinger_to_vertex": 0.965
+    },
+    "Lime": {
+      "P_linear_init": 0.009,
+      "P_gradient": 0.029,
+      "hellinger_to_vertex": 0.911
+    },
+    "Aqua": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.001,
+      "hellinger_to_vertex": 0.985
+    },
+    "Gold": {
+      "P_linear_init": 0.026,
+      "P_gradient": 0.106,
+      "hellinger_to_vertex": 0.821
+    },
+    "Silver": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.002,
+      "hellinger_to_vertex": 0.977
+    },
+    "Beige": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.99
+    },
+    "Tan": {
+      "P_linear_init": 0.001,
+      "P_gradient": 0.013,
+      "hellinger_to_vertex": 0.941
+    },
+    "Peach": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.001,
+      "hellinger_to_vertex": 0.984
+    },
+    "Coral": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.001,
+      "hellinger_to_vertex": 0.981
+    },
+    "Salmon": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.99
+    },
+    "Crimson": {
+      "P_linear_init": 0.008,
+      "P_gradient": 0.069,
+      "hellinger_to_vertex": 0.859
+    },
+    "Scarlet": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.008,
+      "hellinger_to_vertex": 0.956
+    },
+    "Lavender": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.999
+    },
+    "Plum": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.996
+    },
+    "Mint": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.991
+    },
+    "Ivory": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.998
+    },
+    "Charcoal": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.999
+    },
+    "Amber": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.997
+    },
+    "Azure": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.998
+    },
+    "Rose": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.99
+    },
+    "Ruby": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.004,
+      "hellinger_to_vertex": 0.966
+    },
+    "Emerald": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.997
+    },
+    "Sapphire": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 1.0
+    },
+    "Jade": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.997
+    },
+    "Mustard": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.999
+    },
+    "Cream": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.993
+    },
+    "Bronze": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.995
+    },
+    "Copper": {
+      "P_linear_init": 0.0,
+      "P_gradient": 0.0,
+      "hellinger_to_vertex": 0.991
+    }
+  }
+}
